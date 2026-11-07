@@ -19,7 +19,15 @@ from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 
 from . import events as E
-from .config import GATE_TAU, GATE_TAU_CHUNK, LLM_MODEL, LLM_PROVIDER, ROOT, SPARSE_WEIGHT
+from .config import (
+    GATE_TAU,
+    GATE_TAU_CHUNK,
+    LLM_API_KEY,
+    LLM_MODEL,
+    LLM_PROVIDER,
+    ROOT,
+    SPARSE_WEIGHT,
+)
 from .contracts.models import AuthRequest, ChatRequest
 from .orchestrator import run_chat
 from .state import MODULES, get_state, load_state, reset_state
@@ -61,7 +69,10 @@ def health() -> dict:
         "ok": True,
         "model": LLM_MODEL if LLM_PROVIDER != "mock" else "mock(extractive-local)",
         "provider": LLM_PROVIDER,
-        "has_key": bool(LLM_PROVIDER != "mock"),
+        # 之前写成 bool(LLM_PROVIDER != "mock")，只看 provider 不看 key ——
+        # 会出现"显示有 key、实际回落 mock 且不打降级提示"的假象。这里改成真的看 key。
+        "has_key": bool(LLM_API_KEY),
+        "llm_ready": bool(LLM_PROVIDER != "mock" and LLM_API_KEY),
         "tools": list(TOOLS.keys()),
         "chunks": len(st.chunks),
         "docs": len({c.doc_id for c in st.chunks}),
