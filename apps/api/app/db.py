@@ -231,21 +231,24 @@ class Store:
             ).fetchall()
         ]
         # 拒绝率 & 覆盖率分布
-        answers = c.execute(
-            "SELECT payload FROM events WHERE kind IN ('answer','kb_search')"
+        # ⚠ 口径说明：只有 kb_search 事件同时记录 gated 与 coverage，
+        # 所以两个指标都只统计 kb_search，保证分母一致。
+        # （之前混入 answer 事件，导致"拒答率 100% + 覆盖率 0%"这种自相矛盾的展示。）
+        rows = c.execute(
+            "SELECT payload FROM events WHERE kind='kb_search'"
         ).fetchall()
         gated = total = 0
         covs: list[float] = []
-        for r in answers:
+        for r in rows:
             try:
                 p = json.loads(r["payload"] or "{}")
             except json.JSONDecodeError:
                 continue
-            if "gated" in p:
-                total += 1
-                gated += 1 if p.get("gated") else 0
             if isinstance(p.get("coverage"), (int, float)):
+                total += 1
                 covs.append(float(p["coverage"]))
+                if p.get("gated"):
+                    gated += 1
         return {
             "users": one("SELECT COUNT(*) FROM users"),
             "conversations": one("SELECT COUNT(*) FROM conversations"),
