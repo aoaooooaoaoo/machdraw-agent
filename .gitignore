@@ -42,3 +42,4 @@ _analysis_tmp/
 .DS_Store
 Thumbs.db
 desktop.ini
+data/_*.json
