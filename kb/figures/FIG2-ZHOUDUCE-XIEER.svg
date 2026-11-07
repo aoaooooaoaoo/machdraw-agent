@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1101 468" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-ZHOUDUCE-XIEER-t FIG2-ZHOUDUCE-XIEER-d" class="fig-svg">
+  <title id="FIG2-ZHOUDUCE-XIEER-t">斜二轴测图：轴间角与轴向伸缩系数</title>
+  <desc id="FIG2-ZHOUDUCE-XIEER-d">斜二测轴间角为 90°、135°、135°，X、Z 系数为 1、Y 系数为 0.5；同一长方体在斜二测中前面反映实形、宽取一半。</desc>
+  <defs>
+  <pattern id="FIG2-ZHOUDUCE-XIEER__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-XIEER__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-XIEER__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-XIEER__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-XIEER__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-XIEER__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-ZHOUDUCE-XIEER__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-ZHOUDUCE-XIEER__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-ZHOUDUCE-XIEER__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-ZHOUDUCE-XIEER__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-ZHOUDUCE-XIEER__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-ZHOUDUCE-XIEER__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-ZHOUDUCE-XIEER__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-ZHOUDUCE-XIEER__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-2  斜二轴测图（同一长方体 60×40×30）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">与正等测的区别：斜二测有一个面平行于轴测投影面，该面反映实形。</text>
+    <line x1="190" y1="360" x2="320" y2="360" stroke="currentColor" stroke-width="2"/>
+    <line x1="190" y1="360" x2="190" y2="230" stroke="currentColor" stroke-width="2"/>
+    <line x1="190" y1="360" x2="98" y2="268" stroke="currentColor" stroke-width="2"/>
+    <path d="M190,320 L192.62,320.09 L195.22,320.34 L197.8,320.77 L200.35,321.36 L202.86,322.12 L205.31,323.04 L207.69,324.13 L210,325.36 L212.22,326.74 L214.35,328.27 L216.37,329.93 L218.28,331.72 L220.07,333.63 L221.73,335.65 L223.26,337.78 L224.64,340 L225.87,342.31 L226.96,344.69 L227.88,347.14 L228.64,349.65 L229.23,352.2 L229.66,354.78 L229.91,357.38 L230,360" stroke="#2563eb" stroke-width="0.8" fill="none"/>
+    <text x="242" y="330" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">90°</text>
+    <text x="324" y="378" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">X</text>
+    <text x="190" y="220" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">Z</text>
+    <text x="88" y="262" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">Y</text>
+    <text x="202" y="378" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">O</text>
+    <text x="190" y="190" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">轴间角 90°、135°、135°</text>
+    <text x="190" y="208" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">p = r = 1，q = 0.5</text>
+    <path d="M470.00,420.00 L590.00,420.00 M435.36,385.36 L470.00,420.00 M470.00,360.00 L590.00,360.00 M590.00,360.00 L555.36,325.36 M555.36,325.36 L435.36,325.36 M435.36,325.36 L470.00,360.00 M470.00,420.00 L470.00,360.00 M590.00,420.00 L590.00,360.00 M435.36,385.36 L435.36,325.36" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M470,420 L590,420 L590,360 L470,360 Z" stroke="#2563eb" stroke-width="0.8" fill="none" stroke-dasharray="2 3"/>
+    <text x="530" y="446" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">前面：反映实形</text>
+    <line x1="572.68" y1="342.68" x2="660" y2="270" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG2-ZHOUDUCE-XIEER__ar-red)"/>
+    <text x="666" y="274" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">宽 40 → 只画 20（q = 0.5）</text>
+    <line x1="530" y1="360" x2="530" y2="300" stroke="#6b7280" stroke-width="0.8" marker-end="url(#FIG2-ZHOUDUCE-XIEER__ar-ink)"/>
+    <text x="536" y="304" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">长 60 = 实长</text>
+    <text x="640" y="300" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 斜二测：X、Z 轴仍成 90°（与正等测的 120° 不同），Y 轴与两者各成 135°。</text>
+    <text x="640" y="322" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② X、Z 方向取实长（系数 1）；Y 方向只取一半（系数 0.5）。</text>
+    <text x="640" y="344" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 平行于 XOZ 面的圆，在斜二测里仍画成圆（不用画椭圆）—— 这是斜二测最大的好处。</text>
+    <text x="640" y="366" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 缺点：立体感不如正等测，故一般只用于“一个方向形状复杂、另两个方向简单”的零件。</text>
+  </g>
+</svg>

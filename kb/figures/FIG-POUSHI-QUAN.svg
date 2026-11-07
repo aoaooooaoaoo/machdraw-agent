@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 982 647" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-POUSHI-QUAN-t FIG-POUSHI-QUAN-d" class="fig-svg">
+  <title id="FIG-POUSHI-QUAN-t">全剖视图：带内孔圆筒的全剖</title>
+  <desc id="FIG-POUSHI-QUAN-d">左为外形视图（内孔画虚线），右为全剖视图（内孔轮廓变粗实线、空腔不画剖面线）；俯视图上用粗短画与箭头标出剖切位置线 A—A。</desc>
+  <defs>
+  <pattern id="FIG-POUSHI-QUAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-QUAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-QUAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-QUAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-QUAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-QUAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-POUSHI-QUAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 5  全剖视图（圆筒：法兰 Ø80、筒体 Ø50、内孔 Ø28，高 60）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">用通过轴线的剖切平面把零件完全剖开，向后投射 —— 得到 A—A 全剖视图。</text>
+    <path d="M220,280 L250,280 L250,180 L350,180 L350,280 L380,280 L380,300 L220,300 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="272" y1="180" x2="272" y2="300" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="328" y1="180" x2="328" y2="300" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="300" y1="160" x2="300" y2="320" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="300" y="148" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">外形视图（内孔画虚线）</text>
+    <circle cx="300" cy="410" r="80" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="200" y1="410" x2="400" y2="410" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="300" y1="322" x2="300" y2="498" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="300" y="528" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">俯视图</text>
+    <line x1="220" y1="410" x2="186" y2="410" stroke="currentColor" stroke-width="3"/>
+    <line x1="380" y1="410" x2="414" y2="410" stroke="currentColor" stroke-width="3"/>
+    <line x1="186" y1="410" x2="186" y2="376" stroke="currentColor" stroke-width="2" marker-end="url(#FIG-POUSHI-QUAN__ar-ink)"/>
+    <line x1="414" y1="410" x2="414" y2="376" stroke="currentColor" stroke-width="2" marker-end="url(#FIG-POUSHI-QUAN__ar-ink)"/>
+    <text x="178" y="368" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">A</text>
+    <text x="422" y="368" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">A</text>
+    <path d="M640,280 L670,280 L670,180 L770,180 L770,280 L800,280 L800,300 L640,300 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <rect x="670" y="180" width="22" height="100" fill="url(#FIG-POUSHI-QUAN__hatch45)" stroke="none"/>
+    <rect x="640" y="280" width="52" height="20" fill="url(#FIG-POUSHI-QUAN__hatch45)" stroke="none"/>
+    <rect x="748" y="180" width="22" height="100" fill="url(#FIG-POUSHI-QUAN__hatch45)" stroke="none"/>
+    <rect x="748" y="280" width="52" height="20" fill="url(#FIG-POUSHI-QUAN__hatch45)" stroke="none"/>
+    <line x1="692" y1="180" x2="692" y2="300" stroke="currentColor" stroke-width="2"/>
+    <line x1="748" y1="180" x2="748" y2="300" stroke="currentColor" stroke-width="2"/>
+    <line x1="720" y1="160" x2="720" y2="320" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="720" y="148" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">A—A 全剖视图</text>
+    <line x1="412" y1="410" x2="470" y2="430" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG-POUSHI-QUAN__ar-red)"/>
+    <text x="476" y="434" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">剖切位置线（粗短画 + 箭头）</text>
+    <line x1="778" y1="196" x2="856" y2="168" stroke="#6b7280" stroke-width="0.8" marker-end="url(#FIG-POUSHI-QUAN__ar-ink)"/>
+    <text x="862" y="172" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">剖面线：45° 细实线</text>
+    <line x1="330" y1="250" x2="416" y2="236" stroke="#2563eb" stroke-width="0.8" marker-end="url(#FIG-POUSHI-QUAN__ar-blue)"/>
+    <text x="422" y="240" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">内孔 Ø28</text>
+    <text x="40" y="556" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 全剖：用剖切平面把零件完全剖开，移去前半部分后再投射；原被遮住的内部轮廓变成可见，画粗实线。</text>
+    <text x="40" y="579" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 剖切位置线用粗短画（本图 3 px）画在俯视图上，箭头指明投射方向，两端注相向的字母 A，并在剖视图上方注 A—A。</text>
+    <text x="40" y="602" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 剖面线用 45° 细实线，间距均匀；同一零件在各剖视图中的方向、间距要一致。</text>
+    <text x="40" y="625" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 空腔（内孔）里不画剖面线；剖面线一律画到粗实线为止，不能画进空腔或越过轮廓。</text>
+  </g>
+</svg>

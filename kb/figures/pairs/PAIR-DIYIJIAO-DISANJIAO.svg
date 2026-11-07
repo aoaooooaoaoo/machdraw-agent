@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="PAIR-DIYIJIAO-DISANJIAO-t PAIR-DIYIJIAO-DISANJIAO-d" class="fig-svg pair-svg" data-pair-id="PAIR-DIYIJIAO-DISANJIAO">
+  <title id="PAIR-DIYIJIAO-DISANJIAO-t">第一角画法 与 第三角画法</title>
+  <desc id="PAIR-DIYIJIAO-DISANJIAO-d">同一个台阶块、同样三个视图：只差视图摆在主视图的哪一侧 | A：第一角画法（我国采用）；B：第三角画法（欧美部分国家）</desc>
+  <defs>
+  <pattern id="hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <marker id="ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#1f2937"/>
+  </marker>
+  <marker id="ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/>
+  </marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+  <text x="380" y="23" font-size="13.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">第一角画法 与 第三角画法</text>
+  <text x="380" y="41" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">同一个台阶块、同样三个视图：只差视图摆在主视图的哪一侧</text>
+  <g data-panel="a" data-caption="第一角画法（我国采用）">
+    <circle cx="32" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="32" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">A</text>
+    <path d="M100,159 L100,120 L139,120 L139,146 L178,146 L178,159 Z" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M100,180 L178,180 L178,232 L100,232 Z" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M139,193 L139,219" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M100,193 L139,193" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M100,219 L139,219" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M200,159 L200,146 L213,146 L213,120 L239,120 L239,146 L252,146 L252,159 Z" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <text x="139" y="112" font-size="9.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">主视图</text>
+    <text x="139" y="246" font-size="9.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">俯视图</text>
+    <text x="226" y="174" font-size="9.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">左视图</text>
+    <line x1="69" y1="206" x2="100" y2="206" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="100" cy="206" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="58" cy="206" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="58" y="209.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="295.01" y1="131.59" x2="252" y2="130" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="252" cy="130" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="306" cy="132" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="306" y="135.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="68.8" y1="170.09" x2="120" y2="180" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="120" cy="180" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="58" cy="168" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="58" y="171.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="190" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">A：第一角画法（我国采用）</text>
+  <g data-panel="b" data-caption="第三角画法（欧美部分国家）">
+    <circle cx="412" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="412" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">B</text>
+    <path d="M530,221 L530,182 L569,182 L569,208 L608,208 L608,221 Z" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M530,118 L608,118 L608,170 L530,170 Z" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M569,131 L569,157" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M530,131 L569,131" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M530,157 L569,157" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M440,221 L440,208 L453,208 L453,182 L479,182 L479,208 L492,208 L492,221 Z" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <text x="569" y="110" font-size="9.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">俯视图</text>
+    <text x="569" y="236" font-size="9.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">主视图</text>
+    <text x="466" y="236" font-size="9.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">左视图</text>
+    <line x1="669" y1="144" x2="608" y2="144" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="608" cy="144" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="680" cy="144" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="680" y="147.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="425" y1="200" x2="440" y2="200" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="440" cy="200" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="414" cy="200" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="414" y="203.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="669.35" y1="189.24" x2="595" y2="170" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="595" cy="170" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="680" cy="192" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="680" y="195.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="570" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">B：第三角画法（欧美部分国家）</text>
+  <line x1="380" y1="76" x2="380" y2="314" stroke="#d7dde6" stroke-width="1"/>
+  <line x1="20" y1="318" x2="740" y2="318" stroke="#d7dde6" stroke-width="1"/>
+  <g data-legend="1">
+    <text x="20" y="340" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="1">① 俯视图位置：第一角在主视图下方；第三角在主视图上方（正好相反）</text>
+    <text x="20" y="360" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="2">② 左视图位置：第一角在主视图右方；第三角在主视图左方</text>
+    <text x="20" y="380" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="3">③ 靠近主视图的一侧：第一角表示物体的后面；第三角表示物体的前面</text>
+    <text x="20" y="400" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280" data-diff="0">注：第一角＝观察者—机件—投影面（我国采用）；第三角＝观察者—投影面—机件（欧美部分国家）</text>
+  </g>
+  </g>
+</svg>

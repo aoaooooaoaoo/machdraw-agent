@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="PAIR-BANJING-ZHIJING-t PAIR-BANJING-ZHIJING-d" class="fig-svg pair-svg" data-pair-id="PAIR-BANJING-ZHIJING">
+  <title id="PAIR-BANJING-ZHIJING-t">R（半径）与 Ø（直径）标注</title>
+  <desc id="PAIR-BANJING-ZHIJING-d">同一块板、同样两个尺寸：符号选错，意思就变了 | A：正确：圆弧注 R、整圆注 Ø；B：错误：圆弧注 Ø、整圆注 R</desc>
+  <defs>
+  <pattern id="hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <marker id="ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#1f2937"/>
+  </marker>
+  <marker id="ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/>
+  </marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+  <text x="380" y="23" font-size="13.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">R（半径）与 Ø（直径）标注</text>
+  <text x="380" y="41" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">同一块板、同样两个尺寸：符号选错，意思就变了</text>
+  <g data-panel="a" data-caption="正确：圆弧注 R、整圆注 Ø">
+    <circle cx="32" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="32" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">A</text>
+    <path d="M104,170 L101.96,170.08 L99.93,170.32 L97.93,170.72 L95.97,171.27 L94.05,171.98 L92.2,172.83 L90.42,173.83 L88.72,174.97 L87.11,176.23 L85.62,177.62 L84.23,179.11 L82.97,180.72 L81.83,182.42 L80.83,184.2 L79.98,186.05 L79.27,187.97 L78.72,189.93 L78.32,191.93 L78.08,193.96 L78,196 L78.08,198.04 L78.32,200.07 L78.72,202.07 L79.27,204.03 L79.98,205.95 L80.83,207.8 L81.83,209.58 L82.97,211.28 L84.23,212.89 L85.62,214.38 L87.11,215.77 L88.72,217.03 L90.42,218.17 L92.2,219.17 L94.05,220.02 L95.97,220.73 L97.93,221.28 L99.93,221.68 L101.96,221.92 L104,222" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M104,222 L214,222 L214,170 L104,170" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <line x1="99" y1="196" x2="109" y2="196" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="104" y1="191" x2="104" y2="201" stroke="#6b7280" stroke-width="0.8"/>
+    <circle cx="176" cy="196" r="10" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <line x1="104" y1="196" x2="78" y2="196" stroke="#1f2937" stroke-width="0.8" marker-end="url(#ar-ink)"/>
+    <text x="72" y="191" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#1f2937">R20</text>
+    <line x1="166" y1="196" x2="186" y2="196" stroke="#1f2937" stroke-width="0.8" marker-start="url(#ar-ink)" marker-end="url(#ar-ink)"/>
+    <text x="176" y="181" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937">Ø16</text>
+    <line x1="89.4" y1="154.8" x2="66" y2="186" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="66" cy="186" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="96" cy="146" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="96" y="149.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="251.51" y1="163.32" x2="180" y2="186" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="180" cy="186" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="262" cy="160" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="262" y="163.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="64.33" y1="227.89" x2="78" y2="196" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="78" cy="196" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="60" cy="238" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="60" y="241.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="190" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">A：正确：圆弧注 R、整圆注 Ø</text>
+  <g data-panel="b" data-caption="错误：圆弧注 Ø、整圆注 R">
+    <circle cx="412" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="412" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">B</text>
+    <path d="M484,170 L481.96,170.08 L479.93,170.32 L477.93,170.72 L475.97,171.27 L474.05,171.98 L472.2,172.83 L470.42,173.83 L468.72,174.97 L467.11,176.23 L465.62,177.62 L464.23,179.11 L462.97,180.72 L461.83,182.42 L460.83,184.2 L459.98,186.05 L459.27,187.97 L458.72,189.93 L458.32,191.93 L458.08,193.96 L458,196 L458.08,198.04 L458.32,200.07 L458.72,202.07 L459.27,204.03 L459.98,205.95 L460.83,207.8 L461.83,209.58 L462.97,211.28 L464.23,212.89 L465.62,214.38 L467.11,215.77 L468.72,217.03 L470.42,218.17 L472.2,219.17 L474.05,220.02 L475.97,220.73 L477.93,221.28 L479.93,221.68 L481.96,221.92 L484,222" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M484,222 L594,222 L594,170 L484,170" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <line x1="479" y1="196" x2="489" y2="196" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="484" y1="191" x2="484" y2="201" stroke="#6b7280" stroke-width="0.8"/>
+    <circle cx="556" cy="196" r="10" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <line x1="458" y1="196" x2="442" y2="176" stroke="#1f2937" stroke-width="0.8" marker-end="url(#ar-ink)"/>
+    <text x="438" y="172" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#1f2937">Ø40</text>
+    <line x1="405" y1="165" x2="415" y2="175" stroke="#dc2626" stroke-width="1.2"/>
+    <line x1="405" y1="175" x2="415" y2="165" stroke="#dc2626" stroke-width="1.2"/>
+    <line x1="546" y1="196" x2="566" y2="196" stroke="#1f2937" stroke-width="0.8" marker-start="url(#ar-ink)" marker-end="url(#ar-ink)"/>
+    <text x="556" y="181" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937">R8</text>
+    <line x1="571" y1="174" x2="581" y2="184" stroke="#dc2626" stroke-width="1.2"/>
+    <line x1="571" y1="184" x2="581" y2="174" stroke="#dc2626" stroke-width="1.2"/>
+    <line x1="469.4" y1="154.8" x2="446" y2="186" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="446" cy="186" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="476" cy="146" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="476" y="149.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="631.51" y1="163.32" x2="560" y2="186" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="560" cy="186" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="642" cy="160" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="642" y="163.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="444.33" y1="227.89" x2="458" y2="196" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="458" cy="196" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="440" cy="238" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="440" y="241.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="570" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" font-weight="600">B：错误：圆弧注 Ø、整圆注 R</text>
+  <line x1="380" y1="76" x2="380" y2="314" stroke="#d7dde6" stroke-width="1"/>
+  <line x1="20" y1="318" x2="740" y2="318" stroke="#d7dde6" stroke-width="1"/>
+  <g data-legend="1">
+    <text x="20" y="340" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="1">① 圆弧用 R：A 半圆弧注 R20；B 注成 Ø40 —— 直径符号只能用于整圆或大于半圆的弧</text>
+    <text x="20" y="360" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="2">② 整圆用 Ø：A 通孔注 Ø16；B 注成 R8 —— 半径符号不能标整圆</text>
+    <text x="20" y="380" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="3">③ 尺寸线：R 的尺寸线必须通过圆心、只画一个箭头指向圆弧；Ø 的尺寸线通过圆心、两端箭头指向圆周</text>
+    <text x="20" y="400" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280" data-diff="0">注：口诀：整圆和大于半圆的弧注 Ø，半圆及小于半圆的弧注 R</text>
+  </g>
+  </g>
+</svg>

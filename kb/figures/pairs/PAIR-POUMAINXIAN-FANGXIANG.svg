@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="PAIR-POUMAINXIAN-FANGXIANG-t PAIR-POUMAINXIAN-FANGXIANG-d" class="fig-svg pair-svg" data-pair-id="PAIR-POUMAINXIAN-FANGXIANG">
+  <title id="PAIR-POUMAINXIAN-FANGXIANG-t">相邻零件剖面线：同向 与 反向</title>
+  <desc id="PAIR-POUMAINXIAN-FANGXIANG-d">座 + 衬套同时被剖：方向一样就成了一块料 | A：剖面线同向（错误）；B：剖面线反向（正确）</desc>
+  <defs>
+  <pattern id="hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <marker id="ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#1f2937"/>
+  </marker>
+  <marker id="ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/>
+  </marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+  <text x="380" y="23" font-size="13.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">相邻零件剖面线：同向 与 反向</text>
+  <text x="380" y="41" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">座 + 衬套同时被剖：方向一样就成了一块料</text>
+  <g data-panel="a" data-caption="剖面线同向（错误）">
+    <circle cx="32" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="32" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">A</text>
+    <path d="M110,150 L270,150 L270,162 L110,162 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M110,218 L270,218 L270,230 L110,230 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M98,162 L282,162 L282,176 L98,176 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M98,204 L282,204 L282,218 L98,218 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M110,150 L270,150" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M110,230 L270,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M110,150 L110,162" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M110,218 L110,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M270,150 L270,162" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M270,218 L270,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M98,162 L282,162" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M98,218 L282,218" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M98,176 L282,176" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M98,204 L282,204" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M98,162 L98,176" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M98,204 L98,218" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M282,162 L282,176" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M282,204 L282,218" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <line x1="88" y1="190" x2="292" y2="190" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="54" y="126" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937">座</text>
+    <line x1="56" y1="132" x2="116" y2="156" stroke="#6b7280" stroke-width="0.8"/>
+    <text x="54" y="250" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937">套</text>
+    <line x1="56" y1="244" x2="116" y2="211" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="307.99" y1="142.56" x2="250" y2="169" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="250" cy="169" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="318" cy="138" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="318" y="141.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="307.93" y1="245.58" x2="245" y2="218" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="245" cy="218" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="318" cy="250" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="318" y="253.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+  </g>
+  <text x="190" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" font-weight="600">A：剖面线同向（错误）</text>
+  <g data-panel="b" data-caption="剖面线反向（正确）">
+    <circle cx="412" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="412" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">B</text>
+    <path d="M490,150 L650,150 L650,162 L490,162 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M490,218 L650,218 L650,230 L490,230 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M478,162 L662,162 L662,176 L478,176 Z" fill="url(#hatch135)" stroke="none"/>
+    <path d="M478,204 L662,204 L662,218 L478,218 Z" fill="url(#hatch135)" stroke="none"/>
+    <path d="M490,150 L650,150" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M490,230 L650,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M490,150 L490,162" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M490,218 L490,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M650,150 L650,162" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M650,218 L650,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M478,162 L662,162" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M478,218 L662,218" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M478,176 L662,176" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M478,204 L662,204" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M478,162 L478,176" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M478,204 L478,218" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M662,162 L662,176" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M662,204 L662,218" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <line x1="468" y1="190" x2="672" y2="190" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="434" y="126" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937">座</text>
+    <line x1="436" y1="132" x2="496" y2="156" stroke="#6b7280" stroke-width="0.8"/>
+    <text x="434" y="250" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937">套</text>
+    <line x1="436" y1="244" x2="496" y2="211" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="687.99" y1="142.56" x2="630" y2="169" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="630" cy="169" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="698" cy="138" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="698" y="141.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="687.93" y1="245.58" x2="625" y2="218" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="625" cy="218" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="698" cy="250" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="698" y="253.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+  </g>
+  <text x="570" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">B：剖面线反向（正确）</text>
+  <line x1="380" y1="76" x2="380" y2="314" stroke="#d7dde6" stroke-width="1"/>
+  <line x1="20" y1="318" x2="740" y2="318" stroke="#d7dde6" stroke-width="1"/>
+  <g data-legend="1">
+    <text x="20" y="340" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="1">① 方向不同：A 座与套的剖面线都是 45°（同向）；B 座 45°、套 135°（方向相反）</text>
+    <text x="20" y="360" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="2">② 辨认结果：A 两条带连成一片，看不出是两个零件；B 一眼分开，配合面（一条线）很清楚</text>
+    <text x="20" y="380" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280" data-diff="0">注：也可以方向相同而间距不同；关键是相邻零件必须能区分，同一零件在各视图中必须一致</text>
+    <text x="20" y="400" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280" data-diff="0">注：相邻零件的接触面、配合面只画一条线；有间隙才画两条线</text>
+  </g>
+  </g>
+</svg>

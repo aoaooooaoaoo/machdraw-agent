@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="PAIR-POU-BAN-JUBU-t PAIR-POU-BAN-JUBU-d" class="fig-svg pair-svg" data-pair-id="PAIR-POU-BAN-JUBU">
+  <title id="PAIR-POU-BAN-JUBU-t">半剖视图 与 局部剖视图</title>
+  <desc id="PAIR-POU-BAN-JUBU-d">同一个问题的两种分界：半剖靠对称中心线，局部剖靠波浪线 | A：半剖视图（对称法兰套筒）；B：局部剖视图（平板 + 竖直通孔）</desc>
+  <defs>
+  <pattern id="hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <marker id="ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#1f2937"/>
+  </marker>
+  <marker id="ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/>
+  </marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+  <text x="380" y="23" font-size="13.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">半剖视图 与 局部剖视图</text>
+  <text x="380" y="41" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">同一个问题的两种分界：半剖靠对称中心线，局部剖靠波浪线</text>
+  <g data-panel="a" data-caption="半剖视图（对称法兰套筒）">
+    <circle cx="32" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="32" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">A</text>
+    <path d="M125,270 L125,240 L142,240 L142,148" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M171,148 L171,270" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M142,148 L171,148" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M125,270 L171,270" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M125,240 L142,240 L142,148 L171,148 L171,270 L125,270 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M255,270 L255,240 L238,240 L238,148" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M209,270 L255,270" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M190,148 L238,148" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <line x1="190" y1="132" x2="190" y2="286" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="190" y1="127" x2="190" y2="140" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="190" cy="140" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="190" cy="116" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="190" y="119.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="291.12" y1="260.38" x2="255" y2="255" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="255" cy="255" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="302" cy="262" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="302" y="265.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="104.96" y1="223.09" x2="142" y2="220" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="142" cy="220" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="94" cy="224" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="94" y="227.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="190" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">A：半剖视图（对称法兰套筒）</text>
+  <g data-panel="b" data-caption="局部剖视图（平板 + 竖直通孔）">
+    <circle cx="412" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="412" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">B</text>
+    <path d="M470,160 L548,160 L548,212 L546,209.65 L544,209.61 L542,211.74 L540,213.89 L538,214.12 L536,212.45 L534,210.63 L532,210.29 L530,211.41 L528,213.13 L526,214.05 L524,213.09 L522,210.93 L520,209.51 L518,210.27 L516,212.7 L514,214.67 L512,214.37 L510,211.98 L508,209.55 L506,209.17 L504,211.16 L502,213.81 L500,214.9 L498,213.61 L496,211.14 L494,209.52 L492,209.96 L490,211.91 L488,213.69 L486,213.97 L484,212.75 L482,211.18 L480,210.23 L478,210.6 L476,212.26 L474,213.97 L472,214.23 L470,212.63 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M592,160 L670,160 L670,211.53 L668,210.07 L666,210.05 L664,211.7 L662,213.81 L660,214.63 L658,213.34 L656,210.85 L654,209.16 L652,209.7 L650,212.11 L648,214.46 L646,214.83 L644,212.93 L642,210.35 L640,209.2 L638,210.35 L636,212.73 L634,214.32 L632,213.89 L630,212.01 L628,210.37 L626,210.28 L624,211.58 L622,213.19 L620,213.97 L618,212.97 L616,210.86 L614,209.55 L612,210.45 L610,212.93 L608,214.73 L606,214.04 L604,211.37 L602,209.2 L600,209.64 L598,212.31 L596,214.67 L594,214.48 L592,212 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M470,160 L548,160" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M592,160 L670,160" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M470,262 L670,262" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M470,160 L470,262" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M670,160 L670,262" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M548,212 L546,209.65 L544,209.61 L542,211.74 L540,213.89 L538,214.12 L536,212.45 L534,210.63 L532,210.29 L530,211.41 L528,213.13 L526,214.05 L524,213.09 L522,210.93 L520,209.51 L518,210.27 L516,212.7 L514,214.67 L512,214.37 L510,211.98 L508,209.55 L506,209.17 L504,211.16 L502,213.81 L500,214.9 L498,213.61 L496,211.14 L494,209.52 L492,209.96 L490,211.91 L488,213.69 L486,213.97 L484,212.75 L482,211.18 L480,210.23 L478,210.6 L476,212.26 L474,213.97 L472,214.23 L470,212.63" stroke="#1f2937" stroke-width="0.8" fill="none"/>
+    <path d="M592,212 L594,214.48 L596,214.67 L598,212.31 L600,209.64 L602,209.2 L604,211.37 L606,214.04 L608,214.73 L610,212.93 L612,210.45 L614,209.55 L616,210.86 L618,212.97 L620,213.97 L622,213.19 L624,211.58 L626,210.28 L628,210.37 L630,212.01 L632,213.89 L634,214.32 L636,212.73 L638,210.35 L640,209.2 L642,210.35 L644,212.93 L646,214.83 L648,214.46 L650,212.11 L652,209.7 L654,209.16 L656,210.85 L658,213.34 L660,214.63 L662,213.81 L664,211.7 L666,210.05 L668,210.07 L670,211.53" stroke="#1f2937" stroke-width="0.8" fill="none"/>
+    <path d="M548,160 L548,212" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M592,160 L592,212" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M548,212 L548,262" stroke="#1f2937" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <path d="M592,212 L592,262" stroke="#1f2937" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <line x1="448.65" y1="198.75" x2="500" y2="212" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="500" cy="212" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="438" cy="196" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="438" y="199.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="695.07" y1="177.21" x2="670" y2="180" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="670" cy="180" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="706" cy="176" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="706" y="179.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="675.03" y1="246.78" x2="630" y2="250" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="630" cy="250" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="686" cy="246" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="686" y="249.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="570" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">B：局部剖视图（平板 + 竖直通孔）</text>
+  <line x1="380" y1="76" x2="380" y2="314" stroke="#d7dde6" stroke-width="1"/>
+  <line x1="20" y1="318" x2="740" y2="318" stroke="#d7dde6" stroke-width="1"/>
+  <g data-legend="1">
+    <text x="20" y="340" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="1">① 分界线不同：A 用细点画线（对称中心线），B 用细实线波浪线，手画、不规则</text>
+    <text x="20" y="360" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="2">② 适用条件不同：A 只用于对称机件；B 不受对称限制，要保留大部分外形时首选</text>
+    <text x="20" y="380" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="3">③ 剖切范围不同：A 恰好剖一半；B 只剖开要表达的那一小块，其余全按外形画</text>
+    <text x="20" y="400" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280" data-diff="0">注：波浪线不能与轮廓线重合、不能画在孔槽的空腔上；遇孔必须断开（B 图在孔口处断开）</text>
+  </g>
+  </g>
+</svg>

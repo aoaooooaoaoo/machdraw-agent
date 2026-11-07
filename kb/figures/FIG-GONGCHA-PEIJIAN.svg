@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1034 614" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-GONGCHA-PEIJIAN-t FIG-GONGCHA-PEIJIAN-d" class="fig-svg">
+  <title id="FIG-GONGCHA-PEIJIAN-t">三种配合的公差带对照：间隙、过渡、过盈</title>
+  <desc id="FIG-GONGCHA-PEIJIAN-d">同一基本尺寸 Φ30 下，H7/g6 为间隙配合、H7/k6 为过渡配合、H7/s6 为过盈配合；通过孔带与轴带的相对位置判断配合性质。</desc>
+  <defs>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 15  三种配合的公差带对照（Φ30，单位 μm）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">孔 H7 = 0～+21；轴 g6 = −20～−7、k6 = +2～+15、s6 = +35～+48（GB/T 1800.1）。</text>
+    <line x1="60" y1="430" x2="350" y2="430" stroke="currentColor" stroke-width="1.4"/>
+    <text x="340" y="446" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">0</text>
+    <rect x="90" y="333.4" width="90" height="96.6" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.14"/>
+    <rect x="210" y="462.2" width="90" height="59.8" stroke="#ea580c" stroke-width="2" fill="#ea580c" fill-opacity="0.14"/>
+    <text x="135" y="325.4" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">孔 H7</text>
+    <text x="255" y="454.2" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#ea580c">轴 g6</text>
+    <text x="205" y="96" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="#16a34a" font-weight="600">间隙配合 H7/g6</text>
+    <text x="205" y="120" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#16a34a">Xmax = +41，Xmin = +7</text>
+    <line x1="392" y1="430" x2="682" y2="430" stroke="currentColor" stroke-width="1.4"/>
+    <text x="672" y="446" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">0</text>
+    <rect x="422" y="333.4" width="90" height="96.6" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.14"/>
+    <rect x="542" y="361" width="90" height="59.8" stroke="#ea580c" stroke-width="2" fill="#ea580c" fill-opacity="0.14"/>
+    <text x="467" y="325.4" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">孔 H7</text>
+    <text x="587" y="353" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#ea580c">轴 k6</text>
+    <text x="537" y="96" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="#b45309" font-weight="600">过渡配合 H7/k6</text>
+    <text x="537" y="120" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#b45309">Xmax = +19，Ymax = 15</text>
+    <line x1="724" y1="430" x2="1014" y2="430" stroke="currentColor" stroke-width="1.4"/>
+    <text x="1004" y="446" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">0</text>
+    <rect x="754" y="333.4" width="90" height="96.6" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.14"/>
+    <rect x="874" y="209.2" width="90" height="59.8" stroke="#ea580c" stroke-width="2" fill="#ea580c" fill-opacity="0.14"/>
+    <text x="799" y="325.4" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">孔 H7</text>
+    <text x="919" y="201.2" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#ea580c">轴 s6</text>
+    <text x="869" y="96" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" font-weight="600">过盈配合 H7/s6</text>
+    <text x="869" y="120" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626">Ymax = 48，Ymin = 14</text>
+    <line x1="44" y1="430" x2="340" y2="430" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="44" y1="520" x2="44" y2="180" stroke="currentColor" stroke-width="0.8"/>
+    <text x="54" y="176" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">偏差 / μm（零线 = 0）</text>
+    <line x1="38" y1="430" x2="50" y2="430" stroke="currentColor" stroke-width="0.8"/>
+    <text x="34" y="434" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">0</text>
+    <line x1="38" y1="338" x2="50" y2="338" stroke="currentColor" stroke-width="0.8"/>
+    <text x="34" y="342" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">+20</text>
+    <line x1="38" y1="246" x2="50" y2="246" stroke="currentColor" stroke-width="0.8"/>
+    <text x="34" y="250" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">+40</text>
+    <text x="40" y="548" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 判断口诀：孔带（上）在轴带（下）之上 → 间隙；两带有重叠 → 过渡；孔带在轴带之下 → 过盈。</text>
+    <text x="40" y="570" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 间隙配合 Xmax = ES − ei、Xmin = EI − es；过盈配合 Ymax = es − EI、Ymin = ei − ES。</text>
+    <text x="40" y="592" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 同一基本尺寸的孔、轴公差带画在同一条零线上，比高度、看位置就能一眼定配合类型。</text>
+  </g>
+</svg>

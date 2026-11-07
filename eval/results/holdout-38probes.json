@@ -1,0 +1,394 @@
+{
+  "tau": 0.55,
+  "lam": 0.45,
+  "acc": 0.9737,
+  "in_min": 0.4698,
+  "out_max": 0.5823,
+  "separation": -0.1125,
+  "in_recall": "29/30",
+  "out_reject": "8/8",
+  "near_note": "0/0",
+  "doc_hit": "30/30",
+  "rows": [
+    {
+      "id": "H01",
+      "domain": "in",
+      "q": "图线分为哪几种？粗线和细线的比例是多少？",
+      "coverage": 0.4698,
+      "gated": true,
+      "ok": false,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H02",
+      "domain": "in",
+      "q": "标题栏一般放在图纸的什么位置？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H03",
+      "domain": "in",
+      "q": "投影法和中心投影法有什么区别？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H04",
+      "domain": "in",
+      "q": "点的三面投影之间有什么对应关系？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H05",
+      "domain": "in",
+      "q": "圆柱被斜截时截交线是什么形状？",
+      "coverage": 0.5936,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "截交线求法（平面与圆柱、圆锥、球相交的判据与作图）"
+    },
+    {
+      "id": "H06",
+      "domain": "in",
+      "q": "球被平面截切后截交线是什么？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "投影理论三章：点线面投影、截交线与相贯线的教学要点"
+    },
+    {
+      "id": "H07",
+      "domain": "in",
+      "q": "两个回转体相贯时相贯线有什么性质？",
+      "coverage": 0.7209,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "相贯线求法（表面取点法、辅助平面法、简化画法与常见错误）"
+    },
+    {
+      "id": "H08",
+      "domain": "in",
+      "q": "组合体的形体分析法是怎么做的？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "三视图投影规律与组合体读图的教学要点"
+    },
+    {
+      "id": "H09",
+      "domain": "in",
+      "q": "画组合体三视图时先画哪个视图？",
+      "coverage": 0.6058,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H10",
+      "domain": "in",
+      "q": "正等轴测图的轴向伸缩系数是多少？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "轴测图：正等轴测与斜二轴测的画法（依据 GB/T 4458.3—2013）"
+    },
+    {
+      "id": "H11",
+      "domain": "in",
+      "q": "斜二测的轴测轴角度怎么规定？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H12",
+      "domain": "in",
+      "q": "基本视图一共有几个？分别叫什么？",
+      "coverage": 0.6514,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "视图的种类与配置：基本视图、向视图、局部视图、斜视图（依据 GB/T 4458.1—2002）"
+    },
+    {
+      "id": "H13",
+      "domain": "in",
+      "q": "剖视图的剖切符号由哪几部分组成？",
+      "coverage": 0.7163,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "剖视图与断面图（GB/T 4458.6-2002 摘录整理）"
+    },
+    {
+      "id": "H14",
+      "domain": "in",
+      "q": "什么情况下剖视图可以省略标注？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "剖视图与断面图（GB/T 4458.6-2002 摘录整理）"
+    },
+    {
+      "id": "H15",
+      "domain": "in",
+      "q": "移出断面图和重合断面图的轮廓线分别用什么线？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H16",
+      "domain": "in",
+      "q": "局部放大图的比例怎么标注？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H17",
+      "domain": "in",
+      "q": "表面结构代号中的去除材料符号是什么样子？",
+      "coverage": 0.8194,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H18",
+      "domain": "in",
+      "q": "几何公差的基准符号怎么画？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "几何公差：形状、方向、位置与跳动公差（依据 GB/T 1182—2018）"
+    },
+    {
+      "id": "H19",
+      "domain": "in",
+      "q": "外螺纹的小径用什么线画？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H20",
+      "domain": "in",
+      "q": "螺纹标记 M20×2-6H 里的 6H 表示什么？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "螺纹的规定画法与标记（依据 GB/T 4459.1—1995、GB/T 197—2018）"
+    },
+    {
+      "id": "H21",
+      "domain": "in",
+      "q": "齿轮的齿顶圆和分度圆分别用什么线画？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H22",
+      "domain": "in",
+      "q": "平键的标记 GB/T 1096 键 8×7×40 表示什么？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "键连接与销连接（平键标记、键槽画法、装配画法与销标记）"
+    },
+    {
+      "id": "H23",
+      "domain": "in",
+      "q": "滚动轴承代号 30210 是什么轴承？内径多少？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H24",
+      "domain": "in",
+      "q": "零件图上的技术要求一般写哪些内容？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H25",
+      "domain": "in",
+      "q": "装配图中的序号怎么编排？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "零件图与装配图：内容、序号编排与明细栏（依据 GB/T 4458.2—2003、GB/T 10609.2—2009）"
+    },
+    {
+      "id": "H26",
+      "domain": "in",
+      "q": "由装配图拆画零件图时先做什么？",
+      "coverage": 0.8089,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H27",
+      "domain": "in",
+      "q": "尺寸公差带图中的零线代表什么？",
+      "coverage": 0.7398,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H28",
+      "domain": "in",
+      "q": "间隙配合、过渡配合、过盈配合怎么区分？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H29",
+      "domain": "in",
+      "q": "表面粗糙度 Ra 的数值越小说明什么？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H30",
+      "domain": "in",
+      "q": "螺纹退刀槽的作用是什么？",
+      "coverage": 1.0,
+      "gated": false,
+      "ok": true,
+      "doc_hit": true,
+      "top": "中心孔与退刀槽、越程槽（型式、标记、图样表示与标注）"
+    },
+    {
+      "id": "H31",
+      "domain": "out",
+      "q": "数控车床的对刀步骤是什么？",
+      "coverage": 0.0,
+      "gated": true,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H32",
+      "domain": "out",
+      "q": "不锈钢为什么容易加工硬化？",
+      "coverage": 0.1694,
+      "gated": true,
+      "ok": true,
+      "doc_hit": true,
+      "top": "尺寸链（组成、极值法计算与图样上\"留开口\"的处理）"
+    },
+    {
+      "id": "H33",
+      "domain": "out",
+      "q": "激光切割的功率怎么选？",
+      "coverage": 0.2329,
+      "gated": true,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H34",
+      "domain": "out",
+      "q": "SolidWorks 怎么装配约束？",
+      "coverage": 0.4902,
+      "gated": true,
+      "ok": true,
+      "doc_hit": true,
+      "top": "表面结构（表面粗糙度）Ra 与 Rz 的代号与标注（依据 GB/T 131—2006）"
+    },
+    {
+      "id": "H35",
+      "domain": "out",
+      "q": "工厂车间的5S管理怎么做？",
+      "coverage": 0.1846,
+      "gated": true,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H36",
+      "domain": "out",
+      "q": "机械设计基础里的齿轮强度怎么校核？",
+      "coverage": 0.5823,
+      "gated": true,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H37",
+      "domain": "out",
+      "q": "焊接残余应力怎么消除？",
+      "coverage": 0.2174,
+      "gated": true,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    },
+    {
+      "id": "H38",
+      "domain": "out",
+      "q": "注塑模具的浇口位置怎么定？",
+      "coverage": 0.0526,
+      "gated": true,
+      "ok": true,
+      "doc_hit": true,
+      "top": "机械制图知识点手册（自建）"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 849 574" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-YUANHU-LIANJIE-t FIG-YUANHU-LIANJIE-d" class="fig-svg">
+  <title id="FIG-YUANHU-LIANJIE-t">圆弧连接步骤：R10 连接两条互相垂直的直线</title>
+  <desc id="FIG-YUANHU-LIANJIE-d">三个分步：① 以 R 为距离作两条平行线求圆心；② 过圆心作垂线求切点；③ 以圆心和半径画连接弧。</desc>
+  <defs>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-YUANHU-LIANJIE__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 11  圆弧连接的作图步骤（R10 连接两垂直直线，k = 3 px/mm）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">已知两条互相垂直的直线，用 R10 的圆弧光滑连接 —— 关键在于“先求圆心、再求切点、后画弧”。</text>
+    <text x="190" y="186" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">① 求圆心</text>
+    <path d="M50,250.0 L190,250.0 L190,390.0" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="40" y1="280" x2="160" y2="280" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="160" y1="280" x2="160" y2="400" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <circle cx="160" cy="280" r="2.4" fill="currentColor" stroke="none"/>
+    <text x="150" y="296" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">O</text>
+    <line x1="108" y1="280" x2="108" y2="250" stroke="#2563eb" stroke-width="0.8" marker-start="url(#FIG-YUANHU-LIANJIE__ar-blue)" marker-end="url(#FIG-YUANHU-LIANJIE__ar-blue)"/>
+    <text x="100" y="269" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#2563eb">R10</text>
+    <text x="500" y="186" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">② 求切点</text>
+    <path d="M360,250.0 L500,250.0 L500,390.0" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="470" y1="280" x2="470" y2="250" stroke="#2563eb" stroke-width="0.8"/>
+    <line x1="470" y1="280" x2="500" y2="280" stroke="#2563eb" stroke-width="0.8"/>
+    <circle cx="470" cy="280" r="2.4" fill="currentColor" stroke="none"/>
+    <circle cx="470" cy="250" r="2.4" fill="currentColor" stroke="none"/>
+    <circle cx="500" cy="280" r="2.4" fill="currentColor" stroke="none"/>
+    <text x="462" y="296" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">O</text>
+    <text x="462" y="242" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="#2563eb" font-weight="600">T1</text>
+    <text x="508" y="294" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb" font-weight="600">T2</text>
+    <path d="M470.0,259.0 L479.0,259.0 L479.0,250.0" stroke="#6b7280" stroke-width="0.8" fill="none"/>
+    <path d="M491,280.0 L491,271.0 L500,271.0" stroke="#6b7280" stroke-width="0.8" fill="none"/>
+    <text x="810" y="186" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">③ 画弧</text>
+    <line x1="670" y1="250" x2="780" y2="250" stroke="currentColor" stroke-width="2"/>
+    <line x1="810" y1="280" x2="810" y2="390" stroke="currentColor" stroke-width="2"/>
+    <circle cx="780" cy="280" r="2.4" fill="currentColor" stroke="none"/>
+    <path d="M780,250 L781.47,250.04 L782.94,250.14 L784.4,250.32 L785.85,250.58 L787.29,250.9 L788.71,251.29 L790.11,251.75 L791.48,252.28 L792.83,252.88 L794.14,253.54 L795.42,254.27 L796.67,255.06 L797.87,255.9 L799.03,256.81 L800.15,257.77 L801.21,258.79 L802.23,259.85 L803.19,260.97 L804.1,262.13 L804.94,263.33 L805.73,264.58 L806.46,265.86 L807.12,267.17 L807.72,268.52 L808.25,269.89 L808.71,271.29 L809.1,272.71 L809.42,274.15 L809.68,275.6 L809.86,277.06 L809.96,278.53 L810,280" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="772" y="296" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">O</text>
+    <line x1="777" y1="250" x2="783" y2="250" stroke="currentColor" stroke-width="2"/>
+    <line x1="807" y1="280" x2="813" y2="280" stroke="currentColor" stroke-width="2"/>
+    <text x="40" y="480" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 求圆心：分别以 R（=10 mm）为距离，作两条已知直线的平行线，两平行线的交点 O 就是连接弧的圆心。</text>
+    <text x="40" y="504" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 求切点：过 O 分别向两条已知直线作垂线，垂足 T1、T2 就是连接点（切点）—— 不先求切点，弧与直线接不上。</text>
+    <text x="40" y="528" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 画弧：以 O 为圆心、R 为半径，在两个切点之间画弧（粗实线），再把多余的作图线擦掉。</text>
+    <text x="40" y="552" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 光滑连接的条件：连接弧与直线相切于切点，切点必须是“由圆心作垂线的垂足”，凭目测接弧是常见错误。</text>
+  </g>
+</svg>

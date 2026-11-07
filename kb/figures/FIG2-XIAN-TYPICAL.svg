@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1011 593" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-XIAN-TYPICAL-t FIG2-XIAN-TYPICAL-d" class="fig-svg">
+  <title id="FIG2-XIAN-TYPICAL-t">直线的三面投影：一般位置、投影面平行、投影面垂直</title>
+  <desc id="FIG2-XIAN-TYPICAL-d">三类直线在 V、H 面上的投影特征：一般位置三投影都小于实长；平行线有一个投影反映实长；垂直线有一个投影积聚成点。</desc>
+  <defs>
+  <pattern id="FIG2-XIAN-TYPICAL__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-XIAN-TYPICAL__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-XIAN-TYPICAL__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-XIAN-TYPICAL__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-XIAN-TYPICAL__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-XIAN-TYPICAL__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-XIAN-TYPICAL__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-XIAN-TYPICAL__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-XIAN-TYPICAL__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-XIAN-TYPICAL__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-XIAN-TYPICAL__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-XIAN-TYPICAL__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-XIAN-TYPICAL__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-XIAN-TYPICAL__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-5  直线的投影特征（三类直线对照）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">上为 V 面投影（a′b′），下为 H 面投影（ab），中间的横线是投影轴 OX。</text>
+    <text x="170" y="150" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">① 一般位置直线</text>
+    <line x1="40" y1="300" x2="300" y2="300" stroke="#6b7280" stroke-width="0.8"/>
+    <text x="302" y="314" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">OX</text>
+    <text x="34" y="240" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">V</text>
+    <text x="34" y="360" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">H</text>
+    <line x1="80" y1="230" x2="200" y2="284" stroke="currentColor" stroke-width="2"/>
+    <line x1="80" y1="326" x2="200" y2="360" stroke="currentColor" stroke-width="2"/>
+    <line x1="80" y1="230" x2="80" y2="326" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="200" y1="284" x2="200" y2="360" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <circle cx="80" cy="230" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="200" cy="284" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="80" cy="326" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="200" cy="360" r="2.2" fill="currentColor" stroke="none"/>
+    <text x="72" y="226" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">a′</text>
+    <text x="208" y="280" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">b′</text>
+    <text x="72" y="340" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">a</text>
+    <text x="208" y="374" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">b</text>
+    <text x="180" y="400" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626">三个投影都小于实长，都倾斜于投影轴</text>
+    <text x="180" y="420" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">求实长要用直角三角形法</text>
+    <text x="510" y="150" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">② 投影面平行线（水平线）</text>
+    <line x1="380" y1="300" x2="640" y2="300" stroke="#6b7280" stroke-width="0.8"/>
+    <text x="642" y="314" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">OX</text>
+    <text x="374" y="240" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">V</text>
+    <text x="374" y="360" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">H</text>
+    <line x1="420" y1="250" x2="540" y2="250" stroke="currentColor" stroke-width="2"/>
+    <line x1="420" y1="320" x2="540" y2="326" stroke="currentColor" stroke-width="2"/>
+    <line x1="420" y1="250" x2="420" y2="320" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="540" y1="250" x2="540" y2="326" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <circle cx="420" cy="250" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="540" cy="250" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="420" cy="320" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="540" cy="326" r="2.2" fill="currentColor" stroke="none"/>
+    <text x="412" y="246" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">a′</text>
+    <text x="548" y="246" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">b′</text>
+    <text x="412" y="334" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">a</text>
+    <text x="548" y="340" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">b</text>
+    <text x="520" y="400" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626">a′b′ ∥ OX（正面投影水平）</text>
+    <text x="520" y="420" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">ab 反映实长，并反映与 V 面的夹角 β</text>
+    <text x="850" y="150" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">③ 投影面垂直线（铅垂线）</text>
+    <line x1="720" y1="300" x2="980" y2="300" stroke="#6b7280" stroke-width="0.8"/>
+    <text x="982" y="314" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">OX</text>
+    <text x="714" y="240" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">V</text>
+    <text x="714" y="360" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">H</text>
+    <line x1="790" y1="284" x2="790" y2="204" stroke="currentColor" stroke-width="2"/>
+    <line x1="790" y1="326" x2="790" y2="326" stroke="currentColor" stroke-width="2"/>
+    <line x1="790" y1="284" x2="790" y2="326" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="790" y1="204" x2="790" y2="326" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <circle cx="790" cy="284" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="790" cy="204" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="790" cy="326" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="790" cy="326" r="2.2" fill="currentColor" stroke="none"/>
+    <text x="782" y="280" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">a′</text>
+    <text x="798" y="200" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">b′</text>
+    <text x="782" y="340" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">a</text>
+    <text x="798" y="340" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">b</text>
+    <text x="860" y="400" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626">水平投影积聚成一点 a(b)</text>
+    <text x="860" y="420" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">a′b′ 反映实长，且垂直于 OX</text>
+    <text x="40" y="508" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 一般位置直线：三投影都倾斜于投影轴、都小于实长 —— 想求实长与倾角，只能用直角三角形法或换面法。</text>
+    <text x="40" y="529" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 投影面平行线：有一个投影平行于投影轴，另一个投影反映实长和真实倾角（本图水平线的 ab 即实长）。</text>
+    <text x="40" y="550" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 投影面垂直线：有一个投影积聚成一点，另一个投影反映实长且垂直于投影轴。</text>
+    <text x="40" y="571" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 读图时先看“有没有平行于投影轴”“有没有积聚成点”，就能立刻判断直线属于哪一类。</text>
+  </g>
+</svg>

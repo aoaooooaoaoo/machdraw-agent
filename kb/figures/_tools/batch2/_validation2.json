@@ -1,0 +1,179 @@
+{
+ "figures": [
+  {
+   "figure_id": "FIG2-ZHOUDUCE-ZHENGDENG",
+   "file": "FIG2-ZHOUDUCE-ZHENGDENG.svg",
+   "bytes": 10345,
+   "errors": [],
+   "viewBox": "0 0 1081 651",
+   "shape_count": 15,
+   "text_count": 20
+  },
+  {
+   "figure_id": "FIG2-ZHOUDUCE-XIEER",
+   "file": "FIG2-ZHOUDUCE-XIEER.svg",
+   "bytes": 8154,
+   "errors": [],
+   "viewBox": "0 0 1101 468",
+   "shape_count": 8,
+   "text_count": 16
+  },
+  {
+   "figure_id": "FIG2-ZHOUDUCE-YUAN",
+   "file": "FIG2-ZHOUDUCE-YUAN.svg",
+   "bytes": 16141,
+   "errors": [],
+   "viewBox": "0 0 1064 600",
+   "shape_count": 25,
+   "text_count": 20
+  },
+  {
+   "figure_id": "FIG2-DIAN-SANMIAN",
+   "file": "FIG2-DIAN-SANMIAN.svg",
+   "bytes": 10405,
+   "errors": [],
+   "viewBox": "0 0 941 637",
+   "shape_count": 9,
+   "text_count": 34
+  },
+  {
+   "figure_id": "FIG2-XIAN-TYPICAL",
+   "file": "FIG2-XIAN-TYPICAL.svg",
+   "bytes": 12003,
+   "errors": [],
+   "viewBox": "0 0 1011 593",
+   "shape_count": 27,
+   "text_count": 36
+  },
+  {
+   "figure_id": "FIG2-PINGMIAN-TYPICAL",
+   "file": "FIG2-PINGMIAN-TYPICAL.svg",
+   "bytes": 11976,
+   "errors": [],
+   "viewBox": "0 0 989 563",
+   "shape_count": 18,
+   "text_count": 39
+  },
+  {
+   "figure_id": "FIG2-JIEJIAO-YUANZHU",
+   "file": "FIG2-JIEJIAO-YUANZHU.svg",
+   "bytes": 10007,
+   "errors": [],
+   "viewBox": "0 0 1014 515",
+   "shape_count": 10,
+   "text_count": 21
+  },
+  {
+   "figure_id": "FIG2-JIEJIAO-YUANZHUI-1",
+   "file": "FIG2-JIEJIAO-YUANZHUI-1.svg",
+   "bytes": 32413,
+   "errors": [],
+   "viewBox": "0 0 1139 678",
+   "shape_count": 17,
+   "text_count": 32
+  },
+  {
+   "figure_id": "FIG2-JIEJIAO-YUANZHUI-2",
+   "file": "FIG2-JIEJIAO-YUANZHUI-2.svg",
+   "bytes": 28142,
+   "errors": [],
+   "viewBox": "0 0 1093 670",
+   "shape_count": 33,
+   "text_count": 15
+  },
+  {
+   "figure_id": "FIG2-XIANGUAN-JIANHUA",
+   "file": "FIG2-XIANGUAN-JIANHUA.svg",
+   "bytes": 8607,
+   "errors": [],
+   "viewBox": "0 0 610 645",
+   "shape_count": 12,
+   "text_count": 14
+  },
+  {
+   "figure_id": "FIG2-ZUHETI-XINGTIFA",
+   "file": "FIG2-ZUHETI-XINGTIFA.svg",
+   "bytes": 8503,
+   "errors": [],
+   "viewBox": "0 0 817 560",
+   "shape_count": 10,
+   "text_count": 22
+  },
+  {
+   "figure_id": "FIG2-BUDI-SANSHITU",
+   "file": "FIG2-BUDI-SANSHITU.svg",
+   "bytes": 7718,
+   "errors": [],
+   "viewBox": "0 0 887 507",
+   "shape_count": 13,
+   "text_count": 13
+  },
+  {
+   "figure_id": "FIG2-CHICUN-JIZHUN",
+   "file": "FIG2-CHICUN-JIZHUN.svg",
+   "bytes": 8849,
+   "errors": [],
+   "viewBox": "0 0 887 540",
+   "shape_count": 16,
+   "text_count": 17
+  },
+  {
+   "figure_id": "FIG2-JIANLIANJIE",
+   "file": "FIG2-JIANLIANJIE.svg",
+   "bytes": 13411,
+   "errors": [],
+   "viewBox": "0 0 643 558",
+   "shape_count": 22,
+   "text_count": 14
+  },
+  {
+   "figure_id": "FIG2-ZHOUCHENG-HUAFAA",
+   "file": "FIG2-ZHOUCHENG-HUAFAA.svg",
+   "bytes": 8739,
+   "errors": [],
+   "viewBox": "0 0 649 576",
+   "shape_count": 21,
+   "text_count": 13
+  },
+  {
+   "figure_id": "FIG2-CHILUN-NIEHE",
+   "file": "FIG2-CHILUN-NIEHE.svg",
+   "bytes": 7793,
+   "errors": [],
+   "viewBox": "0 0 722 518",
+   "shape_count": 13,
+   "text_count": 12
+  },
+  {
+   "figure_id": "FIG2-AUTOCAD-JIEMIAN",
+   "file": "FIG2-AUTOCAD-JIEMIAN.svg",
+   "bytes": 9222,
+   "errors": [],
+   "viewBox": "0 0 1075 618",
+   "shape_count": 22,
+   "text_count": 18
+  },
+  {
+   "figure_id": "FIG2-ZHUANGPEI-MINGXI",
+   "file": "FIG2-ZHUANGPEI-MINGXI.svg",
+   "bytes": 12120,
+   "errors": [],
+   "viewBox": "0 0 1179 620",
+   "shape_count": 34,
+   "text_count": 34
+  },
+  {
+   "figure_id": "FIG2-LINGJIAN-WUBU",
+   "file": "FIG2-LINGJIAN-WUBU.svg",
+   "bytes": 10504,
+   "errors": [],
+   "viewBox": "0 0 1022 602",
+   "shape_count": 26,
+   "text_count": 23
+  }
+ ],
+ "catalog_errors": [],
+ "missing": [],
+ "jsonl_total": 34,
+ "keep": 15
+}

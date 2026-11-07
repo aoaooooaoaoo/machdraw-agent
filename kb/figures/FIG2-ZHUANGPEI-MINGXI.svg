@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1179 620" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-ZHUANGPEI-MINGXI-t FIG2-ZHUANGPEI-MINGXI-d" class="fig-svg">
+  <title id="FIG2-ZHUANGPEI-MINGXI-t">装配图的序号与明细栏</title>
+  <desc id="FIG2-ZHUANGPEI-MINGXI-d">装配图右下角画明细栏，零件用指引线引出并编序号；明细栏按序号自下而上排列，与图上序号一一对应。</desc>
+  <defs>
+  <pattern id="FIG2-ZHUANGPEI-MINGXI__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHUANGPEI-MINGXI__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHUANGPEI-MINGXI__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHUANGPEI-MINGXI__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHUANGPEI-MINGXI__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-ZHUANGPEI-MINGXI__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-ZHUANGPEI-MINGXI__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-ZHUANGPEI-MINGXI__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-ZHUANGPEI-MINGXI__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-ZHUANGPEI-MINGXI__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-ZHUANGPEI-MINGXI__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-ZHUANGPEI-MINGXI__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-ZHUANGPEI-MINGXI__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-ZHUANGPEI-MINGXI__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-17  装配图的零件序号与明细栏</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">序号指引线从零件可见轮廓内引出，端部画小圆点；明细栏紧接标题栏上方，自下而上填写。</text>
+    <rect x="60" y="80" width="900" height="470" stroke="currentColor" stroke-width="2" fill="none"/>
+    <rect x="150" y="250" width="420" height="60" stroke="currentColor" stroke-width="2" fill="none"/>
+    <rect x="430" y="220" width="90" height="120" stroke="currentColor" stroke-width="2" fill="none"/>
+    <rect x="520" y="236" width="60" height="88" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="150" y1="280" x2="700" y2="280" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="560" y1="236" x2="560" y2="324" stroke="currentColor" stroke-width="2"/>
+    <text x="330" y="350" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">装配体示意（轴 — 齿轮 — 端盖）</text>
+    <line x1="200" y1="268" x2="200" y2="158" stroke="currentColor" stroke-width="0.8"/>
+    <circle cx="200" cy="268" r="2.4" fill="currentColor" stroke="none"/>
+    <circle cx="200" cy="146" r="11" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="200" y="150" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">1</text>
+    <line x1="200" y1="157" x2="200" y2="166" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="200" y1="166" x2="214" y2="166" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="470" y1="236" x2="470" y2="138" stroke="currentColor" stroke-width="0.8"/>
+    <circle cx="470" cy="236" r="2.4" fill="currentColor" stroke="none"/>
+    <circle cx="470" cy="126" r="11" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="470" y="130" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">2</text>
+    <line x1="470" y1="137" x2="470" y2="146" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="470" y1="146" x2="484" y2="146" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="548" y1="246" x2="620" y2="138" stroke="currentColor" stroke-width="0.8"/>
+    <circle cx="548" cy="246" r="2.4" fill="currentColor" stroke="none"/>
+    <circle cx="620" cy="126" r="11" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="620" y="130" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">3</text>
+    <line x1="620" y1="137" x2="620" y2="146" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="620" y1="146" x2="634" y2="146" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="600" y1="330" x2="1160" y2="330" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="600" y1="356" x2="1160" y2="356" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="600" y1="382" x2="1160" y2="382" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="600" y1="408" x2="1160" y2="408" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="600" y1="434" x2="1160" y2="434" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="600" y1="330" x2="600" y2="434" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="644" y1="330" x2="644" y2="434" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="774" y1="330" x2="774" y2="434" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="924" y1="330" x2="924" y2="434" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="980" y1="330" x2="980" y2="434" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="1070" y1="330" x2="1070" y2="434" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="1160" y1="330" x2="1160" y2="434" stroke="currentColor" stroke-width="0.8"/>
+    <text x="605" y="348" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">序号</text>
+    <text x="649" y="348" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">代号</text>
+    <text x="779" y="348" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">名称</text>
+    <text x="929" y="348" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">数量</text>
+    <text x="985" y="348" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">材料</text>
+    <text x="1075" y="348" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">备注</text>
+    <text x="605" y="374" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">3</text>
+    <text x="649" y="374" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">Dg-03</text>
+    <text x="779" y="374" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">端盖</text>
+    <text x="929" y="374" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">1</text>
+    <text x="985" y="374" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">HT200</text>
+    <text x="1075" y="374" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor"></text>
+    <text x="605" y="400" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">2</text>
+    <text x="649" y="400" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">Dg-02</text>
+    <text x="779" y="400" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">圆柱齿轮</text>
+    <text x="929" y="400" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">1</text>
+    <text x="985" y="400" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">45</text>
+    <text x="1075" y="400" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">m=2 z=40</text>
+    <text x="605" y="426" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">1</text>
+    <text x="649" y="426" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">Dg-01</text>
+    <text x="779" y="426" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">轴</text>
+    <text x="929" y="426" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">1</text>
+    <text x="985" y="426" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">45</text>
+    <text x="1075" y="426" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">调质</text>
+    <rect x="600" y="434" width="560" height="60" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="880" y="484" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">减速器装配图</text>
+    <text x="880" y="502" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">比例 1:1　　图号 Dg-00</text>
+    <text x="60" y="578" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 序号用指引线从零件的可见轮廓内引出，端部画小圆点，再画横线，序号写在横线上方（或圆圈内）。</text>
+    <text x="60" y="598" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 明细栏紧接在标题栏上方，自下而上按序号排列；栏内项目与图上序号一一对应。</text>
+  </g>
+</svg>

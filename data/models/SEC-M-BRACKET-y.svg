@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 358.0 185.0" width="620" font-family="system-ui, sans-serif">
+<rect x="0" y="0" width="358.0" height="185.0" fill="#ffffff"/>
+<g id="aux" opacity="0.75">
+</g><g id="hatch">
+<line x1="303.515" y1="144.0" x2="312.0" y2="135.515" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="300.0" y1="139.029" x2="311.029" y2="128.0" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="300.0" y1="130.544" x2="302.544" y2="128.0" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="278.059" y1="144.0" x2="284.0" y2="138.059" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="269.574" y1="144.0" x2="284.0" y2="129.574" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="261.088" y1="144.0" x2="277.088" y2="128.0" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="252.603" y1="144.0" x2="268.603" y2="128.0" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="244.118" y1="144.0" x2="260.118" y2="128.0" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="235.632" y1="144.0" x2="251.632" y2="128.0" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="227.147" y1="144.0" x2="243.147" y2="128.0" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="220.0" y1="142.662" x2="234.662" y2="128.0" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="220.0" y1="134.177" x2="226.177" y2="128.0" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="201.691" y1="144.0" x2="204.0" y2="141.691" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="193.206" y1="144.0" x2="204.0" y2="133.206" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="192.0" y1="136.721" x2="200.721" y2="128.0" stroke="#6b7280" stroke-width="0.7"/>
+<line x1="192.0" y1="128.235" x2="192.235" y2="128.0" stroke="#6b7280" stroke-width="0.7"/>
+</g><g id="views">
+<line x1="46.0" y1="144.0" x2="166.0" y2="144.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="46.0" y1="128.0" x2="166.0" y2="128.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="166.0" y1="144.0" x2="166.0" y2="128.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="166.0" y1="123.714" x2="166.0" y2="68.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="46.0" y1="144.0" x2="46.0" y2="128.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="46.0" y1="123.714" x2="46.0" y2="68.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="46.0" y1="144.0" x2="46.0" y2="68.0" stroke="#94a3b8" stroke-width="1.0" stroke-dasharray="6 4" stroke-linecap="round"/>
+<line x1="166.0" y1="144.0" x2="166.0" y2="68.0" stroke="#94a3b8" stroke-width="1.0" stroke-dasharray="6 4" stroke-linecap="round"/>
+<line x1="46.0" y1="68.0" x2="166.0" y2="68.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="58.0" y1="145.0" x2="74.0" y2="145.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="138.0" y1="145.0" x2="154.0" y2="145.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="58.0" y1="127.0" x2="74.0" y2="127.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="138.0" y1="127.0" x2="154.0" y2="127.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="74.0" y1="143.714" x2="74.0" y2="128.286" stroke="#94a3b8" stroke-width="1.0" stroke-dasharray="6 4" stroke-linecap="round"/>
+<line x1="58.0" y1="143.714" x2="58.0" y2="128.286" stroke="#94a3b8" stroke-width="1.0" stroke-dasharray="6 4" stroke-linecap="round"/>
+<line x1="154.0" y1="143.714" x2="154.0" y2="128.286" stroke="#94a3b8" stroke-width="1.0" stroke-dasharray="6 4" stroke-linecap="round"/>
+<line x1="138.0" y1="143.714" x2="138.0" y2="128.286" stroke="#94a3b8" stroke-width="1.0" stroke-dasharray="6 4" stroke-linecap="round"/>
+<line x1="192.0" y1="144.0" x2="312.0" y2="144.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="192.0" y1="128.0" x2="312.0" y2="128.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="192.0" y1="144.0" x2="192.0" y2="68.0" stroke="#94a3b8" stroke-width="1.0" stroke-dasharray="6 4" stroke-linecap="round"/>
+<line x1="312.0" y1="144.0" x2="312.0" y2="68.0" stroke="#94a3b8" stroke-width="1.0" stroke-dasharray="6 4" stroke-linecap="round"/>
+<line x1="312.0" y1="144.0" x2="312.0" y2="128.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="312.0" y1="123.714" x2="312.0" y2="68.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="192.0" y1="144.0" x2="192.0" y2="128.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="192.0" y1="123.714" x2="192.0" y2="68.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="192.0" y1="68.0" x2="312.0" y2="68.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="204.0" y1="145.0" x2="220.0" y2="145.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="284.0" y1="145.0" x2="300.0" y2="145.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="204.0" y1="127.0" x2="220.0" y2="127.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+<line x1="284.0" y1="127.0" x2="300.0" y2="127.0" stroke="#111827" stroke-width="1.9" stroke-linecap="round"/>
+</g>
+<text x="106.0" y="165.0" font-size="12" text-anchor="middle" fill="#374151">外形视图</text>
+<text x="252.0" y="165.0" font-size="12" text-anchor="middle" fill="#374151">剖视图（A—A）</text>
+<text x="12" y="20" font-size="12" fill="#6b7280">支架 · 120×80×76 mm · 第一角</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 623 494" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-POUMAINXIAN-t FIG-POUMAINXIAN-d" class="fig-svg">
+  <title id="FIG-POUMAINXIAN-t">相邻零件剖面线方向应相反</title>
+  <desc id="FIG-POUMAINXIAN-d">同一剖视图中两个相邻零件：一个剖面线画 45°、另一个画 135°，方向相反，使两个零件一眼可分。</desc>
+  <defs>
+  <pattern id="FIG-POUMAINXIAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUMAINXIAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUMAINXIAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUMAINXIAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUMAINXIAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-POUMAINXIAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-POUMAINXIAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 9  相邻零件的剖面线方向（剖视图中的装配画法）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">零件 1 为凹形块、零件 2 为凸块，两者装配在一起后同时被剖切。</text>
+    <path d="M200,150 L310,150 L310,230 L410,230 L410,150 L520,150 L520,290 L200,290 Z" fill="url(#FIG-POUMAINXIAN__hatch45)" stroke="none"/>
+    <path d="M200,150 L310,150 L310,230 L410,230 L410,150 L520,150 L520,290 L200,290 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M310,150 L410,150 L410,230 L310,230 Z" fill="url(#FIG-POUMAINXIAN__hatch135)" stroke="none"/>
+    <rect x="310" y="150" width="100" height="80" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="214" y1="250" x2="150" y2="330" stroke="#2563eb" stroke-width="0.8" marker-end="url(#FIG-POUMAINXIAN__ar-blue)"/>
+    <text x="156" y="334" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">零件 1：剖面线 45°</text>
+    <line x1="430" y1="166" x2="490" y2="116" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG-POUMAINXIAN__ar-red)"/>
+    <text x="496" y="120" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">零件 2：剖面线 135°</text>
+    <text x="360" y="322" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">两零件的接触面画一条粗实线（不画两条）</text>
+    <text x="40" y="380" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 同一零件在各剖视图中的剖面线方向、间距必须一致 —— 这样读图时才能把同一个零件认出来。</text>
+    <text x="40" y="403" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 相邻两个零件的剖面线方向应相反（本图 45° 与 135°）。</text>
+    <text x="40" y="426" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 若不便反向，则方向可以相同，但间距必须不同，靠疏密区分两个零件。</text>
+    <text x="40" y="449" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 剖面线用细实线，与主要轮廓线成 45°（也可 30° 或 60°），间距均匀（本图 6 px）。</text>
+    <text x="40" y="472" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">⑤ 相邻零件的接触面只画一条粗实线；非接触面（有间隙）各画各的轮廓线。</text>
+  </g>
+</svg>

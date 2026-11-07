@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 705 686" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-SANSHITU-BASE-t FIG-SANSHITU-BASE-d" class="fig-svg">
+  <title id="FIG-SANSHITU-BASE-t">三视图的形成与三等规律</title>
+  <desc id="FIG-SANSHITU-BASE-d">L 形块按第一角投影得到主视图、俯视图、左视图；蓝色虚线示长对正，红色虚线示高平齐，绿色虚线加 45° 辅助线示宽相等。</desc>
+  <defs>
+  <pattern id="FIG-SANSHITU-BASE__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-BASE__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-BASE__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-BASE__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-BASE__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-BASE__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-SANSHITU-BASE__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2  三视图的形成（第一角投影）与三等规律</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">形体：L 形块 100×60×70（长×宽×高，mm）；投影比例 k = 2 px/mm。</text>
+    <path d="M120,290 L320,290 L320,220 L230,220 L230,150 L120,150 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="220" y="136" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">主视图</text>
+    <rect x="120" y="340" width="200" height="120" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="230" y1="340" x2="230" y2="460" stroke="currentColor" stroke-width="2"/>
+    <text x="220" y="486" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">俯视图</text>
+    <rect x="400" y="150" width="120" height="140" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="400" y1="220" x2="520" y2="220" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="460" y="136" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">左视图</text>
+    <line x1="120" y1="290" x2="120" y2="340" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="230" y1="290" x2="230" y2="340" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="320" y1="290" x2="320" y2="340" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="320" y1="150" x2="400" y2="150" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="320" y1="220" x2="400" y2="220" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="320" y1="290" x2="400" y2="290" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <path d="M320,460 L520,460 L520,290" stroke="#16a34a" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <path d="M320,340 L400,340" stroke="#16a34a" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <path d="M400,340 L520,460" stroke="#16a34a" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <line x1="390" y1="560" x2="424" y2="560" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="436" y="564" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">长对正：主视图与俯视图的 X 方向尺寸相同</text>
+    <line x1="390" y1="586" x2="424" y2="586" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="436" y="590" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">高平齐：主视图与左视图的 Z 方向尺寸相同</text>
+    <line x1="390" y1="612" x2="424" y2="612" stroke="#16a34a" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="436" y="616" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#16a34a">宽相等：俯视图的高 = 左视图的宽（Y 方向相同）</text>
+    <line x1="120" y1="320" x2="320" y2="320" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-BASE__ar-ink)" marker-end="url(#FIG-SANSHITU-BASE__ar-ink)"/>
+    <text x="220" y="315" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">100</text>
+    <line x1="120" y1="293" x2="120" y2="325" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="320" y1="293" x2="320" y2="325" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="96" y1="150" x2="96" y2="290" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-BASE__ar-ink)" marker-end="url(#FIG-SANSHITU-BASE__ar-ink)"/>
+    <text x="91" y="224.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">70</text>
+    <line x1="117" y1="150" x2="91" y2="150" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="117" y1="290" x2="91" y2="290" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="120" y1="112" x2="230" y2="112" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-BASE__ar-ink)" marker-end="url(#FIG-SANSHITU-BASE__ar-ink)"/>
+    <text x="175" y="107" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">55</text>
+    <line x1="120" y1="147" x2="120" y2="107" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="230" y1="147" x2="230" y2="107" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="345" y1="220" x2="345" y2="290" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-BASE__ar-ink)" marker-end="url(#FIG-SANSHITU-BASE__ar-ink)"/>
+    <text x="350" y="259.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">35</text>
+    <line x1="323" y1="220" x2="350" y2="220" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="323" y1="290" x2="350" y2="290" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="400" y1="520" x2="520" y2="520" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-BASE__ar-ink)" marker-end="url(#FIG-SANSHITU-BASE__ar-ink)"/>
+    <text x="460" y="515" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">60</text>
+    <line x1="400" y1="293" x2="400" y2="525" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="520" y1="293" x2="520" y2="525" stroke="currentColor" stroke-width="0.8"/>
+    <text x="120" y="640" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">三等规律：长对正、高平齐、宽相等</text>
+    <text x="120" y="664" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">第一角布置：主视图在左上，俯视图在其正下方，左视图在其正右方 —— 三个视图之间必然满足上述三条。</text>
+  </g>
+</svg>

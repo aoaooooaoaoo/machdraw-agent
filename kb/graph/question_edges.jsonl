@@ -1,0 +1,27 @@
+{"source": "Q-001", "target": "Q-025", "relation": "prereq", "why": "先知道 A3 的幅面尺寸与图框留边，才能按图幅设置布局并出图"}
+{"source": "Q-002", "target": "Q-008", "relation": "contrast", "why": "三视图度量性好但需空间想象，正等测直观却不能直接量取"}
+{"source": "Q-002", "target": "Q-012", "relation": "prereq", "why": "补第三视图全靠长对正、高平齐、宽相等逐块投影"}
+{"source": "Q-002", "target": "Q-018", "relation": "prereq", "why": "检查视图对错时，第一步就是按三等规律核对三个视图"}
+{"source": "Q-003", "target": "Q-016", "relation": "cause", "why": "肋板纵剖不画剖面线，正是对剖面线规则设的例外"}
+{"source": "Q-003", "target": "Q-023", "relation": "prereq", "why": "连接图中相邻零件剖面线相反、标准件不画剖面线，先懂剖面线规则"}
+{"source": "Q-004", "target": "Q-015", "relation": "prereq", "why": "先掌握半剖以中心线分界且只用于对称件，选型时才不会选错"}
+{"source": "Q-005", "target": "Q-023", "relation": "prereq", "why": "连接画法的终止线与旋入深度都由螺纹五要素决定"}
+{"source": "Q-006", "target": "Q-026", "relation": "prereq", "why": "配合面选 Ra0.8～1.6，要先会读表面结构代号与 Ra 数系"}
+{"source": "Q-007", "target": "Q-014", "relation": "prereq", "why": "IT 等级决定孔、轴公差值，不会查公差就判断不了配合类型"}
+{"source": "Q-007", "target": "Q-026", "relation": "prereq", "why": "选 k6、m6 公差带要用标准公差等级与基本偏差，先懂分级"}
+{"source": "Q-009", "target": "Q-019", "relation": "prereq", "why": "先懂相贯线是两表面公有线，才能定简化圆弧的圆心与半径"}
+{"source": "Q-010", "target": "Q-015", "relation": "prereq", "why": "剖视是在基本视图基础上选用的方法，先熟悉六面视图配置"}
+{"source": "Q-010", "target": "Q-020", "relation": "prereq", "why": "定表达方案要先知道六个基本视图有哪些、按什么位置配置"}
+{"source": "Q-011", "target": "Q-021", "relation": "cause", "why": "齿轮泵泵体齿轮腔的中心距 a=m(z1+z2)/2 由齿轮公式算出"}
+{"source": "Q-012", "target": "Q-020", "relation": "prereq", "why": "不会由两视图想出形体，就定不出支架的视图数量与表达方法"}
+{"source": "Q-012", "target": "Q-022", "relation": "prereq", "why": "先读懂各基本体的形状与相对位置，才注得全定形与定位尺寸"}
+{"source": "Q-013", "target": "Q-020", "relation": "prereq", "why": "分不清共面与相错，剖切范围与视图数量就会定错"}
+{"source": "Q-013", "target": "Q-022", "relation": "cause", "why": "相切处视图不画线、尺寸也不注，表面连接关系决定哪些尺寸不注"}
+{"source": "Q-014", "target": "Q-021", "relation": "prereq", "why": "拆画时要移注配合尺寸并把代号换成极限偏差，先会算配合"}
+{"source": "Q-014", "target": "Q-026", "relation": "prereq", "why": "先会判配合类型与算间隙过盈，才能论证 k6、m6 为何是过渡配合"}
+{"source": "Q-015", "target": "Q-017", "relation": "contrast", "why": "一个在剖视种类内选，一个在断面与剖视之间选，最容易混"}
+{"source": "Q-015", "target": "Q-020", "relation": "prereq", "why": "支架内腔用局部剖还是全剖，取决于剖视选型的判据"}
+{"source": "Q-016", "target": "Q-020", "relation": "cause", "why": "支架多带肋板，纵剖不画剖面线是表达方案里的易错点"}
+{"source": "Q-017", "target": "Q-020", "relation": "prereq", "why": "表达方案除了视图与剖视，还要定哪里用断面，先懂两者之别"}
+{"source": "Q-019", "target": "Q-024", "relation": "prereq", "why": "先掌握两圆柱正交的简化圆弧，才能综合处理柱+球+柱相贯"}
+{"source": "Q-020", "target": "Q-021", "relation": "contrast", "why": "一个从零设计表达方案，一个在装配图基础上重构方案"}

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1014 515" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-JIEJIAO-YUANZHU-t FIG2-JIEJIAO-YUANZHU-d" class="fig-svg">
+  <title id="FIG2-JIEJIAO-YUANZHU-t">圆柱截交线三例：圆、椭圆、矩形</title>
+  <desc id="FIG2-JIEJIAO-YUANZHU-d">截平面垂直于轴线截得圆、倾斜截得椭圆、平行于轴线截得矩形；每例给出主视图与断面真形。</desc>
+  <defs>
+  <pattern id="FIG2-JIEJIAO-YUANZHU__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-JIEJIAO-YUANZHU__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-JIEJIAO-YUANZHU__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-JIEJIAO-YUANZHU__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-JIEJIAO-YUANZHU__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-JIEJIAO-YUANZHU__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-JIEJIAO-YUANZHU__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-JIEJIAO-YUANZHU__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-JIEJIAO-YUANZHU__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-JIEJIAO-YUANZHU__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-JIEJIAO-YUANZHU__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-JIEJIAO-YUANZHU__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-JIEJIAO-YUANZHU__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-JIEJIAO-YUANZHU__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-7  圆柱的截交线（圆柱 Ø80×100，单位 mm）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">关键：先看截平面与圆柱轴线的相对位置，再决定截交线是什么形状。</text>
+    <text x="190" y="150" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">① 截平面 ⊥ 轴线</text>
+    <rect x="66" y="180" width="96" height="120" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="54" y1="240" x2="174" y2="240" stroke="#dc2626" stroke-width="3"/>
+    <text x="114" y="322" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">主视图</text>
+    <circle cx="290" cy="240" r="24" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="290" y="300" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">断面真形</text>
+    <text x="190" y="348" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb" font-weight="600">截交线：圆</text>
+    <text x="190" y="376" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">圆是实形，正面投影积聚成一条直线</text>
+    <text x="530" y="150" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">② 截平面倾斜</text>
+    <rect x="406" y="180" width="96" height="120" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="396" y1="200" x2="512" y2="286" stroke="#dc2626" stroke-width="3"/>
+    <text x="454" y="322" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">主视图</text>
+    <path d="M658.53,230.73 L658.81,231.81 L658.97,232.92 L659.01,234.06 L658.92,235.23 L658.71,236.42 L658.37,237.62 L657.91,238.84 L657.34,240.06 L656.64,241.27 L655.83,242.49 L654.91,243.69 L653.89,244.88 L652.76,246.04 L651.54,247.18 L650.22,248.29 L648.82,249.37 L647.33,250.4 L645.77,251.39 L644.15,252.33 L642.46,253.22 L640.72,254.05 L638.93,254.82 L637.11,255.53 L635.25,256.17 L633.38,256.74 L631.48,257.24 L629.59,257.67 L627.69,258.02 L625.8,258.29 L623.93,258.48 L622.09,258.6 L620.28,258.64 L618.52,258.59 L616.8,258.47 L615.14,258.27 L613.54,257.99 L612.01,257.63 L610.56,257.2 L609.2,256.69 L607.92,256.11 L606.73,255.47 L605.65,254.75 L604.67,253.98 L603.8,253.14 L603.04,252.25 L602.4,251.3 L601.87,250.31 L601.47,249.27 L601.19,248.19 L601.03,247.08 L600.99,245.94 L601.08,244.77 L601.29,243.58 L601.63,242.38 L602.09,241.16 L602.66,239.94 L603.36,238.73 L604.17,237.51 L605.09,236.31 L606.11,235.12 L607.24,233.96 L608.46,232.82 L609.78,231.71 L611.18,230.63 L612.67,229.6 L614.23,228.61 L615.85,227.67 L617.54,226.78 L619.28,225.95 L621.07,225.18 L622.89,224.47 L624.75,223.83 L626.62,223.26 L628.52,222.76 L630.41,222.33 L632.31,221.98 L634.2,221.71 L636.07,221.52 L637.91,221.4 L639.72,221.36 L641.48,221.41 L643.2,221.53 L644.86,221.73 L646.46,222.01 L647.99,222.37 L649.44,222.8 L650.8,223.31 L652.08,223.89 L653.27,224.53 L654.35,225.25 L655.33,226.02 L656.2,226.86 L656.96,227.75 L657.6,228.7 L658.13,229.69 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="630" y="300" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">断面真形</text>
+    <text x="530" y="348" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb" font-weight="600">截交线：椭圆</text>
+    <text x="530" y="376" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">要按点求：先找长短轴两端点，再求中间点</text>
+    <text x="870" y="150" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">③ 截平面 ∥ 轴线</text>
+    <rect x="746" y="180" width="96" height="120" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="764" y1="176" x2="764" y2="304" stroke="#dc2626" stroke-width="3"/>
+    <line x1="806" y1="176" x2="806" y2="304" stroke="#dc2626" stroke-width="3"/>
+    <text x="794" y="322" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">主视图</text>
+    <rect x="944" y="224" width="52" height="32" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="970" y="300" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">断面真形</text>
+    <text x="870" y="348" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb" font-weight="600">截交线：矩形</text>
+    <text x="870" y="376" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">截交线是两条素线 + 上下两段圆弧</text>
+    <text x="40" y="430" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 截平面垂直于轴线 → 截交线是圆。正面投影积聚成一条直线，水平投影就是圆本身（实形）。</text>
+    <text x="40" y="451" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 截平面倾斜于轴线 → 截交线是椭圆。作图时先求长短轴端点（最低、最高素线处），再求若干个中间点。</text>
+    <text x="40" y="472" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 截平面平行于轴线 → 截交线是两条素线加两段圆弧，围成矩形（注意：只有截平面切到两端面时才是完整矩形）。</text>
+    <text x="40" y="493" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 判断顺序永远是：先看截平面与轴线的位置关系，再决定截交线的形状，最后才动笔画。</text>
+  </g>
+</svg>

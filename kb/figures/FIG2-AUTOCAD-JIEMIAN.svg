@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1075 618" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-AUTOCAD-JIEMIAN-t FIG2-AUTOCAD-JIEMIAN-d" class="fig-svg">
+  <title id="FIG2-AUTOCAD-JIEMIAN-t">AutoCAD 界面分区与常用命令</title>
+  <desc id="FIG2-AUTOCAD-JIEMIAN-d">AutoCAD 窗口分六个区：标题栏、菜单栏、功能区、绘图区、命令行、状态栏；起步只要记住 L、C、O、TR、CO 五个命令。</desc>
+  <defs>
+  <pattern id="FIG2-AUTOCAD-JIEMIAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-AUTOCAD-JIEMIAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-AUTOCAD-JIEMIAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-AUTOCAD-JIEMIAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-AUTOCAD-JIEMIAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-AUTOCAD-JIEMIAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-AUTOCAD-JIEMIAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-AUTOCAD-JIEMIAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-AUTOCAD-JIEMIAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-AUTOCAD-JIEMIAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-AUTOCAD-JIEMIAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-AUTOCAD-JIEMIAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-AUTOCAD-JIEMIAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-AUTOCAD-JIEMIAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-16  AutoCAD 界面分区（示意）与起步常用命令</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">绘图区里能看到 UCS 坐标系图标和十字光标 —— 所有命令都在命令行里回显。</text>
+    <rect x="40" y="70" width="960" height="28" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="50" y="89" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">AutoCAD 2024  -  [Drawing1.dwg]</text>
+    <rect x="40" y="98" width="960" height="24" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="50" y="115" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">文件   编辑   视图   插入   格式   工具   绘图   标注   修改   帮助</text>
+    <rect x="40" y="122" width="960" height="62" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="50" y="140" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">默认   插入   注释   参数化   视图   管理   输出</text>
+    <rect x="50" y="148" width="108" height="28" stroke="currentColor" stroke-width="0.8" fill="none" stroke-opacity="0.55"/>
+    <rect x="170" y="148" width="108" height="28" stroke="currentColor" stroke-width="0.8" fill="none" stroke-opacity="0.55"/>
+    <rect x="290" y="148" width="108" height="28" stroke="currentColor" stroke-width="0.8" fill="none" stroke-opacity="0.55"/>
+    <rect x="410" y="148" width="108" height="28" stroke="currentColor" stroke-width="0.8" fill="none" stroke-opacity="0.55"/>
+    <rect x="40" y="184" width="780" height="320" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <line x1="100" y1="430" x2="170" y2="430" stroke="#16a34a" stroke-width="0.8"/>
+    <line x1="100" y1="430" x2="100" y2="360" stroke="#16a34a" stroke-width="0.8"/>
+    <text x="176" y="434" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#16a34a">X</text>
+    <text x="96" y="352" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#16a34a">Y</text>
+    <path d="M440,330 L600,330 L600,400 L440,400 Z" stroke="#2563eb" stroke-width="0.8" fill="none"/>
+    <path d="M370,250 L460,250" stroke="#6b7280" stroke-width="0.8" fill="none"/>
+    <line x1="470" y1="300" x2="560" y2="300" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="560" y1="240" x2="560" y2="380" stroke="#b45309" stroke-width="0.8" stroke-opacity="0.7"/>
+    <line x1="490" y1="310" x2="630" y2="310" stroke="#b45309" stroke-width="0.8" stroke-opacity="0.7"/>
+    <rect x="820" y="184" width="180" height="320" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="830" y="204" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">特性 / 图层</text>
+    <line x1="830" y1="222" x2="990" y2="222" stroke="#6b7280" stroke-width="0.8" stroke-opacity="0.4"/>
+    <line x1="830" y1="248" x2="990" y2="248" stroke="#6b7280" stroke-width="0.8" stroke-opacity="0.4"/>
+    <line x1="830" y1="274" x2="990" y2="274" stroke="#6b7280" stroke-width="0.8" stroke-opacity="0.4"/>
+    <line x1="830" y1="300" x2="990" y2="300" stroke="#6b7280" stroke-width="0.8" stroke-opacity="0.4"/>
+    <rect x="40" y="504" width="960" height="46" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="50" y="522" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">命令: _line</text>
+    <text x="50" y="540" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">指定第一个点:  指定下一点或 [放弃(U)]:</text>
+    <rect x="40" y="550" width="960" height="22" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="50" y="565" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">模型  栅格  捕捉  正交  极轴  对象捕捉  对象追踪  允许/禁止动态 UCS  线宽  模型</text>
+    <text x="1016" y="84" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">① 标题栏</text>
+    <text x="1016" y="110" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">② 菜单栏</text>
+    <text x="1016" y="156" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">③ 功能区</text>
+    <text x="1016" y="200" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">④ 绘图区</text>
+    <text x="1016" y="520" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">⑤ 命令行</text>
+    <text x="1016" y="566" font-size="10" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">⑥ 状态栏</text>
+    <text x="40" y="596" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">起步五个命令：L = 直线（Line）/ C = 圆（Circle）/ O = 偏移（Offset）/ TR = 修剪（Trim）/ CO = 复制（Copy）。</text>
+  </g>
+</svg>

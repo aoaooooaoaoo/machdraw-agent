@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="PAIR-DUANMIAN-POUSHI-t PAIR-DUANMIAN-POUSHI-d" class="fig-svg pair-svg" data-pair-id="PAIR-DUANMIAN-POUSHI">
+  <title id="PAIR-DUANMIAN-POUSHI-t">断面图 与 剖视图</title>
+  <desc id="PAIR-DUANMIAN-POUSHI-d">同一零件、同一剖切位置（水平剖切、向下投射）：只差“后面的东西画不画” | A：断面图（只画断面形状）；B：剖视图（断面 + 后方轮廓）</desc>
+  <defs>
+  <pattern id="hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <marker id="ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#1f2937"/>
+  </marker>
+  <marker id="ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/>
+  </marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+  <text x="380" y="23" font-size="13.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">断面图 与 剖视图</text>
+  <text x="380" y="41" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">同一零件、同一剖切位置（水平剖切、向下投射）：只差“后面的东西画不画”</text>
+  <g data-panel="a" data-caption="断面图（只画断面形状）">
+    <circle cx="32" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="32" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">A</text>
+    <path d="M222,180 L221.61,185.01 L220.43,189.89 L218.51,194.53 L215.89,198.81 L212.63,202.63 L208.81,205.89 L204.53,208.51 L199.89,210.43 L195.01,211.61 L190,212 L184.99,211.61 L180.11,210.43 L175.47,208.51 L171.19,205.89 L167.37,202.63 L164.11,198.81 L161.49,194.53 L159.57,189.89 L158.39,185.01 L158,180 L158.39,174.99 L159.57,170.11 L161.49,165.47 L164.11,161.19 L167.37,157.37 L171.19,154.11 L175.47,151.49 L180.11,149.57 L184.99,148.39 L190,148 L195.01,148.39 L199.89,149.57 L204.53,151.49 L208.81,154.11 L212.63,157.37 L215.89,161.19 L218.51,165.47 L220.43,170.11 L221.61,174.99 L222,180 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M220.98,172 L262,172 L262,188 L220.98,188 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M220.98,188 L219.51,192.38 L217.42,196.5 L214.76,200.27 L211.59,203.62 L207.96,206.48 L203.96,208.79 L199.67,210.5 L195.18,211.58 L190.58,211.99 L185.97,211.74 L181.44,210.83 L177.09,209.28 L173.01,207.12 L169.28,204.39 L165.99,201.15 L163.19,197.48 L160.96,193.44 L159.33,189.12 L158.33,184.61 L158,180 L158.33,175.39 L159.33,170.88 L160.96,166.56 L163.19,162.52 L165.99,158.85 L169.28,155.61 L173.01,152.88 L177.09,150.72 L181.44,149.17 L185.97,148.26 L190.58,148.01 L195.18,148.42 L199.67,149.5 L203.96,151.21 L207.96,153.52 L211.59,156.38 L214.76,159.73 L217.42,163.5 L219.51,167.62 L220.98,172" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M220.98,172 L262,172 L262,188 L220.98,188" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <text x="190" y="92" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">A—A</text>
+    <line x1="301" y1="120" x2="270" y2="120" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="270" cy="120" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="312" cy="120" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="312" y="123.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="289.56" y1="93.48" x2="240" y2="110" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="240" cy="110" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="300" cy="90" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="300" y="93.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="302.85" y1="221.9" x2="240" y2="180" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="240" cy="180" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="312" cy="228" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="312" y="231.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="190" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">A：断面图（只画断面形状）</text>
+  <g data-panel="b" data-caption="剖视图（断面 + 后方轮廓）">
+    <circle cx="412" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="412" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">B</text>
+    <path d="M602,180 L601.61,185.01 L600.43,189.89 L598.51,194.53 L595.89,198.81 L592.63,202.63 L588.81,205.89 L584.53,208.51 L579.89,210.43 L575.01,211.61 L570,212 L564.99,211.61 L560.11,210.43 L555.47,208.51 L551.19,205.89 L547.37,202.63 L544.11,198.81 L541.49,194.53 L539.57,189.89 L538.39,185.01 L538,180 L538.39,174.99 L539.57,170.11 L541.49,165.47 L544.11,161.19 L547.37,157.37 L551.19,154.11 L555.47,151.49 L560.11,149.57 L564.99,148.39 L570,148 L575.01,148.39 L579.89,149.57 L584.53,151.49 L588.81,154.11 L592.63,157.37 L595.89,161.19 L598.51,165.47 L600.43,170.11 L601.61,174.99 L602,180 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M600.98,172 L642,172 L642,188 L600.98,188 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M490,100 L650,100 L650,260 L490,260 Z" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M600.98,188 L599.51,192.38 L597.42,196.5 L594.76,200.27 L591.59,203.62 L587.96,206.48 L583.96,208.79 L579.67,210.5 L575.18,211.58 L570.58,211.99 L565.97,211.74 L561.44,210.83 L557.09,209.28 L553.01,207.12 L549.28,204.39 L545.99,201.15 L543.19,197.48 L540.96,193.44 L539.33,189.12 L538.33,184.61 L538,180 L538.33,175.39 L539.33,170.88 L540.96,166.56 L543.19,162.52 L545.99,158.85 L549.28,155.61 L553.01,152.88 L557.09,150.72 L561.44,149.17 L565.97,148.26 L570.58,148.01 L575.18,148.42 L579.67,149.5 L583.96,151.21 L587.96,153.52 L591.59,156.38 L594.76,159.73 L597.42,163.5 L599.51,167.62 L600.98,172" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M600.98,172 L642,172 L642,188 L600.98,188" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <text x="570" y="92" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">A—A</text>
+    <line x1="681" y1="120" x2="650" y2="120" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="650" cy="120" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="692" cy="120" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="692" y="123.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="669.56" y1="93.48" x2="620" y2="110" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="620" cy="110" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="680" cy="90" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="680" y="93.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="682.85" y1="221.9" x2="620" y2="180" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="620" cy="180" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="692" cy="228" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="692" y="231.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="570" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">B：剖视图（断面 + 后方轮廓）</text>
+  <line x1="380" y1="76" x2="380" y2="314" stroke="#d7dde6" stroke-width="1"/>
+  <line x1="20" y1="318" x2="740" y2="318" stroke="#d7dde6" stroke-width="1"/>
+  <g data-legend="1">
+    <text x="20" y="340" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="1">① 图形内容不同：A 只画断面形状（圆 + 肋）；B 还要画出剖切面后方可见的底板轮廓</text>
+    <text x="20" y="360" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="2">② 底板轮廓的画法：A 没有；B 用粗实线画，但绝不能画剖面线</text>
+    <text x="20" y="380" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="3">③ 剖面线的范围：两图都只画在被切到的断面内（圆与肋），肋板横向剖切必须画</text>
+    <text x="20" y="400" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280" data-diff="0">注：断面图轮廓用粗实线；不对称的移出断面必须标箭头，在剖切符号延长线上的对称断面可省略全部标注</text>
+  </g>
+  </g>
+</svg>

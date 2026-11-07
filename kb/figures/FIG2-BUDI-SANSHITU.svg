@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 887 507" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-BUDI-SANSHITU-t FIG2-BUDI-SANSHITU-d" class="fig-svg">
+  <title id="FIG2-BUDI-SANSHITU-t">补画第三视图：由主视图与俯视图补出左视图</title>
+  <desc id="FIG2-BUDI-SANSHITU-d">已知主视图与俯视图，左视图位置留虚线框提示补画；先做形体分析、逐块对投影，再按三等规律补线。</desc>
+  <defs>
+  <pattern id="FIG2-BUDI-SANSHITU__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-BUDI-SANSHITU__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-BUDI-SANSHITU__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-BUDI-SANSHITU__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-BUDI-SANSHITU__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-BUDI-SANSHITU__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-BUDI-SANSHITU__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-BUDI-SANSHITU__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-BUDI-SANSHITU__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-BUDI-SANSHITU__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-BUDI-SANSHITU__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-BUDI-SANSHITU__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-BUDI-SANSHITU__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-BUDI-SANSHITU__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-11  补画第三视图（底板 + 圆柱凸台）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">左视图的位置用虚线框表示“待补”，补完后应满足高平齐与宽相等。</text>
+    <rect x="80" y="240" width="180" height="40" stroke="currentColor" stroke-width="2" fill="none"/>
+    <rect x="140" y="190" width="80" height="50" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="170" y="320" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">主视图</text>
+    <rect x="80" y="340" width="180" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="170" cy="390" r="40" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="80" y1="390" x2="260" y2="390" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="170" y="468" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">俯视图</text>
+    <rect x="320" y="190" width="100" height="90" stroke="#dc2626" stroke-width="0.8" fill="none" stroke-dasharray="7 5"/>
+    <text x="370" y="232" font-size="26" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626">?</text>
+    <text x="370" y="314" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" font-weight="600">左视图（要补）</text>
+    <text x="370" y="336" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">宽 = 俯视图的高（宽相等）</text>
+    <line x1="260" y1="200" x2="320" y2="200" stroke="#ea580c" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="260" y1="280" x2="320" y2="280" stroke="#ea580c" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="170" y1="300" x2="170" y2="340" stroke="#16a34a" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="80" y1="300" x2="80" y2="340" stroke="#16a34a" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="260" y1="310" x2="300" y2="310" stroke="#7c3aed" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="300" y1="310" x2="300" y2="440" stroke="#7c3aed" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="260" y1="440" x2="300" y2="440" stroke="#7c3aed" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="470" y="380" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">补图四步：</text>
+    <text x="470" y="401" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 形体分析：底板（长方体）+ 凸台（圆柱），共两块。</text>
+    <text x="470" y="422" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 逐块对投影：底板在主视图是 180×40 的矩形，俯视图是 180×100 的矩形。</text>
+    <text x="470" y="443" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 想第三投影：左视图里底板是 100×40 的矩形（宽 = 俯视图的高）。</text>
+    <text x="470" y="464" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 补线检查：凸台在左视图里是 80 宽 × 50 高的矩形，与主视图高平齐。</text>
+    <text x="470" y="485" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">易错：漏画凸台的转向轮廓线；或把“宽”画成俯视图的宽（≈ 长对正用错方向）。</text>
+  </g>
+</svg>

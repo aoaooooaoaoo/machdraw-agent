@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1003 587" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-DUANMIAN-t FIG-DUANMIAN-d" class="fig-svg">
+  <title id="FIG-DUANMIAN-t">断面图与剖视图的区别</title>
+  <desc id="FIG-DUANMIAN-d">同一零件、同一剖切位置、同一投射方向：断面图只画断面形状，剖视图在断面形状之外还要画出剖切平面后方所有可见轮廓（如底板轮廓）。</desc>
+  <defs>
+  <pattern id="FIG-DUANMIAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-DUANMIAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-DUANMIAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-DUANMIAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-DUANMIAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-DUANMIAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-DUANMIAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-DUANMIAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-DUANMIAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-DUANMIAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-DUANMIAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-DUANMIAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-DUANMIAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-DUANMIAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 8  断面图与剖视图的区别（同一零件、同一剖切位置、同一投射方向）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">零件：Ø40 立柱 + 肋板 40×16，立在 100×100 底板上；沿立柱中部水平剖切，向下投射。</text>
+    <path d="M309.19,292.00 L308.29,288.44 L307.07,284.97 L305.53,281.64 L303.70,278.45 L301.58,275.45 L299.20,272.66 L296.56,270.09 L293.71,267.78 L290.65,265.74 L287.42,263.99 L284.04,262.55 L280.55,261.42 L276.96,260.61 L273.32,260.14 L269.65,260.00 L265.98,260.20 L262.35,260.74 L258.78,261.61 L255.30,262.80 L251.95,264.30 L248.75,266.11 L245.73,268.20 L242.91,270.57 L240.33,273.17 L237.99,276.01 L235.93,279.05 L234.15,282.26 L232.67,285.63 L231.51,289.11 L230.67,292.69 L230.17,296.33 L230.00,300.00 L230.17,303.67 L230.67,307.31 L231.51,310.89 L232.67,314.37 L234.15,317.74 L235.93,320.95 L237.99,323.99 L240.33,326.83 L242.91,329.43 L245.73,331.80 L248.75,333.89 L251.95,335.70 L255.30,337.20 L258.78,338.39 L262.35,339.26 L265.98,339.80 L269.65,340.00 L273.32,339.86 L276.96,339.39 L280.55,338.58 L284.04,337.45 L287.42,336.01 L290.65,334.26 L293.71,332.22 L296.56,329.91 L299.20,327.34 L301.58,324.55 L303.70,321.55 L305.53,318.36 L307.07,315.03 L308.29,311.56 L309.19,308.00 L350.00,308.00 L350.00,292.00 Z" fill="url(#FIG-DUANMIAN__hatch45)" stroke="none"/>
+    <path d="M309.19,292.00 L308.29,288.44 L307.07,284.97 L305.53,281.64 L303.70,278.45 L301.58,275.45 L299.20,272.66 L296.56,270.09 L293.71,267.78 L290.65,265.74 L287.42,263.99 L284.04,262.55 L280.55,261.42 L276.96,260.61 L273.32,260.14 L269.65,260.00 L265.98,260.20 L262.35,260.74 L258.78,261.61 L255.30,262.80 L251.95,264.30 L248.75,266.11 L245.73,268.20 L242.91,270.57 L240.33,273.17 L237.99,276.01 L235.93,279.05 L234.15,282.26 L232.67,285.63 L231.51,289.11 L230.67,292.69 L230.17,296.33 L230.00,300.00 L230.17,303.67 L230.67,307.31 L231.51,310.89 L232.67,314.37 L234.15,317.74 L235.93,320.95 L237.99,323.99 L240.33,326.83 L242.91,329.43 L245.73,331.80 L248.75,333.89 L251.95,335.70 L255.30,337.20 L258.78,338.39 L262.35,339.26 L265.98,339.80 L269.65,340.00 L273.32,339.86 L276.96,339.39 L280.55,338.58 L284.04,337.45 L287.42,336.01 L290.65,334.26 L293.71,332.22 L296.56,329.91 L299.20,327.34 L301.58,324.55 L303.70,321.55 L305.53,318.36 L307.07,315.03 L308.29,311.56 L309.19,308.00 L350.00,308.00 L350.00,292.00 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="270" y="232" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">断面图</text>
+    <text x="270" y="250" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">A—A</text>
+    <text x="270" y="392" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">只画剖切面与形体相交的断面形状</text>
+    <text x="270" y="410" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">（肋板：断面照画剖面线）</text>
+    <rect x="600" y="200" width="200" height="200" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M739.19,292.00 L738.29,288.44 L737.07,284.97 L735.53,281.64 L733.70,278.45 L731.58,275.45 L729.20,272.66 L726.56,270.09 L723.71,267.78 L720.65,265.74 L717.42,263.99 L714.04,262.55 L710.55,261.42 L706.96,260.61 L703.32,260.14 L699.65,260.00 L695.98,260.20 L692.35,260.74 L688.78,261.61 L685.30,262.80 L681.95,264.30 L678.75,266.11 L675.73,268.20 L672.91,270.57 L670.33,273.17 L667.99,276.01 L665.93,279.05 L664.15,282.26 L662.67,285.63 L661.51,289.11 L660.67,292.69 L660.17,296.33 L660.00,300.00 L660.17,303.67 L660.67,307.31 L661.51,310.89 L662.67,314.37 L664.15,317.74 L665.93,320.95 L667.99,323.99 L670.33,326.83 L672.91,329.43 L675.73,331.80 L678.75,333.89 L681.95,335.70 L685.30,337.20 L688.78,338.39 L692.35,339.26 L695.98,339.80 L699.65,340.00 L703.32,339.86 L706.96,339.39 L710.55,338.58 L714.04,337.45 L717.42,336.01 L720.65,334.26 L723.71,332.22 L726.56,329.91 L729.20,327.34 L731.58,324.55 L733.70,321.55 L735.53,318.36 L737.07,315.03 L738.29,311.56 L739.19,308.00 L780.00,308.00 L780.00,292.00 Z" fill="url(#FIG-DUANMIAN__hatch45)" stroke="none"/>
+    <path d="M739.19,292.00 L738.29,288.44 L737.07,284.97 L735.53,281.64 L733.70,278.45 L731.58,275.45 L729.20,272.66 L726.56,270.09 L723.71,267.78 L720.65,265.74 L717.42,263.99 L714.04,262.55 L710.55,261.42 L706.96,260.61 L703.32,260.14 L699.65,260.00 L695.98,260.20 L692.35,260.74 L688.78,261.61 L685.30,262.80 L681.95,264.30 L678.75,266.11 L675.73,268.20 L672.91,270.57 L670.33,273.17 L667.99,276.01 L665.93,279.05 L664.15,282.26 L662.67,285.63 L661.51,289.11 L660.67,292.69 L660.17,296.33 L660.00,300.00 L660.17,303.67 L660.67,307.31 L661.51,310.89 L662.67,314.37 L664.15,317.74 L665.93,320.95 L667.99,323.99 L670.33,326.83 L672.91,329.43 L675.73,331.80 L678.75,333.89 L681.95,335.70 L685.30,337.20 L688.78,338.39 L692.35,339.26 L695.98,339.80 L699.65,340.00 L703.32,339.86 L706.96,339.39 L710.55,338.58 L714.04,337.45 L717.42,336.01 L720.65,334.26 L723.71,332.22 L726.56,329.91 L729.20,327.34 L731.58,324.55 L733.70,321.55 L735.53,318.36 L737.07,315.03 L738.29,311.56 L739.19,308.00 L780.00,308.00 L780.00,292.00 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="700" y="172" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">剖视图</text>
+    <text x="700" y="190" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">A—A</text>
+    <text x="700" y="440" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">断面形状 + 剖切面后方可见轮廓</text>
+    <text x="700" y="458" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">（底板轮廓可见，但不画剖面线）</text>
+    <line x1="800" y1="250" x2="858" y2="220" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG-DUANMIAN__ar-red)"/>
+    <text x="864" y="224" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">底板轮廓（断面图没有）</text>
+    <line x1="350" y1="300" x2="452" y2="336" stroke="#2563eb" stroke-width="0.8" marker-end="url(#FIG-DUANMIAN__ar-blue)"/>
+    <text x="458" y="340" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">肋板（断面照画剖面线）</text>
+    <text x="40" y="496" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 断面图只表达剖切面切断形体后得到的断面形状；剖视图还要把剖切面后方所有可见轮廓都画出来。</text>
+    <text x="40" y="519" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 断面图与剖视图的剖面线画法相同（45° 细实线）；但断面图中不会出现剖切面后方的轮廓线。</text>
+    <text x="40" y="542" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 移出断面图一般画在视图之外，用剖切符号（粗短画 + 箭头 + 字母）标注；不对称的断面必须标箭头。</text>
+    <text x="40" y="565" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 判断口诀：图里出现“后面看得到的轮廓”—— 是剖视图；“只有一个断面”—— 是断面图。</text>
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 645" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-XIANGUAN-JIANHUA-t FIG2-XIANGUAN-JIANHUA-d" class="fig-svg">
+  <title id="FIG2-XIANGUAN-JIANHUA-t">正交异径圆柱相贯线的简化画法</title>
+  <desc id="FIG2-XIANGUAN-JIANHUA-d">两个垂直相交、直径不等的圆柱，相贯线可用一段圆弧代替：圆弧半径取大圆柱半径 R，圆心落在小圆柱轴线上，圆弧过三个点。</desc>
+  <defs>
+  <pattern id="FIG2-XIANGUAN-JIANHUA__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-XIANGUAN-JIANHUA__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-XIANGUAN-JIANHUA__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-XIANGUAN-JIANHUA__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-XIANGUAN-JIANHUA__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-XIANGUAN-JIANHUA__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-XIANGUAN-JIANHUA__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-XIANGUAN-JIANHUA__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-XIANGUAN-JIANHUA__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-XIANGUAN-JIANHUA__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-XIANGUAN-JIANHUA__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-XIANGUAN-JIANHUA__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-XIANGUAN-JIANHUA__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-XIANGUAN-JIANHUA__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-9  相贯线的简化画法（正交异径圆柱）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">大圆柱 Ø80（水平）、小圆柱 Ø50（竖直）；简化画法只适用于异径正交、且大圆柱直径明显较大的情况。</text>
+    <rect x="160" y="260" width="380" height="80" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="160" y1="300" x2="540" y2="300" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <rect x="315" y="170" width="50" height="90" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="340" y1="160" x2="340" y2="310" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <path d="M315,260 L315.89,260.69 L316.8,261.36 L317.72,262 L318.66,262.61 L319.62,263.2 L320.6,263.76 L321.59,264.29 L322.6,264.79 L323.62,265.27 L324.65,265.71 L325.7,266.13 L326.75,266.52 L327.82,266.88 L328.9,267.2 L329.98,267.5 L331.07,267.77 L332.17,268 L333.28,268.21 L334.39,268.38 L335.51,268.52 L336.63,268.63 L337.75,268.71 L338.87,268.76 L340,268.78 L341.13,268.76 L342.25,268.71 L343.37,268.63 L344.49,268.52 L345.61,268.38 L346.72,268.21 L347.83,268 L348.93,267.77 L350.02,267.5 L351.1,267.2 L352.18,266.88 L353.25,266.52 L354.3,266.13 L355.35,265.71 L356.38,265.27 L357.4,264.79 L358.41,264.29 L359.4,263.76 L360.38,263.2 L361.34,262.61 L362.28,262 L363.2,261.36 L364.11,260.69 L365,260" stroke="currentColor" stroke-width="3" fill="none"/>
+    <circle cx="340" cy="228.78" r="2.4" fill="#dc2626" stroke="none"/>
+    <line x1="340" y1="228.78" x2="436" y2="194.78" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG2-XIANGUAN-JIANHUA__ar-red)"/>
+    <text x="442" y="198.78" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">O（圆心，落在小圆柱轴线上）</text>
+    <text x="303" y="254" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#2563eb" font-weight="600">1</text>
+    <text x="377" y="254" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb" font-weight="600">2</text>
+    <text x="352" y="276" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#16a34a" font-weight="600">3（最低点）</text>
+    <text x="200" y="244" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">大圆柱</text>
+    <text x="340" y="156" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">小圆柱</text>
+    <line x1="340" y1="228.78" x2="370.64" y2="254.49" stroke="#dc2626" stroke-width="0.8" marker-start="url(#FIG2-XIANGUAN-JIANHUA__ar-red)" marker-end="url(#FIG2-XIANGUAN-JIANHUA__ar-red)"/>
+    <text x="392" y="258.78" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">R = 大圆柱半径</text>
+    <rect x="160" y="430" width="380" height="80" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="340" cy="470" r="25" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="160" y1="470" x2="540" y2="470" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="340" y1="416" x2="340" y2="524" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="340" y="544" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">俯视图</text>
+    <text x="40" y="560" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 三个点：1、2 是两个圆柱轮廓线的交点，3 是相贯线的最低点（在小圆柱轴线上）。</text>
+    <text x="40" y="581" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 圆弧半径取大圆柱半径 R，圆心必须落在小圆柱轴线上 —— 这两条是简化画法的硬性条件。</text>
+    <text x="40" y="602" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 求圆心：以 R 为半径、过 1、2 两点画圆弧，圆心自然落在小圆柱轴线上。</text>
+    <text x="40" y="623" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 只适用于“异径正交”：两圆柱直径相等时相贯线是两个相交的椭圆，不能这样简化。</text>
+  </g>
+</svg>

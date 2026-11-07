@@ -1,0 +1,17 @@
+{
+  "backend\\.env": {
+    "exists": true,
+    "lines": [
+      "DEEPSEEK_API_KEY=<SET len=19 looks_placeholder=True>",
+      "BASE_URL=https://api.deepseek.com/v1",
+      "MODEL=deepseek-flash",
+      "VISION_MODEL=deepseek-flash",
+      "RAG_TOP_K=4",
+      "MAX_TURNS=6"
+    ]
+  },
+  "rag-system\\.env": {
+    "exists": false
+  },
+  "RetrievedChunk.to_dict": "class RetrievedChunk:\n    \"\"\"一次检索结果条目。\"\"\"\n\n    chunk_id: str\n    document_id: str\n    document_title: str\n    content: str\n    score: float\n    dense_score: float = 0.0\n    sparse_score: float = 0.0\n    parent_key: str = \"\"\n    section_title: str = \"\"\n    section_path: List[str] = field(default_factory=list)\n    page_start: Optional[int] = None\n    page_end: Optional[int] = None\n    token_count: int = 0\n    images: List[str] = field(default_factory=list)\n\n    def to_dict(self, include_content: bool = True) -> Dict[str, Any]:\n        data: Dict[str, Any] = {\n            \"chunk_id\": self.chunk_id,\n            \"document_id\": self.document_id,\n            \"document_title\": self.document_title,\n            \"parent_key\": self.parent_key,\n            \"section_title\": self.section_title,\n            \"section_path\": self.section_path,\n            \"page_start\": self.page_start,\n            \"page_end\": self.page_end,\n            \"score\": round(self.score, 6),\n            \"dense_score\": round(self.dense_score, 6),\n            \"sparse_score\": round(self.sparse_score, 6),\n            \"token_count\": self.token_count,\n            \"images\": self.images,\n        }\n        if include_content:\n            data[\"content\"] = self.content\n        return data\n\n\n@dataclass"
+}

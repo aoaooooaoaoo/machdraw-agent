@@ -1,0 +1,425 @@
+[
+    {
+        "doc_id": "WEB-CUR-TOULIANG",
+        "title": "投影理论三章：点线面投影、截交线与相贯线的教学要点",
+        "category": "参考资料",
+        "role": "curriculum",
+        "source": "https://jxx.dgut.edu.cn/__local/8/81/CF/8199CDD105DD8F16882A9E575E0_FD316781_340DD.pdf",
+        "license": "高校官网公开教学文件摘编（东莞理工学院《工程制图》课程教学大纲；非开放许可，仅内部教研使用）",
+        "retrieved": "2026-11-07",
+        "word_count": 1295,
+        "topics": [
+            "点的投影",
+            "直线的投影",
+            "平面的投影",
+            "截交线",
+            "相贯线"
+        ]
+    },
+    {
+        "doc_id": "WEB-CUR-ZUHETI",
+        "title": "三视图投影规律与组合体读图的教学要点",
+        "category": "参考资料",
+        "role": "curriculum",
+        "source": "https://jxx.dgut.edu.cn/__local/6/C8/3B/FFF9C652410E7441698423881A9_12C84D33_347C2.pdf",
+        "license": "高校官网公开教学文件摘编（东莞理工学院《机械制图》课程教学大纲；非开放许可，仅内部教研使用）",
+        "retrieved": "2026-11-07",
+        "word_count": 1387,
+        "topics": [
+            "三视图",
+            "三等规律",
+            "形体分析法",
+            "线面分析法",
+            "组合体尺寸标注"
+        ]
+    },
+    {
+        "doc_id": "WEB-LEC-GDUT-ZHOUCE",
+        "title": "轴测图一章的教学设计与考核要求（广东工业大学公开教学设计）",
+        "category": "参考资料",
+        "role": "lecture",
+        "source": "https://courses.gdut.edu.cn/pluginfile.php/253289/mod_resource/content/2/%E7%AC%AC%E5%9B%9B%E7%AB%A0%E8%BD%B4%E6%B5%8B%E5%9B%BE%E6%95%99%E5%AD%A6%E8%AE%BE%E8%AE%A1.pdf",
+        "license": "高校官网公开教学文件摘编（广东工业大学课程平台公开教学设计；非开放许可，仅内部教研使用）",
+        "retrieved": "2026-11-07",
+        "word_count": 1129,
+        "topics": [
+            "轴测图教学设计",
+            "正等测",
+            "斜二测",
+            "教学考核"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-BIAOMIAN",
+        "title": "表面结构（表面粗糙度）Ra 与 Rz 的代号与标注（依据 GB/T 131—2006）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=E83E2264601B94071763C2D0537B927A",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 1041,
+        "topics": [
+            "表面结构",
+            "表面粗糙度",
+            "Ra",
+            "Rz"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-CHICUN",
+        "title": "尺寸标注的基本规则（依据 GB/T 4458.4—2003）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=08588A5F3FE19F16B9EE8D5D87E064D5",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 971,
+        "topics": [
+            "尺寸注法",
+            "尺寸四要素",
+            "尺寸基准",
+            "尺寸数字"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-CHILUN",
+        "title": "齿轮的规定画法与几何计算（依据 GB/T 4459.2—2003）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=DB37A333DC65C632DE6538C6DAD74E44",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 944,
+        "topics": [
+            "齿轮参数",
+            "齿轮规定画法",
+            "齿轮啮合画法",
+            "模数"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-DUANMIAN",
+        "title": "断面图：移出断面与重合断面（依据 GB/T 4458.6—2002）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=98FC4489987C8309C89CC2816AFFCE9C",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 956,
+        "topics": [
+            "断面图",
+            "移出断面",
+            "重合断面"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-GONGCHA",
+        "title": "几何公差：形状、方向、位置与跳动公差（依据 GB/T 1182—2018）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=C87A687A21B36E2F2D3A09BDF03DCA01",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 1006,
+        "topics": [
+            "几何公差",
+            "形状公差",
+            "方向公差",
+            "位置公差",
+            "公差框格"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-JIANHUA",
+        "title": "局部放大图与简化画法（依据 GB/T 16675.1—2012）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=518C27563B4CB6F2AD7F962A42768242",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 1114,
+        "topics": [
+            "局部放大图",
+            "简化画法",
+            "肋板不剖"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-LUOWEN",
+        "title": "螺纹的规定画法与标记（依据 GB/T 4459.1—1995、GB/T 197—2018）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=026B5C6659F37FBE052E85E8C4C9D83E",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 1013,
+        "topics": [
+            "螺纹五要素",
+            "螺纹规定画法",
+            "螺纹标记",
+            "螺纹紧固件"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-PEIHE",
+        "title": "极限与配合：基孔制、基轴制与 H7/k6 的读法（依据 GB/T 1800.1—2020）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=B2EA3A6454B903DCF466A0CE16F2ED26",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 1038,
+        "topics": [
+            "极限与配合",
+            "基孔制",
+            "基轴制",
+            "公差带",
+            "H7/k6"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-POUSHI",
+        "title": "剖视图：全剖、半剖与局部剖（依据 GB/T 4458.6—2002）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=98FC4489987C8309C89CC2816AFFCE9C",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 1063,
+        "topics": [
+            "剖视图",
+            "全剖视图",
+            "半剖视图",
+            "局部剖视图",
+            "剖面符号"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-SHITU",
+        "title": "视图的种类与配置：基本视图、向视图、局部视图、斜视图（依据 GB/T 4458.1—2002）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=1B3AE836354647D640A592D775EDB683",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 1039,
+        "topics": [
+            "基本视图",
+            "向视图",
+            "局部视图",
+            "斜视图"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-TOUYING",
+        "title": "投影法基础与第一角、第三角投影（依据 GB/T 14692—2008）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=1072044E4F129FBC0423C354C2D6FE51",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 1025,
+        "topics": [
+            "第一角投影",
+            "第三角投影",
+            "正投影法",
+            "投影面体系"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-ZHOUCE",
+        "title": "轴测图：正等轴测与斜二轴测的画法（依据 GB/T 4458.3—2013）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=52098A4E44A7F21B33FB11F2609052B4",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 1027,
+        "topics": [
+            "轴测图",
+            "正等轴测",
+            "斜二轴测",
+            "轴向伸缩系数"
+        ]
+    },
+    {
+        "doc_id": "WEB-STD-ZHUANGPEI",
+        "title": "零件图与装配图：内容、序号编排与明细栏（依据 GB/T 4458.2—2003、GB/T 10609.2—2009）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=6A25994FA2F4188305AE8AB6DF632347",
+        "license": "国家标准公开信息摘编（仅摘编标准号、名称、适用范围与术语，不复制正文）",
+        "retrieved": "2026-11-07",
+        "word_count": 1203,
+        "topics": [
+            "零件图",
+            "装配图",
+            "序号编排",
+            "明细栏",
+            "拆画零件图"
+        ]
+    },
+    {
+        "doc_id": "DEPTH-CHICUNLIAN",
+        "title": "尺寸链（组成、极值法计算与图样上\"留开口\"的处理）",
+        "category": "参考资料",
+        "role": "authority",
+        "source": "依据 GB/T 1800.1—2020《线性尺寸公差 ISO 代号体系》、GB/T 4458.4—2003《机械制图 尺寸注法》与公开教材所述尺寸链原理自撰",
+        "license": "自建整理",
+        "retrieved": "2026-11-07",
+        "word_count": 1379,
+        "topics": [
+            "尺寸链",
+            "封闭环",
+            "增环与减环",
+            "极值法计算",
+            "封闭尺寸链"
+        ]
+    },
+    {
+        "doc_id": "DEPTH-JIEJIAO",
+        "title": "截交线求法（平面与圆柱、圆锥、球相交的判据与作图）",
+        "category": "参考资料",
+        "role": "authority",
+        "source": "依据 GB/T 4458.1—2002《机械制图 图样画法 视图》与公开教材所述画法几何原理自撰",
+        "license": "自建整理",
+        "retrieved": "2026-11-07",
+        "word_count": 1411,
+        "topics": [
+            "截交线",
+            "圆柱截交",
+            "圆锥截交",
+            "球面截交",
+            "共有点三步法"
+        ]
+    },
+    {
+        "doc_id": "DEPTH-LINGJIAN",
+        "title": "读零件图（四类典型零件的表达方案与读图五步法）",
+        "category": "参考资料",
+        "role": "procedure",
+        "source": "依据 GB/T 131—2006《表面结构的表示法》、GB/T 1182—2018《几何公差标注》、GB/T 1800.1—2020《线性尺寸公差 ISO 代号体系》与公开教材所述读图方法自撰",
+        "license": "自建整理",
+        "retrieved": "2026-11-07",
+        "word_count": 1499,
+        "topics": [
+            "读零件图",
+            "四类典型零件",
+            "尺寸基准",
+            "技术要求识读"
+        ]
+    },
+    {
+        "doc_id": "DEPTH-QIUJIAO",
+        "title": "表面结构与几何公差的识读（Ra 数值、框格读法与最大实体要求）",
+        "category": "参考资料",
+        "role": "authority",
+        "source": "依据 GB/T 131—2006《表面结构的表示法》、GB/T 1182—2018《几何公差标注》、GB/T 1184—1996《未注公差值》与公开教材所述识读方法自撰",
+        "license": "自建整理",
+        "retrieved": "2026-11-07",
+        "word_count": 1499,
+        "topics": [
+            "表面结构识读",
+            "Ra 数值序列",
+            "几何公差框格",
+            "最大实体要求"
+        ]
+    },
+    {
+        "doc_id": "DEPTH-XIANGGUAN",
+        "title": "相贯线求法（表面取点法、辅助平面法、简化画法与常见错误）",
+        "category": "参考资料",
+        "role": "authority",
+        "source": "依据 GB/T 4458.1—2002《机械制图 图样画法 视图》与公开教材所述画法几何原理自撰",
+        "license": "自建整理",
+        "retrieved": "2026-11-07",
+        "word_count": 1396,
+        "topics": [
+            "相贯线",
+            "表面取点法",
+            "辅助平面法",
+            "相贯线简化画法",
+            "可见性判断"
+        ]
+    },
+    {
+        "doc_id": "DEPTH-ZHUANGPEI",
+        "title": "读装配图与拆画零件图（五项内容、特殊表达与拆画步骤）",
+        "category": "参考资料",
+        "role": "procedure",
+        "source": "依据 GB/T 4458.2—2003《装配图中零、部件序号及其编排方法》、GB/T 10609.2—2009《明细栏》与公开教材所述拆画方法自撰",
+        "license": "自建整理",
+        "retrieved": "2026-11-07",
+        "word_count": 1430,
+        "topics": [
+            "读装配图",
+            "装配图特殊表达方法",
+            "拆卸画法",
+            "拆画零件图"
+        ]
+    },
+    {
+        "doc_id": "STD-JIANLIANJIE",
+        "title": "键连接与销连接（平键标记、键槽画法、装配画法与销标记）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "依据 GB/T 1096—2003《普通型 平键》、GB/T 1095—2003《平键 键槽的剖面尺寸》、GB/T 117—2000《圆锥销》、GB/T 119.1—2000《圆柱销 不淬硬钢和奥氏体不锈钢》自撰",
+        "license": "自建整理",
+        "retrieved": "2026-11-07",
+        "word_count": 1165,
+        "topics": [
+            "平键标记",
+            "键槽画法",
+            "键连接装配画法",
+            "销连接"
+        ]
+    },
+    {
+        "doc_id": "STD-ZHOUCHENG",
+        "title": "滚动轴承（代号含义、内径规则、剖视中的规定画法与简化画法）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "依据 GB/T 4459.7—2017《机械制图 滚动轴承表示法》与 GB/T 276《滚动轴承 深沟球轴承 外形尺寸》等轴承尺寸标准自撰",
+        "license": "自建整理",
+        "retrieved": "2026-11-07",
+        "word_count": 1368,
+        "topics": [
+            "滚动轴承代号",
+            "内径代号",
+            "滚动轴承规定画法",
+            "滚动轴承简化画法"
+        ]
+    },
+    {
+        "doc_id": "STD-ZHONGXINKONG",
+        "title": "中心孔与退刀槽、越程槽（型式、标记、图样表示与标注）",
+        "category": "参考资料",
+        "role": "standard",
+        "source": "依据 GB/T 6403.4—2008《60°中心孔》、GB/T 6403.5—2008《砂轮越程槽》、GB/T 3—1997《普通螺纹收尾、肩距、退刀槽和倒角》、GB/T 4459.5—1999《机械制图 中心孔表示法》自撰",
+        "license": "自建整理",
+        "retrieved": "2026-11-07",
+        "word_count": 1461,
+        "topics": [
+            "中心孔型式",
+            "中心孔标记",
+            "退刀槽",
+            "越程槽"
+        ]
+    },
+    {
+        "doc_id": "DEPTH-CHICUNLIAN-2",
+        "title": "尺寸链算例（五环零件尺寸链与装配尺寸链，逐步计算并验算）",
+        "category": "参考资料",
+        "role": "procedure",
+        "source": "依据 GB/T 1800.1—2020《线性尺寸公差 ISO 代号体系 第1部分：公差、偏差和配合的基础》、GB/T 4458.4—2003《机械制图 尺寸注法》与公开教材所述尺寸链极值法自撰",
+        "license": "自建整理",
+        "retrieved": "2026-11-07",
+        "word_count": 1145,
+        "topics": [
+            "尺寸链算例",
+            "封闭环极限尺寸",
+            "装配尺寸链",
+            "极值法验算"
+        ]
+    }
+]

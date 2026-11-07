@@ -1,0 +1,42 @@
+{
+  "ids.py": "\"\"\"统一 ID 生成器。沿用原项目的可读前缀风格。\"\"\"\n\nfrom __future__ import annotations\n\nimport secrets\nimport time\nfrom typing import Dict\n\n_PREFIX_MAP: Dict[str, str] = {\n    \"document\": \"doc\",\n    \"chunk\": \"chk\",\n    \"parent\": \"par\",\n    \"conversation\": \"conv\",\n    \"message\": \"msg\",\n    \"citation\": \"cit\",\n    \"job\": \"job\",\n}\n\n\ndef new_id(kind: str) -> str:\n    \"\"\"生成带语义前缀的唯一 ID，例如 doc_9f3c2a1b8e7d。\"\"\"\n    prefix = _PREFIX_MAP.get(kind, kind)\n    stamp = format(int(time.time() * 1000) % 0xFFFFFFFFFF, \"010x\")\n    rand = secrets.token_hex(4)\n    return f\"{prefix}_{stamp}{rand}\"\n\n\ndef request_id() -> str:\n    \"\"\"用于响应信封与日志关联。\"\"\"\n    return f\"req_{secrets.token_hex(8)}\"\n",
+  "terms_count": 126,
+  "terms_sample": [
+    {
+      "zh": "晶体",
+      "en": "crystal",
+      "definition": "组成晶体的原子、离子、分子等质点在空间呈规则排列（长程序）的固态物质。固态金属与合金大都是晶体。",
+      "refs": [
+        "《教材》实验一 · 二、实验原理"
+      ]
+    },
+    {
+      "zh": "非晶体",
+      "en": "amorphous solid",
+      "definition": "质点除与其最相近者外基本无规则堆积（短程序）的固态物质。与晶体的最本质差别在于有无长程序。",
+      "refs": [
+        "《教材》实验一 · 二、实验原理"
+      ]
+    },
+    {
+      "zh": "空间点阵",
+      "en": "space lattice",
+      "definition": "一组按连接其中任何两点的矢量进行平移后而能复原的点的重复排列。可分解为各组平行的直线点阵或平面点阵，并可划分成并置的平行六面体单位。",
+      "refs": [
+        "《教材》实验一 · 二、实验原理"
+      ],
+      "aliases": [
+        "点阵"
+      ]
+    }
+  ],
+  "terms_keys": [
+    "aliases",
+    "definition",
+    "en",
+    "refs",
+    "zh"
+  ],
+  "ParentChunk": "class ParentChunk:\n    \"\"\"章节级父块：提供上下文与溯源，不直接参与向量检索。\"\"\"\n\n    id: str\n    parent_key: str\n    document_id: str\n    section_id: str\n    section_title: str\n    section_path: List[str]\n    level: int\n    preview: str\n    page_start: Optional[int]\n    page_end: Optional[int]\n    child_count: int = 0\n\n",
+  "ChildChunk": "class ChildChunk:\n    \"\"\"检索子块：真正写入向量库的单元。\"\"\"\n\n    id: str\n    chunk_id: str\n    document_id: str\n    parent_key: str\n    section_title: str\n    section_path: List[str]\n    content: str\n    page_start: Optional[int]\n    page_end: Optional[int]\n    chunk_index: int\n    index_in_parent: int\n    token_count: int\n    # 版面解析产出的截图（URL 列表）。随段落一起检索返回，让答案能带上原文配图。\n    images: List[str] = field(default_factory=list)\n\n"
+}

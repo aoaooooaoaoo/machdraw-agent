@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1081 651" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-ZHOUDUCE-ZHENGDENG-t FIG2-ZHOUDUCE-ZHENGDENG-d" class="fig-svg">
+  <title id="FIG2-ZHOUDUCE-ZHENGDENG-t">正等轴测图的轴间角与长方体三步画法</title>
+  <desc id="FIG2-ZHOUDUCE-ZHENGDENG-d">轴间角均为 120°，轴向伸缩系数 p=q=r≈0.82（简化取 1）；长方体按“定底面 → 竖高度 → 完成”三步画出。</desc>
+  <defs>
+  <pattern id="FIG2-ZHOUDUCE-ZHENGDENG__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-ZHENGDENG__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-ZHENGDENG__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-ZHENGDENG__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-ZHENGDENG__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-ZHENGDENG__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-ZHOUDUCE-ZHENGDENG__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-ZHOUDUCE-ZHENGDENG__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-ZHOUDUCE-ZHENGDENG__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-ZHOUDUCE-ZHENGDENG__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-ZHOUDUCE-ZHENGDENG__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-ZHOUDUCE-ZHENGDENG__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-ZHOUDUCE-ZHENGDENG__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-ZHOUDUCE-ZHENGDENG__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-1  正等轴测图的形成与画法（长方体 60×40×30）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">轴测轴三根互成 120°；轴向尺寸按 1:1 量取（简化系数），斜线不量取。</text>
+    <line x1="250" y1="400" x2="120.1" y2="475" stroke="currentColor" stroke-width="2"/>
+    <line x1="250" y1="400" x2="379.9" y2="475" stroke="currentColor" stroke-width="2"/>
+    <line x1="250" y1="400" x2="250" y2="250" stroke="currentColor" stroke-width="2"/>
+    <path d="M289.84,423 L288.25,425.56 L286.49,428 L284.58,430.33 L282.53,432.53 L280.33,434.58 L278,436.49 L275.56,438.25 L273,439.84 L270.35,441.26 L267.6,442.5 L264.79,443.56 L261.91,444.43 L258.97,445.12 L256,445.61 L253.01,445.9 L250,446 L246.99,445.9 L244,445.61 L241.03,445.12 L238.09,444.43 L235.21,443.56 L232.4,442.5 L229.65,441.26 L227,439.84 L224.44,438.25 L222,436.49 L219.67,434.58 L217.47,432.53 L215.42,430.33 L213.51,428 L211.75,425.56 L210.16,423" stroke="#2563eb" stroke-width="0.8" fill="none"/>
+    <path d="M210.16,423 L208.74,420.35 L207.5,417.6 L206.44,414.79 L205.57,411.91 L204.88,408.97 L204.39,406 L204.1,403.01 L204,400 L204.1,396.99 L204.39,394 L204.88,391.03 L205.57,388.09 L206.44,385.21 L207.5,382.4 L208.74,379.65 L210.16,377 L211.75,374.44 L213.51,372 L215.42,369.67 L217.47,367.47 L219.67,365.42 L222,363.51 L224.44,361.75 L227,360.16 L229.65,358.74 L232.4,357.5 L235.21,356.44 L238.09,355.57 L241.03,354.88 L244,354.39 L246.99,354.1 L250,354" stroke="#2563eb" stroke-width="0.8" fill="none"/>
+    <path d="M250,354 L253.01,354.1 L256,354.39 L258.97,354.88 L261.91,355.57 L264.79,356.44 L267.6,357.5 L270.35,358.74 L273,360.16 L275.56,361.75 L278,363.51 L280.33,365.42 L282.53,367.47 L284.58,369.67 L286.49,372 L288.25,374.44 L289.84,377 L291.26,379.65 L292.5,382.4 L293.56,385.21 L294.43,388.09 L295.12,391.03 L295.61,394 L295.9,396.99 L296,400 L295.9,403.01 L295.61,406 L295.12,408.97 L294.43,411.91 L293.56,414.79 L292.5,417.6 L291.26,420.35 L289.84,423" stroke="#2563eb" stroke-width="0.8" fill="none"/>
+    <text x="250" y="466" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">120°</text>
+    <text x="196.31" y="373" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">120°</text>
+    <text x="303.69" y="373" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">120°</text>
+    <text x="114.1" y="493" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">X</text>
+    <text x="385.9" y="493" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">Y</text>
+    <text x="250" y="240" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">Z</text>
+    <text x="240" y="420" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">O</text>
+    <text x="250" y="200" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">轴测轴与轴间角</text>
+    <text x="570" y="392" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">① 定底面</text>
+    <line x1="600" y1="470" x2="509.07" y2="522.5" stroke="#6b7280" stroke-width="0.8"/>
+    <line x1="600" y1="470" x2="660.62" y2="505" stroke="#6b7280" stroke-width="0.8"/>
+    <path d="M600,470 L509.07,522.5 L569.69,557.5 L660.62,505 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="770" y="392" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">② 竖高度</text>
+    <path d="M800,470 L709.07,522.5 L769.69,557.5 L860.62,505 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="800" y1="470" x2="800" y2="417.5" stroke="currentColor" stroke-width="2"/>
+    <line x1="709.07" y1="522.5" x2="709.07" y2="470" stroke="currentColor" stroke-width="2"/>
+    <line x1="769.69" y1="557.5" x2="769.69" y2="505" stroke="currentColor" stroke-width="2"/>
+    <line x1="860.62" y1="505" x2="860.62" y2="452.5" stroke="currentColor" stroke-width="2"/>
+    <text x="970" y="392" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">③ 完成</text>
+    <path d="M1000.00,470.00 L909.07,522.50 M909.07,522.50 L969.69,557.50 M969.69,557.50 L1060.62,505.00 M1060.62,505.00 L1000.00,470.00 M1000.00,417.50 L909.07,470.00 M1060.62,452.50 L1000.00,417.50 M1000.00,470.00 L1000.00,417.50 M909.07,522.50 L909.07,470.00 M1060.62,505.00 L1060.62,452.50" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="954.53" y="496.25" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280" dy="16">60</text>
+    <text x="1030.31" y="487.5" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280" dx="-8" dy="12">40</text>
+    <text x="1000" y="443.75" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280" dx="-10">30</text>
+    <text x="40" y="566" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 定底面：沿 X、Y 方向按 1:1 量出长 60、宽 40，得底面菱形（轴测图里矩形画成平行四边形）。</text>
+    <text x="40" y="587" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 竖高度：从底面四个顶点向上引垂线，量高 30。</text>
+    <text x="40" y="608" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 完成：连出顶面平行线，只画可见的 9 条棱 —— 被挡住的那个角（后下角）的 3 条棱不画，也不画虚线。</text>
+    <text x="40" y="629" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">口诀：轴向尺寸直接量，非轴向尺寸不能量（要按坐标求出两端点再连线）。</text>
+  </g>
+</svg>

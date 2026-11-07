@@ -1,0 +1,56 @@
+{"id":"P01","domain":"in","q":"三视图的投影规律是什么？","expect_docs":["视图与三视图"]}
+{"id":"P02","domain":"in","q":"俯视图和左视图应该放在什么位置？","expect_docs":["视图与三视图"]}
+{"id":"P03","domain":"in","q":"长对正高平齐宽相等分别对应哪两个视图？","expect_docs":["视图与三视图"]}
+{"id":"P04","domain":"in","q":"第一角投影法是怎么规定的？","expect_docs":["视图与三视图"]}
+{"id":"P05","domain":"in","q":"粗实线用来画什么？","expect_docs":["图线"]}
+{"id":"P06","domain":"in","q":"虚线在什么情况下可以省略？","expect_docs":["图线"]}
+{"id":"P07","domain":"in","q":"细点画线画轴线时两端要超出轮廓线多少？","expect_docs":["图线"]}
+{"id":"P08","domain":"in","q":"图线的宽度系列有哪些，粗线细线比例多少？","expect_docs":["图线"]}
+{"id":"P09","domain":"in","q":"剖视图的概念是什么？","expect_docs":["剖视图与断面图"]}
+{"id":"P10","domain":"in","q":"半剖视图以什么为分界？适用什么场合？","expect_docs":["剖视图与断面图"]}
+{"id":"P11","domain":"in","q":"局部剖视图用什么线分界？","expect_docs":["剖视图与断面图"]}
+{"id":"P12","domain":"in","q":"金属材料的剖面线怎么画，方向和间距？","expect_docs":["剖视图与断面图"]}
+{"id":"P13","domain":"in","q":"肋板纵剖为什么可以不画剖面线？","expect_docs":["剖视图与断面图"]}
+{"id":"P14","domain":"in","q":"剖视图和断面图有什么区别？","expect_docs":["剖视图与断面图"]}
+{"id":"P15","domain":"in","q":"尺寸标注的基本规则有哪些？","expect_docs":["尺寸注法"]}
+{"id":"P16","domain":"in","q":"为什么尺寸链不能标成封闭的？","expect_docs":["尺寸注法"]}
+{"id":"P17","domain":"in","q":"直径和半径的符号怎么标？球面呢？","expect_docs":["尺寸注法"]}
+{"id":"P18","domain":"in","q":"C2 是什么意思？","expect_docs":["尺寸注法"]}
+{"id":"P19","domain":"in","q":"尺寸数字在垂直方向应该朝哪边？","expect_docs":["尺寸注法"]}
+{"id":"P20","domain":"in","q":"尺寸界线应该从哪里引出来？","expect_docs":["尺寸注法"]}
+
+{"id":"P21","domain":"out","q":"铝合金焊接工艺参数怎么确定？"}
+{"id":"P22","domain":"out","q":"数控加工中心的G代码怎么编程？"}
+{"id":"P23","domain":"out","q":"45钢淬火温度选多少合适？"}
+{"id":"P24","domain":"out","q":"3D打印用PLA还是ABS好？"}
+{"id":"P25","domain":"out","q":"减速器应该用什么牌号的润滑油？"}
+{"id":"P26","domain":"out","q":"Python怎么用pandas读取Excel？"}
+{"id":"P27","domain":"out","q":"考研数学要复习哪些内容？"}
+
+{"id":"P28","domain":"out","q":"焊接符号在图纸上怎么标注？"}
+{"id":"P29","domain":"near","q":"表面粗糙度Ra和加工成本有什么关系？"}
+{"id":"P30","domain":"out","q":"液压系统原理图的符号怎么看？"}
+{"id":"P31","domain":"out","q":"电气接线图里的线号怎么标？"}
+{"id":"P32","domain":"out","q":"建筑立面图和机械零件图有什么区别？"}
+{"id": "P33", "domain": "in", "q": "平键的标记怎么写？", "expect_docs": ["键连接"]}
+{"id": "P34", "domain": "in", "q": "轴上键槽和轮毂键槽分别怎么画？", "expect_docs": ["键连接"]}
+{"id": "P35", "domain": "in", "q": "滚动轴承的代号怎么看，内径代号怎么换算？", "expect_docs": ["滚动轴承"]}
+{"id": "P36", "domain": "in", "q": "轴承 6208 的内径是多少？", "expect_docs": ["滚动轴承"]}
+{"id": "P37", "domain": "in", "q": "中心孔的标记 A2 是什么意思？", "expect_docs": ["中心孔"]}
+{"id": "P38", "domain": "in", "q": "退刀槽 2×1 表示什么？", "expect_docs": ["中心孔"]}
+{"id": "P39", "domain": "in", "q": "尺寸链里的封闭环怎么确定？", "expect_docs": ["尺寸链"]}
+{"id": "P40", "domain": "in", "q": "装配图的明细栏应该写什么？", "expect_docs": ["装配图", "读装配图"]}
+{"id": "P41", "domain": "in", "q": "装配图有哪些特殊表达方法？", "expect_docs": ["装配图", "读装配图"]}
+{"id": "P42", "domain": "in", "q": "Ra 1.6 对应什么加工方法？", "expect_docs": ["表面结构"]}
+{"id": "P43", "domain": "in", "q": "几何公差框格里每一格代表什么？", "expect_docs": ["表面结构", "几何公差"]}
+{"id": "P44", "domain": "in", "q": "螺纹终止线用粗实线还是细实线？", "expect_docs": ["螺纹"]}
+{"id": "P45", "domain": "in", "q": "齿轮的分度圆用什么线画？", "expect_docs": ["齿轮"]}
+{"id": "P46", "domain": "in", "q": "六个基本视图怎么配置？", "expect_docs": ["视图"]}
+{"id": "P47", "domain": "in", "q": "局部放大图怎么标注？", "expect_docs": ["视图", "简化"]}
+{"id": "P48", "domain": "in", "q": "相贯线的简化画法在什么条件下可以用？", "expect_docs": ["相贯线"]}
+{"id": "P49", "domain": "in", "q": "截交线求共有点的步骤是什么？", "expect_docs": ["截交线"]}
+{"id": "P50", "domain": "in", "q": "读零件图应该按什么顺序看？", "expect_docs": ["零件图"]}
+{"id": "P51", "domain": "out", "q": "PLC 梯形图怎么编程？"}
+{"id": "P52", "domain": "out", "q": "液压泵的流量怎么选型？"}
+{"id": "P53", "domain": "out", "q": "金属材料的热处理回火温度怎么定？"}
+{"id": "P54", "domain": "out", "q": "有限元分析里网格划得越细越好吗？"}

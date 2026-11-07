@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 887 540" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-CHICUN-JIZHUN-t FIG2-CHICUN-JIZHUN-d" class="fig-svg">
+  <title id="FIG2-CHICUN-JIZHUN-t">尺寸基准：设计基准与工艺基准</title>
+  <desc id="FIG2-CHICUN-JIZHUN-d">同一零件两种标注方案：从设计基准出发与从工艺基准出发；同一方向的定位尺寸必须从同一个基准出发。</desc>
+  <defs>
+  <pattern id="FIG2-CHICUN-JIZHUN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-CHICUN-JIZHUN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-CHICUN-JIZHUN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-CHICUN-JIZHUN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-CHICUN-JIZHUN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-CHICUN-JIZHUN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-CHICUN-JIZHUN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-CHICUN-JIZHUN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-CHICUN-JIZHUN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-CHICUN-JIZHUN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-CHICUN-JIZHUN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-CHICUN-JIZHUN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-CHICUN-JIZHUN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-CHICUN-JIZHUN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-12  尺寸基准（设计基准 vs 工艺基准）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">零件形状相同，只是 180 与 60 两个定位尺寸的出发点不同。</text>
+    <text x="240" y="160" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb" font-weight="600">① 从设计基准出发</text>
+    <path d="M120,220 L180,220 L180,200 L360,200 L360,260 L120,260 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M360,269 L354.4,276 L365.6,276 Z" stroke="none" fill="#2563eb"/>
+    <text x="360" y="296" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">设计基准（右端面）</text>
+    <line x1="180" y1="330" x2="360" y2="330" stroke="#2563eb" stroke-width="0.8" marker-start="url(#FIG2-CHICUN-JIZHUN__ar-blue)" marker-end="url(#FIG2-CHICUN-JIZHUN__ar-blue)"/>
+    <text x="270" y="325" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">180</text>
+    <line x1="180" y1="263" x2="180" y2="335" stroke="#2563eb" stroke-width="0.8"/>
+    <line x1="360" y1="263" x2="360" y2="335" stroke="#2563eb" stroke-width="0.8"/>
+    <line x1="120" y1="168" x2="180" y2="168" stroke="#2563eb" stroke-width="0.8" marker-start="url(#FIG2-CHICUN-JIZHUN__ar-blue)" marker-end="url(#FIG2-CHICUN-JIZHUN__ar-blue)"/>
+    <text x="150" y="163" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">60</text>
+    <line x1="120" y1="197" x2="120" y2="163" stroke="#2563eb" stroke-width="0.8"/>
+    <line x1="180" y1="217" x2="180" y2="163" stroke="#2563eb" stroke-width="0.8"/>
+    <text x="240" y="386" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">定位尺寸都从右端面量起 → 与设计要求一致</text>
+    <text x="740" y="160" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#ea580c" font-weight="600">② 从工艺基准出发</text>
+    <path d="M620,220 L680,220 L680,200 L860,200 L860,260 L620,260 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M620,269 L614.4,276 L625.6,276 Z" stroke="none" fill="#ea580c"/>
+    <text x="626" y="296" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#ea580c">工艺基准（左端面）</text>
+    <line x1="620" y1="330" x2="800" y2="330" stroke="#ea580c" stroke-width="0.8" marker-start="url(#FIG2-CHICUN-JIZHUN__ar-orange)" marker-end="url(#FIG2-CHICUN-JIZHUN__ar-orange)"/>
+    <text x="710" y="325" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#ea580c">180</text>
+    <line x1="620" y1="263" x2="620" y2="335" stroke="#ea580c" stroke-width="0.8"/>
+    <line x1="800" y1="263" x2="800" y2="335" stroke="#ea580c" stroke-width="0.8"/>
+    <line x1="800" y1="168" x2="860" y2="168" stroke="#ea580c" stroke-width="0.8" marker-start="url(#FIG2-CHICUN-JIZHUN__ar-orange)" marker-end="url(#FIG2-CHICUN-JIZHUN__ar-orange)"/>
+    <text x="830" y="163" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#ea580c">60</text>
+    <line x1="800" y1="197" x2="800" y2="163" stroke="#ea580c" stroke-width="0.8"/>
+    <line x1="860" y1="217" x2="860" y2="163" stroke="#ea580c" stroke-width="0.8"/>
+    <text x="740" y="386" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#ea580c">定位尺寸改用左端面量起 → 便于装夹与测量</text>
+    <text x="40" y="430" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 尺寸基准：标注尺寸时用来确定尺寸位置的几何元素（面、线、点）。每个方向至少有一个主要基准。</text>
+    <text x="40" y="452" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 设计基准：设计时用来确定零件在部件中位置的面（装配面、端面、轴线）。</text>
+    <text x="40" y="474" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 工艺基准：加工、测量、装夹时使用的基准（端面、中心孔、工艺凸台）。</text>
+    <text x="40" y="496" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 标注原则：同一方向的定位尺寸必须从同一个基准出发；设计基准与工艺基准尽量重合，否则会产生基准不重合误差。</text>
+    <text x="40" y="518" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">⑤ 易错：把 180 从左端标、60 从右端标 —— 尺寸基准不统一，读图和加工都会出错。</text>
+  </g>
+</svg>

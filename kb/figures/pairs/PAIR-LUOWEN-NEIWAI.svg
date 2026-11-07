@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="PAIR-LUOWEN-NEIWAI-t PAIR-LUOWEN-NEIWAI-d" class="fig-svg pair-svg" data-pair-id="PAIR-LUOWEN-NEIWAI">
+  <title id="PAIR-LUOWEN-NEIWAI-t">外螺纹 与 内螺纹（剖视）画法</title>
+  <desc id="PAIR-LUOWEN-NEIWAI-d">同样按比例画：粗细实线在内、外螺纹里正好互换 | A：外螺纹（M40）；B：内螺纹剖视（M40）</desc>
+  <defs>
+  <pattern id="hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <marker id="ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#1f2937"/>
+  </marker>
+  <marker id="ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/>
+  </marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+  <text x="380" y="23" font-size="13.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">外螺纹 与 内螺纹（剖视）画法</text>
+  <text x="380" y="41" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">同样按比例画：粗细实线在内、外螺纹里正好互换</text>
+  <g data-panel="a" data-caption="外螺纹（M40）">
+    <circle cx="32" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="32" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">A</text>
+    <path d="M86,150 L250,150" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M86,230 L250,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M86,150 L86,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M250,150 L250,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M86,156 L250,156" stroke="#1f2937" stroke-width="0.8" fill="none"/>
+    <path d="M86,224 L250,224" stroke="#1f2937" stroke-width="0.8" fill="none"/>
+    <line x1="78" y1="190" x2="258" y2="190" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="289.04" y1="142.88" x2="200" y2="150" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="200" cy="150" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="300" cy="142" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="300" y="145.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="289.17" y1="240.05" x2="200" y2="224" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="200" cy="224" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="300" cy="242" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="300" y="245.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="289.03" y1="195.23" x2="215" y2="190" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="215" cy="190" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="300" cy="196" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="300" y="199.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="190" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">A：外螺纹（M40）</text>
+  <g data-panel="b" data-caption="内螺纹剖视（M40）">
+    <circle cx="412" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="412" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">B</text>
+    <path d="M466,150 L610,150 L610,169.6 L466,169.6 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M466,210.4 L610,210.4 L610,230 L466,230 Z" fill="url(#hatch45)" stroke="none"/>
+    <path d="M466,150 L610,150" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M466,230 L610,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M466,150 L466,169.6" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M466,210.4 L466,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M610,150 L610,169.6" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M610,210.4 L610,230" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M466,169.6 L610,169.6" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M466,210.4 L610,210.4" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M466,166 L610,166" stroke="#1f2937" stroke-width="0.8" fill="none"/>
+    <path d="M466,214 L610,214" stroke="#1f2937" stroke-width="0.8" fill="none"/>
+    <line x1="458" y1="190" x2="618" y2="190" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="669.4" y1="144.93" x2="580" y2="169.6" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="580" cy="169.6" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="680" cy="142" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="680" y="145.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="669.34" y1="239.29" x2="570" y2="214" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="570" cy="214" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="680" cy="242" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="680" y="245.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="670.03" y1="200.65" x2="620" y2="224" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="620" cy="224" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="680" cy="196" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="680" y="199.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="570" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">B：内螺纹剖视（M40）</text>
+  <line x1="380" y1="76" x2="380" y2="314" stroke="#d7dde6" stroke-width="1"/>
+  <line x1="20" y1="318" x2="740" y2="318" stroke="#d7dde6" stroke-width="1"/>
+  <g data-legend="1">
+    <text x="20" y="340" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="1">① 牙顶线型不同：A 外螺纹的牙顶在大径 d 上，画粗实线；B 内螺纹的牙顶在小径 D₁ 上，画粗实线</text>
+    <text x="20" y="360" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="2">② 牙底线型不同：A 牙底（小径 d₁≈0.85d）画细实线；B 牙底（大径 D）画细实线 —— 两图粗细线正好互换</text>
+    <text x="20" y="380" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="3">③ 剖面线：A 是实心杆，不剖、无剖面线；B 剖面线画到牙顶粗实线为止，不越过牙底细实线</text>
+    <text x="20" y="400" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280" data-diff="0">注：端视图：外螺纹大径整圆粗实线、小径约 3/4 圈细实线；内螺纹相反（小径粗、大径细 3/4 圈）</text>
+  </g>
+  </g>
+</svg>

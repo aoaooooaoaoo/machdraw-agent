@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 941 582" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-LIUGESHITU-t FIG-LIUGESHITU-d" class="fig-svg">
+  <title id="FIG-LIUGESHITU-t">六个基本视图的配置（第一角）</title>
+  <desc id="FIG-LIUGESHITU-d">第一角画法下六个基本视图的展开位置：仰视图在主视图上方，俯视图在下方，右视图在左方，左视图在右方，后视图在左视图右方。</desc>
+  <defs>
+  <pattern id="FIG-LIUGESHITU__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LIUGESHITU__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LIUGESHITU__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LIUGESHITU__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LIUGESHITU__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-LIUGESHITU__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-LIUGESHITU__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 4  六个基本视图的配置（第一角画法）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">形体 80×40×50（长×宽×高），中间 Ø20 通孔；k = 2 px/mm。</text>
+    <rect x="300" y="180" width="160" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="380" cy="230" r="20" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="380" y="172" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">主视图</text>
+    <rect x="300" y="300" width="160" height="80" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="360" y1="300" x2="360" y2="380" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="400" y1="300" x2="400" y2="380" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="380" y="400" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">俯视图</text>
+    <rect x="300" y="70" width="160" height="80" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="360" y1="70" x2="360" y2="150" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="400" y1="70" x2="400" y2="150" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="290" y="115" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">仰视图</text>
+    <rect x="480" y="180" width="80" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="480" y1="220" x2="560" y2="220" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="480" y1="240" x2="560" y2="240" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="520" y="172" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">左视图</text>
+    <rect x="180" y="180" width="80" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="180" y1="220" x2="260" y2="220" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="180" y1="240" x2="260" y2="240" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="220" y="172" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">右视图</text>
+    <rect x="580" y="180" width="160" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="660" cy="230" r="20" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="660" y="172" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">后视图</text>
+    <text x="40" y="470" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">长对正：主、俯、仰三个视图左右对齐（同一 X 范围）。</text>
+    <text x="40" y="494" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">高平齐：主、左、右、后四个视图上下齐平（同一 Z 范围）。</text>
+    <text x="40" y="518" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">宽相等：俯、仰、左、右四个视图的宽都是同一 Y 范围；画图时常用 45° 辅助线把宽从俯视图搬到左视图。</text>
+    <text x="40" y="560" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">记忆口诀：绕主视图“上下左右”依次是仰、俯、右、左；后视图放在左视图的右边。六个基本视图一律不画虚线以外的多余线，也不标注“视图名称”以外的字样（本图为教学加注）。</text>
+  </g>
+</svg>

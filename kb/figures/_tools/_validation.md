@@ -1,0 +1,17 @@
+| 图号 | 文件 | viewBox | 尺寸 (px) | 文件大小 | 图元 | 文字 | 校验 |
+|---|---|---|---|---|---|---|---|
+| FIG-LINETYPE | `FIG-LINETYPE.svg` | 0 0 979 589 | 979×589 | 10.5 KB | 7 | 28 | ✅ |
+| FIG-SANSHITU-BASE | `FIG-SANSHITU-BASE.svg` | 0 0 705 686 | 705×686 | 9.8 KB | 32 | 15 | ✅ |
+| FIG-SANSHITU-EXAMPLE | `FIG-SANSHITU-EXAMPLE.svg` | 0 0 918 682 | 918×682 | 10.6 KB | 34 | 17 | ✅ |
+| FIG-LIUGESHITU | `FIG-LIUGESHITU.svg` | 0 0 941 582 | 941×582 | 7.7 KB | 16 | 12 | ✅ |
+| FIG-POUSHI-QUAN | `FIG-POUSHI-QUAN.svg` | 0 0 982 647 | 982×647 | 8.8 KB | 22 | 14 | ✅ |
+| FIG-POUSHI-BAN | `FIG-POUSHI-BAN.svg` | 0 0 679 588 | 679×588 | 7.8 KB | 13 | 14 | ✅ |
+| FIG-POUSHI-JUBU | `FIG-POUSHI-JUBU.svg` | 0 0 884 511 | 884×511 | 9.8 KB | 16 | 12 | ✅ |
+| FIG-DUANMIAN | `FIG-DUANMIAN.svg` | 0 0 1003 587 | 1003×587 | 11.3 KB | 7 | 16 | ✅ |
+| FIG-POUMAINXIAN | `FIG-POUMAINXIAN.svg` | 0 0 623 494 | 623×494 | 6.5 KB | 6 | 10 | ✅ |
+| FIG-GONGCHA-DAI | `FIG-GONGCHA-DAI.svg` | 0 0 959 662 | 959×662 | 9.1 KB | 12 | 24 | ✅ |
+| FIG-YUANHU-LIANJIE | `FIG-YUANHU-LIANJIE.svg` | 0 0 849 574 | 849×574 | 8.8 KB | 19 | 15 | ✅ |
+| FIG-LUOWEN | `FIG-LUOWEN.svg` | 0 0 1015 506 | 1015×506 | 10.5 KB | 31 | 15 | ✅ |
+| FIG-BIAOMIAN | `FIG-BIAOMIAN.svg` | 0 0 989 636 | 989×636 | 9.9 KB | 10 | 33 | ✅ |
+| FIG-CHICUN-SIYAOSU | `FIG-CHICUN-SIYAOSU.svg` | 0 0 923 610 | 923×610 | 9.2 KB | 16 | 21 | ✅ |
+| FIG-GONGCHA-PEIJIAN | `FIG-GONGCHA-PEIJIAN.svg` | 0 0 1034 614 | 1034×614 | 8.9 KB | 14 | 24 | ✅ |

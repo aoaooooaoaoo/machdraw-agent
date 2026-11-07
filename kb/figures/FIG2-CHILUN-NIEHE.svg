@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 722 518" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-CHILUN-NIEHE-t FIG2-CHILUN-NIEHE-d" class="fig-svg">
+  <title id="FIG2-CHILUN-NIEHE-t">圆柱齿轮啮合画法：啮合区的五条线</title>
+  <desc id="FIG2-CHILUN-NIEHE-d">两齿轮啮合时，分度线重合为一条细点画线；两齿顶线一条画粗实线、一条画虚线；两齿根线都画粗实线。</desc>
+  <defs>
+  <pattern id="FIG2-CHILUN-NIEHE__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-CHILUN-NIEHE__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-CHILUN-NIEHE__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-CHILUN-NIEHE__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-CHILUN-NIEHE__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-CHILUN-NIEHE__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-CHILUN-NIEHE__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-CHILUN-NIEHE__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-CHILUN-NIEHE__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-CHILUN-NIEHE__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-CHILUN-NIEHE__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-CHILUN-NIEHE__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-CHILUN-NIEHE__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-CHILUN-NIEHE__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-15  两圆柱齿轮啮合的画法（啮合区五条线）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">分度圆在图上变成一条细点画线；齿顶线一实一虚，用来表示谁在前、谁被挡住。</text>
+    <line x1="100" y1="300" x2="640" y2="300" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="120" y1="340" x2="396" y2="340" stroke="currentColor" stroke-width="2"/>
+    <line x1="120" y1="250" x2="396" y2="250" stroke="currentColor" stroke-width="2"/>
+    <line x1="348" y1="260" x2="620" y2="260" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="348" y1="350" x2="620" y2="350" stroke="currentColor" stroke-width="2"/>
+    <line x1="120" y1="250" x2="120" y2="340" stroke="currentColor" stroke-width="2"/>
+    <line x1="620" y1="260" x2="620" y2="350" stroke="currentColor" stroke-width="2"/>
+    <line x1="246" y1="216" x2="246" y2="374" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="496" y1="226" x2="496" y2="384" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="186" y="204" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">齿轮 1（主动）</text>
+    <text x="536" y="214" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">齿轮 2（从动）</text>
+    <line x1="432" y1="302" x2="462" y2="346" stroke="#7c3aed" stroke-width="0.8" marker-end="url(#FIG2-CHILUN-NIEHE__ar-violet)"/>
+    <text x="468" y="350" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed">分度线：两分度圆相切，画细点画线</text>
+    <line x1="320" y1="340" x2="270" y2="396" stroke="#16a34a" stroke-width="0.8" marker-end="url(#FIG2-CHILUN-NIEHE__ar-green)"/>
+    <text x="276" y="400" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#16a34a">齿顶线（齿轮 1）：粗实线</text>
+    <line x1="560" y1="260" x2="580" y2="216" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG2-CHILUN-NIEHE__ar-red)"/>
+    <text x="574" y="220" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#dc2626">齿顶线（齿轮 2）：虚线（被齿轮 1 挡住）</text>
+    <line x1="180" y1="250" x2="140" y2="194" stroke="#2563eb" stroke-width="0.8" marker-end="url(#FIG2-CHILUN-NIEHE__ar-blue)"/>
+    <text x="146" y="198" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">齿根线：粗实线</text>
+    <text x="40" y="430" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 啮合区共五条线：一条分度线（两齿轮分度线重合，画细点画线）+ 两条齿顶线（一粗实线、一虚线）+ 两条齿根线（都画粗实线）。</text>
+    <text x="40" y="452" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 分度线在啮合区不是两条线，而是重合为一条细点画线 —— 这是最容易画错的地方。</text>
+    <text x="40" y="474" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 齿顶线一实一虚，表示一个齿轮的齿顶可见、另一个被挡住；齿根线都画粗实线（都可见）。</text>
+    <text x="40" y="496" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 啮合区外，每个齿轮仍按单个齿轮的规定画法画（齿顶线粗实线、分度线点画线、齿根线细实线或粗实线）。</text>
+  </g>
+</svg>

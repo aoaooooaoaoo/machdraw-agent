@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 941 637" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-DIAN-SANMIAN-t FIG2-DIAN-SANMIAN-d" class="fig-svg">
+  <title id="FIG2-DIAN-SANMIAN-t">点的三面投影与展开图</title>
+  <desc id="FIG2-DIAN-SANMIAN-d">点 A 向 V、H、W 三个投影面投射得 a′、a、a″；展开后 a′a ⊥ OX（长对正）、a′a″ ⊥ OZ（高平齐）、a 到 OX 的距离等于 a″ 到 OZ 的距离（宽相等）。</desc>
+  <defs>
+  <pattern id="FIG2-DIAN-SANMIAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-DIAN-SANMIAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-DIAN-SANMIAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-DIAN-SANMIAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-DIAN-SANMIAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-DIAN-SANMIAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-DIAN-SANMIAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-DIAN-SANMIAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-DIAN-SANMIAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-DIAN-SANMIAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-DIAN-SANMIAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-DIAN-SANMIAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-DIAN-SANMIAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-DIAN-SANMIAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-4  点的三面投影（A 距 V 面 90、距 H 面 70、距 W 面 110，单位 mm）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">左：三投影面体系立体图；右：三个投影面展开后的投影图。</text>
+    <line x1="300" y1="400" x2="540" y2="400" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="300" y1="400" x2="300" y2="140" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="300" y1="400" x2="430" y2="530" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="544" y="414" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">X</text>
+    <text x="286" y="138" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">Z</text>
+    <text x="288" y="418" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">O</text>
+    <text x="438" y="526" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">45°</text>
+    <circle cx="450" cy="290" r="2.6" fill="#2563eb" stroke="none"/>
+    <text x="460" y="282" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb" font-weight="600">a′</text>
+    <circle cx="450" cy="480" r="2.6" fill="#2563eb" stroke="none"/>
+    <text x="460" y="496" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb" font-weight="600">a</text>
+    <circle cx="380" cy="290" r="2.6" fill="#2563eb" stroke="none"/>
+    <text x="370" y="282" font-size="13" font-family="system-ui, sans-serif" text-anchor="end" fill="#2563eb" font-weight="600">a″</text>
+    <line x1="450" y1="290" x2="450" y2="480" stroke="#16a34a" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="380" y1="290" x2="450" y2="290" stroke="#ea580c" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <path d="M450,480 L380,480 L380,290" stroke="#7c3aed" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <text x="375" y="390" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#16a34a">x</text>
+    <text x="288" y="345" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="#ea580c">z</text>
+    <text x="414" y="472" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed">y</text>
+    <text x="420" y="110" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">展开图（三个投影面展开到一个平面）</text>
+    <text x="620" y="170" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">投影与坐标的对应关系</text>
+    <text x="620" y="208" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">a′（正面投影 V）</text>
+    <text x="790" y="208" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#16a34a">由 x、z 确定</text>
+    <text x="620" y="242" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">a（水平投影 H）</text>
+    <text x="790" y="242" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#0f766e">由 x、y 确定</text>
+    <text x="620" y="276" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">a″（侧面投影 W）</text>
+    <text x="790" y="276" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed">由 y、z 确定</text>
+    <text x="620" y="340" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">三等规律（展开图上的三条线）</text>
+    <text x="620" y="372" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#16a34a" font-weight="600">长对正</text>
+    <text x="682" y="372" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">a′ 与 a 在同一条竖线上（x 相同）</text>
+    <text x="620" y="398" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#ea580c" font-weight="600">高平齐</text>
+    <text x="682" y="398" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">a′ 与 a″ 在同一条水平线上（z 相同）</text>
+    <text x="620" y="424" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed" font-weight="600">宽相等</text>
+    <text x="682" y="424" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">a 到 OX 的距离 = a″ 到 OZ 的距离（都是 y）</text>
+    <text x="620" y="470" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">点到投影面的距离</text>
+    <text x="628" y="496" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">到 V 面 = y　　到 H 面 = z　　到 W 面 = x</text>
+    <text x="620" y="534" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">记住：投影面的名称决定了“用哪两个坐标”。</text>
+    <text x="40" y="552" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① a′（V 面）由 x、z 定；a（H 面）由 x、y 定；a″（W 面）由 y、z 定 —— 投影面名称决定坐标组合。</text>
+    <text x="40" y="573" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 长对正：a′ 与 a 在同一条竖线上（同 x）；高平齐：a′ 与 a″ 在同一条水平线上（同 z）。</text>
+    <text x="40" y="594" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 宽相等：a 到 OX 的距离 = a″ 到 OZ 的距离（都是 y），展开图上靠 45° 线把 y 搬过来。</text>
+    <text x="40" y="615" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 画图口诀：一竖（a′a）、一横（a′a″）、一搬（a → 45° 线 → a″）。</text>
+  </g>
+</svg>

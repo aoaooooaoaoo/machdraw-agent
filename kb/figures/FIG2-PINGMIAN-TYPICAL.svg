@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 989 563" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-PINGMIAN-TYPICAL-t FIG2-PINGMIAN-TYPICAL-d" class="fig-svg">
+  <title id="FIG2-PINGMIAN-TYPICAL-t">平面的三面投影：一般位置、投影面平行、投影面垂直</title>
+  <desc id="FIG2-PINGMIAN-TYPICAL-d">一般位置平面的三投影都是类似形（缩小）；平行面有一个投影反映真形；垂直面有一个投影积聚成斜线。</desc>
+  <defs>
+  <pattern id="FIG2-PINGMIAN-TYPICAL__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-PINGMIAN-TYPICAL__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-PINGMIAN-TYPICAL__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-PINGMIAN-TYPICAL__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-PINGMIAN-TYPICAL__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-PINGMIAN-TYPICAL__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-PINGMIAN-TYPICAL__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-PINGMIAN-TYPICAL__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-PINGMIAN-TYPICAL__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-PINGMIAN-TYPICAL__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-PINGMIAN-TYPICAL__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-PINGMIAN-TYPICAL__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-PINGMIAN-TYPICAL__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-PINGMIAN-TYPICAL__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-6  平面的投影特征（三类平面对照）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">三角形 ABC 分别处于三种位置；上为 V 面投影，下为 H 面投影。</text>
+    <text x="165" y="148" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">① 一般位置平面</text>
+    <line x1="40" y1="288" x2="290" y2="288" stroke="#6b7280" stroke-width="0.8"/>
+    <text x="34" y="233" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">V</text>
+    <text x="34" y="343" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">H</text>
+    <path d="M90,218 L210,268 L142,244 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M90,308 L210,322 L142,360 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="90" y1="218" x2="90" y2="308" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="210" y1="268" x2="210" y2="322" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="142" y1="244" x2="142" y2="360" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="90" y="211" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">a′</text>
+    <text x="210" y="261" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">b′</text>
+    <text x="142" y="237" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">c′</text>
+    <text x="90" y="323" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">a</text>
+    <text x="210" y="337" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">b</text>
+    <text x="142" y="375" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">c</text>
+    <text x="170" y="392" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626">三个投影都是类似形（缩小）</text>
+    <text x="170" y="412" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">都不反映真形，也不积聚</text>
+    <text x="505" y="148" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">② 投影面平行面（水平面）</text>
+    <line x1="380" y1="288" x2="630" y2="288" stroke="#6b7280" stroke-width="0.8"/>
+    <text x="374" y="233" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">V</text>
+    <text x="374" y="343" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">H</text>
+    <path d="M430,258 L550,258 L490,258 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M430,322 L550,322 L490,322 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="430" y1="258" x2="430" y2="322" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="550" y1="258" x2="550" y2="322" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="490" y1="258" x2="490" y2="322" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="430" y="251" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">a′</text>
+    <text x="550" y="251" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">b′</text>
+    <text x="490" y="251" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">c′</text>
+    <text x="430" y="337" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">a</text>
+    <text x="550" y="337" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">b</text>
+    <text x="490" y="337" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">c</text>
+    <text x="510" y="392" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626">正面投影积聚成一条水平线</text>
+    <text x="510" y="412" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">水平投影反映真形</text>
+    <text x="845" y="148" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">③ 投影面垂直面（铅垂面）</text>
+    <line x1="720" y1="288" x2="970" y2="288" stroke="#6b7280" stroke-width="0.8"/>
+    <text x="714" y="233" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">V</text>
+    <text x="714" y="343" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">H</text>
+    <path d="M770,204 L770,268 L870,238 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M770,308 L770,358 L870,332 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="770" y1="204" x2="770" y2="308" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="770" y1="268" x2="770" y2="358" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="870" y1="238" x2="870" y2="332" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="770" y="197" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">a′</text>
+    <text x="770" y="261" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">b′</text>
+    <text x="870" y="231" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">c′</text>
+    <text x="770" y="323" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">a</text>
+    <text x="770" y="373" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">b</text>
+    <text x="870" y="347" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">c</text>
+    <text x="850" y="392" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626">水平投影积聚成一条斜线</text>
+    <text x="850" y="412" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">正面投影为类似形</text>
+    <text x="40" y="478" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 一般位置平面：三面投影都是“类似形”——形状相似但都比真形小，且不积聚。</text>
+    <text x="40" y="499" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 投影面平行面：与一个投影面平行 → 该面投影反映真形，另两个投影积聚成直线（且平行于相应投影轴）。</text>
+    <text x="40" y="520" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 投影面垂直面：与一个投影面垂直 → 该面投影积聚成一条斜线，另两个投影是类似形。</text>
+    <text x="40" y="541" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 判断口诀：先找“有没有积聚成一条线 / 有没有反映真形”，平面位置立刻定。</text>
+  </g>
+</svg>

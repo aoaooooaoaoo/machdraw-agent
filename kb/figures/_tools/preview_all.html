@@ -1,0 +1,1086 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>教学图形库总览</title><style>
+* { box-sizing: border-box; }
+body { margin: 0; padding: 18px; background: #eef2f7; color: #0f172a;
+       font-family: system-ui, -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif; }
+body.dark { background: #0b1220; color: #e2e8f0; }
+h1 { font-size: 15px; margin: 0 0 12px; font-weight: 600; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.card { background: #ffffff; border: 1px solid #e3e9f1; border-radius: 10px; padding: 8px;
+        display: flex; flex-direction: column; gap: 4px; }
+body.dark .card { background: #131c2e; border-color: #24324a; }
+.card .fid { font-size: 11px; letter-spacing: .02em; opacity: .65; font-family: ui-monospace, monospace; }
+.card .cap { font-size: 11px; line-height: 1.45; opacity: .85; }
+svg.fig-svg { width: 100%; height: auto; display: block; }
+.toolbar { position: fixed; right: 14px; top: 14px; display: flex; gap: 8px; }
+.toolbar button { font: inherit; font-size: 12px; padding: 6px 10px; border-radius: 7px;
+                  border: 1px solid #cfd9e6; background: #fff; cursor: pointer; }
+body.dark .toolbar button { background: #1c2840; color: #e2e8f0; border-color: #2c3b57; }
+.one { max-width: 1180px; margin: 0 auto; }
+</style></head><body><div class="toolbar"><button id="theme">切换深色</button></div><h1>机械制图 AI 助教 · 教学图形库（15 张自绘 SVG）</h1><div class="grid"><div class="card"><div class="fid">FIG-LINETYPE</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 979 589" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-LINETYPE-t FIG-LINETYPE-d" class="fig-svg">
+  <title id="FIG-LINETYPE-t">图线线型对照表：六种图线的线型、线宽与用途</title>
+  <desc id="FIG-LINETYPE-d">粗实线、细实线、虚线、细点画线、波浪线、双点画线画在同一张图上对照；线宽以粗实线 d 为基准，细线为 d/2。</desc>
+  <defs>
+  <pattern id="FIG-LINETYPE__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LINETYPE__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LINETYPE__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LINETYPE__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LINETYPE__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-LINETYPE__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-LINETYPE__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-LINETYPE__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-LINETYPE__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-LINETYPE__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-LINETYPE__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-LINETYPE__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-LINETYPE__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-LINETYPE__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 1  图线线型对照表（GB/T 17450、GB/T 4457.4）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">线宽关系：粗线 = d，细线 = d/2；本图取 d = 2 px（A3 图纸实际 d ≈ 0.7 mm）。</text>
+    <text x="40" y="82" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">线型（样本）</text>
+    <text x="320" y="82" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">线宽</text>
+    <text x="400" y="82" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">名称</text>
+    <text x="520" y="82" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">用途 —— 画什么线</text>
+    <line x1="40" y1="118" x2="290" y2="118" stroke="currentColor" stroke-width="2"/>
+    <text x="320" y="122" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">粗 d</text>
+    <text x="400" y="122" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">粗实线</text>
+    <text x="520" y="122" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">可见轮廓线、可见过渡线；螺纹牙顶圆</text>
+    <line x1="40" y1="182" x2="290" y2="182" stroke="currentColor" stroke-width="0.8"/>
+    <text x="320" y="186" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">细 d/2</text>
+    <text x="400" y="186" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">细实线</text>
+    <text x="520" y="186" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">尺寸线、尺寸界线、剖面线、螺纹牙底圆、引出线</text>
+    <line x1="40" y1="246" x2="290" y2="246" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="320" y="250" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">细 d/2</text>
+    <text x="400" y="250" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">虚线</text>
+    <text x="520" y="250" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">不可见轮廓线、不可见过渡线（尽量少用，能用剖视就不用虚线）</text>
+    <line x1="40" y1="310" x2="290" y2="310" stroke="currentColor" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="320" y="314" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">细 d/2</text>
+    <text x="400" y="314" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">细点画线</text>
+    <text x="520" y="314" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">轴线、对称中心线、圆的中心线</text>
+    <path d="M40,374 L42,376.56 L44,377.53 L46,376.23 L48,373.46 L50,371.03 L52,370.51 L54,372.2 L56,374.99 L58,377.06 L60,377.15 L62,375.31 L64,372.79 L66,371.19 L68,371.39 L70,373.11 L72,375.17 L74,376.31 L76,375.99 L78,374.6 L80,373.03 L82,371.89 L84,371.92 L86,373.27 L88,375.25 L90,376.69 L92,376.66 L94,375.04 L96,372.68 L98,370.93 L100,370.84 L102,372.54 L104,375.12 L106,377.15 L108,377.47 L110,375.91 L112,373.31 L114,371.12 L116,370.51 L118,371.77 L120,374.15 L122,376.34 L124,377.17 L126,376.3 L128,374.31 L130,372.34 L132,371.42 L134,371.92 L136,373.43 L138,375.04 L140,375.89 L142,375.94 L144,374.83 L146,373.05 L148,371.58 L150,371.38 L152,372.72 L154,374.96 L156,376.82 L158,377.14 L160,375.61 L162,373.02 L164,370.91 L166,370.58 L168,372.3 L170,375.06 L172,377.2 L174,377.38 L176,375.52 L178,372.78 L180,370.88 L182,370.96 L184,372.88 L186,375.36 L188,376.83 L190,376.45 L192,374.62 L194,372.61 L196,371.68 L198,372.27 L200,373.82 L202,375.41 L204,376.27 L206,375.68 L208,373.84 L210,371.88 L212,371.13 L214,372.26 L216,374.65 L218,376.79 L220,377.23 L222,375.59 L224,372.85 L226,370.76 L228,370.68 L230,372.68 L232,375.5 L234,377.38 L236,377.17 L238,375.06 L240,372.4 L242,370.81 L244,371.16 L246,373.12 L248,375.43 L250,376.74 L252,376.4 L254,374.78 L256,372.93 L258,371.89 L260,372.12 L262,373.24 L264,374.84 L266,376.18 L268,376.41 L270,375.25 L272,373.23 L274,371.44 L276,370.95 L278,372.14 L280,374.45 L282,376.64 L284,377.48 L286,376.44 L288,374.05 L290,371.6" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="320" y="378" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">细 d/2</text>
+    <text x="400" y="378" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">波浪线</text>
+    <text x="520" y="378" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">断裂边界线、局部剖视图的分界线</text>
+    <line x1="40" y1="438" x2="290" y2="438" stroke="currentColor" stroke-width="0.8" stroke-dasharray="20 4 3 4 3 4"/>
+    <text x="320" y="442" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">细 d/2</text>
+    <text x="400" y="442" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">双点画线</text>
+    <text x="520" y="442" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">相邻辅助零件的轮廓、可动零件的极限位置、中断线</text>
+    <line x1="40" y1="468" x2="960" y2="468" stroke="currentColor" stroke-width="0.8"/>
+    <text x="40" y="498" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 同一图样中同类图线的宽度应一致；虚线、点画线的线段长度与间隔应大致相等。</text>
+    <text x="40" y="521" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 点画线的首末两端应画成线段而不是点，并超出轮廓线 2～5 mm（图上约 4 px）。</text>
+    <text x="40" y="544" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 虚线、点画线与实线重合时按实线画；虚线在实线的延长线上时应留出空隙。</text>
+    <text x="40" y="567" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 波浪线、双折线都表示断裂边界：手绘用波浪线、CAD 用双折线；波浪线不得与轮廓线重合。</text>
+  </g>
+</svg>
+<div class="cap">同一张图上并列六种图线的线型样本与线宽关系：粗实线取 d、细线取 d/2，虚线、点画线、波浪线、双点画线各按国标画法，右侧逐条列出各自用途。</div></div><div class="card"><div class="fid">FIG-SANSHITU-BASE</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 705 686" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-SANSHITU-BASE-t FIG-SANSHITU-BASE-d" class="fig-svg">
+  <title id="FIG-SANSHITU-BASE-t">三视图的形成与三等规律</title>
+  <desc id="FIG-SANSHITU-BASE-d">L 形块按第一角投影得到主视图、俯视图、左视图；蓝色虚线示长对正，红色虚线示高平齐，绿色虚线加 45° 辅助线示宽相等。</desc>
+  <defs>
+  <pattern id="FIG-SANSHITU-BASE__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-BASE__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-BASE__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-BASE__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-BASE__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-BASE__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-SANSHITU-BASE__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-SANSHITU-BASE__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2  三视图的形成（第一角投影）与三等规律</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">形体：L 形块 100×60×70（长×宽×高，mm）；投影比例 k = 2 px/mm。</text>
+    <path d="M120,290 L320,290 L320,220 L230,220 L230,150 L120,150 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="220" y="136" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">主视图</text>
+    <rect x="120" y="340" width="200" height="120" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="230" y1="340" x2="230" y2="460" stroke="currentColor" stroke-width="2"/>
+    <text x="220" y="486" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">俯视图</text>
+    <rect x="400" y="150" width="120" height="140" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="400" y1="220" x2="520" y2="220" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="460" y="136" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">左视图</text>
+    <line x1="120" y1="290" x2="120" y2="340" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="230" y1="290" x2="230" y2="340" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="320" y1="290" x2="320" y2="340" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="320" y1="150" x2="400" y2="150" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="320" y1="220" x2="400" y2="220" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="320" y1="290" x2="400" y2="290" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <path d="M320,460 L520,460 L520,290" stroke="#16a34a" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <path d="M320,340 L400,340" stroke="#16a34a" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <path d="M400,340 L520,460" stroke="#16a34a" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <line x1="390" y1="560" x2="424" y2="560" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="436" y="564" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">长对正：主视图与俯视图的 X 方向尺寸相同</text>
+    <line x1="390" y1="586" x2="424" y2="586" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="436" y="590" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">高平齐：主视图与左视图的 Z 方向尺寸相同</text>
+    <line x1="390" y1="612" x2="424" y2="612" stroke="#16a34a" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="436" y="616" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#16a34a">宽相等：俯视图的高 = 左视图的宽（Y 方向相同）</text>
+    <line x1="120" y1="320" x2="320" y2="320" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-BASE__ar-ink)" marker-end="url(#FIG-SANSHITU-BASE__ar-ink)"/>
+    <text x="220" y="315" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">100</text>
+    <line x1="120" y1="293" x2="120" y2="325" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="320" y1="293" x2="320" y2="325" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="96" y1="150" x2="96" y2="290" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-BASE__ar-ink)" marker-end="url(#FIG-SANSHITU-BASE__ar-ink)"/>
+    <text x="91" y="224.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">70</text>
+    <line x1="117" y1="150" x2="91" y2="150" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="117" y1="290" x2="91" y2="290" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="120" y1="112" x2="230" y2="112" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-BASE__ar-ink)" marker-end="url(#FIG-SANSHITU-BASE__ar-ink)"/>
+    <text x="175" y="107" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">55</text>
+    <line x1="120" y1="147" x2="120" y2="107" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="230" y1="147" x2="230" y2="107" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="345" y1="220" x2="345" y2="290" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-BASE__ar-ink)" marker-end="url(#FIG-SANSHITU-BASE__ar-ink)"/>
+    <text x="350" y="259.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">35</text>
+    <line x1="323" y1="220" x2="350" y2="220" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="323" y1="290" x2="350" y2="290" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="400" y1="520" x2="520" y2="520" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-BASE__ar-ink)" marker-end="url(#FIG-SANSHITU-BASE__ar-ink)"/>
+    <text x="460" y="515" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">60</text>
+    <line x1="400" y1="293" x2="400" y2="525" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="520" y1="293" x2="520" y2="525" stroke="currentColor" stroke-width="0.8"/>
+    <text x="120" y="640" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">三等规律：长对正、高平齐、宽相等</text>
+    <text x="120" y="664" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">第一角布置：主视图在左上，俯视图在其正下方，左视图在其正右方 —— 三个视图之间必然满足上述三条。</text>
+  </g>
+</svg>
+<div class="cap">L 形块按第一角投影展开得到三个视图，蓝、红、绿三色虚线分别示出长对正、高平齐、宽相等；绿线配合 45° 辅助线完成俯视图到左视图的宽度搬移。</div></div><div class="card"><div class="fid">FIG-SANSHITU-EXAMPLE</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 918 682" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-SANSHITU-EXAMPLE-t FIG-SANSHITU-EXAMPLE-d" class="fig-svg">
+  <title id="FIG-SANSHITU-EXAMPLE-t">组合体三视图示例：台阶与通孔</title>
+  <desc id="FIG-SANSHITU-EXAMPLE-d">带台阶和竖直通孔的底板，按第一角画出三视图，标出高度、长度、宽度三个尺寸基准，并注明长对正、高平齐、宽相等的对应关系。</desc>
+  <defs>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 3  组合体三视图示例（台阶 + 通孔 + 尺寸基准）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">底板 90×50×20，左端台阶 40×50×25，Ø16 竖直通孔 —— 单位 mm，k = 2 px/mm。</text>
+    <path d="M80,210 L260,210 L260,170 L160,170 L160,120 L80,120 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="194" y1="170" x2="194" y2="210" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="226" y1="170" x2="226" y2="210" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="200" y="106" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">主视图</text>
+    <rect x="80" y="260" width="180" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="160" y1="260" x2="160" y2="360" stroke="currentColor" stroke-width="2"/>
+    <circle cx="210" cy="310" r="16" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="60" y1="310" x2="440" y2="310" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="170" y="386" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">俯视图</text>
+    <rect x="330" y="120" width="100" height="90" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="330" y1="170" x2="430" y2="170" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="364" y1="170" x2="364" y2="210" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="396" y1="170" x2="396" y2="210" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="380" y="108" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">左视图</text>
+    <line x1="80" y1="210" x2="80" y2="260" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <line x1="160" y1="210" x2="160" y2="260" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <line x1="260" y1="210" x2="260" y2="260" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <line x1="260" y1="120" x2="330" y2="120" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <line x1="260" y1="170" x2="330" y2="170" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <line x1="260" y1="210" x2="330" y2="210" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <text x="40" y="234" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed" font-weight="600">高度基准</text>
+    <text x="40" y="249" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed">（底面）</text>
+    <line x1="140" y1="212" x2="96" y2="240" stroke="#7c3aed" stroke-width="0.8" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-violet)"/>
+    <text x="22" y="322" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed" font-weight="600">长度基准</text>
+    <text x="22" y="337" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed">（左端面）</text>
+    <line x1="82" y1="300" x2="74" y2="330" stroke="#7c3aed" stroke-width="0.8" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-violet)"/>
+    <line x1="440" y1="310" x2="470" y2="288" stroke="#7c3aed" stroke-width="0.8" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-violet)"/>
+    <text x="476" y="292" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed">宽度基准（对称中心面）</text>
+    <line x1="80" y1="424" x2="260" y2="424" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-EXAMPLE__ar-ink)" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="170" y="419" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">90</text>
+    <line x1="80" y1="363" x2="80" y2="429" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="260" y1="363" x2="260" y2="429" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="285" y1="260" x2="285" y2="360" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-EXAMPLE__ar-ink)" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="290" y="314.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">50</text>
+    <line x1="263" y1="260" x2="290" y2="260" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="263" y1="360" x2="290" y2="360" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="58" y1="120" x2="58" y2="210" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-EXAMPLE__ar-ink)" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="53" y="169.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">45</text>
+    <line x1="77" y1="120" x2="53" y2="120" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="77" y1="210" x2="53" y2="210" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="276" y1="170" x2="276" y2="210" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-EXAMPLE__ar-ink)" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="281" y="194.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">20</text>
+    <line x1="80" y1="96" x2="160" y2="96" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-EXAMPLE__ar-ink)" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="120" y="91" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">40</text>
+    <line x1="80" y1="117" x2="80" y2="91" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="160" y1="117" x2="160" y2="91" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="232" y1="318" x2="300" y2="404" stroke="currentColor" stroke-width="0.8" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="306" y="408" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">Ø16 通孔</text>
+    <text x="40" y="660" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">读图顺序：先找形状特征视图（这里俯视图最清楚），再按长对正/高平齐/宽相等补出另两个视图；三个方向的尺寸基准各选一个面或中心面，同一方向的尺寸都从该基准出发。</text>
+  </g>
+</svg>
+<div class="cap">带台阶与竖直通孔的底板，三视图按标准位置排布，底面、左端面、对称中心面分别作为高度、长度、宽度基准，虚线表示被遮挡的通孔。</div></div><div class="card"><div class="fid">FIG-LIUGESHITU</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 941 582" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-LIUGESHITU-t FIG-LIUGESHITU-d" class="fig-svg">
+  <title id="FIG-LIUGESHITU-t">六个基本视图的配置（第一角）</title>
+  <desc id="FIG-LIUGESHITU-d">第一角画法下六个基本视图的展开位置：仰视图在主视图上方，俯视图在下方，右视图在左方，左视图在右方，后视图在左视图右方。</desc>
+  <defs>
+  <pattern id="FIG-LIUGESHITU__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LIUGESHITU__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LIUGESHITU__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LIUGESHITU__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LIUGESHITU__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-LIUGESHITU__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-LIUGESHITU__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-LIUGESHITU__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 4  六个基本视图的配置（第一角画法）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">形体 80×40×50（长×宽×高），中间 Ø20 通孔；k = 2 px/mm。</text>
+    <rect x="300" y="180" width="160" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="380" cy="230" r="20" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="380" y="172" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">主视图</text>
+    <rect x="300" y="300" width="160" height="80" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="360" y1="300" x2="360" y2="380" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="400" y1="300" x2="400" y2="380" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="380" y="400" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">俯视图</text>
+    <rect x="300" y="70" width="160" height="80" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="360" y1="70" x2="360" y2="150" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="400" y1="70" x2="400" y2="150" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="290" y="115" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">仰视图</text>
+    <rect x="480" y="180" width="80" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="480" y1="220" x2="560" y2="220" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="480" y1="240" x2="560" y2="240" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="520" y="172" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">左视图</text>
+    <rect x="180" y="180" width="80" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="180" y1="220" x2="260" y2="220" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="180" y1="240" x2="260" y2="240" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="220" y="172" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">右视图</text>
+    <rect x="580" y="180" width="160" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="660" cy="230" r="20" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="660" y="172" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">后视图</text>
+    <text x="40" y="470" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">长对正：主、俯、仰三个视图左右对齐（同一 X 范围）。</text>
+    <text x="40" y="494" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">高平齐：主、左、右、后四个视图上下齐平（同一 Z 范围）。</text>
+    <text x="40" y="518" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">宽相等：俯、仰、左、右四个视图的宽都是同一 Y 范围；画图时常用 45° 辅助线把宽从俯视图搬到左视图。</text>
+    <text x="40" y="560" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">记忆口诀：绕主视图“上下左右”依次是仰、俯、右、左；后视图放在左视图的右边。六个基本视图一律不画虚线以外的多余线，也不标注“视图名称”以外的字样（本图为教学加注）。</text>
+  </g>
+</svg>
+<div class="cap">第一角画法六个基本视图的展开位置：仰视图在上、俯视图在下、右视图在左、左视图在右、后视图在左视图之右，并给出长对正、高平齐、宽相等的对应范围。</div></div><div class="card"><div class="fid">FIG-POUSHI-QUAN</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 982 647" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-POUSHI-QUAN-t FIG-POUSHI-QUAN-d" class="fig-svg">
+  <title id="FIG-POUSHI-QUAN-t">全剖视图：带内孔圆筒的全剖</title>
+  <desc id="FIG-POUSHI-QUAN-d">左为外形视图（内孔画虚线），右为全剖视图（内孔轮廓变粗实线、空腔不画剖面线）；俯视图上用粗短画与箭头标出剖切位置线 A—A。</desc>
+  <defs>
+  <pattern id="FIG-POUSHI-QUAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-QUAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-QUAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-QUAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-QUAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-QUAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-POUSHI-QUAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-POUSHI-QUAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 5  全剖视图（圆筒：法兰 Ø80、筒体 Ø50、内孔 Ø28，高 60）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">用通过轴线的剖切平面把零件完全剖开，向后投射 —— 得到 A—A 全剖视图。</text>
+    <path d="M220,280 L250,280 L250,180 L350,180 L350,280 L380,280 L380,300 L220,300 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="272" y1="180" x2="272" y2="300" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="328" y1="180" x2="328" y2="300" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="300" y1="160" x2="300" y2="320" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="300" y="148" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">外形视图（内孔画虚线）</text>
+    <circle cx="300" cy="410" r="80" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="200" y1="410" x2="400" y2="410" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="300" y1="322" x2="300" y2="498" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="300" y="528" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">俯视图</text>
+    <line x1="220" y1="410" x2="186" y2="410" stroke="currentColor" stroke-width="3"/>
+    <line x1="380" y1="410" x2="414" y2="410" stroke="currentColor" stroke-width="3"/>
+    <line x1="186" y1="410" x2="186" y2="376" stroke="currentColor" stroke-width="2" marker-end="url(#FIG-POUSHI-QUAN__ar-ink)"/>
+    <line x1="414" y1="410" x2="414" y2="376" stroke="currentColor" stroke-width="2" marker-end="url(#FIG-POUSHI-QUAN__ar-ink)"/>
+    <text x="178" y="368" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">A</text>
+    <text x="422" y="368" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">A</text>
+    <path d="M640,280 L670,280 L670,180 L770,180 L770,280 L800,280 L800,300 L640,300 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <rect x="670" y="180" width="22" height="100" fill="url(#FIG-POUSHI-QUAN__hatch45)" stroke="none"/>
+    <rect x="640" y="280" width="52" height="20" fill="url(#FIG-POUSHI-QUAN__hatch45)" stroke="none"/>
+    <rect x="748" y="180" width="22" height="100" fill="url(#FIG-POUSHI-QUAN__hatch45)" stroke="none"/>
+    <rect x="748" y="280" width="52" height="20" fill="url(#FIG-POUSHI-QUAN__hatch45)" stroke="none"/>
+    <line x1="692" y1="180" x2="692" y2="300" stroke="currentColor" stroke-width="2"/>
+    <line x1="748" y1="180" x2="748" y2="300" stroke="currentColor" stroke-width="2"/>
+    <line x1="720" y1="160" x2="720" y2="320" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="720" y="148" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">A—A 全剖视图</text>
+    <line x1="412" y1="410" x2="470" y2="430" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG-POUSHI-QUAN__ar-red)"/>
+    <text x="476" y="434" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">剖切位置线（粗短画 + 箭头）</text>
+    <line x1="778" y1="196" x2="856" y2="168" stroke="#6b7280" stroke-width="0.8" marker-end="url(#FIG-POUSHI-QUAN__ar-ink)"/>
+    <text x="862" y="172" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">剖面线：45° 细实线</text>
+    <line x1="330" y1="250" x2="416" y2="236" stroke="#2563eb" stroke-width="0.8" marker-end="url(#FIG-POUSHI-QUAN__ar-blue)"/>
+    <text x="422" y="240" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">内孔 Ø28</text>
+    <text x="40" y="556" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 全剖：用剖切平面把零件完全剖开，移去前半部分后再投射；原被遮住的内部轮廓变成可见，画粗实线。</text>
+    <text x="40" y="579" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 剖切位置线用粗短画（本图 3 px）画在俯视图上，箭头指明投射方向，两端注相向的字母 A，并在剖视图上方注 A—A。</text>
+    <text x="40" y="602" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 剖面线用 45° 细实线，间距均匀；同一零件在各剖视图中的方向、间距要一致。</text>
+    <text x="40" y="625" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 空腔（内孔）里不画剖面线；剖面线一律画到粗实线为止，不能画进空腔或越过轮廓。</text>
+  </g>
+</svg>
+<div class="cap">圆筒的法兰与筒体用通过轴线的平面完全剖开：外形视图里内孔画虚线，全剖视图里内孔轮廓改为粗实线、空腔不画剖面线，俯视图用粗短画与箭头标出 A—A 剖切位置。</div></div><div class="card"><div class="fid">FIG-POUSHI-BAN</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 679 588" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-POUSHI-BAN-t FIG-POUSHI-BAN-d" class="fig-svg">
+  <title id="FIG-POUSHI-BAN-t">半剖视图：以对称中心线为界，一半剖一半视图</title>
+  <desc id="FIG-POUSHI-BAN-d">对称零件（法兰套筒 Ø80/Ø60、内孔 Ø24）以对称中心线为分界，左半画剖视、右半画视图；视图半侧不画虚线。</desc>
+  <defs>
+  <pattern id="FIG-POUSHI-BAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-BAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-BAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-BAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-BAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-BAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-POUSHI-BAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-POUSHI-BAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-POUSHI-BAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-POUSHI-BAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-POUSHI-BAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-POUSHI-BAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-POUSHI-BAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-POUSHI-BAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 6  半剖视图（对称零件：法兰 Ø80、筒体 Ø60、内孔 Ø24，高 50）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">半剖适用于对称零件 —— 一半表达内形、一半表达外形，一个视图兼顾两者。</text>
+    <path d="M400,360 L560,360 L560,330 L540,330 L540,260 L420,260 L420,330 L400,330 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="456" y1="260" x2="456" y2="360" stroke="currentColor" stroke-width="2"/>
+    <rect x="420" y="260" width="36" height="70" fill="url(#FIG-POUSHI-BAN__hatch45)" stroke="none"/>
+    <rect x="400" y="330" width="56" height="30" fill="url(#FIG-POUSHI-BAN__hatch45)" stroke="none"/>
+    <line x1="480" y1="240" x2="480" y2="384" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="440" y="246" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">剖视（左半）</text>
+    <text x="524" y="246" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">视图（右半）</text>
+    <text x="480" y="400" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">对称中心线（分界）</text>
+    <line x1="456" y1="316" x2="336" y2="296" stroke="#2563eb" stroke-width="0.8" marker-end="url(#FIG-POUSHI-BAN__ar-blue)"/>
+    <text x="330" y="300" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#2563eb">Ø24 孔壁：粗实线</text>
+    <line x1="600" y1="260" x2="600" y2="360" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-POUSHI-BAN__ar-ink)" marker-end="url(#FIG-POUSHI-BAN__ar-ink)"/>
+    <text x="605" y="314.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">50</text>
+    <line x1="543" y1="260" x2="605" y2="260" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="543" y1="360" x2="605" y2="360" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="400" y1="424" x2="560" y2="424" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-POUSHI-BAN__ar-ink)" marker-end="url(#FIG-POUSHI-BAN__ar-ink)"/>
+    <text x="480" y="438" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">Ø80</text>
+    <line x1="400" y1="363" x2="400" y2="429" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="560" y1="363" x2="560" y2="429" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="544" y1="276" x2="636" y2="266" stroke="#6b7280" stroke-width="0.8" marker-end="url(#FIG-POUSHI-BAN__ar-ink)"/>
+    <text x="642" y="270" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">Ø60</text>
+    <text x="40" y="470" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 半剖：以对称中心线为界，一半画剖视、一半画视图；分界线必须是对称中心线（细点画线），不能画成粗实线。</text>
+    <text x="40" y="493" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 剖视侧的孔壁画粗实线、剖面线画到粗实线为止；视图侧的外形轮廓照常画。</text>
+    <text x="40" y="516" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 视图半侧不画虚线 —— 内部形状已由剖视侧表达，再画虚线属重复。</text>
+    <text x="40" y="539" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 标注时只注剖视侧的尺寸，对称尺寸一般注到中心线（不注整圆直径）。</text>
+    <text x="40" y="566" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">⑤ 若对称中心线上有轮廓线（如键槽），不能用半剖，应改用局部剖。</text>
+  </g>
+</svg>
+<div class="cap">对称法兰套筒以对称中心线为界，左半剖视、右半画视图：剖视侧孔壁加粗、画剖面线，视图侧不画虚线，一个视图同时表达内形与外形。</div></div><div class="card"><div class="fid">FIG-POUSHI-JUBU</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 884 511" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-POUSHI-JUBU-t FIG-POUSHI-JUBU-d" class="fig-svg">
+  <title id="FIG-POUSHI-JUBU-t">局部剖视图：用波浪线分界剖开一个孔</title>
+  <desc id="FIG-POUSHI-JUBU-d">在带孔的平板上用波浪线作断裂边界，局部剖开中间部分显示内孔；剖到的孔壁画粗实线，未剖到的部分仍按外形画（孔画虚线）。</desc>
+  <defs>
+  <pattern id="FIG-POUSHI-JUBU__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-JUBU__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-JUBU__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-JUBU__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-JUBU__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-POUSHI-JUBU__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-POUSHI-JUBU__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-POUSHI-JUBU__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-POUSHI-JUBU__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-POUSHI-JUBU__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-POUSHI-JUBU__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-POUSHI-JUBU__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-POUSHI-JUBU__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-POUSHI-JUBU__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 7  局部剖视图（平板 120×50，竖直通孔 Ø20）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">局部剖用波浪线作断裂边界 —— 既显示局部内形，又保留大部分外形，不必画成整剖。</text>
+    <rect x="360" y="210" width="240" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="480" y1="194" x2="480" y2="318" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <path d="M390,210 L386,250 L388,252.38 L390,253.25 L392,251.98 L394,249.32 L396,246.98 L398,246.44 L400,248.01 L402,250.59 L404,252.51 L406,252.55 L408,250.77 L410,248.35 L412,246.79 L414,246.94 L416,248.52 L418,250.42 L420,251.46 L422,251.12 L424,249.76 L426,248.23 L428,247.11 L430,247.1 L432,248.33 L434,250.16 L436,251.48 L438,251.41 L440,249.84 L442,247.56 L444,245.86 L446,245.74 L448,247.3 L450,249.7 L452,251.57 L454,251.83 L456,250.31 L458,247.82 L460,245.71 L460,210 Z" stroke="none" fill="url(#FIG-POUSHI-JUBU__hatch45)"/>
+    <path d="M500,210 L500,248.48 L502,250.2 L504,250.46 L506,248.96 L508,246.48 L510,244.45 L512,244.09 L514,245.67 L516,248.24 L518,250.21 L520,250.34 L522,248.54 L524,245.91 L526,244.07 L528,244.11 L530,245.88 L532,248.18 L534,249.52 L536,249.12 L538,247.35 L540,245.41 L542,244.49 L544,245 L546,246.42 L548,247.88 L550,248.66 L552,248.06 L554,246.28 L556,244.38 L558,243.63 L560,244.65 L562,246.87 L564,248.85 L566,249.22 L568,247.63 L570,245 L572,242.99 L574,242.87 L570,210 Z" stroke="none" fill="url(#FIG-POUSHI-JUBU__hatch45)"/>
+    <path d="M390,210 L386,250 L388,252.38 L390,253.25 L392,251.98 L394,249.32 L396,246.98 L398,246.44 L400,248.01 L402,250.59 L404,252.51 L406,252.55 L408,250.77 L410,248.35 L412,246.79 L414,246.94 L416,248.52 L418,250.42 L420,251.46 L422,251.12 L424,249.76 L426,248.23 L428,247.11 L430,247.1 L432,248.33 L434,250.16 L436,251.48 L438,251.41 L440,249.84 L442,247.56 L444,245.86 L446,245.74 L448,247.3 L450,249.7 L452,251.57 L454,251.83 L456,250.31 L458,247.82 L460,245.71 L462,245.09 L464,246.24 L466,248.44 L468,250.46 L470,251.21 L472,250.34 L474,248.42 L476,246.51 L478,245.6 L480,246.04 L482,247.42 L484,248.89 L486,249.66 L488,249.67 L490,248.57 L492,246.84 L494,245.42 L496,245.19 L498,246.41 L500,248.48 L502,250.2 L504,250.46 L506,248.96 L508,246.48 L510,244.45 L512,244.09 L514,245.67 L516,248.24 L518,250.21 L520,250.34 L522,248.54 L524,245.91 L526,244.07 L528,244.11 L530,245.88 L532,248.18 L534,249.52 L536,249.12 L538,247.35 L540,245.41 L542,244.49 L544,245 L546,246.42 L548,247.88 L550,248.66 L552,248.06 L554,246.28 L556,244.38 L558,243.63 L560,244.65 L562,246.87 L564,248.85 L566,249.22 L568,247.63 L570,245 L572,242.99 L574,242.87 L570,210" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <line x1="460" y1="210" x2="460" y2="245.71" stroke="currentColor" stroke-width="2"/>
+    <line x1="500" y1="210" x2="500" y2="248.48" stroke="currentColor" stroke-width="2"/>
+    <line x1="460" y1="245.71" x2="460" y2="310" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="500" y1="248.48" x2="500" y2="310" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="480" y="190" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">局部剖视图</text>
+    <line x1="560" y1="232" x2="640" y2="214" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG-POUSHI-JUBU__ar-red)"/>
+    <text x="646" y="218" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">波浪线（细实线，手画，不能与轮廓线重合）</text>
+    <line x1="500" y1="290" x2="630" y2="330" stroke="#2563eb" stroke-width="0.8" marker-end="url(#FIG-POUSHI-JUBU__ar-blue)"/>
+    <text x="636" y="334" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">未剖到的部分照外形画，孔画虚线</text>
+    <line x1="360" y1="352" x2="600" y2="352" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-POUSHI-JUBU__ar-ink)" marker-end="url(#FIG-POUSHI-JUBU__ar-ink)"/>
+    <text x="480" y="347" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">120</text>
+    <line x1="336" y1="210" x2="336" y2="310" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-POUSHI-JUBU__ar-ink)" marker-end="url(#FIG-POUSHI-JUBU__ar-ink)"/>
+    <text x="331" y="264.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">50</text>
+    <line x1="357" y1="210" x2="331" y2="210" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="357" y1="310" x2="331" y2="310" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="470" y1="214" x2="300" y2="150" stroke="#6b7280" stroke-width="0.8" marker-end="url(#FIG-POUSHI-JUBU__ar-ink)"/>
+    <text x="294" y="154" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">Ø20 通孔</text>
+    <text x="40" y="420" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 局部剖：用波浪线作断裂边界，只剖开需要表达内部结构的那一块，其余仍按外形画。</text>
+    <text x="40" y="443" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 波浪线必须画在零件的实体部分内，不能与轮廓线重合，不能画在孔、槽的空腔上，也不能是规则的正弦曲线。</text>
+    <text x="40" y="466" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 波浪线遇到孔槽时应断开（孔槽处没有实体可以断裂）。</text>
+    <text x="40" y="489" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 局部剖一般不加标注，位置由波浪线表达；同一视图上局部剖的数量不宜过多，避免支离破碎。</text>
+  </g>
+</svg>
+<div class="cap">平板中间的通孔用波浪线围出局部剖切范围：剖到的孔壁画粗实线、区域外仍按外形画虚线，说明波浪线不能与轮廓线重合也不能画在空腔上。</div></div><div class="card"><div class="fid">FIG-DUANMIAN</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1003 587" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-DUANMIAN-t FIG-DUANMIAN-d" class="fig-svg">
+  <title id="FIG-DUANMIAN-t">断面图与剖视图的区别</title>
+  <desc id="FIG-DUANMIAN-d">同一零件、同一剖切位置、同一投射方向：断面图只画断面形状，剖视图在断面形状之外还要画出剖切平面后方所有可见轮廓（如底板轮廓）。</desc>
+  <defs>
+  <pattern id="FIG-DUANMIAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-DUANMIAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-DUANMIAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-DUANMIAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-DUANMIAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-DUANMIAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-DUANMIAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-DUANMIAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-DUANMIAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-DUANMIAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-DUANMIAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-DUANMIAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-DUANMIAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-DUANMIAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 8  断面图与剖视图的区别（同一零件、同一剖切位置、同一投射方向）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">零件：Ø40 立柱 + 肋板 40×16，立在 100×100 底板上；沿立柱中部水平剖切，向下投射。</text>
+    <path d="M309.19,292.00 L308.29,288.44 L307.07,284.97 L305.53,281.64 L303.70,278.45 L301.58,275.45 L299.20,272.66 L296.56,270.09 L293.71,267.78 L290.65,265.74 L287.42,263.99 L284.04,262.55 L280.55,261.42 L276.96,260.61 L273.32,260.14 L269.65,260.00 L265.98,260.20 L262.35,260.74 L258.78,261.61 L255.30,262.80 L251.95,264.30 L248.75,266.11 L245.73,268.20 L242.91,270.57 L240.33,273.17 L237.99,276.01 L235.93,279.05 L234.15,282.26 L232.67,285.63 L231.51,289.11 L230.67,292.69 L230.17,296.33 L230.00,300.00 L230.17,303.67 L230.67,307.31 L231.51,310.89 L232.67,314.37 L234.15,317.74 L235.93,320.95 L237.99,323.99 L240.33,326.83 L242.91,329.43 L245.73,331.80 L248.75,333.89 L251.95,335.70 L255.30,337.20 L258.78,338.39 L262.35,339.26 L265.98,339.80 L269.65,340.00 L273.32,339.86 L276.96,339.39 L280.55,338.58 L284.04,337.45 L287.42,336.01 L290.65,334.26 L293.71,332.22 L296.56,329.91 L299.20,327.34 L301.58,324.55 L303.70,321.55 L305.53,318.36 L307.07,315.03 L308.29,311.56 L309.19,308.00 L350.00,308.00 L350.00,292.00 Z" fill="url(#FIG-DUANMIAN__hatch45)" stroke="none"/>
+    <path d="M309.19,292.00 L308.29,288.44 L307.07,284.97 L305.53,281.64 L303.70,278.45 L301.58,275.45 L299.20,272.66 L296.56,270.09 L293.71,267.78 L290.65,265.74 L287.42,263.99 L284.04,262.55 L280.55,261.42 L276.96,260.61 L273.32,260.14 L269.65,260.00 L265.98,260.20 L262.35,260.74 L258.78,261.61 L255.30,262.80 L251.95,264.30 L248.75,266.11 L245.73,268.20 L242.91,270.57 L240.33,273.17 L237.99,276.01 L235.93,279.05 L234.15,282.26 L232.67,285.63 L231.51,289.11 L230.67,292.69 L230.17,296.33 L230.00,300.00 L230.17,303.67 L230.67,307.31 L231.51,310.89 L232.67,314.37 L234.15,317.74 L235.93,320.95 L237.99,323.99 L240.33,326.83 L242.91,329.43 L245.73,331.80 L248.75,333.89 L251.95,335.70 L255.30,337.20 L258.78,338.39 L262.35,339.26 L265.98,339.80 L269.65,340.00 L273.32,339.86 L276.96,339.39 L280.55,338.58 L284.04,337.45 L287.42,336.01 L290.65,334.26 L293.71,332.22 L296.56,329.91 L299.20,327.34 L301.58,324.55 L303.70,321.55 L305.53,318.36 L307.07,315.03 L308.29,311.56 L309.19,308.00 L350.00,308.00 L350.00,292.00 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="270" y="232" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">断面图</text>
+    <text x="270" y="250" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">A—A</text>
+    <text x="270" y="392" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">只画剖切面与形体相交的断面形状</text>
+    <text x="270" y="410" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">（肋板：断面照画剖面线）</text>
+    <rect x="600" y="200" width="200" height="200" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M739.19,292.00 L738.29,288.44 L737.07,284.97 L735.53,281.64 L733.70,278.45 L731.58,275.45 L729.20,272.66 L726.56,270.09 L723.71,267.78 L720.65,265.74 L717.42,263.99 L714.04,262.55 L710.55,261.42 L706.96,260.61 L703.32,260.14 L699.65,260.00 L695.98,260.20 L692.35,260.74 L688.78,261.61 L685.30,262.80 L681.95,264.30 L678.75,266.11 L675.73,268.20 L672.91,270.57 L670.33,273.17 L667.99,276.01 L665.93,279.05 L664.15,282.26 L662.67,285.63 L661.51,289.11 L660.67,292.69 L660.17,296.33 L660.00,300.00 L660.17,303.67 L660.67,307.31 L661.51,310.89 L662.67,314.37 L664.15,317.74 L665.93,320.95 L667.99,323.99 L670.33,326.83 L672.91,329.43 L675.73,331.80 L678.75,333.89 L681.95,335.70 L685.30,337.20 L688.78,338.39 L692.35,339.26 L695.98,339.80 L699.65,340.00 L703.32,339.86 L706.96,339.39 L710.55,338.58 L714.04,337.45 L717.42,336.01 L720.65,334.26 L723.71,332.22 L726.56,329.91 L729.20,327.34 L731.58,324.55 L733.70,321.55 L735.53,318.36 L737.07,315.03 L738.29,311.56 L739.19,308.00 L780.00,308.00 L780.00,292.00 Z" fill="url(#FIG-DUANMIAN__hatch45)" stroke="none"/>
+    <path d="M739.19,292.00 L738.29,288.44 L737.07,284.97 L735.53,281.64 L733.70,278.45 L731.58,275.45 L729.20,272.66 L726.56,270.09 L723.71,267.78 L720.65,265.74 L717.42,263.99 L714.04,262.55 L710.55,261.42 L706.96,260.61 L703.32,260.14 L699.65,260.00 L695.98,260.20 L692.35,260.74 L688.78,261.61 L685.30,262.80 L681.95,264.30 L678.75,266.11 L675.73,268.20 L672.91,270.57 L670.33,273.17 L667.99,276.01 L665.93,279.05 L664.15,282.26 L662.67,285.63 L661.51,289.11 L660.67,292.69 L660.17,296.33 L660.00,300.00 L660.17,303.67 L660.67,307.31 L661.51,310.89 L662.67,314.37 L664.15,317.74 L665.93,320.95 L667.99,323.99 L670.33,326.83 L672.91,329.43 L675.73,331.80 L678.75,333.89 L681.95,335.70 L685.30,337.20 L688.78,338.39 L692.35,339.26 L695.98,339.80 L699.65,340.00 L703.32,339.86 L706.96,339.39 L710.55,338.58 L714.04,337.45 L717.42,336.01 L720.65,334.26 L723.71,332.22 L726.56,329.91 L729.20,327.34 L731.58,324.55 L733.70,321.55 L735.53,318.36 L737.07,315.03 L738.29,311.56 L739.19,308.00 L780.00,308.00 L780.00,292.00 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="700" y="172" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">剖视图</text>
+    <text x="700" y="190" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">A—A</text>
+    <text x="700" y="440" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">断面形状 + 剖切面后方可见轮廓</text>
+    <text x="700" y="458" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">（底板轮廓可见，但不画剖面线）</text>
+    <line x1="800" y1="250" x2="858" y2="220" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG-DUANMIAN__ar-red)"/>
+    <text x="864" y="224" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">底板轮廓（断面图没有）</text>
+    <line x1="350" y1="300" x2="452" y2="336" stroke="#2563eb" stroke-width="0.8" marker-end="url(#FIG-DUANMIAN__ar-blue)"/>
+    <text x="458" y="340" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">肋板（断面照画剖面线）</text>
+    <text x="40" y="496" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 断面图只表达剖切面切断形体后得到的断面形状；剖视图还要把剖切面后方所有可见轮廓都画出来。</text>
+    <text x="40" y="519" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 断面图与剖视图的剖面线画法相同（45° 细实线）；但断面图中不会出现剖切面后方的轮廓线。</text>
+    <text x="40" y="542" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 移出断面图一般画在视图之外，用剖切符号（粗短画 + 箭头 + 字母）标注；不对称的断面必须标箭头。</text>
+    <text x="40" y="565" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 判断口诀：图里出现“后面看得到的轮廓”—— 是剖视图；“只有一个断面”—— 是断面图。</text>
+  </g>
+</svg>
+<div class="cap">同一零件、同一剖切位置、同一投射方向的两种表达：断面图只有断面形状，剖视图还要画出剖切面后方可见的底板轮廓，区别一眼可见。</div></div><div class="card"><div class="fid">FIG-POUMAINXIAN</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 623 494" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-POUMAINXIAN-t FIG-POUMAINXIAN-d" class="fig-svg">
+  <title id="FIG-POUMAINXIAN-t">相邻零件剖面线方向应相反</title>
+  <desc id="FIG-POUMAINXIAN-d">同一剖视图中两个相邻零件：一个剖面线画 45°、另一个画 135°，方向相反，使两个零件一眼可分。</desc>
+  <defs>
+  <pattern id="FIG-POUMAINXIAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUMAINXIAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUMAINXIAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUMAINXIAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-POUMAINXIAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-POUMAINXIAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-POUMAINXIAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-POUMAINXIAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 9  相邻零件的剖面线方向（剖视图中的装配画法）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">零件 1 为凹形块、零件 2 为凸块，两者装配在一起后同时被剖切。</text>
+    <path d="M200,150 L310,150 L310,230 L410,230 L410,150 L520,150 L520,290 L200,290 Z" fill="url(#FIG-POUMAINXIAN__hatch45)" stroke="none"/>
+    <path d="M200,150 L310,150 L310,230 L410,230 L410,150 L520,150 L520,290 L200,290 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M310,150 L410,150 L410,230 L310,230 Z" fill="url(#FIG-POUMAINXIAN__hatch135)" stroke="none"/>
+    <rect x="310" y="150" width="100" height="80" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="214" y1="250" x2="150" y2="330" stroke="#2563eb" stroke-width="0.8" marker-end="url(#FIG-POUMAINXIAN__ar-blue)"/>
+    <text x="156" y="334" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">零件 1：剖面线 45°</text>
+    <line x1="430" y1="166" x2="490" y2="116" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG-POUMAINXIAN__ar-red)"/>
+    <text x="496" y="120" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">零件 2：剖面线 135°</text>
+    <text x="360" y="322" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">两零件的接触面画一条粗实线（不画两条）</text>
+    <text x="40" y="380" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 同一零件在各剖视图中的剖面线方向、间距必须一致 —— 这样读图时才能把同一个零件认出来。</text>
+    <text x="40" y="403" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 相邻两个零件的剖面线方向应相反（本图 45° 与 135°）。</text>
+    <text x="40" y="426" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 若不便反向，则方向可以相同，但间距必须不同，靠疏密区分两个零件。</text>
+    <text x="40" y="449" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 剖面线用细实线，与主要轮廓线成 45°（也可 30° 或 60°），间距均匀（本图 6 px）。</text>
+    <text x="40" y="472" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">⑤ 相邻零件的接触面只画一条粗实线；非接触面（有间隙）各画各的轮廓线。</text>
+  </g>
+</svg>
+<div class="cap">两个相邻零件同时被剖切时，剖面线分别画成 45° 与 135°，方向相反便于区分；同一零件在各剖视图中的方向与间距必须一致。</div></div><div class="card"><div class="fid">FIG-GONGCHA-DAI</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 959 662" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-GONGCHA-DAI-t FIG-GONGCHA-DAI-d" class="fig-svg">
+  <title id="FIG-GONGCHA-DAI-t">公差带图：Φ30 H7/k6</title>
+  <desc id="FIG-GONGCHA-DAI-d">零线、孔 H7 公差带（0～+21 μm）、轴 k6 公差带（+2～+15 μm），标出 ES/EI/es/ei 与最大间隙、最大过盈。</desc>
+  <defs>
+  <pattern id="FIG-GONGCHA-DAI__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-DAI__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-DAI__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-DAI__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-DAI__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-DAI__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-GONGCHA-DAI__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-GONGCHA-DAI__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-GONGCHA-DAI__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-GONGCHA-DAI__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-GONGCHA-DAI__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-GONGCHA-DAI__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-GONGCHA-DAI__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-GONGCHA-DAI__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 10  公差带图（Φ30 H7/k6，单位 μm）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">孔 H7：EI = 0、ES = +0.021；轴 k6：ei = +0.002、es = +0.015 —— 数值取自 GB/T 1800.1。</text>
+    <line x1="112" y1="430" x2="900" y2="430" stroke="currentColor" stroke-width="1.4"/>
+    <line x1="112" y1="500" x2="112" y2="286" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="106" y1="430" x2="118" y2="430" stroke="currentColor" stroke-width="0.8"/>
+    <text x="100" y="434" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">0</text>
+    <line x1="106" y1="370" x2="118" y2="370" stroke="currentColor" stroke-width="0.8"/>
+    <text x="100" y="374" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">+10</text>
+    <line x1="106" y1="310" x2="118" y2="310" stroke="currentColor" stroke-width="0.8"/>
+    <text x="100" y="314" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">+20</text>
+    <text x="112" y="276" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">偏差 / μm</text>
+    <text x="906" y="434" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">零线 0</text>
+    <rect x="210" y="304" width="160" height="126" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.14"/>
+    <rect x="430" y="340" width="160" height="78" stroke="#ea580c" stroke-width="2" fill="#ea580c" fill-opacity="0.14"/>
+    <text x="210" y="296" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">ES = +0.021</text>
+    <text x="210" y="448" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">EI = 0</text>
+    <text x="440" y="358" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#ea580c">es = +0.015</text>
+    <text x="440" y="410" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#ea580c">ei = +0.002</text>
+    <text x="290" y="472" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb" font-weight="600">孔 Φ30 H7</text>
+    <text x="510" y="472" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#ea580c" font-weight="600">轴 Φ30 k6</text>
+    <line x1="370" y1="304" x2="650" y2="304" stroke="#0f766e" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="590" y1="418" x2="650" y2="418" stroke="#0f766e" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="650" y1="304" x2="650" y2="418" stroke="#0f766e" stroke-width="0.8" marker-start="url(#FIG-GONGCHA-DAI__ar-teal)" marker-end="url(#FIG-GONGCHA-DAI__ar-teal)"/>
+    <text x="662" y="356" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#0f766e" font-weight="600">Xmax</text>
+    <text x="662" y="374" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#0f766e">= +19 μm</text>
+    <line x1="590" y1="340" x2="790" y2="340" stroke="#7c3aed" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="790" y1="340" x2="790" y2="430" stroke="#7c3aed" stroke-width="0.8" marker-start="url(#FIG-GONGCHA-DAI__ar-violet)" marker-end="url(#FIG-GONGCHA-DAI__ar-violet)"/>
+    <text x="802" y="356" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed" font-weight="600">Ymax</text>
+    <text x="802" y="374" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed">= 15 μm</text>
+    <text x="210" y="512" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">孔公差带完全在零线上方（基孔制 H：EI = 0）</text>
+    <text x="210" y="534" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#ea580c">轴 k6 的公差带（+2～+15）也全部在零线上方 → 过渡配合</text>
+    <text x="40" y="560" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 零线是基本尺寸对应的偏差为零的直线；零线以上为正偏差，以下为负偏差，单位一律 μm。</text>
+    <text x="40" y="580" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② ES / EI 是孔的上、下偏差；es / ei 是轴的上、下偏差（大写对孔、小写对轴）。</text>
+    <text x="40" y="600" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 配合性质看两带的位置关系：孔带全在轴带之上为间隙配合；两带有重叠为过渡配合；孔带全在轴带之下为过盈配合。</text>
+    <text x="40" y="620" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 本例 Xmax = ES − ei = +19 μm（最大间隙），Ymax = es − EI = +15 μm（最大过盈）→ 过渡配合。</text>
+    <text x="40" y="640" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">⑤ 注意：k6 的 ei = +2 μm，轴公差带整体在零线上方，它并不跨零线；真正跨零线的是 js / j / J 这类对称偏差代号。</text>
+  </g>
+</svg>
+<div class="cap">Φ30 H7/k6 的公差带图：零线以上画出孔 H7（0～+21）与轴 k6（+2～+15），标出 ES/EI/es/ei 及最大间隙 +19、最大过盈 15。</div></div><div class="card"><div class="fid">FIG-YUANHU-LIANJIE</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 849 574" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-YUANHU-LIANJIE-t FIG-YUANHU-LIANJIE-d" class="fig-svg">
+  <title id="FIG-YUANHU-LIANJIE-t">圆弧连接步骤：R10 连接两条互相垂直的直线</title>
+  <desc id="FIG-YUANHU-LIANJIE-d">三个分步：① 以 R 为距离作两条平行线求圆心；② 过圆心作垂线求切点；③ 以圆心和半径画连接弧。</desc>
+  <defs>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-YUANHU-LIANJIE__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-YUANHU-LIANJIE__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-YUANHU-LIANJIE__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 11  圆弧连接的作图步骤（R10 连接两垂直直线，k = 3 px/mm）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">已知两条互相垂直的直线，用 R10 的圆弧光滑连接 —— 关键在于“先求圆心、再求切点、后画弧”。</text>
+    <text x="190" y="186" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">① 求圆心</text>
+    <path d="M50,250.0 L190,250.0 L190,390.0" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="40" y1="280" x2="160" y2="280" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="160" y1="280" x2="160" y2="400" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <circle cx="160" cy="280" r="2.4" fill="currentColor" stroke="none"/>
+    <text x="150" y="296" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">O</text>
+    <line x1="108" y1="280" x2="108" y2="250" stroke="#2563eb" stroke-width="0.8" marker-start="url(#FIG-YUANHU-LIANJIE__ar-blue)" marker-end="url(#FIG-YUANHU-LIANJIE__ar-blue)"/>
+    <text x="100" y="269" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#2563eb">R10</text>
+    <text x="500" y="186" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">② 求切点</text>
+    <path d="M360,250.0 L500,250.0 L500,390.0" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="470" y1="280" x2="470" y2="250" stroke="#2563eb" stroke-width="0.8"/>
+    <line x1="470" y1="280" x2="500" y2="280" stroke="#2563eb" stroke-width="0.8"/>
+    <circle cx="470" cy="280" r="2.4" fill="currentColor" stroke="none"/>
+    <circle cx="470" cy="250" r="2.4" fill="currentColor" stroke="none"/>
+    <circle cx="500" cy="280" r="2.4" fill="currentColor" stroke="none"/>
+    <text x="462" y="296" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">O</text>
+    <text x="462" y="242" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="#2563eb" font-weight="600">T1</text>
+    <text x="508" y="294" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb" font-weight="600">T2</text>
+    <path d="M470.0,259.0 L479.0,259.0 L479.0,250.0" stroke="#6b7280" stroke-width="0.8" fill="none"/>
+    <path d="M491,280.0 L491,271.0 L500,271.0" stroke="#6b7280" stroke-width="0.8" fill="none"/>
+    <text x="810" y="186" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">③ 画弧</text>
+    <line x1="670" y1="250" x2="780" y2="250" stroke="currentColor" stroke-width="2"/>
+    <line x1="810" y1="280" x2="810" y2="390" stroke="currentColor" stroke-width="2"/>
+    <circle cx="780" cy="280" r="2.4" fill="currentColor" stroke="none"/>
+    <path d="M780,250 L781.47,250.04 L782.94,250.14 L784.4,250.32 L785.85,250.58 L787.29,250.9 L788.71,251.29 L790.11,251.75 L791.48,252.28 L792.83,252.88 L794.14,253.54 L795.42,254.27 L796.67,255.06 L797.87,255.9 L799.03,256.81 L800.15,257.77 L801.21,258.79 L802.23,259.85 L803.19,260.97 L804.1,262.13 L804.94,263.33 L805.73,264.58 L806.46,265.86 L807.12,267.17 L807.72,268.52 L808.25,269.89 L808.71,271.29 L809.1,272.71 L809.42,274.15 L809.68,275.6 L809.86,277.06 L809.96,278.53 L810,280" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="772" y="296" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor" font-weight="600">O</text>
+    <line x1="777" y1="250" x2="783" y2="250" stroke="currentColor" stroke-width="2"/>
+    <line x1="807" y1="280" x2="813" y2="280" stroke="currentColor" stroke-width="2"/>
+    <text x="40" y="480" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 求圆心：分别以 R（=10 mm）为距离，作两条已知直线的平行线，两平行线的交点 O 就是连接弧的圆心。</text>
+    <text x="40" y="504" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 求切点：过 O 分别向两条已知直线作垂线，垂足 T1、T2 就是连接点（切点）—— 不先求切点，弧与直线接不上。</text>
+    <text x="40" y="528" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 画弧：以 O 为圆心、R 为半径，在两个切点之间画弧（粗实线），再把多余的作图线擦掉。</text>
+    <text x="40" y="552" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 光滑连接的条件：连接弧与直线相切于切点，切点必须是“由圆心作垂线的垂足”，凭目测接弧是常见错误。</text>
+  </g>
+</svg>
+<div class="cap">R10 圆弧连接两条互相垂直直线的三个步骤：作平行线求圆心、作垂线求切点、以圆心和半径画弧，每步都在图上标出 O 与 T1、T2。</div></div><div class="card"><div class="fid">FIG-LUOWEN</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1015 506" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-LUOWEN-t FIG-LUOWEN-d" class="fig-svg">
+  <title id="FIG-LUOWEN-t">螺纹的比例画法：外螺纹与内螺纹（剖视）对照</title>
+  <desc id="FIG-LUOWEN-d">外螺纹牙顶 d 画粗实线、牙底 d₁=0.85d 画细实线，端视图牙底圆画约 3/4 圈；内螺纹剖视牙顶 D₁ 画粗实线、牙底 D 画细实线；螺纹终止线用粗实线。</desc>
+  <defs>
+  <pattern id="FIG-LUOWEN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LUOWEN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LUOWEN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LUOWEN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-LUOWEN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-LUOWEN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-LUOWEN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-LUOWEN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-LUOWEN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-LUOWEN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-LUOWEN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-LUOWEN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-LUOWEN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-LUOWEN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 12  螺纹的比例画法（外螺纹 / 内螺纹剖视，M40，d₁ = 0.85d）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">螺纹不按真实牙型画，只按比例画牙顶、牙底两条线 —— 这样画才能一眼区分内外螺纹。</text>
+    <text x="230" y="96" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">外螺纹</text>
+    <line x1="76" y1="210" x2="470" y2="210" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="90" y1="166" x2="90" y2="254" stroke="currentColor" stroke-width="2"/>
+    <line x1="90" y1="166" x2="415" y2="166" stroke="currentColor" stroke-width="2"/>
+    <line x1="90" y1="254" x2="415" y2="254" stroke="currentColor" stroke-width="2"/>
+    <line x1="415" y1="166" x2="430" y2="181" stroke="currentColor" stroke-width="2"/>
+    <line x1="415" y1="254" x2="430" y2="239" stroke="currentColor" stroke-width="2"/>
+    <line x1="430" y1="181" x2="430" y2="239" stroke="currentColor" stroke-width="2"/>
+    <line x1="170" y1="172.6" x2="370" y2="172.6" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="170" y1="247.4" x2="370" y2="247.4" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="370" y1="166" x2="370" y2="254" stroke="currentColor" stroke-width="2"/>
+    <line x1="44" y1="166" x2="44" y2="254" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-LUOWEN__ar-ink)" marker-end="url(#FIG-LUOWEN__ar-ink)"/>
+    <text x="39" y="214.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">d</text>
+    <line x1="87" y1="166" x2="39" y2="166" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="87" y1="254" x2="39" y2="254" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="70" y1="172.6" x2="70" y2="247.4" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-LUOWEN__ar-ink)" marker-end="url(#FIG-LUOWEN__ar-ink)"/>
+    <text x="65" y="214.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">d₁</text>
+    <line x1="87" y1="172.6" x2="65" y2="172.6" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="87" y1="247.4" x2="65" y2="247.4" stroke="currentColor" stroke-width="0.8"/>
+    <circle cx="560" cy="210" r="44" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M595.14,222.79 L593.72,226.17 L591.97,229.4 L589.92,232.44 L587.57,235.27 L584.96,237.85 L582.11,240.16 L579.05,242.18 L575.81,243.9 L572.41,245.28 L568.89,246.33 L565.29,247.02 L561.63,247.36 L557.96,247.34 L554.31,246.96 L550.71,246.23 L547.21,245.14 L543.83,243.72 L540.6,241.97 L537.56,239.92 L534.73,237.57 L532.15,234.96 L529.84,232.11 L527.82,229.05 L526.1,225.81 L524.72,222.41 L523.67,218.89 L522.98,215.29 L522.64,211.63 L522.66,207.96 L523.04,204.31 L523.77,200.71 L524.86,197.21 L526.28,193.83 L528.03,190.6 L530.08,187.56 L532.43,184.73 L535.04,182.15 L537.89,179.84 L540.95,177.82 L544.19,176.1 L547.59,174.72 L551.11,173.67 L554.71,172.98 L558.37,172.64 L562.04,172.66 L565.69,173.04 L569.29,173.77 L572.79,174.86" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <line x1="506" y1="210" x2="614" y2="210" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="560" y1="158" x2="560" y2="262" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="560" y="300" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">端视图：外圈粗实线 = d，内圈细实线 ≈ 3/4 圈 = d₁</text>
+    <text x="800" y="96" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">内螺纹（剖视）</text>
+    <rect x="712" y="122" width="176" height="176" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="800" y1="100" x2="800" y2="320" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="756" y1="122" x2="756" y2="298" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="844" y1="122" x2="844" y2="298" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="762.6" y1="122" x2="762.6" y2="298" stroke="currentColor" stroke-width="2"/>
+    <line x1="837.4" y1="122" x2="837.4" y2="298" stroke="currentColor" stroke-width="2"/>
+    <rect x="712" y="122" width="50.6" height="176" fill="url(#FIG-LUOWEN__hatch45)" stroke="none"/>
+    <rect x="837.4" y="122" width="50.6" height="176" fill="url(#FIG-LUOWEN__hatch45)" stroke="none"/>
+    <line x1="368" y1="256" x2="412" y2="340" stroke="#6b7280" stroke-width="0.8" marker-end="url(#FIG-LUOWEN__ar-ink)"/>
+    <text x="418" y="344" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">螺纹终止线（粗实线）</text>
+    <line x1="762.6" y1="126" x2="694" y2="116" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG-LUOWEN__ar-red)"/>
+    <text x="688" y="120" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#dc2626">D₁：牙顶（粗实线）</text>
+    <line x1="844" y1="126" x2="896" y2="116" stroke="#2563eb" stroke-width="0.8" marker-end="url(#FIG-LUOWEN__ar-blue)"/>
+    <text x="902" y="120" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">D：牙底（细实线）</text>
+    <text x="40" y="392" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 外螺纹：牙顶（大径 d）画粗实线；牙底（小径 d₁ ≈ 0.85d）画细实线；端视图中牙底圆画约 3/4 圈细实线。</text>
+    <text x="40" y="415" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 内螺纹（剖视）：牙顶（小径 D₁）画粗实线，牙底（大径 D）画细实线；剖面线画到牙顶粗实线为止，空腔不画。</text>
+    <text x="40" y="438" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 螺纹终止线用粗实线：外螺纹画在螺纹段结束处、从牙顶画到牙顶；不通孔内螺纹的终止线画到牙顶。</text>
+    <text x="40" y="461" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 螺纹一律按比例画（d₁ ≈ 0.85d），不画真实牙型；45° 倒角在端视图上画成一个圆。</text>
+    <text x="40" y="484" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">⑤ 内螺纹不剖（外形视图）时：小径 D₁ 画粗实线、大径 D 画细实线（约 3/4 圈）；只有剖开后才按上面规则画实体一侧。</text>
+  </g>
+</svg>
+<div class="cap">外螺纹与内螺纹剖视的比例画法对照：外螺纹牙顶 d 画粗实线、牙底 d₁=0.85d 画细实线，端视图牙底圆约 3/4 圈；内螺纹牙顶 D₁ 粗、牙底 D 细。</div></div><div class="card"><div class="fid">FIG-BIAOMIAN</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 989 636" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-BIAOMIAN-t FIG-BIAOMIAN-d" class="fig-svg">
+  <title id="FIG-BIAOMIAN-t">表面结构（Ra）代号与常用加工方法对照</title>
+  <desc id="FIG-BIAOMIAN-d">表面结构符号由基本符号、去材料/不去材料标记和 Ra 数值组成；右侧列出 Ra 0.4～12.5 的常用加工方法。</desc>
+  <defs>
+  <pattern id="FIG-BIAOMIAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-BIAOMIAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-BIAOMIAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-BIAOMIAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-BIAOMIAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-BIAOMIAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-BIAOMIAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 13  表面结构代号（Ra）的组成与常用加工方法</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">符号由两条与水平线成 60° 的细实线组成；数值写在横线上方，单位 μm 省略不写。</text>
+    <line x1="140" y1="250" x2="132" y2="236.14" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="140" y1="250" x2="156" y2="222.29" stroke="currentColor" stroke-width="0.8"/>
+    <text x="200" y="236" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">基本符号</text>
+    <text x="200" y="254" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">两条与水平线成 60° 的细实线</text>
+    <line x1="140" y1="400" x2="132" y2="386.14" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="140" y1="400" x2="156" y2="372.29" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="132" y1="386.14" x2="164" y2="386.14" stroke="currentColor" stroke-width="0.8"/>
+    <text x="148" y="380" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">Ra 3.2</text>
+    <text x="200" y="386" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">用去除材料方法获得的表面</text>
+    <text x="200" y="404" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">基本符号 + 短横线；Ra 数值写在横线上方</text>
+    <line x1="140" y1="550" x2="132" y2="536.14" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="140" y1="550" x2="156" y2="522.29" stroke="currentColor" stroke-width="0.8"/>
+    <circle cx="140" cy="540" r="5" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="200" y="536" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">用不去除材料方法获得的表面</text>
+    <text x="200" y="554" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">基本符号 + 小圆；用于铸、锻等毛坯表面</text>
+    <text x="40" y="614" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">去掉材料（车、铣、磨）标注前两种符号；铸锻件毛坯、不加工表面用带小圆的符号。</text>
+    <text x="505" y="118" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">Ra / μm</text>
+    <text x="575" y="118" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">常用加工方法</text>
+    <text x="790" y="118" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">表面特征</text>
+    <line x1="500" y1="128" x2="970" y2="128" stroke="currentColor" stroke-width="0.8"/>
+    <text x="505" y="158" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">0.4</text>
+    <text x="575" y="158" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">研磨、超精加工、精磨</text>
+    <text x="790" y="158" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">镜面，极光滑</text>
+    <text x="505" y="198" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">0.8</text>
+    <text x="575" y="198" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">精磨、精铰、金刚石车削</text>
+    <text x="790" y="198" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">很光滑</text>
+    <text x="505" y="238" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">1.6</text>
+    <text x="575" y="238" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">精车、精铣、精铰、磨削</text>
+    <text x="790" y="238" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">光滑，配合面常用</text>
+    <text x="505" y="278" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">3.2</text>
+    <text x="575" y="278" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">半精车、半精铣、精车</text>
+    <text x="790" y="278" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">较光滑，一般配合面</text>
+    <text x="505" y="318" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">6.3</text>
+    <text x="575" y="318" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">车、铣、钻、铰</text>
+    <text x="790" y="318" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">中等，非配合面</text>
+    <text x="505" y="358" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">12.5</text>
+    <text x="575" y="358" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">粗车、粗铣、钻孔</text>
+    <text x="790" y="358" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">粗糙，粗加工或非加工面</text>
+    <line x1="500" y1="402" x2="970" y2="402" stroke="currentColor" stroke-width="0.8"/>
+    <text x="500" y="430" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">Ra 越小表面越光滑；数值按优先数系（0.012～100）选取。</text>
+    <text x="500" y="452" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">同一表面只注一次；无法加工的表面用带小圆的符号。</text>
+  </g>
+</svg>
+<div class="cap">表面结构代号的组成：基本符号、去掉材料（加短横线）与不去掉材料（加小圆）的区分、Ra 数值写在横线上方；右侧对照 Ra 0.4～12.5 的常用加工方法。</div></div><div class="card"><div class="fid">FIG-CHICUN-SIYAOSU</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 923 610" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-CHICUN-SIYAOSU-t FIG-CHICUN-SIYAOSU-d" class="fig-svg">
+  <title id="FIG-CHICUN-SIYAOSU-t">尺寸注法四要素：尺寸界线、尺寸线、箭头、尺寸数字</title>
+  <desc id="FIG-CHICUN-SIYAOSU-d">左侧为正确注法并用①②③④指出四要素，右侧列出两种常见错误注法。</desc>
+  <defs>
+  <pattern id="FIG-CHICUN-SIYAOSU__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-CHICUN-SIYAOSU__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-CHICUN-SIYAOSU__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-CHICUN-SIYAOSU__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-CHICUN-SIYAOSU__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-CHICUN-SIYAOSU__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-CHICUN-SIYAOSU__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-CHICUN-SIYAOSU__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-CHICUN-SIYAOSU__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-CHICUN-SIYAOSU__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-CHICUN-SIYAOSU__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-CHICUN-SIYAOSU__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-CHICUN-SIYAOSU__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-CHICUN-SIYAOSU__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 14  尺寸注法的四要素（正确注法 / 错误注法对照）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">尺寸界线、尺寸线用细实线；箭头画在尺寸线两端；尺寸数字写在尺寸线上方（水平尺寸字头朝上，垂直尺寸字头朝左）。</text>
+    <text x="90" y="158" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">正确注法</text>
+    <rect x="90" y="200" width="240" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="90" y1="356" x2="330" y2="356" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-CHICUN-SIYAOSU__ar-ink)" marker-end="url(#FIG-CHICUN-SIYAOSU__ar-ink)"/>
+    <text x="210" y="351" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">40</text>
+    <line x1="90" y1="303" x2="90" y2="361" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="330" y1="303" x2="330" y2="361" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="400" y1="200" x2="400" y2="300" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-CHICUN-SIYAOSU__ar-ink)" marker-end="url(#FIG-CHICUN-SIYAOSU__ar-ink)"/>
+    <text x="405" y="254.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">20</text>
+    <line x1="333" y1="200" x2="405" y2="200" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="333" y1="300" x2="405" y2="300" stroke="currentColor" stroke-width="0.8"/>
+    <circle cx="72" cy="330" r="9" stroke="#0f766e" stroke-width="0.8" fill="none"/>
+    <text x="72" y="334" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#0f766e">①</text>
+    <circle cx="250" cy="380" r="9" stroke="#0f766e" stroke-width="0.8" fill="none"/>
+    <text x="250" y="384" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#0f766e">②</text>
+    <circle cx="348" cy="350" r="9" stroke="#0f766e" stroke-width="0.8" fill="none"/>
+    <text x="348" y="354" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#0f766e">③</text>
+    <circle cx="186" cy="336" r="9" stroke="#0f766e" stroke-width="0.8" fill="none"/>
+    <text x="186" y="340" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#0f766e">④</text>
+    <text x="600" y="158" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">错误注法（✗）</text>
+    <rect x="600" y="200" width="240" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="600" y1="344" x2="840" y2="344" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-CHICUN-SIYAOSU__ar-ink)" marker-end="url(#FIG-CHICUN-SIYAOSU__ar-ink)"/>
+    <text x="720" y="348" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">40</text>
+    <text x="852" y="340" font-size="15" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626" font-weight="600">✗</text>
+    <text x="600" y="392" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">✗ 尺寸数字被尺寸线穿过 —— 数字处应断开或写在线上方</text>
+    <line x1="880" y1="200" x2="880" y2="300" stroke="currentColor" stroke-width="2" marker-start="url(#FIG-CHICUN-SIYAOSU__ar-ink)" marker-end="url(#FIG-CHICUN-SIYAOSU__ar-ink)"/>
+    <text x="885" y="254.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">20</text>
+    <line x1="843" y1="200" x2="885" y2="200" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="843" y1="300" x2="885" y2="300" stroke="currentColor" stroke-width="0.8"/>
+    <text x="896" y="244" font-size="15" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626" font-weight="600">✗</text>
+    <text x="600" y="418" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">✗ 尺寸线画成粗实线 —— 尺寸线、尺寸界线都用细实线</text>
+    <text x="40" y="470" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 尺寸界线：由轮廓线、轴线或对称中心线引出，末端超出尺寸线 2～5 mm，用细实线。</text>
+    <text x="40" y="494" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 尺寸线：细实线，与被注线段平行，不能用轮廓线、轴线或对称中心线代替。</text>
+    <text x="40" y="518" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 箭头：画在尺寸线两端，箭尖接触尺寸界线；位置不够时可画在外侧并用引线引出。</text>
+    <text x="40" y="542" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 尺寸数字：写在尺寸线上方居中；水平尺寸字头朝上，垂直尺寸字头朝左，倾斜尺寸按斜线方向注写。</text>
+    <text x="40" y="588" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">口诀：界线细、线平行、箭头顶住界线、数字在上不被穿 —— 四条做到，尺寸就合规。</text>
+  </g>
+</svg>
+<div class="cap">尺寸注法四要素在同一尺寸上的位置关系，并对照两种常见错误：尺寸数字被尺寸线穿过、尺寸线画成粗实线。</div></div><div class="card"><div class="fid">FIG-GONGCHA-PEIJIAN</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1034 614" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-GONGCHA-PEIJIAN-t FIG-GONGCHA-PEIJIAN-d" class="fig-svg">
+  <title id="FIG-GONGCHA-PEIJIAN-t">三种配合的公差带对照：间隙、过渡、过盈</title>
+  <desc id="FIG-GONGCHA-PEIJIAN-d">同一基本尺寸 Φ30 下，H7/g6 为间隙配合、H7/k6 为过渡配合、H7/s6 为过盈配合；通过孔带与轴带的相对位置判断配合性质。</desc>
+  <defs>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-GONGCHA-PEIJIAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-GONGCHA-PEIJIAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 15  三种配合的公差带对照（Φ30，单位 μm）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">孔 H7 = 0～+21；轴 g6 = −20～−7、k6 = +2～+15、s6 = +35～+48（GB/T 1800.1）。</text>
+    <line x1="60" y1="430" x2="350" y2="430" stroke="currentColor" stroke-width="1.4"/>
+    <text x="340" y="446" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">0</text>
+    <rect x="90" y="333.4" width="90" height="96.6" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.14"/>
+    <rect x="210" y="462.2" width="90" height="59.8" stroke="#ea580c" stroke-width="2" fill="#ea580c" fill-opacity="0.14"/>
+    <text x="135" y="325.4" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">孔 H7</text>
+    <text x="255" y="454.2" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#ea580c">轴 g6</text>
+    <text x="205" y="96" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="#16a34a" font-weight="600">间隙配合 H7/g6</text>
+    <text x="205" y="120" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#16a34a">Xmax = +41，Xmin = +7</text>
+    <line x1="392" y1="430" x2="682" y2="430" stroke="currentColor" stroke-width="1.4"/>
+    <text x="672" y="446" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">0</text>
+    <rect x="422" y="333.4" width="90" height="96.6" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.14"/>
+    <rect x="542" y="361" width="90" height="59.8" stroke="#ea580c" stroke-width="2" fill="#ea580c" fill-opacity="0.14"/>
+    <text x="467" y="325.4" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">孔 H7</text>
+    <text x="587" y="353" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#ea580c">轴 k6</text>
+    <text x="537" y="96" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="#b45309" font-weight="600">过渡配合 H7/k6</text>
+    <text x="537" y="120" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#b45309">Xmax = +19，Ymax = 15</text>
+    <line x1="724" y1="430" x2="1014" y2="430" stroke="currentColor" stroke-width="1.4"/>
+    <text x="1004" y="446" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">0</text>
+    <rect x="754" y="333.4" width="90" height="96.6" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.14"/>
+    <rect x="874" y="209.2" width="90" height="59.8" stroke="#ea580c" stroke-width="2" fill="#ea580c" fill-opacity="0.14"/>
+    <text x="799" y="325.4" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb">孔 H7</text>
+    <text x="919" y="201.2" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#ea580c">轴 s6</text>
+    <text x="869" y="96" font-size="13" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" font-weight="600">过盈配合 H7/s6</text>
+    <text x="869" y="120" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626">Ymax = 48，Ymin = 14</text>
+    <line x1="44" y1="430" x2="340" y2="430" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="44" y1="520" x2="44" y2="180" stroke="currentColor" stroke-width="0.8"/>
+    <text x="54" y="176" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">偏差 / μm（零线 = 0）</text>
+    <line x1="38" y1="430" x2="50" y2="430" stroke="currentColor" stroke-width="0.8"/>
+    <text x="34" y="434" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">0</text>
+    <line x1="38" y1="338" x2="50" y2="338" stroke="currentColor" stroke-width="0.8"/>
+    <text x="34" y="342" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">+20</text>
+    <line x1="38" y1="246" x2="50" y2="246" stroke="currentColor" stroke-width="0.8"/>
+    <text x="34" y="250" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">+40</text>
+    <text x="40" y="548" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 判断口诀：孔带（上）在轴带（下）之上 → 间隙；两带有重叠 → 过渡；孔带在轴带之下 → 过盈。</text>
+    <text x="40" y="570" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 间隙配合 Xmax = ES − ei、Xmin = EI − es；过盈配合 Ymax = es − EI、Ymin = ei − ES。</text>
+    <text x="40" y="592" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 同一基本尺寸的孔、轴公差带画在同一条零线上，比高度、看位置就能一眼定配合类型。</text>
+  </g>
+</svg>
+<div class="cap">同一基本尺寸 Φ30 下三种配合的公差带对照：H7/g6 为间隙、H7/k6 为过渡、H7/s6 为过盈，看孔带与轴带的相对位置即可判断配合性质。</div></div></div><script>
+document.getElementById('theme').onclick = () => document.body.classList.toggle('dark');
+</script></body></html>

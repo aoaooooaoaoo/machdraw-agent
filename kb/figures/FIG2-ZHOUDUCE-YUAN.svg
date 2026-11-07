@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1064 600" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-ZHOUDUCE-YUAN-t FIG2-ZHOUDUCE-YUAN-d" class="fig-svg">
+  <title id="FIG2-ZHOUDUCE-YUAN-t">圆的正等测：椭圆长短轴方向与四心圆法</title>
+  <desc id="FIG2-ZHOUDUCE-YUAN-d">正等测中圆变成椭圆，长轴约 1.22d、短轴约 0.71d；四心圆法用四段圆弧近似作出椭圆。</desc>
+  <defs>
+  <pattern id="FIG2-ZHOUDUCE-YUAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-YUAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-YUAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-YUAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-YUAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUDUCE-YUAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-ZHOUDUCE-YUAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-ZHOUDUCE-YUAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-ZHOUDUCE-YUAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-ZHOUDUCE-YUAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-ZHOUDUCE-YUAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-ZHOUDUCE-YUAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-ZHOUDUCE-YUAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-ZHOUDUCE-YUAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-3  圆的正等测画法（四心圆法，圆 Ø140）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">关键：椭圆长轴永远垂直于该圆所在平面法线的投影方向。</text>
+    <path d="M300,260 L421.24,330 L300,400 L178.76,330 Z" stroke="#6b7280" stroke-width="0.8" fill="none"/>
+    <path d="M300,260.0 L300,400.0 M178.76,330 L421.24,330" stroke="#6b7280" stroke-width="0.8" fill="none" stroke-dasharray="6 4"/>
+    <path d="M239.38,295 L242.15,293.45 L244.96,291.97 L247.8,290.57 L250.69,289.24 L253.6,287.99 L256.55,286.81 L259.53,285.71 L262.53,284.69 L265.57,283.75 L268.62,282.89 L271.7,282.11 L274.79,281.41 L277.91,280.79 L281.03,280.25 L284.18,279.8 L287.33,279.42 L290.49,279.13 L293.65,278.93 L296.83,278.8 L300,278.76 L303.17,278.8 L306.35,278.93 L309.51,279.13 L312.67,279.42 L315.82,279.8 L318.97,280.25 L322.09,280.79 L325.21,281.41 L328.3,282.11 L331.38,282.89 L334.43,283.75 L337.47,284.69 L340.47,285.71 L343.45,286.81 L346.4,287.99 L349.31,289.24 L352.2,290.57 L355.04,291.97 L357.85,293.45 L360.62,295" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M360.62,365 L357.85,366.55 L355.04,368.03 L352.2,369.43 L349.31,370.76 L346.4,372.01 L343.45,373.19 L340.47,374.29 L337.47,375.31 L334.43,376.25 L331.38,377.11 L328.3,377.89 L325.21,378.59 L322.09,379.21 L318.97,379.75 L315.82,380.2 L312.67,380.58 L309.51,380.87 L306.35,381.07 L303.17,381.2 L300,381.24 L296.83,381.2 L293.65,381.07 L290.49,380.87 L287.33,380.58 L284.18,380.2 L281.03,379.75 L277.91,379.21 L274.79,378.59 L271.7,377.89 L268.62,377.11 L265.57,376.25 L262.53,375.31 L259.53,374.29 L256.55,373.19 L253.6,372.01 L250.69,370.76 L247.8,369.43 L244.96,368.03 L242.15,366.55 L239.38,365" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M360.62,295 L362.87,296.4 L365.02,297.94 L367.06,299.62 L368.99,301.42 L370.8,303.35 L372.48,305.4 L374.02,307.55 L375.41,309.79 L376.66,312.13 L377.75,314.53 L378.68,317.01 L379.45,319.54 L380.05,322.12 L380.48,324.73 L380.74,327.36 L380.83,330 L380.74,332.64 L380.48,335.27 L380.05,337.88 L379.45,340.46 L378.68,342.99 L377.75,345.47 L376.66,347.87 L375.41,350.21 L374.02,352.45 L372.48,354.6 L370.8,356.65 L368.99,358.58 L367.06,360.38 L365.02,362.06 L362.87,363.6 L360.62,365" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M239.38,365 L237.13,363.6 L234.98,362.06 L232.94,360.38 L231.01,358.58 L229.2,356.65 L227.52,354.6 L225.98,352.45 L224.59,350.21 L223.34,347.87 L222.25,345.47 L221.32,342.99 L220.55,340.46 L219.95,337.88 L219.52,335.27 L219.26,332.64 L219.17,330 L219.26,327.36 L219.52,324.73 L219.95,322.12 L220.55,319.54 L221.32,317.01 L222.25,314.53 L223.34,312.13 L224.59,309.79 L225.98,307.55 L227.52,305.4 L229.2,303.35 L231.01,301.42 L232.94,299.62 L234.98,297.94 L237.13,296.4 L239.38,295" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="300" cy="260" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="300" cy="400" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="259.59" cy="330" r="2.2" fill="currentColor" stroke="none"/>
+    <circle cx="340.41" cy="330" r="2.2" fill="currentColor" stroke="none"/>
+    <text x="300" y="248" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb" font-weight="600">O₁</text>
+    <text x="300" y="420" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#2563eb" font-weight="600">O₂</text>
+    <text x="249.59" y="322" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="#2563eb" font-weight="600">O₃</text>
+    <text x="350.41" y="350" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb" font-weight="600">O₄</text>
+    <line x1="357.12" y1="295" x2="364.12" y2="295" stroke="#dc2626" stroke-width="0.8"/>
+    <line x1="357.12" y1="365" x2="364.12" y2="365" stroke="#dc2626" stroke-width="0.8"/>
+    <line x1="235.88" y1="365" x2="242.88" y2="365" stroke="#dc2626" stroke-width="0.8"/>
+    <line x1="235.88" y1="295" x2="242.88" y2="295" stroke="#dc2626" stroke-width="0.8"/>
+    <text x="300" y="152" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">四心圆法</text>
+    <line x1="374.41" y1="318" x2="450" y2="222" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG2-ZHOUDUCE-YUAN__ar-red)"/>
+    <text x="456" y="226" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">小弧半径 R₁ = ρ/3</text>
+    <line x1="360" y1="376" x2="450" y2="458" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG2-ZHOUDUCE-YUAN__ar-red)"/>
+    <text x="456" y="462" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">大弧半径 R₂ = ρ</text>
+    <text x="300" y="506" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626">切点在菱形四边中点（红短线）；ρ = 0.866d 为菱形长半对角线</text>
+    <path d="M761.1,250 L760.97,252.32 L760.58,254.62 L759.93,256.91 L759.02,259.16 L757.86,261.38 L756.45,263.55 L754.8,265.66 L752.91,267.7 L750.8,269.67 L748.47,271.55 L745.94,273.34 L743.2,275.03 L740.29,276.62 L737.2,278.08 L733.95,279.43 L730.55,280.66 L727.02,281.75 L723.38,282.71 L719.64,283.52 L715.81,284.19 L711.92,284.72 L707.98,285.1 L704,285.32 L700,285.4 L696,285.32 L692.02,285.1 L688.08,284.72 L684.19,284.19 L680.36,283.52 L676.62,282.71 L672.98,281.75 L669.45,280.66 L666.05,279.43 L662.8,278.08 L659.71,276.62 L656.8,275.03 L654.06,273.34 L651.53,271.55 L649.2,269.67 L647.09,267.7 L645.2,265.66 L643.55,263.55 L642.14,261.38 L640.98,259.16 L640.07,256.91 L639.42,254.62 L639.03,252.32 L638.9,250 L639.03,247.68 L639.42,245.38 L640.07,243.09 L640.98,240.84 L642.14,238.62 L643.55,236.45 L645.2,234.34 L647.09,232.3 L649.2,230.33 L651.53,228.45 L654.06,226.66 L656.8,224.97 L659.71,223.38 L662.8,221.92 L666.05,220.57 L669.45,219.34 L672.98,218.25 L676.62,217.29 L680.36,216.48 L684.19,215.81 L688.08,215.28 L692.02,214.9 L696,214.68 L700,214.6 L704,214.68 L707.98,214.9 L711.92,215.28 L715.81,215.81 L719.64,216.48 L723.38,217.29 L727.02,218.25 L730.55,219.34 L733.95,220.57 L737.2,221.92 L740.29,223.38 L743.2,224.97 L745.94,226.66 L748.47,228.45 L750.8,230.33 L752.91,232.3 L754.8,234.34 L756.45,236.45 L757.86,238.62 L759.02,240.84 L759.93,243.09 L760.58,245.38 L760.97,247.68 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M638.9,250.0 L761.1,250.0" stroke="#2563eb" stroke-width="0.8" fill="none" stroke-dasharray="10 3 3 3"/>
+    <path d="M700.0,214.6 L700.0,285.4" stroke="#dc2626" stroke-width="0.8" fill="none" stroke-dasharray="10 3 3 3"/>
+    <text x="700" y="346" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">水平面上的圆</text>
+    <text x="700" y="363" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">长轴水平</text>
+    <path d="M880.55,197.09 L882.49,198.36 L884.29,199.85 L885.94,201.56 L887.44,203.47 L888.78,205.58 L889.96,207.89 L890.96,210.37 L891.79,213.03 L892.43,215.84 L892.9,218.8 L893.18,221.89 L893.28,225.1 L893.19,228.42 L892.92,231.83 L892.46,235.32 L891.82,238.87 L891.01,242.47 L890.01,246.1 L888.85,249.75 L887.52,253.4 L886.03,257.04 L884.38,260.64 L882.59,264.2 L880.66,267.7 L878.59,271.12 L876.41,274.46 L874.11,277.68 L871.71,280.79 L869.21,283.77 L866.63,286.6 L863.98,289.28 L861.27,291.79 L858.52,294.11 L855.72,296.25 L852.91,298.2 L850.08,299.93 L847.25,301.45 L844.43,302.75 L841.63,303.83 L838.87,304.68 L836.16,305.29 L833.51,305.66 L830.93,305.8 L828.43,305.69 L826.02,305.35 L823.71,304.77 L821.52,303.96 L819.45,302.91 L817.51,301.64 L815.71,300.15 L814.06,298.44 L812.56,296.53 L811.22,294.42 L810.04,292.11 L809.04,289.63 L808.21,286.97 L807.57,284.16 L807.1,281.2 L806.82,278.11 L806.72,274.9 L806.81,271.58 L807.08,268.17 L807.54,264.68 L808.18,261.13 L808.99,257.53 L809.99,253.9 L811.15,250.25 L812.48,246.6 L813.97,242.96 L815.62,239.36 L817.41,235.8 L819.34,232.3 L821.41,228.88 L823.59,225.54 L825.89,222.32 L828.29,219.21 L830.79,216.23 L833.37,213.4 L836.02,210.72 L838.73,208.21 L841.48,205.89 L844.28,203.75 L847.09,201.8 L849.92,200.07 L852.75,198.55 L855.57,197.25 L858.37,196.17 L861.13,195.32 L863.84,194.71 L866.49,194.34 L869.07,194.2 L871.57,194.31 L873.98,194.65 L876.29,195.23 L878.48,196.04 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M819.5,302.9 L880.5,197.1" stroke="#2563eb" stroke-width="0.8" fill="none" stroke-dasharray="10 3 3 3"/>
+    <path d="M819.3,232.3 L880.7,267.7" stroke="#dc2626" stroke-width="0.8" fill="none" stroke-dasharray="10 3 3 3"/>
+    <text x="850" y="346" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">正平面上的圆</text>
+    <text x="850" y="363" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">长轴与水平成 120°</text>
+    <path d="M1030.55,302.91 L1028.48,303.96 L1026.29,304.77 L1023.98,305.35 L1021.57,305.69 L1019.07,305.8 L1016.49,305.66 L1013.84,305.29 L1011.13,304.68 L1008.37,303.83 L1005.57,302.75 L1002.75,301.45 L999.92,299.93 L997.09,298.2 L994.28,296.25 L991.48,294.11 L988.73,291.79 L986.02,289.28 L983.37,286.6 L980.79,283.77 L978.29,280.79 L975.89,277.68 L973.59,274.46 L971.41,271.12 L969.34,267.7 L967.41,264.2 L965.62,260.64 L963.97,257.04 L962.48,253.4 L961.15,249.75 L959.99,246.1 L958.99,242.47 L958.18,238.87 L957.54,235.32 L957.08,231.83 L956.81,228.42 L956.72,225.1 L956.82,221.89 L957.1,218.8 L957.57,215.84 L958.21,213.03 L959.04,210.37 L960.04,207.89 L961.22,205.58 L962.56,203.47 L964.06,201.56 L965.71,199.85 L967.51,198.36 L969.45,197.09 L971.52,196.04 L973.71,195.23 L976.02,194.65 L978.43,194.31 L980.93,194.2 L983.51,194.34 L986.16,194.71 L988.87,195.32 L991.63,196.17 L994.43,197.25 L997.25,198.55 L1000.08,200.07 L1002.91,201.8 L1005.72,203.75 L1008.52,205.89 L1011.27,208.21 L1013.98,210.72 L1016.63,213.4 L1019.21,216.23 L1021.71,219.21 L1024.11,222.32 L1026.41,225.54 L1028.59,228.88 L1030.66,232.3 L1032.59,235.8 L1034.38,239.36 L1036.03,242.96 L1037.52,246.6 L1038.85,250.25 L1040.01,253.9 L1041.01,257.53 L1041.83,261.13 L1042.46,264.68 L1042.92,268.17 L1043.19,271.58 L1043.28,274.9 L1043.18,278.11 L1042.9,281.2 L1042.43,284.16 L1041.79,286.97 L1040.96,289.63 L1039.96,292.11 L1038.78,294.42 L1037.44,296.53 L1035.94,298.44 L1034.29,300.15 L1032.49,301.64 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M969.5,197.1 L1030.5,302.9" stroke="#2563eb" stroke-width="0.8" fill="none" stroke-dasharray="10 3 3 3"/>
+    <path d="M1030.7,232.3 L969.3,267.7" stroke="#dc2626" stroke-width="0.8" fill="none" stroke-dasharray="10 3 3 3"/>
+    <text x="1000" y="346" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">侧平面上的圆</text>
+    <text x="1000" y="363" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">长轴与水平成 60°</text>
+    <text x="850" y="148" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">长轴 ≈ 1.22d（蓝）、短轴 ≈ 0.71d（红）</text>
+    <text x="40" y="536" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 四心圆法是近似画法：四个圆心取在短对角线两端与长对角线上，四段弧在菱形各边中点相接。</text>
+    <text x="40" y="557" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 长轴近似 1.22d、短轴 0.71d（d 为圆的直径）；实际作图用四心法即可，不必量轴长。</text>
+    <text x="40" y="578" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 三个坐标面上的圆，椭圆长轴方向不同 —— 长轴始终垂直于该面法线的轴测投影方向。</text>
+  </g>
+</svg>

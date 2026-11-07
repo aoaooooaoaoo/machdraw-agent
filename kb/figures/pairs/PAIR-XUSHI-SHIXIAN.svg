@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="PAIR-XUSHI-SHIXIAN-t PAIR-XUSHI-SHIXIAN-d" class="fig-svg pair-svg" data-pair-id="PAIR-XUSHI-SHIXIAN">
+  <title id="PAIR-XUSHI-SHIXIAN-t">不可见轮廓：细虚线 与 粗实线</title>
+  <desc id="PAIR-XUSHI-SHIXIAN-d">同一块带阶梯孔的板：线型一改，读出来的形体就变了 | A：细虚线（正确）；B：粗实线（错误）</desc>
+  <defs>
+  <pattern id="hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <marker id="ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#1f2937"/>
+  </marker>
+  <marker id="ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse"
+          markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/>
+  </marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+  <text x="380" y="23" font-size="13.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">不可见轮廓：细虚线 与 粗实线</text>
+  <text x="380" y="41" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">同一块带阶梯孔的板：线型一改，读出来的形体就变了</text>
+  <g data-panel="a" data-caption="细虚线（正确）">
+    <circle cx="32" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="32" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">A</text>
+    <path d="M90,140 L290,140 L290,250 L90,250 Z" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M160,140 L160,176" stroke="#1f2937" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <path d="M220,140 L220,176" stroke="#1f2937" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <path d="M160,176 L220,176" stroke="#1f2937" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <path d="M174,176 L174,250" stroke="#1f2937" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <path d="M206,176 L206,250" stroke="#1f2937" stroke-width="0.8" stroke-dasharray="6 4" fill="none"/>
+    <line x1="125.97" y1="125.59" x2="160" y2="158" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="160" cy="158" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="118" cy="118" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="118" y="121.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="68.56" y1="193.09" x2="174" y2="224" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="174" cy="224" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="58" cy="190" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="58" y="193.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="311" y1="202.28" x2="206" y2="205" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="206" cy="205" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="322" cy="202" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="322" y="205.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="190" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="600">A：细虚线（正确）</text>
+  <g data-panel="b" data-caption="粗实线（错误）">
+    <circle cx="412" cy="64" r="11" stroke="#1f2937" stroke-width="1.2" fill="none"/>
+    <text x="412" y="68.4" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#1f2937" font-weight="700">B</text>
+    <path d="M470,140 L670,140 L670,250 L470,250 Z" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M540,140 L540,176" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M600,140 L600,176" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M540,176 L600,176" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M554,176 L554,250" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M586,176 L586,250" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <line x1="505.97" y1="125.59" x2="540" y2="158" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="540" cy="158" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="498" cy="118" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="1"/>
+    <text x="498" y="121.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="1">①</text>
+    <line x1="448.56" y1="193.09" x2="554" y2="224" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="554" cy="224" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="438" cy="190" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="2"/>
+    <text x="438" y="193.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="2">②</text>
+    <line x1="691" y1="202.28" x2="586" y2="205" stroke="#dc2626" stroke-width="0.8"/>
+    <circle cx="586" cy="205" r="1.7" fill="#dc2626" stroke="none"/>
+    <circle cx="702" cy="202" r="10" stroke="#dc2626" stroke-width="1.2" fill="none" class="diff-marker" data-diff="3"/>
+    <text x="702" y="205.7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" class="diff-no" data-diff="3">③</text>
+  </g>
+  <text x="570" y="307" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" font-weight="600">B：粗实线（错误）</text>
+  <line x1="380" y1="76" x2="380" y2="314" stroke="#d7dde6" stroke-width="1"/>
+  <line x1="20" y1="318" x2="740" y2="318" stroke="#d7dde6" stroke-width="1"/>
+  <g data-legend="1">
+    <text x="20" y="340" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="1">① 线型不同：A 内孔轮廓用细虚线（不可见轮廓）；B 画成粗实线，等于宣称它是可见轮廓</text>
+    <text x="20" y="360" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="2">② 线宽不同：A 虚线用细线 0.8（约粗实线的一半）；B 与外形同宽 2，粗细层次消失</text>
+    <text x="20" y="380" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#1f2937" data-diff="3">③ 读图结论不同：A 孔在板后、外形完整；B 孔像是开在前面的槽，形体判断直接错</text>
+    <text x="20" y="400" font-size="10.5" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280" data-diff="0">注：内部结构复杂时的正确做法是改用剖视图（或局部剖），不是把虚线描粗</text>
+  </g>
+  </g>
+</svg>

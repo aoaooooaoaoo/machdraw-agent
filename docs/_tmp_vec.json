@@ -1,0 +1,14 @@
+{
+  "count": 117,
+  "dim": 512,
+  "sample_key": "chk_doc_a163fb06774ffd660e_0001_0000",
+  "sample_keys": [
+    "chk_doc_a163fb06774ffd660e_0001_0000",
+    "chk_doc_a163fb0686ad236441_0001_0000",
+    "chk_doc_a163fb0697ef4d55fe_0001_0000"
+  ],
+  "has_tf": true,
+  "tf_size": 347,
+  "vec_norm": 1.0,
+  "doc_field": "doc_a163fb06774ffd660e"
+}

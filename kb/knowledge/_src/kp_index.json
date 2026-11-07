@@ -1,0 +1,987 @@
+{
+ "figsize": {
+  "kp_id": "KP-BASIC-001",
+  "term": "图纸幅面",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "frame": {
+  "kp_id": "KP-BASIC-002",
+  "term": "图框与留边",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "titleblock": {
+  "kp_id": "KP-BASIC-003",
+  "term": "标题栏",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "scale": {
+  "kp_id": "KP-BASIC-004",
+  "term": "比例",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "linetypes": {
+  "kp_id": "KP-BASIC-005",
+  "term": "图线种类与用途",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "linewidth": {
+  "kp_id": "KP-BASIC-006",
+  "term": "线宽",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "wavyline": {
+  "kp_id": "KP-BASIC-007",
+  "term": "波浪线与双折线",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "linedraw": {
+  "kp_id": "KP-BASIC-008",
+  "term": "图线的画法规定",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "dim4": {
+  "kp_id": "KP-BASIC-009",
+  "term": "尺寸注法四要素",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "dimnum": {
+  "kp_id": "KP-BASIC-010",
+  "term": "尺寸数字与符号",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "dimlayout": {
+  "kp_id": "KP-BASIC-011",
+  "term": "尺寸的清晰布置",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "dimcircle": {
+  "kp_id": "KP-BASIC-012",
+  "term": "圆与圆弧的尺寸注法",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "slopetaper": {
+  "kp_id": "KP-BASIC-013",
+  "term": "斜度与锥度",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "polygon": {
+  "kp_id": "KP-BASIC-014",
+  "term": "正多边形画法",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "ellipse": {
+  "kp_id": "KP-BASIC-015",
+  "term": "椭圆画法",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "arcconnect": {
+  "kp_id": "KP-BASIC-016",
+  "term": "圆弧连接",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "lineseg": {
+  "kp_id": "KP-BASIC-017",
+  "term": "平面图形的线段分析",
+  "chapter": "第一章 制图的基本知识和基本技能"
+ },
+ "cad_ui": {
+  "kp_id": "KP-CAD-001",
+  "term": "AutoCAD 坐标系与坐标输入",
+  "chapter": "第二章 AutoCAD 基础"
+ },
+ "cad_cmd": {
+  "kp_id": "KP-CAD-002",
+  "term": "常用绘图与编辑命令",
+  "chapter": "第二章 AutoCAD 基础"
+ },
+ "cad_layer": {
+  "kp_id": "KP-CAD-003",
+  "term": "图层与线型管理",
+  "chapter": "第二章 AutoCAD 基础"
+ },
+ "cad_block": {
+  "kp_id": "KP-CAD-004",
+  "term": "图块与属性",
+  "chapter": "第二章 AutoCAD 基础"
+ },
+ "cad_dim": {
+  "kp_id": "KP-CAD-005",
+  "term": "CAD 尺寸标注",
+  "chapter": "第二章 AutoCAD 基础"
+ },
+ "cad_hatch": {
+  "kp_id": "KP-CAD-006",
+  "term": "图案填充（剖面线）",
+  "chapter": "第二章 AutoCAD 基础"
+ },
+ "cad_snap": {
+  "kp_id": "KP-CAD-007",
+  "term": "正交、对象捕捉与极轴追踪",
+  "chapter": "第二章 AutoCAD 基础"
+ },
+ "cad_layout": {
+  "kp_id": "KP-CAD-008",
+  "term": "模型空间与图纸空间",
+  "chapter": "第二章 AutoCAD 基础"
+ },
+ "cad_plot": {
+  "kp_id": "KP-CAD-009",
+  "term": "打印出图",
+  "chapter": "第二章 AutoCAD 基础"
+ },
+ "cad_flow": {
+  "kp_id": "KP-CAD-010",
+  "term": "用 CAD 绘制三视图的流程",
+  "chapter": "第二章 AutoCAD 基础"
+ },
+ "cad_units": {
+  "kp_id": "KP-CAD-011",
+  "term": "绘图单位与图形界限",
+  "chapter": "第二章 AutoCAD 基础"
+ },
+ "proj_method": {
+  "kp_id": "KP-PROJ-001",
+  "term": "投影法的分类",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "ortho_feature": {
+  "kp_id": "KP-PROJ-002",
+  "term": "正投影的特性",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "three_planes": {
+  "kp_id": "KP-PROJ-003",
+  "term": "三面投影体系",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "three_views": {
+  "kp_id": "KP-PROJ-004",
+  "term": "三视图的形成与展开",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "view_rule": {
+  "kp_id": "KP-PROJ-005",
+  "term": "三等规律",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "point_proj": {
+  "kp_id": "KP-PROJ-006",
+  "term": "点的三面投影",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "point_coord": {
+  "kp_id": "KP-PROJ-007",
+  "term": "点的坐标与投影面距离",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "point_visible": {
+  "kp_id": "KP-PROJ-008",
+  "term": "重影点与可见性",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "line_general": {
+  "kp_id": "KP-PROJ-009",
+  "term": "一般位置直线",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "line_parallel": {
+  "kp_id": "KP-PROJ-010",
+  "term": "投影面平行线",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "line_perp": {
+  "kp_id": "KP-PROJ-011",
+  "term": "投影面垂直线",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "line_point": {
+  "kp_id": "KP-PROJ-012",
+  "term": "直线上的点",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "right_angle": {
+  "kp_id": "KP-PROJ-013",
+  "term": "直角投影定理",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "two_lines": {
+  "kp_id": "KP-PROJ-014",
+  "term": "两直线的相对位置",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "plane_repr": {
+  "kp_id": "KP-PROJ-015",
+  "term": "平面的表示法",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "plane_general": {
+  "kp_id": "KP-PROJ-016",
+  "term": "一般位置平面",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "plane_parallel": {
+  "kp_id": "KP-PROJ-017",
+  "term": "投影面平行面",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "plane_perp": {
+  "kp_id": "KP-PROJ-018",
+  "term": "投影面垂直面",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "plane_point_line": {
+  "kp_id": "KP-PROJ-019",
+  "term": "平面上的点和直线",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "line_plane_intersect": {
+  "kp_id": "KP-PROJ-020",
+  "term": "直线与平面相交",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "plane_plane_intersect": {
+  "kp_id": "KP-PROJ-021",
+  "term": "两平面相交",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "parallel_perp": {
+  "kp_id": "KP-PROJ-022",
+  "term": "平行与垂直关系",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "change_plane": {
+  "kp_id": "KP-PROJ-023",
+  "term": "换面法原理",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "change_rule": {
+  "kp_id": "KP-PROJ-024",
+  "term": "点的换面规律",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "change_app": {
+  "kp_id": "KP-PROJ-025",
+  "term": "换面法的应用",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "rt_triangle": {
+  "kp_id": "KP-PROJ-026",
+  "term": "直角三角形法",
+  "chapter": "第三章 点、直线和平面的投影"
+ },
+ "prism_proj": {
+  "kp_id": "KP-SOLID-001",
+  "term": "棱柱的投影",
+  "chapter": "第四章 立体的投影"
+ },
+ "pyramid_proj": {
+  "kp_id": "KP-SOLID-002",
+  "term": "棱锥的投影",
+  "chapter": "第四章 立体的投影"
+ },
+ "solid_point": {
+  "kp_id": "KP-SOLID-003",
+  "term": "平面立体表面取点",
+  "chapter": "第四章 立体的投影"
+ },
+ "outline": {
+  "kp_id": "KP-SOLID-004",
+  "term": "转向轮廓线",
+  "chapter": "第四章 立体的投影"
+ },
+ "cylinder": {
+  "kp_id": "KP-SOLID-005",
+  "term": "圆柱的投影",
+  "chapter": "第四章 立体的投影"
+ },
+ "cone": {
+  "kp_id": "KP-SOLID-006",
+  "term": "圆锥的投影",
+  "chapter": "第四章 立体的投影"
+ },
+ "sphere": {
+  "kp_id": "KP-SOLID-007",
+  "term": "圆球的投影",
+  "chapter": "第四章 立体的投影"
+ },
+ "torus": {
+  "kp_id": "KP-SOLID-008",
+  "term": "圆环的投影",
+  "chapter": "第四章 立体的投影"
+ },
+ "curve_point": {
+  "kp_id": "KP-SOLID-009",
+  "term": "曲面立体表面取点方法",
+  "chapter": "第四章 立体的投影"
+ },
+ "section_line": {
+  "kp_id": "KP-SOLID-010",
+  "term": "截交线",
+  "chapter": "第四章 立体的投影"
+ },
+ "section_method": {
+  "kp_id": "KP-SOLID-011",
+  "term": "截交线的求法",
+  "chapter": "第四章 立体的投影"
+ },
+ "cyl_section": {
+  "kp_id": "KP-SOLID-012",
+  "term": "圆柱的截交线",
+  "chapter": "第四章 立体的投影"
+ },
+ "cone_section": {
+  "kp_id": "KP-SOLID-013",
+  "term": "圆锥的截交线",
+  "chapter": "第四章 立体的投影"
+ },
+ "sphere_section": {
+  "kp_id": "KP-SOLID-014",
+  "term": "圆球的截交线",
+  "chapter": "第四章 立体的投影"
+ },
+ "section_true": {
+  "kp_id": "KP-SOLID-015",
+  "term": "断面的真形",
+  "chapter": "第四章 立体的投影"
+ },
+ "intersect_concept": {
+  "kp_id": "KP-SOLID-016",
+  "term": "相贯线",
+  "chapter": "第四章 立体的投影"
+ },
+ "intersect_method": {
+  "kp_id": "KP-SOLID-017",
+  "term": "相贯线的求法",
+  "chapter": "第四章 立体的投影"
+ },
+ "cyl_cyl_special": {
+  "kp_id": "KP-SOLID-018",
+  "term": "两圆柱正交相贯",
+  "chapter": "第四章 立体的投影"
+ },
+ "intersect_special": {
+  "kp_id": "KP-SOLID-019",
+  "term": "相贯线的特殊情况",
+  "chapter": "第四章 立体的投影"
+ },
+ "intersect_visible": {
+  "kp_id": "KP-SOLID-020",
+  "term": "相贯线的可见性与常见错误",
+  "chapter": "第四章 立体的投影"
+ },
+ "cut_hole": {
+  "kp_id": "KP-SOLID-021",
+  "term": "切割与穿孔后的投影",
+  "chapter": "第四章 立体的投影"
+ },
+ "combo_form": {
+  "kp_id": "KP-COMP-001",
+  "term": "组合体的组合方式",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "surface_relation": {
+  "kp_id": "KP-COMP-002",
+  "term": "表面连接关系",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "tangent_flush": {
+  "kp_id": "KP-COMP-003",
+  "term": "相切与平齐的画法",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "feature_view": {
+  "kp_id": "KP-COMP-004",
+  "term": "形状特征视图",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "main_view_choice": {
+  "kp_id": "KP-COMP-005",
+  "term": "主视图的选择",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "view_draw_step": {
+  "kp_id": "KP-COMP-006",
+  "term": "画组合体三视图的步骤",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "hidden_line": {
+  "kp_id": "KP-COMP-007",
+  "term": "虚线的处理",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "form_analysis": {
+  "kp_id": "KP-COMP-008",
+  "term": "形体分析法",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "line_face_analysis": {
+  "kp_id": "KP-COMP-009",
+  "term": "线面分析法",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "frame_meaning": {
+  "kp_id": "KP-COMP-010",
+  "term": "视图中图线与线框的含义",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "read_step": {
+  "kp_id": "KP-COMP-011",
+  "term": "读组合体视图的步骤",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "make_up_third": {
+  "kp_id": "KP-COMP-012",
+  "term": "补画第三视图",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "make_up_line": {
+  "kp_id": "KP-COMP-013",
+  "term": "补画视图中的漏线",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "choice_third": {
+  "kp_id": "KP-COMP-014",
+  "term": "选择正确的第三视图",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "dim_class": {
+  "kp_id": "KP-COMP-015",
+  "term": "组合体尺寸的分类",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "dim_datum": {
+  "kp_id": "KP-COMP-016",
+  "term": "尺寸基准",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "dim_closed_chain": {
+  "kp_id": "KP-COMP-017",
+  "term": "尺寸链不封闭",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "dim_overall": {
+  "kp_id": "KP-COMP-018",
+  "term": "总体尺寸的注法",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "dim_avoid": {
+  "kp_id": "KP-COMP-019",
+  "term": "不注交线与相切处的尺寸",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "dim_repeat": {
+  "kp_id": "KP-COMP-020",
+  "term": "不注重复尺寸",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "dim_feature_view": {
+  "kp_id": "KP-COMP-021",
+  "term": "尺寸注在特征视图上",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "symmetry_draw": {
+  "kp_id": "KP-COMP-022",
+  "term": "对称结构的表达",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "sketch": {
+  "kp_id": "KP-COMP-023",
+  "term": "徒手草图",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "config_design": {
+  "kp_id": "KP-COMP-024",
+  "term": "构型设计",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "combo_cut": {
+  "kp_id": "KP-COMP-025",
+  "term": "切割式组合体的读图",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "combo_add": {
+  "kp_id": "KP-COMP-026",
+  "term": "叠加式组合体的读图",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "combo_check": {
+  "kp_id": "KP-COMP-027",
+  "term": "三视图的校核",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "combo_error": {
+  "kp_id": "KP-COMP-028",
+  "term": "组合体画图的常见错误",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "unfold_prism": {
+  "kp_id": "KP-COMP-029",
+  "term": "平面立体的表面展开",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "unfold_cyl": {
+  "kp_id": "KP-COMP-030",
+  "term": "圆柱与圆锥的展开",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "unfold_pipe": {
+  "kp_id": "KP-COMP-031",
+  "term": "弯管的展开",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "view_count": {
+  "kp_id": "KP-COMP-032",
+  "term": "视图数量与配置",
+  "chapter": "第五章 组合体的视图与形体构型"
+ },
+ "axo_concept": {
+  "kp_id": "KP-AXO-001",
+  "term": "轴测图的基本概念",
+  "chapter": "第六章 轴测图"
+ },
+ "axo_class": {
+  "kp_id": "KP-AXO-002",
+  "term": "轴测图的分类",
+  "chapter": "第六章 轴测图"
+ },
+ "iso_angle": {
+  "kp_id": "KP-AXO-003",
+  "term": "正等测的轴间角与伸缩系数",
+  "chapter": "第六章 轴测图"
+ },
+ "iso_ellipse": {
+  "kp_id": "KP-AXO-004",
+  "term": "正等测中圆的椭圆画法",
+  "chapter": "第六章 轴测图"
+ },
+ "iso_plane": {
+  "kp_id": "KP-AXO-005",
+  "term": "平面立体的正等测画法",
+  "chapter": "第六章 轴测图"
+ },
+ "iso_curve": {
+  "kp_id": "KP-AXO-006",
+  "term": "曲面立体的正等测画法",
+  "chapter": "第六章 轴测图"
+ },
+ "cavalier": {
+  "kp_id": "KP-AXO-007",
+  "term": "斜二测的轴间角与伸缩系数",
+  "chapter": "第六章 轴测图"
+ },
+ "axo_section": {
+  "kp_id": "KP-AXO-008",
+  "term": "轴测剖视图",
+  "chapter": "第六章 轴测图"
+ },
+ "axo_compare": {
+  "kp_id": "KP-AXO-009",
+  "term": "轴测图与三视图的比较",
+  "chapter": "第六章 轴测图"
+ },
+ "axo_choose": {
+  "kp_id": "KP-AXO-010",
+  "term": "轴测图的选择",
+  "chapter": "第六章 轴测图"
+ },
+ "axo_error": {
+  "kp_id": "KP-AXO-011",
+  "term": "轴测图的常见错误",
+  "chapter": "第六章 轴测图"
+ },
+ "six_views": {
+  "kp_id": "KP-EXPR-001",
+  "term": "六个基本视图",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "view_config": {
+  "kp_id": "KP-EXPR-002",
+  "term": "视图的配置与标注",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "partial_view": {
+  "kp_id": "KP-EXPR-003",
+  "term": "局部视图",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "directional_view": {
+  "kp_id": "KP-EXPR-004",
+  "term": "向视图",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "oblique_view": {
+  "kp_id": "KP-EXPR-005",
+  "term": "斜视图",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "angle_method": {
+  "kp_id": "KP-EXPR-006",
+  "term": "第一角与第三角画法",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "section_concept": {
+  "kp_id": "KP-EXPR-007",
+  "term": "剖视图的概念",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "hatch": {
+  "kp_id": "KP-EXPR-008",
+  "term": "剖面符号与剖面线",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "full_section": {
+  "kp_id": "KP-EXPR-009",
+  "term": "全剖视图",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "half_section": {
+  "kp_id": "KP-EXPR-010",
+  "term": "半剖视图",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "local_section": {
+  "kp_id": "KP-EXPR-011",
+  "term": "局部剖视图",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "section_label": {
+  "kp_id": "KP-EXPR-012",
+  "term": "剖视图的标注",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "rib_rule": {
+  "kp_id": "KP-EXPR-013",
+  "term": "肋板纵剖的特殊规定",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "section_omit": {
+  "kp_id": "KP-EXPR-014",
+  "term": "剖视图中的省略与规定画法",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "step_section": {
+  "kp_id": "KP-EXPR-015",
+  "term": "阶梯剖",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "revolved_section": {
+  "kp_id": "KP-EXPR-016",
+  "term": "旋转剖",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "oblique_section": {
+  "kp_id": "KP-EXPR-017",
+  "term": "斜剖",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "composite_section": {
+  "kp_id": "KP-EXPR-018",
+  "term": "复合剖",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "section_view": {
+  "kp_id": "KP-EXPR-019",
+  "term": "断面图的概念",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "removed_section": {
+  "kp_id": "KP-EXPR-020",
+  "term": "移出断面",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "coincident_section": {
+  "kp_id": "KP-EXPR-021",
+  "term": "重合断面",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "section_compare": {
+  "kp_id": "KP-EXPR-022",
+  "term": "断面图与剖视图的区别",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "enlarged_view": {
+  "kp_id": "KP-EXPR-023",
+  "term": "局部放大图",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "simplify": {
+  "kp_id": "KP-EXPR-024",
+  "term": "简化画法",
+  "chapter": "第七章 机件的常用表达方法"
+ },
+ "thread_five": {
+  "kp_id": "KP-STD-001",
+  "term": "螺纹的五要素",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "thread_type": {
+  "kp_id": "KP-STD-002",
+  "term": "螺纹的分类",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "thread_draw": {
+  "kp_id": "KP-STD-003",
+  "term": "螺纹的规定画法",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "thread_mark": {
+  "kp_id": "KP-STD-004",
+  "term": "螺纹的标记",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "thread_blind": {
+  "kp_id": "KP-STD-005",
+  "term": "不通孔螺纹的画法",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "thread_error": {
+  "kp_id": "KP-STD-006",
+  "term": "螺纹画法的常见错误",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "fastener": {
+  "kp_id": "KP-STD-007",
+  "term": "常用螺纹紧固件与规定标记",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "proportional": {
+  "kp_id": "KP-STD-008",
+  "term": "紧固件的比例画法",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "bolt_connect": {
+  "kp_id": "KP-STD-009",
+  "term": "螺栓连接的画法",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "stud_connect": {
+  "kp_id": "KP-STD-010",
+  "term": "双头螺柱连接的画法",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "screw_connect": {
+  "kp_id": "KP-STD-011",
+  "term": "螺钉连接的画法",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "connect_error": {
+  "kp_id": "KP-STD-012",
+  "term": "螺纹连接画法的常见错误",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "gear_param": {
+  "kp_id": "KP-STD-013",
+  "term": "直齿圆柱齿轮的主要参数",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "gear_formula": {
+  "kp_id": "KP-STD-014",
+  "term": "齿轮的尺寸计算",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "gear_draw": {
+  "kp_id": "KP-STD-015",
+  "term": "齿轮的规定画法",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "gear_mesh": {
+  "kp_id": "KP-STD-016",
+  "term": "齿轮啮合的画法",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "key_connect": {
+  "kp_id": "KP-STD-017",
+  "term": "键连接",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "pin_connect": {
+  "kp_id": "KP-STD-018",
+  "term": "销连接",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "bearing": {
+  "kp_id": "KP-STD-019",
+  "term": "滚动轴承的代号与画法",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "spring": {
+  "kp_id": "KP-STD-020",
+  "term": "圆柱螺旋压缩弹簧",
+  "chapter": "第八章 螺纹、齿轮、常用标准件及其连接"
+ },
+ "part_content": {
+  "kp_id": "KP-PART-001",
+  "term": "零件图的内容",
+  "chapter": "第九章 零件图"
+ },
+ "part_express": {
+  "kp_id": "KP-PART-002",
+  "term": "零件表达方案的选择",
+  "chapter": "第九章 零件图"
+ },
+ "part_datum": {
+  "kp_id": "KP-PART-003",
+  "term": "尺寸基准",
+  "chapter": "第九章 零件图"
+ },
+ "part_dim_reasonable": {
+  "kp_id": "KP-PART-004",
+  "term": "合理标注尺寸",
+  "chapter": "第九章 零件图"
+ },
+ "surface_structure": {
+  "kp_id": "KP-PART-005",
+  "term": "表面结构",
+  "chapter": "第九章 零件图"
+ },
+ "surface_symbol": {
+  "kp_id": "KP-PART-006",
+  "term": "表面结构代号与标注",
+  "chapter": "第九章 零件图"
+ },
+ "fit_basic": {
+  "kp_id": "KP-PART-007",
+  "term": "基本尺寸与极限尺寸",
+  "chapter": "第九章 零件图"
+ },
+ "deviation": {
+  "kp_id": "KP-PART-008",
+  "term": "偏差与尺寸公差",
+  "chapter": "第九章 零件图"
+ },
+ "tolerance_grade": {
+  "kp_id": "KP-PART-009",
+  "term": "标准公差等级与基本偏差",
+  "chapter": "第九章 零件图"
+ },
+ "fit_system": {
+  "kp_id": "KP-PART-010",
+  "term": "基孔制与基轴制的选用",
+  "chapter": "第九章 零件图"
+ },
+ "fit_type": {
+  "kp_id": "KP-PART-011",
+  "term": "配合类型的判断",
+  "chapter": "第九章 零件图"
+ },
+ "fit_calc": {
+  "kp_id": "KP-PART-012",
+  "term": "配合的计算",
+  "chapter": "第九章 零件图"
+ },
+ "tolerance_mark": {
+  "kp_id": "KP-PART-013",
+  "term": "公差与配合在图样上的标注",
+  "chapter": "第九章 零件图"
+ },
+ "geo_tolerance": {
+  "kp_id": "KP-PART-014",
+  "term": "几何公差",
+  "chapter": "第九章 零件图"
+ },
+ "process_structure": {
+  "kp_id": "KP-PART-015",
+  "term": "常见工艺结构",
+  "chapter": "第九章 零件图"
+ },
+ "read_part": {
+  "kp_id": "KP-PART-016",
+  "term": "读零件图",
+  "chapter": "第九章 零件图"
+ },
+ "draw_part": {
+  "kp_id": "KP-PART-017",
+  "term": "画零件图",
+  "chapter": "第九章 零件图"
+ },
+ "process_datum": {
+  "kp_id": "KP-PART-018",
+  "term": "工艺基准",
+  "chapter": "第九章 零件图"
+ },
+ "base_hole": {
+  "kp_id": "KP-PART-019",
+  "term": "基孔制",
+  "chapter": "第九章 零件图"
+ },
+ "base_shaft": {
+  "kp_id": "KP-PART-020",
+  "term": "基轴制",
+  "chapter": "第九章 零件图"
+ },
+ "clearance_fit": {
+  "kp_id": "KP-PART-021",
+  "term": "间隙配合",
+  "chapter": "第九章 零件图"
+ },
+ "interference_fit": {
+  "kp_id": "KP-PART-022",
+  "term": "过盈配合",
+  "chapter": "第九章 零件图"
+ },
+ "transition_fit": {
+  "kp_id": "KP-PART-023",
+  "term": "过渡配合",
+  "chapter": "第九章 零件图"
+ },
+ "assy_content": {
+  "kp_id": "KP-ASSY-001",
+  "term": "装配图的内容",
+  "chapter": "第十章 装配图"
+ },
+ "assy_view": {
+  "kp_id": "KP-ASSY-002",
+  "term": "装配图的表达方案",
+  "chapter": "第十章 装配图"
+ },
+ "assy_dim": {
+  "kp_id": "KP-ASSY-003",
+  "term": "装配图中的尺寸",
+  "chapter": "第十章 装配图"
+ },
+ "assy_parts_list": {
+  "kp_id": "KP-ASSY-004",
+  "term": "序号与明细栏",
+  "chapter": "第十章 装配图"
+ },
+ "assy_draw": {
+  "kp_id": "KP-ASSY-005",
+  "term": "装配图的规定画法",
+  "chapter": "第十章 装配图"
+ },
+ "assy_process": {
+  "kp_id": "KP-ASSY-006",
+  "term": "装配工艺结构",
+  "chapter": "第十章 装配图"
+ },
+ "assy_read": {
+  "kp_id": "KP-ASSY-007",
+  "term": "读装配图",
+  "chapter": "第十章 装配图"
+ },
+ "assy_disassemble": {
+  "kp_id": "KP-ASSY-008",
+  "term": "由装配图拆画零件图",
+  "chapter": "第十章 装配图"
+ },
+ "assy_vs_part": {
+  "kp_id": "KP-ASSY-009",
+  "term": "装配图与零件图的区别",
+  "chapter": "第十章 装配图"
+ },
+ "assy_common": {
+  "kp_id": "KP-ASSY-010",
+  "term": "常见装配体",
+  "chapter": "第十章 装配图"
+ },
+ "assy_tech": {
+  "kp_id": "KP-ASSY-011",
+  "term": "装配图的技术要求",
+  "chapter": "第十章 装配图"
+ },
+ "assy_explode": {
+  "kp_id": "KP-ASSY-012",
+  "term": "装配体爆炸图",
+  "chapter": "第十章 装配图"
+ }
+}

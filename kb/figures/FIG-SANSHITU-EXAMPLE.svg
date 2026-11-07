@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 918 682" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-SANSHITU-EXAMPLE-t FIG-SANSHITU-EXAMPLE-d" class="fig-svg">
+  <title id="FIG-SANSHITU-EXAMPLE-t">组合体三视图示例：台阶与通孔</title>
+  <desc id="FIG-SANSHITU-EXAMPLE-d">带台阶和竖直通孔的底板，按第一角画出三视图，标出高度、长度、宽度三个尺寸基准，并注明长对正、高平齐、宽相等的对应关系。</desc>
+  <defs>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-SANSHITU-EXAMPLE__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-SANSHITU-EXAMPLE__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 3  组合体三视图示例（台阶 + 通孔 + 尺寸基准）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">底板 90×50×20，左端台阶 40×50×25，Ø16 竖直通孔 —— 单位 mm，k = 2 px/mm。</text>
+    <path d="M80,210 L260,210 L260,170 L160,170 L160,120 L80,120 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="194" y1="170" x2="194" y2="210" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="226" y1="170" x2="226" y2="210" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="200" y="106" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">主视图</text>
+    <rect x="80" y="260" width="180" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="160" y1="260" x2="160" y2="360" stroke="currentColor" stroke-width="2"/>
+    <circle cx="210" cy="310" r="16" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="60" y1="310" x2="440" y2="310" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <text x="170" y="386" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">俯视图</text>
+    <rect x="330" y="120" width="100" height="90" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="330" y1="170" x2="430" y2="170" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="364" y1="170" x2="364" y2="210" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <line x1="396" y1="170" x2="396" y2="210" stroke="currentColor" stroke-width="0.8" stroke-dasharray="6 4"/>
+    <text x="380" y="108" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">左视图</text>
+    <line x1="80" y1="210" x2="80" y2="260" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <line x1="160" y1="210" x2="160" y2="260" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <line x1="260" y1="210" x2="260" y2="260" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <line x1="260" y1="120" x2="330" y2="120" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <line x1="260" y1="170" x2="330" y2="170" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <line x1="260" y1="210" x2="330" y2="210" stroke="#dc2626" stroke-width="0.8" stroke-dasharray="6 4" stroke-opacity="0.75"/>
+    <text x="40" y="234" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed" font-weight="600">高度基准</text>
+    <text x="40" y="249" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed">（底面）</text>
+    <line x1="140" y1="212" x2="96" y2="240" stroke="#7c3aed" stroke-width="0.8" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-violet)"/>
+    <text x="22" y="322" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed" font-weight="600">长度基准</text>
+    <text x="22" y="337" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed">（左端面）</text>
+    <line x1="82" y1="300" x2="74" y2="330" stroke="#7c3aed" stroke-width="0.8" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-violet)"/>
+    <line x1="440" y1="310" x2="470" y2="288" stroke="#7c3aed" stroke-width="0.8" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-violet)"/>
+    <text x="476" y="292" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#7c3aed">宽度基准（对称中心面）</text>
+    <line x1="80" y1="424" x2="260" y2="424" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-EXAMPLE__ar-ink)" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="170" y="419" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">90</text>
+    <line x1="80" y1="363" x2="80" y2="429" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="260" y1="363" x2="260" y2="429" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="285" y1="260" x2="285" y2="360" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-EXAMPLE__ar-ink)" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="290" y="314.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">50</text>
+    <line x1="263" y1="260" x2="290" y2="260" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="263" y1="360" x2="290" y2="360" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="58" y1="120" x2="58" y2="210" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-EXAMPLE__ar-ink)" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="53" y="169.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="end" fill="currentColor">45</text>
+    <line x1="77" y1="120" x2="53" y2="120" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="77" y1="210" x2="53" y2="210" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="276" y1="170" x2="276" y2="210" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-EXAMPLE__ar-ink)" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="281" y="194.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">20</text>
+    <line x1="80" y1="96" x2="160" y2="96" stroke="currentColor" stroke-width="0.8" marker-start="url(#FIG-SANSHITU-EXAMPLE__ar-ink)" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="120" y="91" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor">40</text>
+    <line x1="80" y1="117" x2="80" y2="91" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="160" y1="117" x2="160" y2="91" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="232" y1="318" x2="300" y2="404" stroke="currentColor" stroke-width="0.8" marker-end="url(#FIG-SANSHITU-EXAMPLE__ar-ink)"/>
+    <text x="306" y="408" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">Ø16 通孔</text>
+    <text x="40" y="660" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">读图顺序：先找形状特征视图（这里俯视图最清楚），再按长对正/高平齐/宽相等补出另两个视图；三个方向的尺寸基准各选一个面或中心面，同一方向的尺寸都从该基准出发。</text>
+  </g>
+</svg>

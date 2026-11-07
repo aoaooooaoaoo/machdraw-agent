@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 989 636" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG-BIAOMIAN-t FIG-BIAOMIAN-d" class="fig-svg">
+  <title id="FIG-BIAOMIAN-t">表面结构（Ra）代号与常用加工方法对照</title>
+  <desc id="FIG-BIAOMIAN-d">表面结构符号由基本符号、去材料/不去材料标记和 Ra 数值组成；右侧列出 Ra 0.4～12.5 的常用加工方法。</desc>
+  <defs>
+  <pattern id="FIG-BIAOMIAN__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-BIAOMIAN__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-BIAOMIAN__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-BIAOMIAN__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG-BIAOMIAN__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG-BIAOMIAN__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG-BIAOMIAN__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG-BIAOMIAN__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 13  表面结构代号（Ra）的组成与常用加工方法</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">符号由两条与水平线成 60° 的细实线组成；数值写在横线上方，单位 μm 省略不写。</text>
+    <line x1="140" y1="250" x2="132" y2="236.14" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="140" y1="250" x2="156" y2="222.29" stroke="currentColor" stroke-width="0.8"/>
+    <text x="200" y="236" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">基本符号</text>
+    <text x="200" y="254" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">两条与水平线成 60° 的细实线</text>
+    <line x1="140" y1="400" x2="132" y2="386.14" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="140" y1="400" x2="156" y2="372.29" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="132" y1="386.14" x2="164" y2="386.14" stroke="currentColor" stroke-width="0.8"/>
+    <text x="148" y="380" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">Ra 3.2</text>
+    <text x="200" y="386" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">用去除材料方法获得的表面</text>
+    <text x="200" y="404" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">基本符号 + 短横线；Ra 数值写在横线上方</text>
+    <line x1="140" y1="550" x2="132" y2="536.14" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="140" y1="550" x2="156" y2="522.29" stroke="currentColor" stroke-width="0.8"/>
+    <circle cx="140" cy="540" r="5" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="200" y="536" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">用不去除材料方法获得的表面</text>
+    <text x="200" y="554" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">基本符号 + 小圆；用于铸、锻等毛坯表面</text>
+    <text x="40" y="614" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">去掉材料（车、铣、磨）标注前两种符号；铸锻件毛坯、不加工表面用带小圆的符号。</text>
+    <text x="505" y="118" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">Ra / μm</text>
+    <text x="575" y="118" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">常用加工方法</text>
+    <text x="790" y="118" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">表面特征</text>
+    <line x1="500" y1="128" x2="970" y2="128" stroke="currentColor" stroke-width="0.8"/>
+    <text x="505" y="158" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">0.4</text>
+    <text x="575" y="158" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">研磨、超精加工、精磨</text>
+    <text x="790" y="158" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">镜面，极光滑</text>
+    <text x="505" y="198" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">0.8</text>
+    <text x="575" y="198" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">精磨、精铰、金刚石车削</text>
+    <text x="790" y="198" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">很光滑</text>
+    <text x="505" y="238" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">1.6</text>
+    <text x="575" y="238" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">精车、精铣、精铰、磨削</text>
+    <text x="790" y="238" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">光滑，配合面常用</text>
+    <text x="505" y="278" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">3.2</text>
+    <text x="575" y="278" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">半精车、半精铣、精车</text>
+    <text x="790" y="278" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">较光滑，一般配合面</text>
+    <text x="505" y="318" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">6.3</text>
+    <text x="575" y="318" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">车、铣、钻、铰</text>
+    <text x="790" y="318" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">中等，非配合面</text>
+    <text x="505" y="358" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">12.5</text>
+    <text x="575" y="358" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">粗车、粗铣、钻孔</text>
+    <text x="790" y="358" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">粗糙，粗加工或非加工面</text>
+    <line x1="500" y1="402" x2="970" y2="402" stroke="currentColor" stroke-width="0.8"/>
+    <text x="500" y="430" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">Ra 越小表面越光滑；数值按优先数系（0.012～100）选取。</text>
+    <text x="500" y="452" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">同一表面只注一次；无法加工的表面用带小圆的符号。</text>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 817 560" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-ZUHETI-XINGTIFA-t FIG2-ZUHETI-XINGTIFA-d" class="fig-svg">
+  <title id="FIG2-ZUHETI-XINGTIFA-t">形体分析法：把组合体拆成三个基本体</title>
+  <desc id="FIG2-ZUHETI-XINGTIFA-d">组合体由底板、立圆柱、肋板三块基本体组成；读图时逐块对投影，再看它们的表面连接关系，最后合起来。</desc>
+  <defs>
+  <pattern id="FIG2-ZUHETI-XINGTIFA__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZUHETI-XINGTIFA__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZUHETI-XINGTIFA__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZUHETI-XINGTIFA__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZUHETI-XINGTIFA__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-ZUHETI-XINGTIFA__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-ZUHETI-XINGTIFA__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-ZUHETI-XINGTIFA__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-ZUHETI-XINGTIFA__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-ZUHETI-XINGTIFA__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-ZUHETI-XINGTIFA__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-ZUHETI-XINGTIFA__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-ZUHETI-XINGTIFA__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-ZUHETI-XINGTIFA__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-10  形体分析法（底板 + 圆柱 + 肋板）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">①②③ 分别对应底板、立圆柱、肋板；同一形体的三个投影必须互相对得上。</text>
+    <text x="220" y="128" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="currentColor" font-weight="600">组合体的视图</text>
+    <rect x="100" y="260" width="240" height="40" stroke="currentColor" stroke-width="2" fill="none"/>
+    <rect x="200" y="160" width="100" height="100" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M100,260 L200,260 L200,200 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="120" y="300" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb" font-weight="600">①</text>
+    <text x="250" y="214" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" font-weight="600">②</text>
+    <text x="126" y="246" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#16a34a" font-weight="600">③</text>
+    <text x="60" y="285" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">主视图</text>
+    <rect x="100" y="340" width="240" height="160" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="250" cy="420" r="50" stroke="currentColor" stroke-width="2" fill="none"/>
+    <rect x="100" y="400" width="100" height="40" stroke="currentColor" stroke-width="2" fill="none"/>
+    <text x="116" y="366" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb" font-weight="600">①</text>
+    <text x="250" y="424" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#dc2626" font-weight="600">②</text>
+    <text x="120" y="424" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#16a34a" font-weight="600">③</text>
+    <text x="60" y="370" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#6b7280">俯视图</text>
+    <text x="520" y="128" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">拆成三个基本体</text>
+    <text x="430" y="210" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb" font-weight="600">① 长方体底板</text>
+    <text x="434" y="230" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">240×160×40</text>
+    <rect x="626" y="188" width="68" height="36" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="430" y="300" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626" font-weight="600">② 立圆柱</text>
+    <text x="434" y="320" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">Ø100×100</text>
+    <circle cx="660" cy="296" r="18" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <rect x="634" y="276" width="52" height="40" stroke="currentColor" stroke-width="0.8" fill="none" stroke-dasharray="4 3"/>
+    <text x="430" y="390" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#16a34a" font-weight="600">③ 三棱柱肋板</text>
+    <text x="434" y="410" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">100×40×60</text>
+    <path d="M630,404 L690,404 L690,368 Z" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <text x="430" y="470" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">读图三步</text>
+    <text x="434" y="494" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 分块：把组合体拆成几个基本体，标出每块的范围。</text>
+    <text x="434" y="516" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 对投影：每块的三个投影都要对得上（长对正、高平齐、宽相等）。</text>
+    <text x="434" y="538" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 定关系：分清相切、平齐、相交、相贯，分界线该有的画、该无的不画。</text>
+  </g>
+</svg>

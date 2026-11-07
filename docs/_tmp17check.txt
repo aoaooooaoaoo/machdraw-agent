@@ -1,0 +1,3 @@
+﻿lines=1290
+chars=57682
+fences=80

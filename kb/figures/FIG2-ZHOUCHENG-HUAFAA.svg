@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 649 576" width="100%" height="100%" style="height:auto;display:block" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="FIG2-ZHOUCHENG-HUAFAA-t FIG2-ZHOUCHENG-HUAFAA-d" class="fig-svg">
+  <title id="FIG2-ZHOUCHENG-HUAFAA-t">滚动轴承剖视的简化画法</title>
+  <desc id="FIG2-ZHOUCHENG-HUAFAA-d">剖视图中只画内圈、外圈和滚动体，不画保持架；滚动体画十字线；对称件只画上半，标注 d、D、B。</desc>
+  <defs>
+  <pattern id="FIG2-ZHOUCHENG-HUAFAA__hatch45" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUCHENG-HUAFAA__hatch135" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUCHENG-HUAFAA__hatch45d" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUCHENG-HUAFAA__hatch_solid" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#1f2937" stroke-width="0.8"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUCHENG-HUAFAA__hatch_blue" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="6" height="6" fill="#2563eb" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2563eb" stroke-width="1"/>
+  </pattern>
+  <pattern id="FIG2-ZHOUCHENG-HUAFAA__hatch_orange" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+    <rect width="6" height="6" fill="#ea580c" fill-opacity="0.10"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#ea580c" stroke-width="1"/>
+  </pattern>
+  <marker id="FIG2-ZHOUCHENG-HUAFAA__ar-ink" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="currentColor"/></marker>
+  <marker id="FIG2-ZHOUCHENG-HUAFAA__ar-blue" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#2563eb"/></marker>
+  <marker id="FIG2-ZHOUCHENG-HUAFAA__ar-red" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#dc2626"/></marker>
+  <marker id="FIG2-ZHOUCHENG-HUAFAA__ar-green" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#16a34a"/></marker>
+  <marker id="FIG2-ZHOUCHENG-HUAFAA__ar-orange" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#ea580c"/></marker>
+  <marker id="FIG2-ZHOUCHENG-HUAFAA__ar-amber" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#b45309"/></marker>
+  <marker id="FIG2-ZHOUCHENG-HUAFAA__ar-violet" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#7c3aed"/></marker>
+  <marker id="FIG2-ZHOUCHENG-HUAFAA__ar-teal" viewBox="0 0 8 8" refX="7.2" refY="4" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0.6,0.9 L7.2,4 L0.6,7.1 Z" fill="#0f766e"/></marker>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <text x="40" y="32" font-size="13" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor" font-weight="600">图 2-14  滚动轴承的规定画法（简化画法）</text>
+    <text x="40" y="52" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="#6b7280">轴承型号 6208：d=40、D=80、B=18（图中按比例放大绘制）。</text>
+    <rect x="270" y="344" width="250" height="36" stroke="currentColor" stroke-width="2" fill="url(#FIG2-ZHOUCHENG-HUAFAA__hatch45d)"/>
+    <rect x="300" y="344" width="220" height="-24" stroke="currentColor" stroke-width="2" fill="url(#FIG2-ZHOUCHENG-HUAFAA__hatch45)"/>
+    <rect x="300" y="248" width="220" height="24" stroke="currentColor" stroke-width="2" fill="url(#FIG2-ZHOUCHENG-HUAFAA__hatch135)"/>
+    <circle cx="350" cy="296" r="15" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <line x1="335" y1="296" x2="365" y2="296" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="350" y1="281" x2="350" y2="311" stroke="currentColor" stroke-width="0.8"/>
+    <circle cx="470" cy="296" r="15" stroke="currentColor" stroke-width="0.8" fill="none"/>
+    <line x1="455" y1="296" x2="485" y2="296" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="470" y1="281" x2="470" y2="311" stroke="currentColor" stroke-width="0.8"/>
+    <line x1="220" y1="380" x2="600" y2="380" stroke="#6b7280" stroke-width="0.8" stroke-dasharray="18 4 3 4"/>
+    <line x1="560" y1="344" x2="560" y2="380" stroke="#2563eb" stroke-width="0.8" marker-start="url(#FIG2-ZHOUCHENG-HUAFAA__ar-blue)" marker-end="url(#FIG2-ZHOUCHENG-HUAFAA__ar-blue)"/>
+    <text x="565" y="366.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#2563eb">d/2</text>
+    <line x1="523" y1="344" x2="565" y2="344" stroke="#2563eb" stroke-width="0.8"/>
+    <line x1="523" y1="380" x2="565" y2="380" stroke="#2563eb" stroke-width="0.8"/>
+    <line x1="606" y1="248" x2="606" y2="380" stroke="#dc2626" stroke-width="0.8" marker-start="url(#FIG2-ZHOUCHENG-HUAFAA__ar-red)" marker-end="url(#FIG2-ZHOUCHENG-HUAFAA__ar-red)"/>
+    <text x="611" y="318.2" font-size="12" font-family="system-ui, sans-serif" text-anchor="start" fill="#dc2626">D/2</text>
+    <line x1="523" y1="248" x2="611" y2="248" stroke="#dc2626" stroke-width="0.8"/>
+    <line x1="523" y1="380" x2="611" y2="380" stroke="#dc2626" stroke-width="0.8"/>
+    <line x1="300" y1="212" x2="520" y2="212" stroke="#16a34a" stroke-width="0.8" marker-start="url(#FIG2-ZHOUCHENG-HUAFAA__ar-green)" marker-end="url(#FIG2-ZHOUCHENG-HUAFAA__ar-green)"/>
+    <text x="410" y="207" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle" fill="#16a34a">B</text>
+    <line x1="300" y1="245" x2="300" y2="207" stroke="#16a34a" stroke-width="0.8"/>
+    <line x1="520" y1="245" x2="520" y2="207" stroke="#16a34a" stroke-width="0.8"/>
+    <line x1="310" y1="358" x2="254" y2="396" stroke="#2563eb" stroke-width="0.8" marker-end="url(#FIG2-ZHOUCHENG-HUAFAA__ar-blue)"/>
+    <text x="248" y="400" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#2563eb">内圈</text>
+    <line x1="310" y1="262" x2="254" y2="242" stroke="#dc2626" stroke-width="0.8" marker-end="url(#FIG2-ZHOUCHENG-HUAFAA__ar-red)"/>
+    <text x="248" y="246" font-size="11" font-family="system-ui, sans-serif" text-anchor="end" fill="#dc2626">外圈</text>
+    <text x="410" y="414" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle" fill="#6b7280">只画上半（对称件），下半省略不画</text>
+    <text x="40" y="470" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">① 规定画法：剖视图中只画内圈、外圈和滚动体，保持架不画（这是“简化画法”的核心）。</text>
+    <text x="40" y="491" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">② 滚动体在剖视中画成圆圈并加十字线；内外圈画成矩形并画剖面线，两者剖面线方向相反。</text>
+    <text x="40" y="512" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">③ 轴承是对称件，一般只画轴线一侧（上半），另一半省略不画。</text>
+    <text x="40" y="533" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">④ 主要尺寸代号：d 内径、D 外径、B 宽度 —— 与轴承型号一起标注在明细栏或装配图上。</text>
+    <text x="40" y="554" font-size="11" font-family="system-ui, sans-serif" text-anchor="start" fill="currentColor">⑤ 易错：把内圈和外圈的剖面线画成同一方向（相邻零件必须相反）；或把保持架也画出来。</text>
+  </g>
+</svg>
