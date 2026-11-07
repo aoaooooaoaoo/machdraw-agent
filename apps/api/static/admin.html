@@ -132,8 +132,8 @@ function renderOverview(d) {
     kpi(c.chunks, "知识库分块"), kpi(c.docs, "文档"), kpi(c.nodes, "图谱节点"),
     kpi(c.edges, "图谱关系"), kpi(c.figures, "教学图"), kpi(c.pairs, "辨析对"),
     kpi(s.users ?? 0, "账号"), kpi(s.messages ?? 0, "消息"),
-    kpi(g.reject_rate == null ? "—" : (g.reject_rate * 100).toFixed(0) + "%", "拒答率"),
-    kpi(g.coverage_avg == null ? "—" : (g.coverage_avg * 100).toFixed(0) + "%", "平均覆盖率"),
+    kpi(g.reject_rate == null ? "—" : (g.reject_rate * 100).toFixed(0) + "%", "拒答率（kb_search 口径）"),
+    kpi(g.coverage_avg == null ? "—" : (g.coverage_avg * 100).toFixed(0) + "%", "平均覆盖率（同口径）"),
   ].join("");
 
   const ev = s.events || {};
