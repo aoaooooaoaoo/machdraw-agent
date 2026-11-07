@@ -2,7 +2,7 @@
 #
 # 用法：Render → New → Blueprint → 选中本仓库 → Apply
 # 免费档说明：
-#   · 15 分钟无访问会休眠，下一次访问需要 ~40 秒唤醒（首屏会显示 loading）
+#   · 15 分钟无访问会休眠，下一次访问需要约 40 秒唤醒（首屏会显示 loading）
 #   · 512 MB 内存：本项目运行时约 250–300 MB，够用
 #   · 每月 750 小时免费额度，单个服务足够
 services:
@@ -14,13 +14,20 @@ services:
     healthCheckPath: /api/health
     # 首次构建约 5–8 分钟（要装 node 依赖 + Python 依赖 + 建索引）
     envVars:
-      # 默认走本地抽取模式，不需要任何 API Key 就能跑
+      # ---- 大模型：讯飞星辰 MaaS 的免费模型 spark-x2.6-4b（¥0/百万 tokens）
+      # 想退回本地抽取模式：把 MW_LLM_PROVIDER 改成 mock 即可
       - key: MW_LLM_PROVIDER
-        value: mock
-      # 想接真实模型时在 Render 控制台改成 deepseek 并填 Key
-      # - key: MW_LLM_PROVIDER
-      #   value: deepseek
-      # - key: MW_LLM_API_KEY
-      #   sync: false
+        value: openai-compatible
+      - key: MW_LLM_BASE_URL
+        value: https://maas-api.cn-huabei-1.xf-yun.com/v2
+      - key: MW_LLM_MODEL
+        value: spark-x2.6-4b
+      # 关掉思维链：实测 115s → 5.7s，推理 token 3405 → 0
+      - key: MW_LLM_EXTRA_BODY
+        value: '{"thinking":{"type":"disabled"}}'
+      # API Key 不进仓库，部署时在 Render 控制台填：
+      # 服务 → Environment → MW_LLM_API_KEY = ak-xxxx
+      - key: MW_LLM_API_KEY
+        sync: false
       - key: PYTHONIOENCODING
         value: utf-8
