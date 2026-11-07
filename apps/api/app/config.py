@@ -10,6 +10,18 @@ DATA_DIR = ROOT / "data"
 INDEX_DIR = DATA_DIR / "index"
 EVAL_DIR = ROOT / "eval"
 
+# ---- 从 .env 读本地配置（.env 已在 .gitignore，不进仓库）
+# 只用来放 API Key 这类**不该进版本库**的东西；检索参数仍走环境变量，方便探针重标定。
+# 优先级：真实环境变量 > .env（load_dotenv 默认不覆盖已存在的变量）。
+try:
+    from dotenv import load_dotenv
+
+    for _cand in (ROOT / ".env", ROOT / "apps" / "api" / ".env"):
+        if _cand.exists():
+            load_dotenv(_cand, override=False)
+except ImportError:
+    pass    # 没装 python-dotenv 也不影响，走纯环境变量
+
 # ---- 检索参数（起步值，需用 eval/ 的探针集重标定；参考作品 λ=0.35、τ=0.50）
 SPARSE_WEIGHT = float(os.getenv("MW_SPARSE_WEIGHT", "0.45"))   # λ：BM25 通道权重
 GATE_TAU = float(os.getenv("MW_GATE_TAU", "0.55"))             # IDF 覆盖率门控阈值（32 题探针标定：τ=0.45 时 acc 0.969，课内召回 20/20、课外拒答 11/12）
@@ -31,6 +43,10 @@ LLM_PROVIDER = os.getenv("MW_LLM_PROVIDER", "mock")   # mock | deepseek | openai
 LLM_MODEL = os.getenv("MW_LLM_MODEL", "deepseek-chat")
 LLM_BASE_URL = os.getenv("MW_LLM_BASE_URL", "https://api.deepseek.com/v1")
 LLM_API_KEY = os.getenv("MW_LLM_API_KEY", "") or os.getenv("DEEPSEEK_API_KEY", "")
+# 额外请求体参数（JSON 字符串）。主要用于关闭推理模型的思维链：
+#   讯飞 spark-x2.6-4b 实测：默认 115s / 3405 推理 token；带 thinking disabled 后 5.7s / 0 推理 token，回答还更长。
+#   例：MW_LLM_EXTRA_BODY={"thinking":{"type":"disabled"}}
+LLM_EXTRA_BODY = os.getenv("MW_LLM_EXTRA_BODY", "")
 
 # ---- 其它
 DB_PATH = DATA_DIR / "app.db"

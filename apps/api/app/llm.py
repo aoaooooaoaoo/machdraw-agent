@@ -16,7 +16,14 @@ import urllib.error
 import urllib.request
 from dataclasses import dataclass
 
-from .config import GATE_TAU, LLM_API_KEY, LLM_BASE_URL, LLM_MODEL, LLM_PROVIDER
+from .config import (
+    GATE_TAU,
+    LLM_API_KEY,
+    LLM_BASE_URL,
+    LLM_EXTRA_BODY,
+    LLM_MODEL,
+    LLM_PROVIDER,
+)
 from .rag.tokenize import tokenize
 from .rag.symbols import normalize
 
@@ -135,16 +142,27 @@ def mock_answer(query: str, hits: list[dict], gated: bool, coverage: float) -> s
 # ------------------------------------------------------------------ 真实模型
 
 
+def _extra_body() -> dict:
+    """把 MW_LLM_EXTRA_BODY 解析成 dict（解析失败就当没有，不影响主流程）。"""
+    raw = (LLM_EXTRA_BODY or "").strip()
+    if not raw:
+        return {}
+    try:
+        parsed = json.loads(raw)
+        return parsed if isinstance(parsed, dict) else {}
+    except json.JSONDecodeError:
+        return {}
+
+
 def _http_chat(messages: list[dict], temperature: float = 0.2) -> str:
-    payload = json.dumps(
-        {
-            "model": LLM_MODEL,
-            "messages": messages,
-            "temperature": temperature,
-            "stream": False,
-        },
-        ensure_ascii=False,
-    ).encode("utf-8")
+    body = {
+        "model": LLM_MODEL,
+        "messages": messages,
+        "temperature": temperature,
+        "stream": False,
+    }
+    body.update(_extra_body())      # 例如关闭推理模型的思维链
+    payload = json.dumps(body, ensure_ascii=False).encode("utf-8")
     req = urllib.request.Request(
         f"{LLM_BASE_URL.rstrip('/')}/chat/completions",
         data=payload,

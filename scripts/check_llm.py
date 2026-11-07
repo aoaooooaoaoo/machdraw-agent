@@ -46,6 +46,7 @@ def main() -> int:
     from app.config import (
         LLM_API_KEY,
         LLM_BASE_URL,
+        LLM_EXTRA_BODY,
         LLM_MODEL,
         LLM_PROVIDER,
     )
@@ -72,12 +73,21 @@ def main() -> int:
     if "--list" in sys.argv:
         return 0
 
-    body = json.dumps({
+    payload = {
         "model": LLM_MODEL,
         "messages": [{"role": "user", "content": "用一句话说明什么是基孔制"}],
         "temperature": 0.2,
         "stream": False,
-    }, ensure_ascii=False).encode("utf-8")
+    }
+    if LLM_EXTRA_BODY.strip():
+        try:
+            extra = json.loads(LLM_EXTRA_BODY)
+            if isinstance(extra, dict):
+                payload.update(extra)
+                print(f"  额外参数 = {json.dumps(extra, ensure_ascii=False)}")
+        except json.JSONDecodeError:
+            print(f"  [warn] MW_LLM_EXTRA_BODY 不是合法 JSON，已忽略：{LLM_EXTRA_BODY[:60]}")
+    body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
     url = f"{LLM_BASE_URL.rstrip('/')}/chat/completions"
     print(f"\nPOST {url}")
     req = urllib.request.Request(
