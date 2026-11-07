@@ -150,3 +150,49 @@ MW_LLM_EXTRA_BODY={"thinking":{"type":"disabled"}}
 ```
 
 对比 mock 模式：同样问题 0.3 s，但回答是模板拼装的，没有这种论证结构。
+
+
+---
+
+## 九、最终落地配置（2026-11-07 晚上，本地 + 线上都跑通）
+
+### 9.1 本地 `apps/api/.env`（已在 .gitignore）
+
+```
+MW_LLM_PROVIDER=openai-compatible
+MW_LLM_BASE_URL=https://maas-api.cn-huabei-1.xf-yun.com/v2
+MW_LLM_MODEL=spark-x2.6-4b
+MW_LLM_API_KEY=ak-****
+MW_LLM_EXTRA_BODY={"thinking":{"type":"disabled"}}
+```
+
+### 9.2 线上 Render
+
+- **`render.yaml` 里声明**（进仓库，非机密）：PROVIDER / BASE_URL / MODEL / EXTRA_BODY
+- **控制台里填**（不进仓库）：`MW_LLM_API_KEY`，用「Environment → Edit → Add variable」加
+- 实测：改完自动重新部署，`/api/health` 变 `provider=openai-compatible · model=spark-x2.6-4b · llm_ready=true`
+
+### 9.3 实测结果
+
+| 环境 | 提问 | 耗时 | 表现 |
+|---|---|---|---|
+| 本地 | 为什么同一方向的定位尺寸要从同一基准出发？ | 6.9 s | 带「证据1/2/3」引用 + 5 处出处 |
+| 线上 | 同上 | 8.3 s | 分三点论证，每点带出处 |
+| 线上 | 剖视图和断面图有什么区别？ | 0.1 s | 走确定性工具（成对图），不经过模型 |
+| 线上 | Φ30 H7/k6 是什么配合？ | 0.1 s | 走公差引擎，数值由 GB/T 1800 查表 |
+
+> **注意区分**：「走工具的题」永远 0.1 秒且数值绝对准确（引擎算）；
+> 「概念解释题」才走模型（5–9 秒）。这是设计使然：**能算的绝不让模型背**。
+
+### 9.4 顺手修掉的一个真 bug
+
+`/api/health` 的 `has_key` 原来写成 `bool(LLM_PROVIDER != "mock")` —— **只看 provider 不看 key**。
+后果：线上 provider 配了但没有 key 时，状态显示"有 key"，而 `generate()` 悄悄回落 mock
+且**不打降级提示**（因为走的是"未配置"分支，不是"调用失败"分支）。
+已改成 `bool(LLM_API_KEY)`，并新增 `llm_ready = provider != mock and 有 key`。
+
+### 9.5 费用与额度
+
+`spark-x2.6-4b` 是 **¥0/百万 tokens**，TPM 上限 100 万。
+公开站点被人随便用也不花钱，只是可能触发速流控（11202/11203）。
+」
