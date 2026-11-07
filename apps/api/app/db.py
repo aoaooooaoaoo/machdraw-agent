@@ -249,8 +249,16 @@ class Store:
                 covs.append(float(p["coverage"]))
                 if p.get("gated"):
                     gated += 1
+        # 账号数：注册表 + 只走 X-Account 提问的账号（对话不会自动建 users 行）
+        registered = one("SELECT COUNT(*) FROM users")
+        active = one("SELECT COUNT(DISTINCT account) FROM conversations")
+        total_accounts = one(
+            "SELECT COUNT(*) FROM (SELECT account FROM users UNION SELECT account FROM conversations)"
+        )
         return {
-            "users": one("SELECT COUNT(*) FROM users"),
+            "users": total_accounts,
+            "users_registered": registered,
+            "users_active": active,
             "conversations": one("SELECT COUNT(*) FROM conversations"),
             "messages": one("SELECT COUNT(*) FROM messages"),
             "wrongbook": one("SELECT COUNT(*) FROM wrongbook"),
