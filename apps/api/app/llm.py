@@ -120,7 +120,10 @@ def mock_answer(query: str, hits: list[dict], gated: bool, coverage: float) -> s
     lines.append("**出处**：")
     seen = set()
     for h in hits[:3]:
-        ref = f"《{h['documentTitle']}》"
+        # ⚠ 这里原本是 h['documentTitle'] / h['chunkId'] / h['score'] 硬索引。
+        # 这是**降级路径**（模型调用失败时才走到），一旦某个字段缺失就 KeyError 把请求打成 500 ——
+        # 降级本身失败比不降级更糟。全部改成 .get 兜底。
+        ref = f"《{h.get('documentTitle') or h.get('docId') or '未知文档'}》"
         if h.get("section"):
             ref += f" · {h['section']}"
         if h.get("kbNo"):
@@ -128,7 +131,12 @@ def mock_answer(query: str, hits: list[dict], gated: bool, coverage: float) -> s
         if ref in seen:
             continue
         seen.add(ref)
-        lines.append(f"- {ref}（chunk `{h['chunkId']}`，相关度 {h['score']:.3f}）")
+        chunk = h.get("chunkId") or h.get("chunk_id") or "?"
+        try:
+            score = float(h.get("score") or 0.0)
+        except (TypeError, ValueError):
+            score = 0.0
+        lines.append(f"- {ref}（chunk `{chunk}`，相关度 {score:.3f}）")
 
     if coverage < 0.75:
         lines += [
@@ -195,8 +203,10 @@ def generate(query: str, hits: list[dict], gated: bool, coverage: float,
             model="extractive-local",
         )
 
+    # 同上：证据字段用 .get 兜底，避免上游数据结构变动直接把整条链路打崩
     ctx = "\n\n".join(
-        f"【证据{i+1}】《{h['documentTitle']}》· {h.get('section','')}\n{h['content']}"
+        f"【证据{i+1}】《{h.get('documentTitle') or h.get('docId') or '未知文档'}》"
+        f"· {h.get('section', '')}\n{h.get('content', '')}"
         for i, h in enumerate(hits)
     )
     try:
