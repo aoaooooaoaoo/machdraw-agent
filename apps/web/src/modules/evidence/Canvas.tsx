@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { CanvasProps } from '../registry';
 import type { EvidenceArtifactData, EvidenceItem, FigureItem } from '../../lib/types';
+import { useAppStore } from '../../lib/store';
 import { Icon } from '../../shell/Icons';
 
 function pct(score: number): number {
@@ -279,6 +280,8 @@ export function EvidenceCanvas({ artifact, onAsk, demo }: CanvasProps) {
     typeof data.chunkCoverage === 'number' ? Math.round(data.chunkCoverage * 1000) / 10 : null;
 
   const [preview, setPreview] = useState<FigureItem | null>(null);
+  // 门控阈值以后端 /api/health 的 gate_tau 为准（本课程标定为 0.40），不要在前端写死
+  const gateTau = useAppStore((s) => s.health?.gate_tau) ?? 0.4;
 
   return (
     <div className="canvas-body">
@@ -315,12 +318,12 @@ export function EvidenceCanvas({ artifact, onAsk, demo }: CanvasProps) {
           )}
           <div className="ev-stat ev-stat-bar">
             <div className="ev-stat-bar-head">
-              <span className="ev-stat-label">IDF 覆盖率（门控指标 τ={'>'}0.45）</span>
+              <span className="ev-stat-label">IDF 覆盖率（门控指标 τ={'>'}{gateTau.toFixed(2)}）</span>
               <span className="mono">{coveragePct}%</span>
             </div>
             <div className="bar bar-lg">
               <div
-                className={`bar-fill ${coverage < 0.45 ? 'is-warn' : ''}`}
+                className={`bar-fill ${coverage < gateTau ? 'is-warn' : ''}`}
                 style={{ width: `${Math.min(100, coveragePct)}%` }}
               />
             </div>
