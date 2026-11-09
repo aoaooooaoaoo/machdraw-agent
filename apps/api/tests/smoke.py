@@ -1,4 +1,4 @@
-"""端到端冒烟：装载 → 检索 → 编排 → SSE 事件流 → 画布 artifact。
+﻿"""端到端冒烟：装载 → 检索 → 编排 → SSE 事件流 → 画布 artifact。
 
     D:\\桌面\\教学agent\\核反应堆物理agent\\apps\\api\\.venv\\Scripts\\python.exe apps/api/tests/smoke.py
 
@@ -64,7 +64,7 @@ def main() -> int:
     check(len(st.figures) >= 20, f"教学图库 {len(st.figures)} 张")
     check(len(st.pairs) >= 6, f"辨析对 {len(st.pairs)} 组")
     check(len(st.questions) >= 20, f"问题链 {len(st.questions)} 条")
-    check(len(MODULES) == 9, f"模块注册表 {len(MODULES)} 个")
+    check(len(MODULES) == 10, f"模块注册表 {len(MODULES)} 个")
     for w in st.warnings:
         print(f"  [warn] {w}")
 

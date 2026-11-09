@@ -267,6 +267,27 @@ export async function getReview(
   return request('/api/review', { headers: { 'X-Account': account } });
 }
 
+export interface PlanRecommendation {
+  kp_id: string;
+  label: string;
+  chapter: string;
+  state: string;
+  score: number;
+  reason: string;
+}
+
+export interface PlanData {
+  ok: boolean;
+  due: Array<{ key: string; label: string; state: string; score: number; overdue_days: number }>;
+  counts: Record<string, number>;
+  recommendations: PlanRecommendation[];
+  total_tracked: number;
+}
+
+export async function getPlan(account: string): Promise<PlanData> {
+  return request('/api/plan', { headers: { 'X-Account': account } });
+}
+
 /* ---------------------------------------------------------------- 错题本 */
 
 export interface WrongbookPayload {

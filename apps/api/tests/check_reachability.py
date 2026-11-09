@@ -1,10 +1,10 @@
-"""可达性验收：模块 × 工具 × 画布 三角关系没有悬空项。
+﻿"""可达性验收：模块 × 工具 × 画布 三角关系没有悬空项。
 
     D:\\桌面\\教学agent\\核反应堆物理agent\\apps\\api\\.venv\\Scripts\\python.exe apps/api/tests/check_reachability.py
 
 检查：
-1. 9 个模块声明的 tools 都在工具总线里；
-2. 9 个模块声明的 canvas_kinds 都在 8 类画布里；
+1. 10 个模块声明的 tools 都在工具总线里；
+2. 10 个模块声明的 canvas_kinds 都在 8 类画布里；
 3. 每个工具至少被一个模块声明（否则学生永远触发不到）；
 4. 每个画布至少被一个模块声明；
 5. 前端 features/ 目录（若存在）与画布集合一致。

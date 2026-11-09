@@ -43,8 +43,8 @@ for (const [path, mod] of Object.entries(modules)) {
     );
     continue;
   }
-  if (!Array.isArray(feature.artifactTypes) || feature.artifactTypes.length === 0) {
-    console.warn(`[registry] feature "${feature.id}" 没有声明 artifactTypes，已跳过`);
+  if (!Array.isArray(feature.artifactTypes) || (feature.artifactTypes.length === 0 && !feature.page)) {
+    console.warn(`[registry] feature "${feature.id}" 既没有 artifactTypes 也没有 page，已跳过`);
     continue;
   }
   features.push(feature);

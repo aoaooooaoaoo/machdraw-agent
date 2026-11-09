@@ -564,6 +564,81 @@ def restore(payload: dict = Body(...), x_account: str | None = Header(default=No
     }
 
 
+@app.get("/api/plan")
+def plan(x_account: str | None = Header(default=None)) -> dict:
+    """学习计划：到期复习 + 掌握度统计 + 基于前置关系的下一步建议。"""
+    st = get_state()
+    acc = _account(x_account)
+    mastery = st.store.list_mastery(acc)
+    kp_to_node = {n.get("kp_id"): n for n in st.nodes if n.get("kp_id")}
+    now = time.time()
+
+    due: list[dict] = []
+    for key, item in mastery.items():
+        if key.startswith("chapter:"):
+            label = key.split(":", 1)[1]
+        else:
+            label = (kp_to_node.get(key) or {}).get("label") or key
+        score = float(item.get("score") or 0)
+        state = item.get("state") or "未学"
+        last = float(item.get("last_at") or 0)
+        interval = 1 if state == "需复习" else (3 if score < 0.75 else 7)
+        due_at = last + interval * 86400
+        if due_at <= now:
+            due.append({"key": key, "label": label, "state": state,
+                        "score": round(score, 3),
+                        "overdue_days": round((now - due_at) / 86400, 1)})
+    due.sort(key=lambda x: -x["overdue_days"])
+
+    counts: dict[str, int] = {}
+    for item in mastery.values():
+        state = (item or {}).get("state") or "未学"
+        counts[state] = counts.get(state, 0) + 1
+
+    # 前置关系：prereq 边 source → target（source 是 target 的前置）
+    parents: dict[str, list[str]] = {}
+    for e in st.edges:
+        if e.get("rel") == "prereq" and e.get("source") and e.get("target"):
+            parents.setdefault(e["target"], []).append(e["source"])
+    mastered = {kp for kp, it in mastery.items() if (it or {}).get("state") == "已掌握"}
+
+    recommendations = []
+    for node in st.nodes:
+        kp = node.get("kp_id")
+        if not kp:
+            continue
+        item = mastery.get(kp) or {}
+        state = item.get("state") or "未学"
+        if state == "已掌握":
+            continue
+        parents_kp = [p for p in parents.get(node.get("id"), []) if p and p in kp_to_node]
+        if state == "未学" and parents_kp and not all(p in mastered for p in parents_kp):
+            continue  # 前置没掌握，先不推荐
+        reason = (
+            "到期复习" if state == "需复习"
+            else "正在学，继续巩固" if state == "在学"
+            else "前置已掌握，可以开始" if parents_kp
+            else "入门知识点"
+        )
+        recommendations.append({
+            "kp_id": kp, "label": node.get("label") or kp,
+            "chapter": node.get("chapter") or "",
+            "state": state, "score": round(float(item.get("score") or 0), 3),
+            "reason": reason,
+        })
+    recommendations.sort(key=lambda x: ({"需复习": 0, "在学": 1, "未学": 2}.get(x["state"], 3), -x["score"]))
+    recommendations = recommendations[:8]
+
+    return {
+        "ok": True,
+        "account": acc,
+        "due": due,
+        "counts": counts,
+        "recommendations": recommendations,
+        "total_tracked": len(mastery),
+    }
+
+
 # ---------------------------------------------------------------- 模块与图谱
 
 

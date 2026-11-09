@@ -6966,3 +6966,232 @@ kbd {
   display: flex;
   gap: 8px;
 }
+
+/* ============================================================================
+   学习计划（整页模块）
+   ========================================================================== */
+.study-page {
+  flex: 1;
+  min-width: 0;
+  overflow: auto;
+  padding: 22px 26px 34px;
+}
+.study-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.study-head h1 {
+  margin: 0;
+  font-size: 21px;
+  letter-spacing: 0.01em;
+}
+.study-head p {
+  margin: 5px 0 0;
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+.study-head-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.study-stats {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.study-stat {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  box-shadow: var(--shadow-sm);
+}
+.study-stat-n {
+  display: block;
+  font-size: 11px;
+  color: var(--text-3);
+}
+.study-stat b {
+  display: block;
+  margin-top: 4px;
+  font-size: 24px;
+  font-family: var(--mono);
+  color: var(--text);
+}
+.study-stat.is-got b {
+  color: #16a34a;
+}
+.study-stat.is-learning b {
+  color: #d97706;
+}
+.study-stat.is-again b {
+  color: #dc2626;
+}
+.study-cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.study-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.study-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 13px 16px 10px;
+  border-bottom: 1px solid var(--border);
+}
+.study-card-head h2 {
+  margin: 0;
+  font-size: 14px;
+}
+.study-card-hint {
+  font-size: 10.5px;
+  color: var(--text-3);
+}
+.study-card-empty {
+  padding: 22px 16px;
+  font-size: 12.5px;
+  color: var(--text-3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.6;
+}
+.study-list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.study-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: 9px;
+  border: 1px solid transparent;
+}
+.study-item:hover {
+  background: var(--panel-2);
+  border-color: var(--border);
+}
+.study-item-main {
+  flex: 1;
+  min-width: 0;
+}
+.study-item-title {
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+}
+.study-chapter {
+  font-size: 10.5px;
+  color: var(--text-3);
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.study-item-meta {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10.5px;
+  color: var(--text-3);
+}
+.study-badge {
+  font-weight: 600;
+}
+.study-quick {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.study-quick button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text-2);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.study-quick button:hover {
+  border-color: var(--accent-line);
+  color: var(--accent);
+}
+.study-empty {
+  background: var(--panel);
+  border: 1px dashed var(--border-strong);
+  border-radius: 16px;
+  padding: 34px 24px;
+  text-align: center;
+  color: var(--text-2);
+}
+.study-empty h3 {
+  margin: 10px 0 6px;
+  font-size: 17px;
+  color: var(--text);
+}
+.study-empty p {
+  margin: 0 0 14px;
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+.study-empty-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+@media (max-width: 980px) {
+  .study-cols {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .study-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  .study-page {
+    padding: 16px 14px 26px;
+  }
+  .study-head {
+    flex-direction: column;
+  }
+  .study-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* KaTeX：行间公式在窄屏可滚动，避免撑破气泡 */
+.md .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+}
+.md .katex {
+  font-size: 1.06em;
+}

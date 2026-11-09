@@ -91,6 +91,14 @@ MODULES: list[ModuleManifest] = [
         entry_examples=["点堆动力学依赖哪些前置知识？", "多普勒展宽和温度系数什么关系"],
     ),
     ModuleManifest(
+        id="study", name="学习计划", icon="target",
+        canvas_kinds=[],
+        tools=["quiz_from_kb", "kb_search"],
+        system_prompt="学习计划助教：根据学生的掌握度、到期复习和前置依赖，安排今天先学/先复习什么。",
+        desc="今日任务、到期复习、下一步学什么",
+        entry_examples=[],
+    ),
+    ModuleManifest(
         id="wrongbook", name="错题与计算批改", icon="alert",
         canvas_kinds=["annotation", "wrongbook"],
         tools=["wrongbook_crud", "kb_search", "quiz_from_kb"],

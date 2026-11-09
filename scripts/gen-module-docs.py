@@ -1,5 +1,5 @@
-#!/usr/bin/env python
-"""从代码生成 9 个模块的任务书，带 --check 模式防文档漂移。
+﻿#!/usr/bin/env python
+"""从代码生成 10 个模块的任务书，带 --check 模式防文档漂移。
 
 为什么要有这个脚本：
     参考作品的任务书会漂移 —— `module1/AGENTS.md` 写知识点字段叫 `type`，

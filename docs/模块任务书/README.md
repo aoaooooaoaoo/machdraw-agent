@@ -14,10 +14,11 @@
 | 5 | 燃耗与中毒 | [poison.md](poison.md) | `plot` | `poison_calc`、`burnup_calc`、`kb_search` | `plot` |
 | 6 | 概念辨析 | [concept.md](concept.md) | `comparison`、`quiz` | `comparison_pick`、`quiz_from_kb`、`kb_search` | `comparison`、`quiz` |
 | 7 | 知识图谱 | [graph.md](graph.md) | `graph` | `kg_lookup`、`kb_search` | `graph` |
-| 8 | 错题与计算批改 | [wrongbook.md](wrongbook.md) | `annotation`、`wrongbook` | `wrongbook_crud`、`kb_search`、`quiz_from_kb` | `annotation`、`wrongbook` |
-| 9 | 费曼追问 | [feynman.md](feynman.md) | `annotation` | `kb_search` | `annotation` |
+| 8 | 学习计划 | [study.md](study.md) | — | `quiz_from_kb`、`kb_search` | ⚠️ 无 |
+| 9 | 错题与计算批改 | [wrongbook.md](wrongbook.md) | `annotation`、`wrongbook` | `wrongbook_crud`、`kb_search`、`quiz_from_kb` | `annotation`、`wrongbook` |
+| 10 | 费曼追问 | [feynman.md](feynman.md) | `annotation` | `kb_search` | `annotation` |
 
-共 9 个模块（真源：`apps/api/app/state.py` 的 `MODULES`）。
+共 10 个模块（真源：`apps/api/app/state.py` 的 `MODULES`）。
 
 ## 二、八类画布 → 前端 feature
 
@@ -32,7 +33,7 @@
 | `wrongbook` | `wrongbook` | 错题诊改画布 | 70 | false | 无 | `apps/web/src/modules/wrongbook/Canvas.tsx` |
 | `graph` | `graph` | 知识图谱画布 | 80 | true | 有 | `apps/web/src/modules/graph/Canvas.tsx` |
 
-共 8 类画布被模块引用；前端已注册 8 个 feature。
+共 8 类画布被模块引用；前端已注册 9 个 feature。
 
 ## 三、十一个工具
 

@@ -1,4 +1,4 @@
-"""端到端 HTTP 验收：起一个**本脚本自己启动的** uvicorn（端口 8093），跑全部只读接口与对话接口，最后只关自己这个进程。
+﻿"""端到端 HTTP 验收：起一个**本脚本自己启动的** uvicorn（端口 8093），跑全部只读接口与对话接口，最后只关自己这个进程。
 
     D:\\桌面\\教学agent\\核反应堆物理agent\\apps\\api\\.venv\\Scripts\\python.exe scripts\\e2e_check.py
 
@@ -82,7 +82,7 @@ def main() -> int:
               f"nodes={h.get('nodes')} edges={h.get('edges')}")
         check(not h.get("warnings"), "健康检查无 warning", str(h.get("warnings")[:2]))
         mods = http("/api/modules")["modules"]
-        check(len(mods) == 9, "GET /api/modules 9 个模块", f"{[m['id'] for m in mods]}")
+        check(len(mods) == 10, "GET /api/modules 10 个模块", f"{[m['id'] for m in mods]}")
         g = http("/api/graph")
         check(len(g["nodes"]) >= 140 and len(g["edges"]) >= 220, "GET /api/graph",
               f"{len(g['nodes'])} 节点 / {len(g['edges'])} 边 / {len(g['questions'])} 问")
