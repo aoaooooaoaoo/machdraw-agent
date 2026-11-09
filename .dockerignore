@@ -1,0 +1,15 @@
+# 版本控制与构建上下文排除项
+.git
+**/node_modules
+**/.venv
+**/__pycache__
+**/*.pyc
+data
+data-docker
+docs/_tmp
+docs/_analysis_tmp
+_recon
+参考内容
+apps/web/_shots
+apps/api/_preview_L.html
+*.log

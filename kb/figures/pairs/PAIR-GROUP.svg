@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 660" width="980" height="660" role="img" aria-labelledby="PAIR-GROUP-t PAIR-GROUP-d" class="fig-svg pair-svg" data-pair-id="PAIR-GROUP">
+<title id="PAIR-GROUP-t">单群 与 双群</title>
+<desc id="PAIR-GROUP-d">A：单群（一套群常数、一条通量）| B：双群（快/热两群，两条通量）</desc>
+<defs>
+<marker id="arInk" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#1f2328"/></marker>
+<marker id="arA" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#2f6fb0"/></marker>
+<marker id="arB" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#b0642f"/></marker>
+<marker id="arRed" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#c0392b"/></marker>
+<marker id="arGrey" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#6b7280"/></marker>
+</defs>
+<g font-family="Microsoft YaHei, SimHei, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<rect x="0" y="0" width="980" height="660" fill="#fbfaf7"/>
+<text x="490" y="44" font-size="23" fill="#1f2328" text-anchor="middle" font-weight="600">辨析 6　单群 vs 双群</text>
+<text x="490" y="70" font-size="15" fill="#6b7280" text-anchor="middle">同一堆芯：单群用一条余弦通量加 M² 修正泄漏，双群把快群与热群分开、通量形状也不同</text>
+<line x1="30" y1="82" x2="950" y2="82" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="30" y1="556" x2="950" y2="556" stroke="#e3e0da" stroke-width="1.2"/>
+<text x="32" y="574" font-size="15" fill="#1f2328">① 能群划分：A 全能量取 1 群，所有中子按同一平均能量处理；B 按 0.625 eV 分快群 / 热群两群</text>
+<text x="32" y="594" font-size="15" fill="#1f2328">② 群常数：A 全谱一个平均截面（通常按热群加权）；B 各群按自身谱加权：快群 1/E、热群 Maxwell+1/v</text>
+<text x="32" y="614" font-size="15" fill="#1f2328">③ 临界方程：A k_eff = k∞/(1+M²B²)，用 Ps·Pd 近似泄漏；B 两群耦合方程，k_eff 由 2×2 矩阵特征值确定</text>
+<text x="32" y="634" font-size="15" fill="#1f2328">④ 精度与用途：A 手算估算临界尺寸、做灵敏度分析；B 堆芯设计标准做法（少群 2~4 群）</text>
+<text x="948" y="651" font-size="15" fill="#6b7280" text-anchor="end">依据教材 第4章 p.60–71 自绘</text>
+<rect x="24" y="96" width="452" height="456" fill="#f2f7fc" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="250" y="126" font-size="20" fill="#2f6fb0" text-anchor="middle" font-weight="600">A：单群（1 group）</text>
+<rect x="504" y="96" width="452" height="456" fill="#fbf5ef" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="730" y="126" font-size="20" fill="#b0642f" text-anchor="middle" font-weight="600">B：双群（2 groups）</text>
+<rect x="96" y="166" width="356" height="26" fill="#2f6fb0" stroke="#2f6fb0" stroke-width="1.2" rx="3" opacity="0.28"/>
+<text x="274" y="184" font-size="15" fill="#2f6fb0" text-anchor="middle" font-weight="600">1 群：全能量共用一套群常数</text>
+<text x="96" y="160" font-size="15" fill="#6b7280">低能</text>
+<line x1="96" y1="202" x2="452" y2="202" stroke="#6b7280" stroke-width="1.2" marker-end="url(#arGrey)"/>
+<text x="452" y="218" font-size="15" fill="#6b7280" text-anchor="end">能量 E</text>
+<line x1="96" y1="242" x2="96" y2="392" stroke="#e3e0da" stroke-width="1"/>
+<text x="96" y="413" font-size="15" fill="#6b7280" text-anchor="middle">0.0</text>
+<line x1="274" y1="242" x2="274" y2="392" stroke="#e3e0da" stroke-width="1"/>
+<text x="274" y="413" font-size="15" fill="#6b7280" text-anchor="middle">0.5</text>
+<line x1="452" y1="242" x2="452" y2="392" stroke="#e3e0da" stroke-width="1"/>
+<text x="452" y="413" font-size="15" fill="#6b7280" text-anchor="middle">1.0</text>
+<line x1="96" y1="392" x2="452" y2="392" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="397" font-size="15" fill="#6b7280" text-anchor="end">0.0</text>
+<line x1="96" y1="320.571" x2="452" y2="320.571" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="325.571" font-size="15" fill="#6b7280" text-anchor="end">0.5</text>
+<line x1="96" y1="249.143" x2="452" y2="249.143" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="254.143" font-size="15" fill="#6b7280" text-anchor="end">1.0</text>
+<line x1="96" y1="392" x2="452" y2="392" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="96" y1="242" x2="96" y2="392" stroke="#1f2328" stroke-width="1.5"/>
+<text x="274" y="434" font-size="15" fill="#1f2328" text-anchor="middle">径向位置 r / a</text>
+<text x="92" y="234" font-size="15" fill="#1f2328">相对中子通量密度 φ</text>
+<path d="M96,249.143 L101.933,249.179 L107.867,249.286 L113.8,249.465 L119.733,249.715 L125.667,250.036 L131.6,250.428 L137.533,250.892 L143.467,251.426 L149.4,252.03 L155.333,252.704 L161.267,253.448 L167.2,254.262 L173.133,255.144 L179.067,256.095 L185,257.114 L190.933,258.201 L196.867,259.354 L202.8,260.574 L208.733,261.86 L214.667,263.211 L220.6,264.626 L226.533,266.106 L232.467,267.648 L238.4,269.252 L244.333,270.918 L250.267,272.645 L256.2,274.431 L262.133,276.276 L268.067,278.179 L274,280.139 L279.933,282.155 L285.867,284.226 L291.8,286.351 L297.733,288.529 L303.667,290.759 L309.6,293.039 L315.533,295.369 L321.467,297.748 L327.4,300.173 L333.333,302.645 L339.267,305.161 L345.2,307.721 L351.133,310.323 L357.067,312.965 L363,315.648 L368.933,318.368 L374.867,321.126 L380.8,323.919 L386.733,326.746 L392.667,329.605 L398.6,332.496 L404.533,335.417 L410.467,338.366 L416.4,341.342 L422.333,344.343 L428.267,347.369 L434.2,350.416 L440.133,353.484 L446.067,356.572 L452,359.677" fill="none" stroke="#2f6fb0" stroke-width="2.2"/>
+<text x="104" y="344" font-size="15" fill="#2f6fb0" font-weight="600">单群：一条余弦，B² 唯一</text>
+<circle cx="34" cy="451" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="455.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="50" y="456" font-size="15" fill="#1f2328">群常数：全谱一个平均截面</text>
+<circle cx="34" cy="471" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="475.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="50" y="476" font-size="15" fill="#1f2328">临界：k_eff = k∞/(1+M²B²)，M² = L²+τ</text>
+<circle cx="34" cy="491" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="495.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="50" y="496" font-size="15" fill="#1f2328">精度：热堆误差可达百分之几到十几</text>
+<circle cx="34" cy="511" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="515.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">④</text>
+<text x="50" y="516" font-size="15" fill="#1f2328">群数：1 群，无法描述谱硬化</text>
+<rect x="576" y="166" width="256" height="26" fill="#2f6fb0" stroke="#2f6fb0" stroke-width="1.2" rx="3" opacity="0.28"/>
+<rect x="832" y="166" width="100" height="26" fill="#b0642f" stroke="#b0642f" stroke-width="1.2" rx="3" opacity="0.3"/>
+<text x="704" y="184" font-size="15" fill="#2f6fb0" text-anchor="middle" font-weight="600">快群 E &gt; 0.625 eV</text>
+<text x="882" y="184" font-size="15" fill="#b0642f" text-anchor="middle" font-weight="600">热群</text>
+<line x1="832" y1="160" x2="832" y2="200" stroke="#6b7280" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="836" y="158" font-size="15" fill="#6b7280">0.625 eV</text>
+<line x1="576" y1="202" x2="932" y2="202" stroke="#6b7280" stroke-width="1.2" marker-end="url(#arGrey)"/>
+<text x="932" y="218" font-size="15" fill="#6b7280" text-anchor="end">能量 E</text>
+<line x1="576" y1="242" x2="576" y2="392" stroke="#e3e0da" stroke-width="1"/>
+<text x="576" y="413" font-size="15" fill="#6b7280" text-anchor="middle">0.0</text>
+<line x1="754" y1="242" x2="754" y2="392" stroke="#e3e0da" stroke-width="1"/>
+<text x="754" y="413" font-size="15" fill="#6b7280" text-anchor="middle">0.5</text>
+<line x1="932" y1="242" x2="932" y2="392" stroke="#e3e0da" stroke-width="1"/>
+<text x="932" y="413" font-size="15" fill="#6b7280" text-anchor="middle">1.0</text>
+<line x1="576" y1="392" x2="932" y2="392" stroke="#e3e0da" stroke-width="1"/>
+<text x="568" y="397" font-size="15" fill="#6b7280" text-anchor="end">0.0</text>
+<line x1="576" y1="320.571" x2="932" y2="320.571" stroke="#e3e0da" stroke-width="1"/>
+<text x="568" y="325.571" font-size="15" fill="#6b7280" text-anchor="end">0.5</text>
+<line x1="576" y1="249.143" x2="932" y2="249.143" stroke="#e3e0da" stroke-width="1"/>
+<text x="568" y="254.143" font-size="15" fill="#6b7280" text-anchor="end">1.0</text>
+<line x1="576" y1="392" x2="932" y2="392" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="576" y1="242" x2="576" y2="392" stroke="#1f2328" stroke-width="1.5"/>
+<text x="754" y="434" font-size="15" fill="#1f2328" text-anchor="middle">径向位置 r / a</text>
+<text x="572" y="234" font-size="15" fill="#1f2328">相对中子通量密度 φ</text>
+<path d="M576,249.143 L581.933,249.169 L587.867,249.246 L593.8,249.374 L599.733,249.554 L605.667,249.785 L611.6,250.067 L617.533,250.401 L623.467,250.785 L629.4,251.22 L635.333,251.706 L641.267,252.242 L647.2,252.829 L653.133,253.465 L659.067,254.152 L665,254.888 L670.933,255.673 L676.867,256.508 L682.8,257.391 L688.733,258.323 L694.667,259.303 L700.6,260.33 L706.533,261.405 L712.467,262.527 L718.4,263.696 L724.333,264.911 L730.267,266.171 L736.2,267.477 L742.133,268.828 L748.067,270.223 L754,271.661 L759.933,273.143 L765.867,274.668 L771.8,276.235 L777.733,277.844 L783.667,279.494 L789.6,281.184 L795.533,282.914 L801.467,284.684 L807.4,286.492 L813.333,288.338 L819.267,290.221 L825.2,292.141 L831.133,294.097 L837.067,296.088 L843,298.114 L848.933,300.173 L854.867,302.266 L860.8,304.39 L866.733,306.547 L872.667,308.734 L878.6,310.951 L884.533,313.197 L890.467,315.472 L896.4,317.774 L902.333,320.103 L908.267,322.457 L914.2,324.837 L920.133,327.241 L926.067,329.668 L932,332.118" fill="none" stroke="#2f6fb0" stroke-width="2.2"/>
+<path d="M576,249.143 L581.933,249.182 L587.867,249.299 L593.8,249.494 L599.733,249.767 L605.667,250.117 L611.6,250.546 L617.533,251.051 L623.467,251.633 L629.4,252.292 L635.333,253.028 L641.267,253.839 L647.2,254.726 L653.133,255.688 L659.067,256.724 L665,257.835 L670.933,259.018 L676.867,260.274 L682.8,261.602 L688.733,263.002 L694.667,264.472 L700.6,266.011 L706.533,267.62 L712.467,269.296 L718.4,271.039 L724.333,272.849 L730.267,274.723 L736.2,276.662 L742.133,278.664 L748.067,280.727 L754,282.852 L759.933,285.036 L765.867,287.278 L771.8,289.578 L777.733,291.934 L783.667,294.344 L789.6,296.808 L795.533,299.323 L801.467,301.89 L807.4,304.505 L813.333,307.169 L819.267,309.878 L825.2,312.633 L831.133,315.431 L837.067,318.271 L843,321.151 L848.933,324.069 L854.867,327.025 L860.8,330.017 L866.733,333.042 L872.667,336.099 L878.6,339.187 L884.533,342.304 L890.467,345.448 L896.4,348.618 L902.333,351.811 L908.267,355.026 L914.2,358.261 L920.133,361.515 L926.067,364.785 L932,368.071" fill="none" stroke="#b0642f" stroke-width="2.2"/>
+<text x="584" y="340" font-size="15" fill="#2f6fb0" font-weight="600">快群 φ1（较平）</text>
+<text x="584" y="362" font-size="15" fill="#b0642f" font-weight="600">热群 φ2（边缘更陡）</text>
+<circle cx="514" cy="451" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="455.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="530" y="456" font-size="15" fill="#1f2328">分群：快群 / 热群，分界能 0.625 eV</text>
+<circle cx="514" cy="471" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="475.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="530" y="476" font-size="15" fill="#1f2328">群常数：快群按 1/E、热群按 Maxwell 加权</text>
+<circle cx="514" cy="491" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="495.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="530" y="496" font-size="15" fill="#1f2328">临界：两群耦合，泄漏分群处理</text>
+<circle cx="514" cy="511" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="515.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">④</text>
+<text x="530" y="516" font-size="15" fill="#1f2328">群数：商用堆芯程序最小配置 2~4 群</text>
+</g>
+</svg>

@@ -1,0 +1,45 @@
+# ---------------- 依赖与构建产物 ----------------
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# ---------------- 本地数据 / 运行时 ----------------
+data/index/
+data/app.db
+data/*.db
+data-docker/
+%TEMP%/
+
+# ---------------- 参考素材（体积大 + 版权敏感，绝不入库） ----------------
+参考内容/
+_recon/
+
+# ---------------- 截图 / 临时产物 ----------------
+apps/web/_shots/
+data/*.log
+data/docker_build*.log
+data/_*.py
+docs/_tmp/
+docs/_tmp_src_tree.json
+*.bak-*
+*.old
+_analysis_tmp/
+
+# ---------------- 环境与密钥 ----------------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ---------------- 编辑器 / 系统 ----------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+data/_*.json

@@ -1,0 +1,33 @@
+# Render 蓝图：把本仓库一键部署成公网可访问的免费 Web 服务
+#
+# 用法：Render → New → Blueprint → 选中本仓库 → Apply
+# 免费档说明：
+#   · 15 分钟无访问会休眠，下一次访问需要约 40 秒唤醒（首屏会显示 loading）
+#   · 512 MB 内存：本项目运行时约 250–300 MB，够用
+#   · 每月 750 小时免费额度，单个服务足够
+services:
+  - type: web
+    name: reactor-physics-agent
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    # 首次构建约 5–8 分钟（要装 node 依赖 + Python 依赖 + 建索引）
+    envVars:
+      # ---- 大模型：默认本地抽取模式（mock），零 key 可跑
+      # 有 key 时改成 deepseek / openai-compatible：
+      - key: RP_LLM_PROVIDER
+        value: mock
+      - key: RP_LLM_BASE_URL
+        value: https://api.deepseek.com/v1
+      - key: RP_LLM_MODEL
+        value: deepseek-chat
+      # 关掉思维链（推理模型用，非推理模型可不设）
+      # - key: RP_LLM_EXTRA_BODY
+      #   value: '{"thinking":{"type":"disabled"}}'
+      # API Key 不进仓库，部署时在 Render 控制台填：
+      # 服务 → Environment → RP_LLM_API_KEY = sk-xxxx
+      - key: RP_LLM_API_KEY
+        sync: false
+      - key: PYTHONIOENCODING
+        value: utf-8

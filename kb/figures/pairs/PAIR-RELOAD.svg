@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 660" width="980" height="660" role="img" aria-labelledby="PAIR-RELOAD-t PAIR-RELOAD-d" class="fig-svg pair-svg" data-pair-id="PAIR-RELOAD">
+<title id="PAIR-RELOAD-t">OUT-IN 换料 与 低泄漏换料</title>
+<desc id="PAIR-RELOAD-d">A：OUT-IN（新料在外，功率展平）| B：低泄漏（新料在内，泄漏小）</desc>
+<defs>
+<marker id="arInk" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#1f2328"/></marker>
+<marker id="arA" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#2f6fb0"/></marker>
+<marker id="arB" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#b0642f"/></marker>
+<marker id="arRed" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#c0392b"/></marker>
+<marker id="arGrey" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#6b7280"/></marker>
+</defs>
+<g font-family="Microsoft YaHei, SimHei, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<rect x="0" y="0" width="980" height="660" fill="#fbfaf7"/>
+<text x="490" y="44" font-size="23" fill="#1f2328" text-anchor="middle" font-weight="600">辨析 8　OUT-IN 换料 vs 低泄漏换料</text>
+<text x="490" y="70" font-size="15" fill="#6b7280" text-anchor="middle">同一批燃料的两种排列：新料放外区还是放内区，决定功率分布与中子泄漏</text>
+<line x1="30" y1="82" x2="950" y2="82" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="30" y1="556" x2="950" y2="556" stroke="#e3e0da" stroke-width="1.2"/>
+<text x="32" y="574" font-size="15" fill="#1f2328">① 新料位置：A 新料放堆芯外区，旧料在内区交替；B 新料放堆芯内区，深燃耗料放外缘</text>
+<text x="32" y="594" font-size="15" fill="#1f2328">② 功率分布：A 展平、峰因子低（Fr ≈ 1.10）；B 中心峰高（Fr ≈ 1.32），须布可燃毒物压峰</text>
+<text x="32" y="614" font-size="15" fill="#1f2328">③ 中子泄漏：A 边缘通量高、泄漏大，浪费中子；B 深燃耗料在边缘吸收强，快中子泄漏显著减少</text>
+<text x="32" y="634" font-size="15" fill="#1f2328">④ 工程后果：A 循环长度受限，富集度要求高；B 富集度可降 5~10%，压力壳寿命 40→60 年</text>
+<text x="948" y="651" font-size="15" fill="#6b7280" text-anchor="end">依据教材 第9章 p.149–151 自绘</text>
+<rect x="24" y="96" width="452" height="456" fill="#f2f7fc" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="250" y="126" font-size="20" fill="#2f6fb0" text-anchor="middle" font-weight="600">A：OUT-IN 装载（新料在外区）</text>
+<rect x="44" y="270" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="44" y="253" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="44" y="236" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="44" y="219" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="44" y="202" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="44" y="185" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="44" y="168" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="61" y="270" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="61" y="253" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="61" y="236" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="61" y="219" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="61" y="202" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="61" y="185" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="61" y="168" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="78" y="270" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="78" y="253" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="78" y="236" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="78" y="219" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="78" y="202" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="78" y="185" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="78" y="168" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="95" y="270" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="95" y="253" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="95" y="236" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="95" y="219" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="95" y="202" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="95" y="185" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="95" y="168" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="112" y="270" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="112" y="253" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="112" y="236" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="112" y="219" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="112" y="202" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="112" y="185" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="112" y="168" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="129" y="270" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="129" y="253" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="129" y="236" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="129" y="219" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="129" y="202" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="129" y="185" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="129" y="168" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="146" y="270" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="146" y="253" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="146" y="236" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="146" y="219" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="146" y="202" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="146" y="185" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="146" y="168" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="44" y="168" width="119" height="119" fill="none" stroke="#6b7280" stroke-width="1.2"/>
+<rect x="44" y="303" width="13" height="13" fill="#2f6fb0" stroke="#6b7280" stroke-width="0.6" rx="2"/>
+<text x="64" y="314" font-size="15" fill="#1f2328">新料</text>
+<rect x="44" y="324" width="13" height="13" fill="#9dbfda" stroke="#6b7280" stroke-width="0.6" rx="2"/>
+<text x="64" y="335" font-size="15" fill="#1f2328">烧 1 个循环</text>
+<rect x="44" y="345" width="13" height="13" fill="#dae7f2" stroke="#6b7280" stroke-width="0.6" rx="2"/>
+<text x="64" y="356" font-size="15" fill="#1f2328">烧 2 个循环</text>
+<text x="44" y="400" font-size="15" fill="#6b7280">本图为 1/4 堆芯示意：每格一个燃料组件，</text>
+<text x="44" y="420" font-size="15" fill="#6b7280">颜色表示该组件已燃循环数。</text>
+<line x1="216" y1="170" x2="216" y2="300" stroke="#e3e0da" stroke-width="1"/>
+<text x="216" y="321" font-size="15" fill="#6b7280" text-anchor="middle">0.0</text>
+<line x1="336" y1="170" x2="336" y2="300" stroke="#e3e0da" stroke-width="1"/>
+<text x="336" y="321" font-size="15" fill="#6b7280" text-anchor="middle">0.5</text>
+<line x1="456" y1="170" x2="456" y2="300" stroke="#e3e0da" stroke-width="1"/>
+<text x="456" y="321" font-size="15" fill="#6b7280" text-anchor="middle">1.0</text>
+<line x1="216" y1="283.75" x2="456" y2="283.75" stroke="#e3e0da" stroke-width="1"/>
+<text x="208" y="288.75" font-size="15" fill="#6b7280" text-anchor="end">0.8</text>
+<line x1="216" y1="251.25" x2="456" y2="251.25" stroke="#e3e0da" stroke-width="1"/>
+<text x="208" y="256.25" font-size="15" fill="#6b7280" text-anchor="end">1.0</text>
+<line x1="216" y1="218.75" x2="456" y2="218.75" stroke="#e3e0da" stroke-width="1"/>
+<text x="208" y="223.75" font-size="15" fill="#6b7280" text-anchor="end">1.2</text>
+<line x1="216" y1="186.25" x2="456" y2="186.25" stroke="#e3e0da" stroke-width="1"/>
+<text x="208" y="191.25" font-size="15" fill="#6b7280" text-anchor="end">1.4</text>
+<line x1="216" y1="300" x2="456" y2="300" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="216" y1="170" x2="216" y2="300" stroke="#1f2328" stroke-width="1.5"/>
+<text x="336" y="342" font-size="15" fill="#1f2328" text-anchor="middle">径向位置 r / R</text>
+<text x="212" y="162" font-size="15" fill="#1f2328">相对功率</text>
+<path d="M216,243.125 L220,243.13 L224,243.143 L228,243.166 L232,243.197 L236,243.238 L240,243.287 L244,243.346 L248,243.414 L252,243.491 L256,243.576 L260,243.671 L264,243.775 L268,243.888 L272,244.01 L276,244.141 L280,244.281 L284,244.43 L288,244.587 L292,244.755 L296,244.931 L300,245.116 L304,245.31 L308,245.513 L312,245.725 L316,245.946 L320,246.176 L324,246.416 L328,246.664 L332,246.921 L336,247.187 L340,247.463 L344,247.747 L348,248.041 L352,248.343 L356,248.655 L360,248.975 L364,249.305 L368,249.643 L372,249.991 L376,250.347 L380,250.713 L384,251.087 L388,251.471 L392,251.864 L396,252.266 L400,252.676 L404,253.096 L408,253.525 L412,253.963 L416,254.41 L420,254.866 L424,255.331 L428,255.805 L432,256.287 L436,256.78 L440,257.281 L444,257.791 L448,258.31 L452,258.838 L456,259.375" fill="none" stroke="#2f6fb0" stroke-width="2.2"/>
+<text x="260" y="196" font-size="15" fill="#2f6fb0" font-weight="600">展平：Fr ≈ 1.10</text>
+<circle cx="34" cy="447" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="451.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="50" y="452" font-size="15" fill="#1f2328">新料在外区：展平通量、降低功率峰</text>
+<circle cx="34" cy="467" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="471.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="50" y="472" font-size="15" fill="#1f2328">代价：边缘功率高 → 泄漏大、浪费中子</text>
+<circle cx="34" cy="487" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="491.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="50" y="492" font-size="15" fill="#1f2328">结果：循环长度受限，富集度要求高</text>
+<circle cx="34" cy="507" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="511.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">④</text>
+<text x="50" y="512" font-size="15" fill="#1f2328">泄漏 ∝ 边缘通量：边缘通量越高泄漏越大</text>
+<rect x="504" y="96" width="452" height="456" fill="#fbf5ef" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="730" y="126" font-size="20" fill="#b0642f" text-anchor="middle" font-weight="600">B：低泄漏装载（新料在内区）</text>
+<rect x="524" y="270" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="524" y="253" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="524" y="236" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="524" y="219" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="524" y="202" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="524" y="185" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="524" y="168" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="541" y="270" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="541" y="253" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="541" y="236" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="541" y="219" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="541" y="202" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="541" y="185" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="541" y="168" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="558" y="270" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="558" y="253" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="558" y="236" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="558" y="219" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="558" y="202" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="558" y="185" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="558" y="168" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="575" y="270" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="575" y="253" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="575" y="236" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="575" y="219" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="575" y="202" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="575" y="185" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="575" y="168" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="592" y="270" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="592" y="253" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="592" y="236" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="592" y="219" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="592" y="202" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<circle cx="600.5" cy="210.5" r="2.2" fill="#b0642f"/>
+<rect x="592" y="185" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<circle cx="600.5" cy="193.5" r="2.2" fill="#b0642f"/>
+<rect x="592" y="168" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<circle cx="600.5" cy="176.5" r="2.2" fill="#b0642f"/>
+<rect x="609" y="270" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="609" y="253" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="609" y="236" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="609" y="219" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="609" y="202" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<circle cx="617.5" cy="210.5" r="2.2" fill="#b0642f"/>
+<rect x="609" y="185" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<circle cx="617.5" cy="193.5" r="2.2" fill="#b0642f"/>
+<rect x="609" y="168" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<circle cx="617.5" cy="176.5" r="2.2" fill="#b0642f"/>
+<rect x="626" y="270" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="626" y="253" width="17" height="17" fill="#dae7f2" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="626" y="236" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="626" y="219" width="17" height="17" fill="#9dbfda" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="626" y="202" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<circle cx="634.5" cy="210.5" r="2.2" fill="#b0642f"/>
+<rect x="626" y="185" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<circle cx="634.5" cy="193.5" r="2.2" fill="#b0642f"/>
+<rect x="626" y="168" width="17" height="17" fill="#2f6fb0" stroke="#ffffff" stroke-width="0.8"/>
+<circle cx="634.5" cy="176.5" r="2.2" fill="#b0642f"/>
+<rect x="524" y="168" width="119" height="119" fill="none" stroke="#6b7280" stroke-width="1.2"/>
+<rect x="524" y="303" width="13" height="13" fill="#2f6fb0" stroke="#6b7280" stroke-width="0.6" rx="2"/>
+<text x="544" y="314" font-size="15" fill="#1f2328">新料</text>
+<rect x="524" y="324" width="13" height="13" fill="#9dbfda" stroke="#6b7280" stroke-width="0.6" rx="2"/>
+<text x="544" y="335" font-size="15" fill="#1f2328">烧 1 个循环</text>
+<rect x="524" y="345" width="13" height="13" fill="#dae7f2" stroke="#6b7280" stroke-width="0.6" rx="2"/>
+<text x="544" y="356" font-size="15" fill="#1f2328">烧 2 个循环</text>
+<circle cx="530.5" cy="372.5" r="3" fill="#b0642f"/>
+<text x="544" y="377" font-size="15" fill="#1f2328">可燃毒物（压峰）</text>
+<text x="524" y="400" font-size="15" fill="#6b7280">本图为 1/4 堆芯示意：每格一个燃料组件，</text>
+<text x="524" y="420" font-size="15" fill="#6b7280">颜色为已燃循环数，圆点为可燃毒物。</text>
+<line x1="696" y1="170" x2="696" y2="300" stroke="#e3e0da" stroke-width="1"/>
+<text x="696" y="321" font-size="15" fill="#6b7280" text-anchor="middle">0.0</text>
+<line x1="816" y1="170" x2="816" y2="300" stroke="#e3e0da" stroke-width="1"/>
+<text x="816" y="321" font-size="15" fill="#6b7280" text-anchor="middle">0.5</text>
+<line x1="936" y1="170" x2="936" y2="300" stroke="#e3e0da" stroke-width="1"/>
+<text x="936" y="321" font-size="15" fill="#6b7280" text-anchor="middle">1.0</text>
+<line x1="696" y1="283.75" x2="936" y2="283.75" stroke="#e3e0da" stroke-width="1"/>
+<text x="688" y="288.75" font-size="15" fill="#6b7280" text-anchor="end">0.8</text>
+<line x1="696" y1="251.25" x2="936" y2="251.25" stroke="#e3e0da" stroke-width="1"/>
+<text x="688" y="256.25" font-size="15" fill="#6b7280" text-anchor="end">1.0</text>
+<line x1="696" y1="218.75" x2="936" y2="218.75" stroke="#e3e0da" stroke-width="1"/>
+<text x="688" y="223.75" font-size="15" fill="#6b7280" text-anchor="end">1.2</text>
+<line x1="696" y1="186.25" x2="936" y2="186.25" stroke="#e3e0da" stroke-width="1"/>
+<text x="688" y="191.25" font-size="15" fill="#6b7280" text-anchor="end">1.4</text>
+<line x1="696" y1="300" x2="936" y2="300" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="696" y1="170" x2="696" y2="300" stroke="#1f2328" stroke-width="1.5"/>
+<text x="816" y="342" font-size="15" fill="#1f2328" text-anchor="middle">径向位置 r / R</text>
+<text x="692" y="162" font-size="15" fill="#1f2328">相对功率</text>
+<path d="M696,189.5 L700,189.526 L704,189.605 L708,189.736 L712,189.919 L716,190.155 L720,190.442 L724,190.783 L728,191.176 L732,191.621 L736,192.118 L740,192.668 L744,193.27 L748,193.925 L752,194.631 L756,195.391 L760,196.202 L764,197.066 L768,197.983 L772,198.951 L776,199.972 L780,201.046 L784,202.171 L788,203.35 L792,204.58 L796,205.863 L800,207.198 L804,208.586 L808,210.026 L812,211.518 L816,213.062 L820,214.66 L824,216.309 L828,218.011 L832,219.765 L836,221.571 L840,223.43 L844,225.341 L848,227.305 L852,229.321 L856,231.389 L860,233.51 L864,235.683 L868,237.908 L872,240.186 L876,242.516 L880,244.898 L884,247.333 L888,249.82 L892,252.36 L896,254.951 L900,257.596 L904,260.292 L908,263.041 L912,265.843 L916,268.696 L920,271.602 L924,274.561 L928,277.571 L932,280.635 L936,283.75" fill="none" stroke="#b0642f" stroke-width="2.2"/>
+<text x="726" y="196" font-size="15" fill="#b0642f" font-weight="600">中心峰：Fr ≈ 1.32</text>
+<circle cx="514" cy="447" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="451.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="530" y="452" font-size="15" fill="#1f2328">新料在内区：泄漏显著减少、寿期延长</text>
+<circle cx="514" cy="467" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="471.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="530" y="472" font-size="15" fill="#1f2328">代价：中心峰高，须用可燃毒物压峰</text>
+<circle cx="514" cy="487" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="491.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="530" y="492" font-size="15" fill="#1f2328">收益：富集度降 5~10%，压力壳寿命 40→60 年</text>
+<circle cx="514" cy="507" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="511.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">④</text>
+<text x="530" y="512" font-size="15" fill="#1f2328">泄漏 ∝ 边缘通量：深燃耗料在外圈最省中子</text>
+</g>
+</svg>

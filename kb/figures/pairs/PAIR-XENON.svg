@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 660" width="980" height="660" role="img" aria-labelledby="PAIR-XENON-t PAIR-XENON-d" class="fig-svg pair-svg" data-pair-id="PAIR-XENON">
+<title id="PAIR-XENON-t">氙平衡 与 停堆碘坑</title>
+<desc id="PAIR-XENON-d">A：启动后碘、氙浓度建立平衡| B：停堆后氙峰值与剩余反应性碘坑</desc>
+<defs>
+<marker id="arInk" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#1f2328"/></marker>
+<marker id="arA" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#2f6fb0"/></marker>
+<marker id="arB" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#b0642f"/></marker>
+<marker id="arRed" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#c0392b"/></marker>
+<marker id="arGrey" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#6b7280"/></marker>
+</defs>
+<g font-family="Microsoft YaHei, SimHei, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<rect x="0" y="0" width="980" height="660" fill="#fbfaf7"/>
+<text x="490" y="44" font-size="23" fill="#1f2328" text-anchor="middle" font-weight="600">辨析 5　氙平衡 vs 停堆碘坑</text>
+<text x="490" y="70" font-size="15" fill="#6b7280" text-anchor="middle">同一条 135I → 135Xe 燃耗链的两种时间行为：建平衡靠 2 天，碘坑出现在停堆后 10 h</text>
+<line x1="30" y1="82" x2="950" y2="82" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="30" y1="556" x2="950" y2="556" stroke="#e3e0da" stroke-width="1.2"/>
+<text x="32" y="574" font-size="15" fill="#1f2328">① 工况：A 功率恒定，碘氙从零建立平衡；B 满功率运行后突然停堆，φ → 0</text>
+<text x="32" y="594" font-size="15" fill="#1f2328">② 浓度曲线：A 碘、氙单调上升到平衡（约 2 天）；B 氙先升到约 2 倍再按 9.2 h 衰变</text>
+<text x="32" y="614" font-size="15" fill="#1f2328">③ 工程含义：A 决定平衡氙中毒与寿期初临界硼浓度；B 决定停堆后再启动窗口与强迫停堆时间</text>
+<text x="948" y="651" font-size="15" fill="#6b7280" text-anchor="end">依据教材 第6章 p.101–105 自绘</text>
+<rect x="24" y="96" width="452" height="456" fill="#f2f7fc" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="250" y="126" font-size="20" fill="#2f6fb0" text-anchor="middle" font-weight="600">A：启动 → 建立平衡</text>
+<line x1="96" y1="205" x2="96" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="96" y="426" font-size="15" fill="#6b7280" text-anchor="middle">0</text>
+<line x1="167.2" y1="205" x2="167.2" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="167.2" y="426" font-size="15" fill="#6b7280" text-anchor="middle">24</text>
+<line x1="238.4" y1="205" x2="238.4" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="238.4" y="426" font-size="15" fill="#6b7280" text-anchor="middle">48</text>
+<line x1="309.6" y1="205" x2="309.6" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="309.6" y="426" font-size="15" fill="#6b7280" text-anchor="middle">72</text>
+<line x1="380.8" y1="205" x2="380.8" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="380.8" y="426" font-size="15" fill="#6b7280" text-anchor="middle">96</text>
+<line x1="452" y1="205" x2="452" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="452" y="426" font-size="15" fill="#6b7280" text-anchor="middle">120</text>
+<line x1="96" y1="355" x2="452" y2="355" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="360" font-size="15" fill="#6b7280" text-anchor="end">1</text>
+<line x1="96" y1="305" x2="452" y2="305" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="310" font-size="15" fill="#6b7280" text-anchor="end">2</text>
+<line x1="96" y1="255" x2="452" y2="255" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="260" font-size="15" fill="#6b7280" text-anchor="end">3</text>
+<line x1="96" y1="205" x2="452" y2="205" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="210" font-size="15" fill="#6b7280" text-anchor="end">4</text>
+<line x1="96" y1="405" x2="452" y2="405" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="96" y1="205" x2="96" y2="405" stroke="#1f2328" stroke-width="1.5"/>
+<text x="274" y="447" font-size="15" fill="#1f2328" text-anchor="middle">启动后时间 t / h</text>
+<text x="92" y="197" font-size="15" fill="#1f2328">浓度 / 氙平衡浓度</text>
+<line x1="238.4" y1="205" x2="238.4" y2="405" stroke="#6b7280" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="246.4" y="400" font-size="15" fill="#6b7280">≈48 h 达平衡</text>
+<path d="M96,402.671 L101.933,393.688 L107.867,386.397 L113.8,380.481 L119.733,375.679 L125.667,371.782 L131.6,368.62 L137.533,366.053 L143.467,363.97 L149.4,362.28 L155.333,360.908 L161.267,359.795 L167.2,358.891 L173.133,358.158 L179.067,357.563 L185,357.08 L190.933,356.688 L196.867,356.37 L202.8,356.112 L208.733,355.902 L214.667,355.732 L220.6,355.594 L226.533,355.482 L232.467,355.391 L238.4,355.318 L244.333,355.258 L250.267,355.209 L256.2,355.17 L262.133,355.138 L268.067,355.112 L274,355.091 L279.933,355.074 L285.867,355.06 L291.8,355.049 L297.733,355.039 L303.667,355.032 L309.6,355.026 L315.533,355.021 L321.467,355.017 L327.4,355.014 L333.333,355.011 L339.267,355.009 L345.2,355.007 L351.133,355.006 L357.067,355.005 L363,355.004 L368.933,355.003 L374.867,355.003 L380.8,355.002 L386.733,355.002 L392.667,355.001 L398.6,355.001 L404.533,355.001 L410.467,355.001 L416.4,355.001 L422.333,355 L428.267,355 L434.2,355 L440.133,355 L446.067,355 L452,355" fill="none" stroke="#2f6fb0" stroke-width="2.2"/>
+<path d="M96,405 L101.933,370.616 L107.867,342.711 L113.8,320.065 L119.733,301.687 L125.667,286.771 L131.6,274.667 L137.533,264.843 L143.467,256.87 L149.4,250.4 L155.333,245.15 L161.267,240.888 L167.2,237.43 L173.133,234.623 L179.067,232.345 L185,230.497 L190.933,228.997 L196.867,227.779 L202.8,226.791 L208.733,225.989 L214.667,225.338 L220.6,224.81 L226.533,224.382 L232.467,224.034 L238.4,223.752 L244.333,223.523 L250.267,223.337 L256.2,223.186 L262.133,223.063 L268.067,222.964 L274,222.883 L279.933,222.818 L285.867,222.765 L291.8,222.722 L297.733,222.687 L303.667,222.658 L309.6,222.635 L315.533,222.616 L321.467,222.601 L327.4,222.589 L333.333,222.579 L339.267,222.571 L345.2,222.564 L351.133,222.559 L357.067,222.555 L363,222.551 L368.933,222.548 L374.867,222.546 L380.8,222.544 L386.733,222.542 L392.667,222.541 L398.6,222.54 L404.533,222.539 L410.467,222.539 L416.4,222.538 L422.333,222.538 L428.267,222.537 L434.2,222.537 L440.133,222.537 L446.067,222.537 L452,222.537" fill="none" stroke="#2f6fb0" stroke-width="1.8" stroke-dasharray="7 4"/>
+<text x="303.667" y="368" font-size="15" fill="#2f6fb0" font-weight="600">135Xe</text>
+<text x="244.333" y="252.5" font-size="15" fill="#2f6fb0" font-weight="600">135I</text>
+<text x="107.867" y="327.5" font-size="15" fill="#6b7280">φ 恒定</text>
+<circle cx="34" cy="461" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="465.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="50" y="466" font-size="15" fill="#1f2328">时间常数：I 6.7 h、Xe 9.2 h，约 2 天平衡</text>
+<circle cx="34" cy="481" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="485.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="50" y="486" font-size="15" fill="#1f2328">平衡值：Xe ∝ φ，GW 级中毒 0.04~0.05</text>
+<circle cx="34" cy="501" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="505.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="50" y="506" font-size="15" fill="#1f2328">碘平衡浓度约为氙的 3.6 倍（λI &gt; λXe）</text>
+<rect x="504" y="96" width="452" height="456" fill="#fbf5ef" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="730" y="126" font-size="20" fill="#b0642f" text-anchor="middle" font-weight="600">B：突然停堆 → 碘坑</text>
+<line x1="556" y1="205" x2="556" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="556" y="426" font-size="15" fill="#6b7280" text-anchor="middle">0</text>
+<line x1="610.667" y1="205" x2="610.667" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="610.667" y="426" font-size="15" fill="#6b7280" text-anchor="middle">12</text>
+<line x1="665.333" y1="205" x2="665.333" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="665.333" y="426" font-size="15" fill="#6b7280" text-anchor="middle">24</text>
+<line x1="720" y1="205" x2="720" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="720" y="426" font-size="15" fill="#6b7280" text-anchor="middle">36</text>
+<line x1="774.667" y1="205" x2="774.667" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="774.667" y="426" font-size="15" fill="#6b7280" text-anchor="middle">48</text>
+<line x1="829.333" y1="205" x2="829.333" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="829.333" y="426" font-size="15" fill="#6b7280" text-anchor="middle">60</text>
+<line x1="884" y1="205" x2="884" y2="405" stroke="#e3e0da" stroke-width="1"/>
+<text x="884" y="426" font-size="15" fill="#6b7280" text-anchor="middle">72</text>
+<line x1="556" y1="355" x2="884" y2="355" stroke="#e3e0da" stroke-width="1"/>
+<text x="548" y="360" font-size="15" fill="#6b7280" text-anchor="end">1</text>
+<line x1="556" y1="305" x2="884" y2="305" stroke="#e3e0da" stroke-width="1"/>
+<text x="548" y="310" font-size="15" fill="#6b7280" text-anchor="end">2</text>
+<line x1="556" y1="255" x2="884" y2="255" stroke="#e3e0da" stroke-width="1"/>
+<text x="548" y="260" font-size="15" fill="#6b7280" text-anchor="end">3</text>
+<line x1="556" y1="205" x2="884" y2="205" stroke="#e3e0da" stroke-width="1"/>
+<text x="548" y="210" font-size="15" fill="#6b7280" text-anchor="end">4</text>
+<line x1="556" y1="405" x2="884" y2="405" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="556" y1="205" x2="556" y2="405" stroke="#1f2328" stroke-width="1.5"/>
+<text x="720" y="447" font-size="15" fill="#1f2328" text-anchor="middle">停堆后时间 t / h</text>
+<text x="552" y="197" font-size="15" fill="#1f2328">浓度 / 氙平衡浓度</text>
+<line x1="884" y1="386.818" x2="892" y2="386.818" stroke="#1f2328" stroke-width="1.2"/>
+<text x="900" y="391.818" font-size="15" fill="#6b7280">-1000</text>
+<line x1="884" y1="350.455" x2="892" y2="350.455" stroke="#1f2328" stroke-width="1.2"/>
+<text x="900" y="355.455" font-size="15" fill="#6b7280">0</text>
+<line x1="884" y1="295.909" x2="892" y2="295.909" stroke="#1f2328" stroke-width="1.2"/>
+<text x="900" y="300.909" font-size="15" fill="#6b7280">1500</text>
+<line x1="884" y1="241.364" x2="892" y2="241.364" stroke="#1f2328" stroke-width="1.2"/>
+<text x="900" y="246.364" font-size="15" fill="#6b7280">3000</text>
+<text x="940" y="194" font-size="15" fill="#c0392b" text-anchor="end">ρ_res / pcm</text>
+<rect x="568.528" y="205" width="70.6111" height="200" fill="#c0392b" opacity="0.08"/>
+<text x="603.833" y="398" font-size="15" fill="#c0392b" text-anchor="middle" font-weight="600">强迫停堆时间</text>
+<path d="M556,355 L561.467,338.816 L566.933,326.452 L572.4,317.293 L577.867,310.808 L583.333,306.545 L588.8,304.115 L594.267,303.188 L599.733,303.481 L605.2,304.753 L610.667,306.802 L616.133,309.456 L621.6,312.57 L627.067,316.023 L632.533,319.713 L638,323.558 L643.467,327.488 L648.933,331.445 L654.4,335.385 L659.867,339.271 L665.333,343.073 L670.8,346.769 L676.267,350.341 L681.733,353.778 L687.2,357.07 L692.667,360.212 L698.133,363.201 L703.6,366.036 L709.067,368.718 L714.533,371.25 L720,373.635 L725.467,375.876 L730.933,377.98 L736.4,379.951 L741.867,381.795 L747.333,383.517 L752.8,385.125 L758.267,386.623 L763.733,388.017 L769.2,389.315 L774.667,390.52 L780.133,391.639 L785.6,392.677 L791.067,393.639 L796.533,394.531 L802,395.356 L807.467,396.119 L812.933,396.825 L818.4,397.477 L823.867,398.079 L829.333,398.635 L834.8,399.148 L840.267,399.621 L845.733,400.057 L851.2,400.459 L856.667,400.829 L862.133,401.17 L867.6,401.484 L873.067,401.773 L878.533,402.038 L884,402.282" fill="none" stroke="#b0642f" stroke-width="2.2"/>
+<path d="M556,222.536 L561.467,244.021 L566.933,262.976 L572.4,279.7 L577.867,294.454 L583.333,307.471 L588.8,318.955 L594.267,329.087 L599.733,338.025 L605.2,345.912 L610.667,352.869 L616.133,359.008 L621.6,364.423 L627.067,369.201 L632.533,373.417 L638,377.135 L643.467,380.417 L648.933,383.311 L654.4,385.865 L659.867,388.118 L665.333,390.106 L670.8,391.86 L676.267,393.407 L681.733,394.772 L687.2,395.976 L692.667,397.039 L698.133,397.976 L703.6,398.803 L709.067,399.533 L714.533,400.177 L720,400.745 L725.467,401.246 L730.933,401.688 L736.4,402.078 L741.867,402.422 L747.333,402.726 L752.8,402.993 L758.267,403.23 L763.733,403.438 L769.2,403.622 L774.667,403.784 L780.133,403.927 L785.6,404.054 L791.067,404.165 L796.533,404.263 L802,404.35 L807.467,404.427 L812.933,404.494 L818.4,404.554 L823.867,404.606 L829.333,404.653 L834.8,404.694 L840.267,404.73 L845.733,404.761 L851.2,404.79 L856.667,404.814 L862.133,404.836 L867.6,404.855 L873.067,404.873 L878.533,404.888 L884,404.901" fill="none" stroke="#b0642f" stroke-width="1.8" stroke-dasharray="7 4"/>
+<path d="M556,295.909 L561.467,325.334 L566.933,347.814 L572.4,364.468 L577.867,376.258 L583.333,384.01 L588.8,388.427 L594.267,390.113 L599.733,389.581 L605.2,387.267 L610.667,383.542 L616.133,378.717 L621.6,373.055 L627.067,366.777 L632.533,360.067 L638,353.076 L643.467,345.932 L648.933,338.736 L654.4,331.572 L659.867,324.508 L665.333,317.595 L670.8,310.875 L676.267,304.38 L681.733,298.132 L687.2,292.146 L692.667,286.433 L698.133,280.998 L703.6,275.844 L709.067,270.967 L714.533,266.363 L720,262.028 L725.467,257.952 L730.933,254.127 L736.4,250.544 L741.867,247.191 L747.333,244.06 L752.8,241.137 L758.267,238.413 L763.733,235.878 L769.2,233.519 L774.667,231.327 L780.133,229.293 L785.6,227.405 L791.067,225.656 L796.533,224.035 L802,222.535 L807.467,221.147 L812.933,219.864 L818.4,218.678 L823.867,217.583 L829.333,216.572 L834.8,215.64 L840.267,214.78 L845.733,213.987 L851.2,213.256 L856.667,212.583 L862.133,211.963 L867.6,211.393 L873.067,210.868 L878.533,210.385 L884,209.941" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+<text x="628.889" y="296" font-size="15" fill="#b0642f" font-weight="600">135Xe 峰 ≈ 2 倍</text>
+<line x1="638" y1="295" x2="610.667" y2="304" stroke="#b0642f" stroke-width="1"/>
+<text x="729.111" y="275" font-size="15" fill="#b0642f">135I（按 6.7 h 衰变）</text>
+<text x="692.667" y="390.273" font-size="15" fill="#c0392b">剩余反应性 ρ_res</text>
+<circle cx="514" cy="461" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="465.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="530" y="466" font-size="15" fill="#1f2328">停堆后：碘补氙，Xe 峰值 ≈2 倍（~10 h）</text>
+<circle cx="514" cy="481" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="485.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="530" y="486" font-size="15" fill="#1f2328">碘坑：ρ 先降后升，坑底为负即强迫停堆</text>
+<circle cx="514" cy="501" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="505.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="530" y="506" font-size="15" fill="#1f2328">约 2 天恢复；降功率停堆可减小坑深</text>
+</g>
+</svg>

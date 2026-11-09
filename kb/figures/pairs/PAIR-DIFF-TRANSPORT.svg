@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 660" width="980" height="660" role="img" aria-labelledby="PAIR-DIFF-TRANSPORT-t PAIR-DIFF-TRANSPORT-d" class="fig-svg pair-svg" data-pair-id="PAIR-DIFF-TRANSPORT">
+<title id="PAIR-DIFF-TRANSPORT-t">扩散理论 与 输运理论</title>
+<desc id="PAIR-DIFF-TRANSPORT-d">A：扩散理论（Fick + 四假设，光滑通量）| B：输运理论（角通量，吸收体附近凹陷）</desc>
+<defs>
+<marker id="arInk" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#1f2328"/></marker>
+<marker id="arA" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#2f6fb0"/></marker>
+<marker id="arB" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#b0642f"/></marker>
+<marker id="arRed" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#c0392b"/></marker>
+<marker id="arGrey" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#6b7280"/></marker>
+</defs>
+<g font-family="Microsoft YaHei, SimHei, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<rect x="0" y="0" width="980" height="660" fill="#fbfaf7"/>
+<text x="490" y="44" font-size="23" fill="#1f2328" text-anchor="middle" font-weight="600">辨析 2　扩散理论 vs 输运理论</text>
+<text x="490" y="70" font-size="15" fill="#6b7280" text-anchor="middle">同一块含强吸收体的板状介质：扩散把通量抹平，输运在吸收体附近挖出一个凹陷</text>
+<line x1="30" y1="82" x2="950" y2="82" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="30" y1="556" x2="950" y2="556" stroke="#e3e0da" stroke-width="1.2"/>
+<text x="32" y="574" font-size="15" fill="#1f2328">① 描述量：A 只求标量通量 φ(r) 与净流 J = −D dφ/dx；B 求角通量 ψ(r, E, Ω)，保留方向 Ω</text>
+<text x="32" y="594" font-size="15" fill="#1f2328">② 前提假设：A 需 Fick 的四条假设（无限均匀、散射各向同性、弱吸收、通量缓变）；B 无近似，方程由中子数守恒严格导出</text>
+<text x="32" y="614" font-size="15" fill="#1f2328">③ 适用范围：A 外表面/强吸收体/源附近几 λtr 内误差大；B 强吸收体、真空边界、源附近都适用</text>
+<text x="32" y="634" font-size="15" fill="#1f2328">④ 精度与代价：A 二阶椭圆方程，计算量小，工程精度可接受；B 七维（r, E, Ω, t）计算量大，多作基准校核</text>
+<text x="948" y="651" font-size="15" fill="#6b7280" text-anchor="end">依据教材 第4章 p.65 自绘</text>
+<rect x="24" y="96" width="452" height="456" fill="#f2f7fc" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="250" y="126" font-size="20" fill="#2f6fb0" text-anchor="middle" font-weight="600">A：扩散理论（Diffusion）</text>
+<rect x="504" y="96" width="452" height="456" fill="#fbf5ef" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="730" y="126" font-size="20" fill="#b0642f" text-anchor="middle" font-weight="600">B：输运理论（Transport）</text>
+<rect x="96" y="168" width="356" height="26" fill="#cedcea" stroke="#6b7280" stroke-width="1.2" rx="3"/>
+<text x="274" y="185" font-size="15" fill="#1f2328" text-anchor="middle">板状介质：厚 40 cm，中心 x = 20 cm 埋强吸收体</text>
+<line x1="96" y1="218" x2="96" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="96" y="429" font-size="15" fill="#6b7280" text-anchor="middle">0</text>
+<line x1="185" y1="218" x2="185" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="185" y="429" font-size="15" fill="#6b7280" text-anchor="middle">10</text>
+<line x1="274" y1="218" x2="274" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="274" y="429" font-size="15" fill="#6b7280" text-anchor="middle">20</text>
+<line x1="363" y1="218" x2="363" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="363" y="429" font-size="15" fill="#6b7280" text-anchor="middle">30</text>
+<line x1="452" y1="218" x2="452" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="452" y="429" font-size="15" fill="#6b7280" text-anchor="middle">40</text>
+<line x1="96" y1="408" x2="452" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="413" font-size="15" fill="#6b7280" text-anchor="end">0.0</text>
+<line x1="96" y1="313" x2="452" y2="313" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="318" font-size="15" fill="#6b7280" text-anchor="end">0.5</text>
+<line x1="96" y1="218" x2="452" y2="218" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="223" font-size="15" fill="#6b7280" text-anchor="end">1.0</text>
+<line x1="96" y1="408" x2="452" y2="408" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="96" y1="218" x2="96" y2="408" stroke="#1f2328" stroke-width="1.5"/>
+<text x="274" y="450" font-size="15" fill="#1f2328" text-anchor="middle">位置 x / cm</text>
+<text x="92" y="210" font-size="15" fill="#1f2328">相对中子通量密度</text>
+<rect x="265" y="218" width="18" height="190" fill="#6b7280" opacity="0.25"/>
+<line x1="274" y1="218" x2="274" y2="408" stroke="#6b7280" stroke-width="1" stroke-dasharray="4 3"/>
+<rect x="244" y="240" width="60" height="168" fill="#c0392b" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="6 4" opacity="0.07"/>
+<path d="M96,408 L101.933,398.056 L107.867,388.14 L113.8,378.277 L119.733,368.497 L125.667,358.824 L131.6,349.287 L137.533,339.91 L143.467,330.72 L149.4,321.742 L155.333,313 L161.267,304.519 L167.2,296.321 L173.133,288.429 L179.067,280.865 L185,273.65 L190.933,266.802 L196.867,260.342 L202.8,254.287 L208.733,248.653 L214.667,243.455 L220.6,238.709 L226.533,234.426 L232.467,230.62 L238.4,227.299 L244.333,224.474 L250.267,222.152 L256.2,220.339 L262.133,219.041 L268.067,218.26 L274,218 L279.933,218.26 L285.867,219.041 L291.8,220.339 L297.733,222.152 L303.667,224.474 L309.6,227.299 L315.533,230.62 L321.467,234.426 L327.4,238.709 L333.333,243.455 L339.267,248.653 L345.2,254.287 L351.133,260.342 L357.067,266.802 L363,273.65 L368.933,280.865 L374.867,288.429 L380.8,296.321 L386.733,304.519 L392.667,313 L398.6,321.742 L404.533,330.72 L410.467,339.91 L416.4,349.287 L422.333,358.824 L428.267,368.497 L434.2,378.277 L440.133,388.14 L446.067,398.056 L452,408" fill="none" stroke="#2f6fb0" stroke-width="2.2"/>
+<text x="452" y="232" font-size="15" fill="#2f6fb0" text-anchor="end" font-weight="600">扩散解：无凹陷</text>
+<text x="274" y="300" font-size="15" fill="#c0392b" text-anchor="middle" font-weight="600">此区域误差最大</text>
+<circle cx="34" cy="465" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="469.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="50" y="470" font-size="15" fill="#1f2328">描述量：标量通量 φ(r)、净流 J = −D dφ/dx</text>
+<circle cx="34" cy="485" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="489.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="50" y="490" font-size="15" fill="#1f2328">假设：无限均匀、各向同性散射、弱吸收、通量缓变</text>
+<circle cx="34" cy="505" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="509.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="50" y="510" font-size="15" fill="#1f2328">失效区：外表面 / 强吸收体 / 源附近几 λtr</text>
+<rect x="576" y="168" width="356" height="26" fill="#e9d6c3" stroke="#6b7280" stroke-width="1.2" rx="3"/>
+<text x="754" y="185" font-size="15" fill="#1f2328" text-anchor="middle">板状介质：厚 40 cm，中心 x = 20 cm 埋强吸收体</text>
+<line x1="576" y1="218" x2="576" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="576" y="429" font-size="15" fill="#6b7280" text-anchor="middle">0</text>
+<line x1="665" y1="218" x2="665" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="665" y="429" font-size="15" fill="#6b7280" text-anchor="middle">10</text>
+<line x1="754" y1="218" x2="754" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="754" y="429" font-size="15" fill="#6b7280" text-anchor="middle">20</text>
+<line x1="843" y1="218" x2="843" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="843" y="429" font-size="15" fill="#6b7280" text-anchor="middle">30</text>
+<line x1="932" y1="218" x2="932" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="932" y="429" font-size="15" fill="#6b7280" text-anchor="middle">40</text>
+<line x1="576" y1="408" x2="932" y2="408" stroke="#e3e0da" stroke-width="1"/>
+<text x="568" y="413" font-size="15" fill="#6b7280" text-anchor="end">0.0</text>
+<line x1="576" y1="313" x2="932" y2="313" stroke="#e3e0da" stroke-width="1"/>
+<text x="568" y="318" font-size="15" fill="#6b7280" text-anchor="end">0.5</text>
+<line x1="576" y1="218" x2="932" y2="218" stroke="#e3e0da" stroke-width="1"/>
+<text x="568" y="223" font-size="15" fill="#6b7280" text-anchor="end">1.0</text>
+<line x1="576" y1="408" x2="932" y2="408" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="576" y1="218" x2="576" y2="408" stroke="#1f2328" stroke-width="1.5"/>
+<text x="754" y="450" font-size="15" fill="#1f2328" text-anchor="middle">位置 x / cm</text>
+<text x="572" y="210" font-size="15" fill="#1f2328">相对中子通量密度</text>
+<rect x="745" y="218" width="18" height="190" fill="#6b7280" opacity="0.25"/>
+<line x1="754" y1="218" x2="754" y2="408" stroke="#6b7280" stroke-width="1" stroke-dasharray="4 3"/>
+<path d="M576,408 L581.933,399.003 L587.867,389.77 L593.8,380.183 L599.733,370.289 L605.667,360.255 L611.6,350.279 L617.533,340.516 L623.467,331.048 L629.4,321.9 L635.333,313.068 L641.267,304.545 L647.2,296.33 L653.133,288.432 L659.067,280.866 L665,273.65 L670.933,266.803 L676.867,260.343 L682.8,254.293 L688.733,248.682 L694.667,243.575 L700.6,239.137 L706.533,235.769 L712.467,234.299 L718.4,236.111 L724.333,242.919 L730.267,255.905 L736.2,274.34 L742.133,294.578 L748.067,310.647 L754,316.8 L759.933,310.647 L765.867,294.578 L771.8,274.34 L777.733,255.905 L783.667,242.919 L789.6,236.111 L795.533,234.299 L801.467,235.769 L807.4,239.137 L813.333,243.575 L819.267,248.682 L825.2,254.293 L831.133,260.343 L837.067,266.803 L843,273.65 L848.933,280.866 L854.867,288.432 L860.8,296.33 L866.733,304.545 L872.667,313.068 L878.6,321.9 L884.533,331.048 L890.467,340.516 L896.4,350.279 L902.333,360.255 L908.267,370.289 L914.2,380.183 L920.133,389.77 L926.067,399.003 L932,408" fill="none" stroke="#b0642f" stroke-width="2.2"/>
+<text x="638" y="374" font-size="15" fill="#b0642f" font-weight="600">输运解：吸收体附近凹陷</text>
+<line x1="694" y1="366" x2="748" y2="322" stroke="#b0642f" stroke-width="1"/>
+<circle cx="514" cy="465" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="469.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="530" y="470" font-size="15" fill="#1f2328">描述量：角通量 ψ(r,E,Ω)，保留方向</text>
+<circle cx="514" cy="485" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="489.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="530" y="490" font-size="15" fill="#1f2328">方程：由中子数守恒严格导出，不做假设</text>
+<circle cx="514" cy="505" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="509.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="530" y="510" font-size="15" fill="#1f2328">适用：强吸收体 / 边界 / 源附近；代价高</text>
+<circle cx="514" cy="525" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="529.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">④</text>
+<text x="530" y="530" font-size="15" fill="#1f2328">对偶：扩散快而糙，输运慢而准</text>
+</g>
+</svg>

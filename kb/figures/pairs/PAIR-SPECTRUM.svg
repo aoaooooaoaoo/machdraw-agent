@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 660" width="980" height="660" role="img" aria-labelledby="PAIR-SPECTRUM-t PAIR-SPECTRUM-d" class="fig-svg pair-svg" data-pair-id="PAIR-SPECTRUM">
+<title id="PAIR-SPECTRUM-t">快群 与 热群</title>
+<desc id="PAIR-SPECTRUM-d">A：快群（E&gt;0.625 eV，裂变谱+1/E）| B：热群（E&lt;0.625 eV，Maxwell 谱）</desc>
+<defs>
+<marker id="arInk" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#1f2328"/></marker>
+<marker id="arA" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#2f6fb0"/></marker>
+<marker id="arB" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#b0642f"/></marker>
+<marker id="arRed" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#c0392b"/></marker>
+<marker id="arGrey" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#6b7280"/></marker>
+</defs>
+<g font-family="Microsoft YaHei, SimHei, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<rect x="0" y="0" width="980" height="660" fill="#fbfaf7"/>
+<text x="490" y="44" font-size="23" fill="#1f2328" text-anchor="middle" font-weight="600">辨析 1　快群 vs 热群</text>
+<text x="490" y="70" font-size="15" fill="#6b7280" text-anchor="middle">同一条压水堆能谱被分界能 0.625 eV 切成两群：快群管慢化与泄漏，热群管裂变与中毒</text>
+<line x1="30" y1="82" x2="950" y2="82" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="30" y1="556" x2="950" y2="556" stroke="#e3e0da" stroke-width="1.2"/>
+<text x="32" y="574" font-size="15" fill="#1f2328">① 能谱位置：A 0.625 eV 以上（裂变谱+1/E 慢化谱）；B 0.625 eV 以下（Maxwell 谱+1/E 尾）</text>
+<text x="32" y="594" font-size="15" fill="#1f2328">② 截面量级：A 1~5 b 量级，235U 裂变仅约 1 b；B 10²~10³ b，235U 583 b、Xe 3 Mb</text>
+<text x="32" y="614" font-size="15" fill="#1f2328">③ 主要作用：A 慢化、泄漏、238U 共振吸收与快裂变；B 热裂变释放功率、氙钐中毒</text>
+<text x="948" y="651" font-size="15" fill="#6b7280" text-anchor="end">依据教材 第5章 p.79–88 自绘</text>
+<rect x="24" y="96" width="452" height="456" fill="#f2f7fc" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="250" y="126" font-size="20" fill="#2f6fb0" text-anchor="middle" font-weight="600">A：快群（Fast group，E &gt; 0.625 eV）</text>
+<rect x="504" y="96" width="452" height="456" fill="#fbf5ef" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="730" y="126" font-size="20" fill="#b0642f" text-anchor="middle" font-weight="600">B：热群（Thermal group，E &lt; 0.625 eV）</text>
+<rect x="184.243" y="200" width="273.757" height="240" fill="#2f6fb0" opacity="0.12"/>
+<line x1="78" y1="200" x2="78" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="78" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">-3</tspan></text>
+<line x1="154" y1="200" x2="154" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="154" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">-1</tspan></text>
+<line x1="230" y1="200" x2="230" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="230" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">1</tspan></text>
+<line x1="306" y1="200" x2="306" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="306" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">3</tspan></text>
+<line x1="382" y1="200" x2="382" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="382" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">5</tspan></text>
+<line x1="458" y1="200" x2="458" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="458" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">7</tspan></text>
+<line x1="78" y1="212.632" x2="458" y2="212.632" stroke="#e3e0da" stroke-width="1"/>
+<text x="70" y="217.632" font-size="15" fill="#6b7280" text-anchor="end">10<tspan font-size="10.2" dy="-6.3">0</tspan></text>
+<line x1="78" y1="263.158" x2="458" y2="263.158" stroke="#e3e0da" stroke-width="1"/>
+<text x="70" y="268.158" font-size="15" fill="#6b7280" text-anchor="end">10<tspan font-size="10.2" dy="-6.3">-2</tspan></text>
+<line x1="78" y1="313.684" x2="458" y2="313.684" stroke="#e3e0da" stroke-width="1"/>
+<text x="70" y="318.684" font-size="15" fill="#6b7280" text-anchor="end">10<tspan font-size="10.2" dy="-6.3">-4</tspan></text>
+<line x1="78" y1="364.211" x2="458" y2="364.211" stroke="#e3e0da" stroke-width="1"/>
+<text x="70" y="369.211" font-size="15" fill="#6b7280" text-anchor="end">10<tspan font-size="10.2" dy="-6.3">-6</tspan></text>
+<line x1="78" y1="414.737" x2="458" y2="414.737" stroke="#e3e0da" stroke-width="1"/>
+<text x="70" y="419.737" font-size="15" fill="#6b7280" text-anchor="end">10<tspan font-size="10.2" dy="-6.3">-8</tspan></text>
+<line x1="78" y1="440" x2="458" y2="440" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="78" y1="200" x2="78" y2="440" stroke="#1f2328" stroke-width="1.5"/>
+<text x="268" y="482" font-size="15" fill="#1f2328" text-anchor="middle">中子能量 E / eV</text>
+<text x="456" y="170" font-size="15" fill="#1f2328" text-anchor="end">相对中子通量密度 φ(E)</text>
+<line x1="184.243" y1="200" x2="184.243" y2="440" stroke="#6b7280" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="190.243" y="434" font-size="15" fill="#6b7280">E_c = 0.625 eV</text>
+<path d="M78,237.539 L80.375,236.027 L82.75,234.525 L85.125,233.036 L87.5,231.56 L89.875,230.1 L92.25,228.658 L94.625,227.237 L97,225.842 L99.375,224.474 L101.75,223.139 L104.125,221.842 L106.5,220.588 L108.875,219.384 L111.25,218.239 L113.625,217.16 L116,216.158 L118.375,215.245 L120.75,214.435 L123.125,213.743 L125.5,213.186 L127.875,212.785 L130.25,212.563 L132.625,212.546 L135,212.762 L137.375,213.241 L139.75,214.016 L142.125,215.116 L144.5,216.561 L146.875,218.355 L149.25,220.461 L151.625,222.776 L154,225.111 L156.375,227.206 L158.75,228.835 L161.125,229.947 L163.5,230.701 L165.875,231.337 L168.25,232.045 L170.625,232.918 L173,233.971 L175.375,235.18 L177.75,236.509 L180.125,237.921 L182.5,239.39 L184.875,240.897 L187.25,242.429 L189.625,243.978 L192,245.537 L194.375,247.103 L196.75,248.673 L199.125,250.247 L201.5,251.822 L203.875,253.399 L206.25,254.976 L208.625,256.554 L211,258.132 L213.375,259.711 L215.75,261.29 L218.125,262.868 L220.5,264.447 L222.875,266.026 L225.25,267.605 L227.625,269.184 L230,270.763 L232.375,272.342 L234.75,273.921 L237.125,275.5 L239.5,277.079 L241.875,278.658 L244.25,280.237 L246.625,281.815 L249,283.394 L251.375,284.973 L253.75,286.552 L256.125,288.131 L258.5,289.71 L260.875,291.289 L263.25,292.868 L265.625,294.447 L268,296.026 L270.375,297.605 L272.75,299.183 L275.125,300.762 L277.5,302.341 L279.875,303.92 L282.25,305.498 L284.625,307.077 L287,308.656 L289.375,310.234 L291.75,311.812 L294.125,313.39 L296.5,314.968 L298.875,316.546 L301.25,318.124 L303.625,319.701 L306,321.277 L308.375,322.854 L310.75,324.429 L313.125,326.004 L315.5,327.577 L317.875,329.15 L320.25,330.72 L322.625,332.289 L325,333.855 L327.375,335.419 L329.75,336.978 L332.125,338.533 L334.5,340.082 L336.875,341.624 L339.25,343.158 L341.625,344.681 L344,346.191 L346.375,347.685 L348.75,349.159 L351.125,350.611 L353.5,352.033 L355.875,353.422 L358.25,354.77 L360.625,356.07 L363,357.314 L365.375,358.493 L367.75,359.598 L370.125,360.62 L372.5,361.549 L374.875,362.378 L377.25,363.101 L379.625,363.715 L382,364.218 L384.375,364.611 L386.75,364.901 L389.125,365.094 L391.5,365.202 L393.875,365.236 L396.25,365.21 L398.625,365.14 L401,365.042 L403.375,364.931 L405.75,364.825 L408.125,364.74 L410.5,364.695 L412.875,364.709 L415.25,364.801 L417.625,364.994 L420,365.312 L422.375,365.782 L424.75,366.434 L427.125,367.304 L429.5,368.432 L431.875,369.864 L434.25,371.653 L436.625,373.859 L439,376.55 L441.375,379.801 L443.75,383.691 L446.125,388.293 L448.5,393.653 L450.875,399.739 L453.25,406.331 L455.625,412.874 L458,418.474" fill="none" stroke="#2f6fb0" stroke-width="2"/>
+<text x="330" y="192" font-size="15" fill="#2f6fb0" text-anchor="middle" font-weight="600">快群（E &gt; 0.625 eV）</text>
+<text x="258" y="376" font-size="15" fill="#2f6fb0">1/E 慢化谱</text>
+<line x1="272" y1="370" x2="283" y2="308" stroke="#2f6fb0" stroke-width="1"/>
+<text x="452" y="344" font-size="15" fill="#2f6fb0" text-anchor="end">裂变谱 χ(E)</text>
+<line x1="438" y1="340" x2="419" y2="362" stroke="#2f6fb0" stroke-width="1"/>
+<circle cx="34" cy="495" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="499.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="50" y="500" font-size="15" fill="#1f2328">区间：E &gt; 0.625 eV，裂变谱 + 1/E 慢化谱</text>
+<circle cx="34" cy="515" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="519.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="50" y="520" font-size="15" fill="#1f2328">截面：1~5 b；238U 快裂变阈值 ≈ 1 MeV</text>
+<circle cx="34" cy="535" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="539.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="50" y="540" font-size="15" fill="#1f2328">作用：慢化、泄漏、238U 共振吸收</text>
+<rect x="558" y="200" width="106.243" height="240" fill="#b0642f" opacity="0.16"/>
+<line x1="558" y1="200" x2="558" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="558" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">-3</tspan></text>
+<line x1="634" y1="200" x2="634" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="634" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">-1</tspan></text>
+<line x1="710" y1="200" x2="710" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="710" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">1</tspan></text>
+<line x1="786" y1="200" x2="786" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="786" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">3</tspan></text>
+<line x1="862" y1="200" x2="862" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="862" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">5</tspan></text>
+<line x1="938" y1="200" x2="938" y2="440" stroke="#e3e0da" stroke-width="1"/>
+<text x="938" y="461" font-size="15" fill="#6b7280" text-anchor="middle">10<tspan font-size="10.2" dy="-6.3">7</tspan></text>
+<line x1="558" y1="212.632" x2="938" y2="212.632" stroke="#e3e0da" stroke-width="1"/>
+<text x="550" y="217.632" font-size="15" fill="#6b7280" text-anchor="end">10<tspan font-size="10.2" dy="-6.3">0</tspan></text>
+<line x1="558" y1="263.158" x2="938" y2="263.158" stroke="#e3e0da" stroke-width="1"/>
+<text x="550" y="268.158" font-size="15" fill="#6b7280" text-anchor="end">10<tspan font-size="10.2" dy="-6.3">-2</tspan></text>
+<line x1="558" y1="313.684" x2="938" y2="313.684" stroke="#e3e0da" stroke-width="1"/>
+<text x="550" y="318.684" font-size="15" fill="#6b7280" text-anchor="end">10<tspan font-size="10.2" dy="-6.3">-4</tspan></text>
+<line x1="558" y1="364.211" x2="938" y2="364.211" stroke="#e3e0da" stroke-width="1"/>
+<text x="550" y="369.211" font-size="15" fill="#6b7280" text-anchor="end">10<tspan font-size="10.2" dy="-6.3">-6</tspan></text>
+<line x1="558" y1="414.737" x2="938" y2="414.737" stroke="#e3e0da" stroke-width="1"/>
+<text x="550" y="419.737" font-size="15" fill="#6b7280" text-anchor="end">10<tspan font-size="10.2" dy="-6.3">-8</tspan></text>
+<line x1="558" y1="440" x2="938" y2="440" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="558" y1="200" x2="558" y2="440" stroke="#1f2328" stroke-width="1.5"/>
+<text x="748" y="482" font-size="15" fill="#1f2328" text-anchor="middle">中子能量 E / eV</text>
+<text x="936" y="170" font-size="15" fill="#1f2328" text-anchor="end">相对中子通量密度 φ(E)</text>
+<line x1="664.243" y1="200" x2="664.243" y2="440" stroke="#6b7280" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="670.243" y="434" font-size="15" fill="#6b7280">E_c = 0.625 eV</text>
+<path d="M558,237.539 L560.375,236.027 L562.75,234.525 L565.125,233.036 L567.5,231.56 L569.875,230.1 L572.25,228.658 L574.625,227.237 L577,225.842 L579.375,224.474 L581.75,223.139 L584.125,221.842 L586.5,220.588 L588.875,219.384 L591.25,218.239 L593.625,217.16 L596,216.158 L598.375,215.245 L600.75,214.435 L603.125,213.743 L605.5,213.186 L607.875,212.785 L610.25,212.563 L612.625,212.546 L615,212.762 L617.375,213.241 L619.75,214.016 L622.125,215.116 L624.5,216.561 L626.875,218.355 L629.25,220.461 L631.625,222.776 L634,225.111 L636.375,227.206 L638.75,228.835 L641.125,229.947 L643.5,230.701 L645.875,231.337 L648.25,232.045 L650.625,232.918 L653,233.971 L655.375,235.18 L657.75,236.509 L660.125,237.921 L662.5,239.39 L664.875,240.897 L667.25,242.429 L669.625,243.978 L672,245.537 L674.375,247.103 L676.75,248.673 L679.125,250.247 L681.5,251.822 L683.875,253.399 L686.25,254.976 L688.625,256.554 L691,258.132 L693.375,259.711 L695.75,261.29 L698.125,262.868 L700.5,264.447 L702.875,266.026 L705.25,267.605 L707.625,269.184 L710,270.763 L712.375,272.342 L714.75,273.921 L717.125,275.5 L719.5,277.079 L721.875,278.658 L724.25,280.237 L726.625,281.815 L729,283.394 L731.375,284.973 L733.75,286.552 L736.125,288.131 L738.5,289.71 L740.875,291.289 L743.25,292.868 L745.625,294.447 L748,296.026 L750.375,297.605 L752.75,299.183 L755.125,300.762 L757.5,302.341 L759.875,303.92 L762.25,305.498 L764.625,307.077 L767,308.656 L769.375,310.234 L771.75,311.812 L774.125,313.39 L776.5,314.968 L778.875,316.546 L781.25,318.124 L783.625,319.701 L786,321.277 L788.375,322.854 L790.75,324.429 L793.125,326.004 L795.5,327.577 L797.875,329.15 L800.25,330.72 L802.625,332.289 L805,333.855 L807.375,335.419 L809.75,336.978 L812.125,338.533 L814.5,340.082 L816.875,341.624 L819.25,343.158 L821.625,344.681 L824,346.191 L826.375,347.685 L828.75,349.159 L831.125,350.611 L833.5,352.033 L835.875,353.422 L838.25,354.77 L840.625,356.07 L843,357.314 L845.375,358.493 L847.75,359.598 L850.125,360.62 L852.5,361.549 L854.875,362.378 L857.25,363.101 L859.625,363.715 L862,364.218 L864.375,364.611 L866.75,364.901 L869.125,365.094 L871.5,365.202 L873.875,365.236 L876.25,365.21 L878.625,365.14 L881,365.042 L883.375,364.931 L885.75,364.825 L888.125,364.74 L890.5,364.695 L892.875,364.709 L895.25,364.801 L897.625,364.994 L900,365.312 L902.375,365.782 L904.75,366.434 L907.125,367.304 L909.5,368.432 L911.875,369.864 L914.25,371.653 L916.625,373.859 L919,376.55 L921.375,379.801 L923.75,383.691 L926.125,388.293 L928.5,393.653 L930.875,399.739 L933.25,406.331 L935.625,412.874 L938,418.474" fill="none" stroke="#b0642f" stroke-width="2"/>
+<text x="606" y="192" font-size="15" fill="#b0642f" text-anchor="middle" font-weight="600">热群（E &lt; 0.625 eV）</text>
+<text x="572" y="276" font-size="15" fill="#b0642f">Maxwell 谱</text>
+<text x="572" y="298" font-size="15" fill="#6b7280">（峰 0.0253 eV）</text>
+<line x1="602" y1="270" x2="604" y2="224" stroke="#b0642f" stroke-width="1"/>
+<text x="630" y="348" font-size="15" fill="#b0642f">1/E 尾</text>
+<line x1="642" y1="342" x2="678" y2="252" stroke="#b0642f" stroke-width="1"/>
+<circle cx="514" cy="495" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="499.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="530" y="500" font-size="15" fill="#1f2328">区间：E &lt; 0.625 eV，峰在 0.0253 eV</text>
+<circle cx="514" cy="515" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="519.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="530" y="520" font-size="15" fill="#1f2328">截面：10²~10³ b；235U 583 b</text>
+<circle cx="514" cy="535" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="539.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="530" y="540" font-size="15" fill="#1f2328">作用：热裂变维持链式反应、中毒</text>
+</g>
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 660" width="980" height="660" role="img" aria-labelledby="PAIR-ROD-BORON-t PAIR-ROD-BORON-d" class="fig-svg pair-svg" data-pair-id="PAIR-ROD-BORON">
+<title id="PAIR-ROD-BORON-t">控制棒 与 可溶硼</title>
+<desc id="PAIR-ROD-BORON-d">A：控制棒（价值 ∝φ²，钟形微分价值）| B：可溶硼（临界硼浓度随燃耗下降）</desc>
+<defs>
+<marker id="arInk" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#1f2328"/></marker>
+<marker id="arA" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#2f6fb0"/></marker>
+<marker id="arB" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#b0642f"/></marker>
+<marker id="arRed" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#c0392b"/></marker>
+<marker id="arGrey" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#6b7280"/></marker>
+</defs>
+<g font-family="Microsoft YaHei, SimHei, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<rect x="0" y="0" width="980" height="660" fill="#fbfaf7"/>
+<text x="490" y="44" font-size="23" fill="#1f2328" text-anchor="middle" font-weight="600">辨析 7　控制棒 vs 可溶硼</text>
+<text x="490" y="70" font-size="15" fill="#6b7280" text-anchor="middle">两种反应性控制手段：棒靠局部强吸收、动作以秒计；硼靠均匀溶解、动作以小时计</text>
+<line x1="30" y1="82" x2="950" y2="82" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="30" y1="556" x2="950" y2="556" stroke="#e3e0da" stroke-width="1.2"/>
+<text x="32" y="574" font-size="15" fill="#1f2328">① 空间分布：A 局部强吸收体，价值 ∝ φ²，扰动功率分布；B 溶于冷却剂，空间均匀，不扰动功率分布</text>
+<text x="32" y="594" font-size="15" fill="#1f2328">② 价值曲线：A 微分价值中部最大（钟形），积分价值 S 形；B 硼微分价值随浓度缓变，近似线性</text>
+<text x="32" y="614" font-size="15" fill="#1f2328">③ 响应速度：A 机械抽插，秒级，可快速调节与停堆；B 硼化/稀释靠化容系统，小时级，只能慢变化</text>
+<text x="32" y="634" font-size="15" fill="#1f2328">④ 用途分工：A 快速调节 + 停堆，总价值约 7000 pcm；B 补偿燃耗/温度/氙，总价值约 17000 pcm（份额最大）</text>
+<text x="948" y="651" font-size="15" fill="#6b7280" text-anchor="end">依据教材 第7章 p.121–127 自绘</text>
+<rect x="24" y="96" width="452" height="456" fill="#f2f7fc" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="250" y="126" font-size="20" fill="#2f6fb0" text-anchor="middle" font-weight="600">A：控制棒（Control rod）</text>
+<line x1="96" y1="236" x2="96" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="96" y="417" font-size="15" fill="#6b7280" text-anchor="middle">0</text>
+<line x1="185" y1="236" x2="185" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="185" y="417" font-size="15" fill="#6b7280" text-anchor="middle">25</text>
+<line x1="274" y1="236" x2="274" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="274" y="417" font-size="15" fill="#6b7280" text-anchor="middle">50</text>
+<line x1="363" y1="236" x2="363" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="363" y="417" font-size="15" fill="#6b7280" text-anchor="middle">75</text>
+<line x1="452" y1="236" x2="452" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="452" y="417" font-size="15" fill="#6b7280" text-anchor="middle">100</text>
+<line x1="96" y1="396" x2="452" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="401" font-size="15" fill="#6b7280" text-anchor="end">0.0</text>
+<line x1="96" y1="316" x2="452" y2="316" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="321" font-size="15" fill="#6b7280" text-anchor="end">0.5</text>
+<line x1="96" y1="236" x2="452" y2="236" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="241" font-size="15" fill="#6b7280" text-anchor="end">1.0</text>
+<line x1="96" y1="396" x2="452" y2="396" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="96" y1="236" x2="96" y2="396" stroke="#1f2328" stroke-width="1.5"/>
+<text x="274" y="438" font-size="15" fill="#1f2328" text-anchor="middle">控制棒插入深度 / %</text>
+<text x="92" y="228" font-size="15" fill="#1f2328">归一化价值</text>
+<path d="M96,396 L101.933,395.562 L107.867,394.252 L113.8,392.085 L119.733,389.084 L125.667,385.282 L131.6,380.721 L137.533,375.452 L143.467,369.53 L149.4,363.023 L155.333,356 L161.267,348.539 L167.2,340.721 L173.133,332.633 L179.067,324.362 L185,316 L190.933,307.638 L196.867,299.367 L202.8,291.279 L208.733,283.461 L214.667,276 L220.6,268.977 L226.533,262.47 L232.467,256.548 L238.4,251.279 L244.333,246.718 L250.267,242.916 L256.2,239.915 L262.133,237.748 L268.067,236.438 L274,236 L279.933,236.438 L285.867,237.748 L291.8,239.915 L297.733,242.916 L303.667,246.718 L309.6,251.279 L315.533,256.548 L321.467,262.47 L327.4,268.977 L333.333,276 L339.267,283.461 L345.2,291.279 L351.133,299.367 L357.067,307.638 L363,316 L368.933,324.362 L374.867,332.633 L380.8,340.721 L386.733,348.539 L392.667,356 L398.6,363.023 L404.533,369.53 L410.467,375.452 L416.4,380.721 L422.333,385.282 L428.267,389.084 L434.2,392.085 L440.133,394.252 L446.067,395.562 L452,396" fill="none" stroke="#2f6fb0" stroke-width="2.2"/>
+<path d="M96,396 L101.933,395.995 L107.867,395.961 L113.8,395.869 L119.733,395.691 L125.667,395.399 L131.6,394.968 L137.533,394.373 L143.467,393.591 L149.4,392.601 L155.333,391.386 L161.267,389.93 L167.2,388.218 L173.133,386.242 L179.067,383.992 L185,381.465 L190.933,378.659 L196.867,375.575 L202.8,372.218 L208.733,368.597 L214.667,364.72 L220.6,360.601 L226.533,356.257 L232.467,351.706 L238.4,346.968 L244.333,342.066 L250.267,337.024 L256.2,331.869 L262.133,326.628 L268.067,321.328 L274,316 L279.933,310.672 L285.867,305.372 L291.8,300.131 L297.733,294.976 L303.667,289.934 L309.6,285.032 L315.533,280.294 L321.467,275.743 L327.4,271.399 L333.333,267.28 L339.267,263.403 L345.2,259.782 L351.133,256.425 L357.067,253.341 L363,250.535 L368.933,248.008 L374.867,245.758 L380.8,243.782 L386.733,242.07 L392.667,240.614 L398.6,239.399 L404.533,238.409 L410.467,237.627 L416.4,237.032 L422.333,236.601 L428.267,236.309 L434.2,236.131 L440.133,236.039 L446.067,236.005 L452,236" fill="none" stroke="#2f6fb0" stroke-width="1.8" stroke-dasharray="7 4"/>
+<text x="300" y="230" font-size="15" fill="#2f6fb0" font-weight="600">微分价值（钟形）</text>
+<text x="400" y="300" font-size="15" fill="#2f6fb0" text-anchor="middle">积分价值（S 形）</text>
+<text x="240" y="302" font-size="15" fill="#6b7280" text-anchor="end">中部 φ² 最大</text>
+<line x1="274" y1="236" x2="274" y2="396" stroke="#6b7280" stroke-width="1" stroke-dasharray="4 3"/>
+<circle cx="34" cy="475" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="479.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="50" y="480" font-size="15" fill="#1f2328">形状：微分价值钟形，积分价值 S 形</text>
+<circle cx="34" cy="495" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="499.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="50" y="500" font-size="15" fill="#1f2328">响应：机械抽插，秒级，可快速停堆</text>
+<circle cx="34" cy="515" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="519.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="50" y="520" font-size="15" fill="#1f2328">副作用：通量畸变、棒间干涉（总值 7000 pcm）</text>
+<circle cx="34" cy="535" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="539.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">④</text>
+<text x="50" y="540" font-size="15" fill="#1f2328">分工：棒管秒级快变化，硼管小时级慢变化</text>
+<rect x="504" y="96" width="452" height="456" fill="#fbf5ef" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="730" y="126" font-size="20" fill="#b0642f" text-anchor="middle" font-weight="600">B：可溶硼（Soluble boron）</text>
+<line x1="556" y1="236" x2="556" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="556" y="417" font-size="15" fill="#6b7280" text-anchor="middle">0</text>
+<line x1="630" y1="236" x2="630" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="630" y="417" font-size="15" fill="#6b7280" text-anchor="middle">90</text>
+<line x1="704" y1="236" x2="704" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="704" y="417" font-size="15" fill="#6b7280" text-anchor="middle">180</text>
+<line x1="778" y1="236" x2="778" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="778" y="417" font-size="15" fill="#6b7280" text-anchor="middle">270</text>
+<line x1="852" y1="236" x2="852" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="852" y="417" font-size="15" fill="#6b7280" text-anchor="middle">360</text>
+<line x1="556" y1="396" x2="852" y2="396" stroke="#e3e0da" stroke-width="1"/>
+<text x="548" y="401" font-size="15" fill="#6b7280" text-anchor="end">0</text>
+<line x1="556" y1="356" x2="852" y2="356" stroke="#e3e0da" stroke-width="1"/>
+<text x="548" y="361" font-size="15" fill="#6b7280" text-anchor="end">400</text>
+<line x1="556" y1="316" x2="852" y2="316" stroke="#e3e0da" stroke-width="1"/>
+<text x="548" y="321" font-size="15" fill="#6b7280" text-anchor="end">800</text>
+<line x1="556" y1="276" x2="852" y2="276" stroke="#e3e0da" stroke-width="1"/>
+<text x="548" y="281" font-size="15" fill="#6b7280" text-anchor="end">1200</text>
+<line x1="556" y1="236" x2="852" y2="236" stroke="#e3e0da" stroke-width="1"/>
+<text x="548" y="241" font-size="15" fill="#6b7280" text-anchor="end">1600</text>
+<line x1="556" y1="396" x2="852" y2="396" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="556" y1="236" x2="556" y2="396" stroke="#1f2328" stroke-width="1.5"/>
+<text x="704" y="438" font-size="15" fill="#1f2328" text-anchor="middle">燃耗 / EFPD</text>
+<text x="552" y="228" font-size="15" fill="#1f2328">临界硼浓度 / ppm</text>
+<path d="M556,271 L560.933,278.958 L565.867,280.8 L570.8,282.6 L575.733,284.4 L580.667,286.2 L585.6,288 L590.533,289.8 L595.467,291.6 L600.4,293.4 L605.333,295.2 L610.267,297 L615.2,298.8 L620.133,300.6 L625.067,302.4 L630,304.2 L634.933,306 L639.867,307.8 L644.8,309.6 L649.733,311.4 L654.667,313.2 L659.6,315 L664.533,316.8 L669.467,318.6 L674.4,320.4 L679.333,322.2 L684.267,324 L689.2,325.8 L694.133,327.6 L699.067,329.4 L704,331.2 L708.933,333 L713.867,334.8 L718.8,336.6 L723.733,338.4 L728.667,340.2 L733.6,342 L738.533,343.8 L743.467,345.6 L748.4,347.4 L753.333,349.2 L758.267,351 L763.2,352.8 L768.133,354.6 L773.067,356.4 L778,358.2 L782.933,360 L787.867,361.8 L792.8,363.6 L797.733,365.4 L802.667,367.2 L807.6,369 L812.533,370.8 L817.467,372.6 L822.4,374.4 L827.333,376.2 L832.267,378 L837.2,379.8 L842.133,381.6 L847.067,383.4 L852,385.2" fill="none" stroke="#b0642f" stroke-width="2.2"/>
+<line x1="556" y1="246" x2="852" y2="246" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="848" y="239" font-size="15" fill="#c0392b" text-anchor="end">硼浓度上限 1500 ppm</text>
+<text x="616.844" y="282" font-size="15" fill="#b0642f" font-weight="600">临界硼浓度随燃耗下降</text>
+<text x="564.222" y="336" font-size="15" fill="#6b7280">寿期初氙峰陡降</text>
+<line x1="565.867" y1="330" x2="558.056" y2="277.5" stroke="#6b7280" stroke-width="1"/>
+<text x="560" y="388" font-size="15" fill="#6b7280">硼微分价值 ≈ −10 pcm/ppm</text>
+<circle cx="514" cy="475" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="479.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="530" y="480" font-size="15" fill="#1f2328">形状：空间均匀，价值随浓度缓变</text>
+<circle cx="514" cy="495" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="499.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="530" y="500" font-size="15" fill="#1f2328">响应：硼化/稀释，小时级，只做慢补偿</text>
+<circle cx="514" cy="515" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="519.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="530" y="520" font-size="15" fill="#1f2328">用途：燃耗/温度/平衡氙（总值 17000 pcm）</text>
+<circle cx="514" cy="535" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="539.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">④</text>
+<text x="530" y="540" font-size="15" fill="#1f2328">分工：硼补慢变化，棒留作调节与停堆</text>
+</g>
+</svg>

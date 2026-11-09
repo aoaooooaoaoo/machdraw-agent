@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 660" width="980" height="660" role="img" aria-labelledby="PAIR-REFLECTOR-t PAIR-REFLECTOR-d" class="fig-svg pair-svg" data-pair-id="PAIR-REFLECTOR">
+<title id="PAIR-REFLECTOR-t">有反射层 与 无反射层（裸堆）</title>
+<desc id="PAIR-REFLECTOR-d">A：有反射层（边缘通量抬高、节省 δ）| B：裸堆（边缘通量趋零、尺寸大）</desc>
+<defs>
+<marker id="arInk" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#1f2328"/></marker>
+<marker id="arA" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#2f6fb0"/></marker>
+<marker id="arB" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#b0642f"/></marker>
+<marker id="arRed" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#c0392b"/></marker>
+<marker id="arGrey" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0.8,1 L8.6,5 L0.8,9 Z" fill="#6b7280"/></marker>
+</defs>
+<g font-family="Microsoft YaHei, SimHei, sans-serif" stroke-linecap="round" stroke-linejoin="round">
+<rect x="0" y="0" width="980" height="660" fill="#fbfaf7"/>
+<text x="490" y="44" font-size="23" fill="#1f2328" text-anchor="middle" font-weight="600">辨析 4　有反射层 vs 无反射层（裸堆）</text>
+<text x="490" y="70" font-size="15" fill="#6b7280" text-anchor="middle">同功率下的径向通量：反射层把逸出中子送回来，边缘通量抬高、堆芯可以更小</text>
+<line x1="30" y1="82" x2="950" y2="82" stroke="#e3e0da" stroke-width="1.2"/>
+<line x1="30" y1="556" x2="950" y2="556" stroke="#e3e0da" stroke-width="1.2"/>
+<text x="32" y="574" font-size="15" fill="#1f2328">① 边界条件：A 反照率边界，逸出中子部分被反射回来；B 真空边界 φ = 0，用外推距离 0.71λtr 近似</text>
+<text x="32" y="594" font-size="15" fill="#1f2328">② 通量分布：A 堆芯边缘通量抬高（≈0.62），功率展平；B 边缘通量趋零，中心峰突出、不均匀系数大</text>
+<text x="32" y="614" font-size="15" fill="#1f2328">③ 临界尺寸：A 同样功率下临界尺寸小（反射层节省 δ）；B 临界尺寸大，泄漏多，工程上不现实</text>
+<text x="948" y="651" font-size="15" fill="#6b7280" text-anchor="end">依据教材 第4章 p.61–64 自绘</text>
+<rect x="24" y="96" width="452" height="456" fill="#f2f7fc" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="250" y="126" font-size="20" fill="#2f6fb0" text-anchor="middle" font-weight="600">A：带反射层（芯部 a = 85 cm）</text>
+<rect x="504" y="96" width="452" height="456" fill="#fbf5ef" stroke="#e3e0da" stroke-width="1.2" rx="8"/>
+<text x="730" y="126" font-size="20" fill="#b0642f" text-anchor="middle" font-weight="600">B：裸堆（临界半宽 a = 115 cm）</text>
+<line x1="96" y1="212" x2="96" y2="412" stroke="#e3e0da" stroke-width="1"/>
+<text x="96" y="433" font-size="15" fill="#6b7280" text-anchor="middle">0</text>
+<line x1="205.538" y1="212" x2="205.538" y2="412" stroke="#e3e0da" stroke-width="1"/>
+<text x="205.538" y="433" font-size="15" fill="#6b7280" text-anchor="middle">40</text>
+<line x1="315.077" y1="212" x2="315.077" y2="412" stroke="#e3e0da" stroke-width="1"/>
+<text x="315.077" y="433" font-size="15" fill="#6b7280" text-anchor="middle">80</text>
+<line x1="424.615" y1="212" x2="424.615" y2="412" stroke="#e3e0da" stroke-width="1"/>
+<text x="424.615" y="433" font-size="15" fill="#6b7280" text-anchor="middle">120</text>
+<line x1="96" y1="412" x2="452" y2="412" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="417" font-size="15" fill="#6b7280" text-anchor="end">0.0</text>
+<line x1="96" y1="316.762" x2="452" y2="316.762" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="321.762" font-size="15" fill="#6b7280" text-anchor="end">0.5</text>
+<line x1="96" y1="221.524" x2="452" y2="221.524" stroke="#e3e0da" stroke-width="1"/>
+<text x="88" y="226.524" font-size="15" fill="#6b7280" text-anchor="end">1.0</text>
+<line x1="96" y1="412" x2="452" y2="412" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="96" y1="212" x2="96" y2="412" stroke="#1f2328" stroke-width="1.5"/>
+<text x="274" y="454" font-size="15" fill="#1f2328" text-anchor="middle">距中心径向距离 r / cm</text>
+<text x="92" y="204" font-size="15" fill="#1f2328">相对中子通量密度 φ(r)</text>
+<rect x="96" y="212" width="232.769" height="200" fill="#2f6fb0" opacity="0.1"/>
+<rect x="328.769" y="212" width="68.4615" height="200" fill="#6b7280" opacity="0.16"/>
+<line x1="328.769" y1="212" x2="328.769" y2="412" stroke="#2f6fb0" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="410.923" y1="212" x2="410.923" y2="412" stroke="#6b7280" stroke-width="1.2" stroke-dasharray="4 4"/>
+<path d="M96,221.524 L99.8795,221.545 L103.759,221.61 L107.638,221.718 L111.518,221.868 L115.397,222.062 L119.277,222.298 L123.156,222.578 L127.036,222.9 L130.915,223.265 L134.795,223.673 L138.674,224.123 L142.554,224.616 L146.433,225.151 L150.313,225.728 L154.192,226.348 L158.072,227.009 L161.951,227.712 L165.831,228.457 L169.71,229.244 L173.59,230.071 L177.469,230.94 L181.349,231.85 L185.228,232.801 L189.108,233.792 L192.987,234.823 L196.867,235.894 L200.746,237.005 L204.626,238.156 L208.505,239.346 L212.385,240.575 L216.264,241.843 L220.144,243.149 L224.023,244.494 L227.903,245.876 L231.782,247.296 L235.662,248.753 L239.541,250.247 L243.421,251.778 L247.3,253.345 L251.179,254.947 L255.059,256.585 L258.938,258.259 L262.818,259.967 L266.697,261.709 L270.577,263.486 L274.456,265.296 L278.336,267.139 L282.215,269.015 L286.095,270.923 L289.974,272.863 L293.854,274.835 L297.733,276.837 L301.613,278.87 L305.492,280.934 L309.372,283.027 L313.251,285.149 L317.131,287.299 L321.01,289.478 L324.89,291.685 L328.769,293.919 L328.769,293.905 L330.481,299.898 L332.192,305.587 L333.904,310.988 L335.615,316.114 L337.327,320.98 L339.038,325.6 L340.75,329.985 L342.462,334.147 L344.173,338.098 L345.885,341.848 L347.596,345.409 L349.308,348.788 L351.019,351.996 L352.731,355.041 L354.442,357.932 L356.154,360.676 L357.865,363.281 L359.577,365.753 L361.288,368.1 L363,370.328 L364.712,372.443 L366.423,374.451 L368.135,376.356 L369.846,378.165 L371.558,379.882 L373.269,381.512 L374.981,383.06 L376.692,384.528 L378.404,385.922 L380.115,387.246 L381.827,388.502 L383.538,389.695 L385.25,390.827 L386.962,391.901 L388.673,392.921 L390.385,393.89 L392.096,394.809 L393.808,395.681 L395.519,396.509 L397.231,397.295" fill="none" stroke="#2f6fb0" stroke-width="2.2"/>
+<text x="200" y="246" font-size="15" fill="#2f6fb0" text-anchor="middle" font-weight="600">芯部</text>
+<text x="367" y="240" font-size="15" fill="#6b7280" text-anchor="middle">反射层</text>
+<text x="367" y="262" font-size="15" fill="#6b7280" text-anchor="middle">（e 指数衰减）</text>
+<text x="405" y="288" font-size="15" fill="#6b7280" text-anchor="end">等效裸堆边界 a+δ</text>
+<line x1="328.769" y1="310" x2="410.923" y2="310" stroke="#c0392b" stroke-width="1.4" marker-end="url(#arRed)"/>
+<line x1="410.923" y1="310" x2="328.769" y2="310" stroke="#c0392b" stroke-width="1.4" marker-end="url(#arRed)"/>
+<text x="370" y="334" font-size="15" fill="#c0392b" text-anchor="middle" font-weight="600">反射层节省 δ = 30 cm</text>
+<circle cx="34" cy="469" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="473.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="50" y="474" font-size="15" fill="#1f2328">边界：反照率边界，部分中子返回</text>
+<circle cx="34" cy="489" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="493.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="50" y="494" font-size="15" fill="#1f2328">效果：边缘通量抬高、功率展平，省 δ</text>
+<circle cx="34" cy="509" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="34" y="513.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="50" y="514" font-size="15" fill="#1f2328">材料：Σs 大、ξ 大、Σa 小（同慢化剂）</text>
+<line x1="576" y1="212" x2="576" y2="412" stroke="#e3e0da" stroke-width="1"/>
+<text x="576" y="433" font-size="15" fill="#6b7280" text-anchor="middle">0</text>
+<line x1="685.538" y1="212" x2="685.538" y2="412" stroke="#e3e0da" stroke-width="1"/>
+<text x="685.538" y="433" font-size="15" fill="#6b7280" text-anchor="middle">40</text>
+<line x1="795.077" y1="212" x2="795.077" y2="412" stroke="#e3e0da" stroke-width="1"/>
+<text x="795.077" y="433" font-size="15" fill="#6b7280" text-anchor="middle">80</text>
+<line x1="904.615" y1="212" x2="904.615" y2="412" stroke="#e3e0da" stroke-width="1"/>
+<text x="904.615" y="433" font-size="15" fill="#6b7280" text-anchor="middle">120</text>
+<line x1="576" y1="412" x2="932" y2="412" stroke="#e3e0da" stroke-width="1"/>
+<text x="568" y="417" font-size="15" fill="#6b7280" text-anchor="end">0.0</text>
+<line x1="576" y1="316.762" x2="932" y2="316.762" stroke="#e3e0da" stroke-width="1"/>
+<text x="568" y="321.762" font-size="15" fill="#6b7280" text-anchor="end">0.5</text>
+<line x1="576" y1="221.524" x2="932" y2="221.524" stroke="#e3e0da" stroke-width="1"/>
+<text x="568" y="226.524" font-size="15" fill="#6b7280" text-anchor="end">1.0</text>
+<line x1="576" y1="412" x2="932" y2="412" stroke="#1f2328" stroke-width="1.5"/>
+<line x1="576" y1="212" x2="576" y2="412" stroke="#1f2328" stroke-width="1.5"/>
+<text x="754" y="454" font-size="15" fill="#1f2328" text-anchor="middle">距中心径向距离 r / cm</text>
+<text x="572" y="204" font-size="15" fill="#1f2328">相对中子通量密度 φ(r)</text>
+<rect x="576" y="212" width="314.923" height="200" fill="#b0642f" opacity="0.1"/>
+<rect x="890.923" y="212" width="41.0769" height="200" fill="#fbfaf7"/>
+<line x1="899.138" y1="212" x2="899.138" y2="412" stroke="#6b7280" stroke-width="1.2" stroke-dasharray="4 4"/>
+<path d="M576,221.524 L581.249,221.586 L586.497,221.772 L591.746,222.082 L596.995,222.515 L602.244,223.072 L607.492,223.751 L612.741,224.554 L617.99,225.478 L623.238,226.524 L628.487,227.69 L633.736,228.976 L638.985,230.382 L644.233,231.906 L649.482,233.547 L654.731,235.304 L659.979,237.176 L665.228,239.162 L670.477,241.261 L675.726,243.47 L680.974,245.79 L686.223,248.217 L691.472,250.751 L696.721,253.39 L701.969,256.133 L707.218,258.977 L712.467,261.92 L717.715,264.961 L722.964,268.098 L728.213,271.329 L733.462,274.651 L738.71,278.062 L743.959,281.561 L749.208,285.144 L754.456,288.811 L759.705,292.557 L764.954,296.381 L770.203,300.28 L775.451,304.252 L780.7,308.295 L785.949,312.404 L791.197,316.579 L796.446,320.816 L801.695,325.112 L806.944,329.464 L812.192,333.871 L817.441,338.328 L822.69,342.833 L827.938,347.383 L833.187,351.975 L838.436,356.607 L843.685,361.274 L848.933,365.974 L854.182,370.705 L859.431,375.462 L864.679,380.243 L869.928,385.045 L875.177,389.864 L880.426,394.697 L885.674,399.542 L890.923,404.395" fill="none" stroke="#b0642f" stroke-width="2.2"/>
+<text x="701.969" y="232" font-size="15" fill="#b0642f" text-anchor="middle" font-weight="600">裸堆：同一 cos 形，边缘趋零</text>
+<text x="908" y="330" font-size="15" fill="#6b7280">真空</text>
+<text x="908" y="350" font-size="15" fill="#6b7280">φ = 0</text>
+<line x1="740.308" y1="300" x2="849.846" y2="300" stroke="#c0392b" stroke-width="1.2" marker-end="url(#arRed)"/>
+<text x="795.077" y="292" font-size="15" fill="#c0392b" text-anchor="middle">中子一出即丢失</text>
+<text x="712.923" y="380" font-size="15" fill="#1f2328" text-anchor="middle">a = 115 cm（比带反射层大 35%）</text>
+<circle cx="514" cy="469" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="473.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">①</text>
+<text x="530" y="474" font-size="15" fill="#1f2328">边界：真空边界 φ = 0（外推距离 0.71λtr）</text>
+<circle cx="514" cy="489" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="493.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">②</text>
+<text x="530" y="494" font-size="15" fill="#1f2328">代价：临界尺寸大、泄漏多，Ps·Pd 低</text>
+<circle cx="514" cy="509" r="10" fill="#ffffff" stroke="#c0392b" stroke-width="1.4"/>
+<text x="514" y="513.6" font-size="13" fill="#c0392b" text-anchor="middle" font-weight="600">③</text>
+<text x="530" y="514" font-size="15" fill="#1f2328">现实：世界上没有裸堆，仅作理论基准</text>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+services:
+  reactor-physics:
+    build: .
+    image: reactor-physics-agent:0.1
+    container_name: reactor-physics-agent
+    ports:
+      - "${HOST_PORT:-8077}:8077"
+    environment:
+      # 想接真实模型时取消注释并填 key；不填则用内置的本地抽取模式（无需联网、无需 key）
+      # RP_LLM_PROVIDER: deepseek
+      # RP_LLM_API_KEY: sk-xxxx
+      # 检索门控用 config.py 里标定好的默认值（τ=0.40 / τ_chunk=0.25），不要在这里覆盖
+      RP_GATE_TAU: "0.40"
+      RP_GATE_TAU_CHUNK: "0.25"
+    volumes:
+      - ./data-docker:/app/data      # SQLite（账号、错题、学情埋点）持久化
+    restart: unless-stopped

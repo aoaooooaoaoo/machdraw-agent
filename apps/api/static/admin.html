@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>教师端 · 核反应堆物理 AI 助教</title>
+<style>
+  :root{
+    --bg:#f6f8fb; --card:#fff; --line:#e5e9f0; --ink:#111827; --muted:#6b7280;
+    --brand:#2563eb; --ok:#16a34a; --warn:#d97706; --bad:#dc2626;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+  header{background:#fff;border-bottom:1px solid var(--line);padding:14px 22px;
+         display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:9}
+  header h1{font-size:17px;margin:0}
+  header .tag{font-size:12px;color:var(--muted);border:1px solid var(--line);
+              border-radius:999px;padding:2px 10px}
+  header .sp{flex:1}
+  button{font:inherit;cursor:pointer;border:1px solid var(--line);background:#fff;
+         border-radius:8px;padding:7px 14px;color:var(--ink)}
+  button:hover{border-color:var(--brand);color:var(--brand)}
+  button.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+  button:disabled{opacity:.5;cursor:not-allowed}
+  main{padding:18px 22px 60px;max-width:1320px;margin:0 auto}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .kpi .n{font-size:24px;font-weight:650;letter-spacing:-.5px}
+  .kpi .l{font-size:12px;color:var(--muted);margin-top:2px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:12px;
+          padding:16px 18px;margin-top:16px}
+  section h2{font-size:14px;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+  section h2 .hint{font-size:12px;color:var(--muted);font-weight:400}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:12px;color:var(--muted);font-weight:500}
+  tr.row{cursor:pointer}
+  tr.row:hover{background:#f9fbff}
+  .pill{display:inline-block;font-size:11px;padding:1px 7px;border-radius:999px;
+        border:1px solid var(--line);color:var(--muted)}
+  .pill.int{color:var(--warn);border-color:#fde68a;background:#fffbeb}
+  .bar{height:8px;background:#eef2f7;border-radius:99px;overflow:hidden;min-width:60px}
+  .bar > i{display:block;height:100%;background:var(--brand);border-radius:99px}
+  .bar.ok > i{background:var(--ok)} .bar.warn > i{background:var(--warn)}
+  .muted{color:var(--muted)}
+  .sections{font-size:12px;color:var(--muted);padding:4px 8px 10px;line-height:1.7}
+  .sections span{display:inline-block;background:#f3f6fb;border-radius:6px;
+                 padding:1px 8px;margin:2px 4px 2px 0}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:900px){.two{grid-template-columns:1fr}}
+  .empty{color:var(--muted);font-size:13px;padding:10px 0}
+  .warnbox{background:#fffbeb;border:1px solid #fde68a;color:#92400e;
+           border-radius:8px;padding:10px 12px;font-size:12px;margin-top:10px}
+  code{background:#f3f6fb;padding:1px 5px;border-radius:4px;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <h1>核反应堆物理 AI 助教 · 教师端</h1>
+  <span class="tag" id="conn">连接中…</span>
+  <span class="sp"></span>
+  <button id="reload">重建知识库索引</button>
+  <button class="primary" id="refresh">刷新</button>
+</header>
+
+<main>
+  <div class="grid" id="kpi"></div>
+
+  <div class="two">
+    <section>
+      <h2>学情看板 <span class="hint">来自 events 埋点</span></h2>
+      <div id="events"></div>
+      <div id="gate" style="margin-top:14px"></div>
+    </section>
+    <section>
+      <h2>错题根因分布 <span class="hint">来自 wrongbook</span></h2>
+      <div id="roots"></div>
+      <div id="recent" style="margin-top:12px"></div>
+    </section>
+  </div>
+
+  <section>
+    <h2>语料清单 <span class="hint">点一行展开章节</span></h2>
+    <table>
+      <thead><tr>
+        <th style="width:34%">文档</th><th>类别</th><th>角色</th>
+        <th style="width:90px">分块</th><th style="width:80px">内部限定</th>
+      </tr></thead>
+      <tbody id="docs"></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>待教师复核 <span class="hint">文本里带"以标准表为准/待核/存疑"等标记的段落</span></h2>
+    <div id="review"></div>
+  </section>
+
+  <section>
+    <h2>账号 <span class="hint">最近活跃在前</span></h2>
+    <table>
+      <thead><tr><th>账号</th><th style="width:120px">事件数</th>
+      <th style="width:100px">错题数</th><th style="width:180px">创建时间</th></tr></thead>
+      <tbody id="users"></tbody>
+    </table>
+  </section>
+
+  <div class="warnbox" id="warn" style="display:none"></div>
+</main>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function bar(n, max, cls="") {
+  const p = max > 0 ? Math.round(n / max * 100) : 0;
+  return `<div class="bar ${cls}"><i style="width:${p}%"></i></div>`;
+}
+
+async function getJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(url + " → " + r.status);
+  return r.json();
+}
+
+function kpi(n, l) { return `<div class="kpi"><div class="n">${n}</div><div class="l">${l}</div></div>`; }
+
+function renderOverview(d) {
+  const c = d.corpus, s = d.stats, g = s.gate || {};
+  $("#conn").textContent = "已连接 · " + d.config.llm_provider;
+  $("#kpi").innerHTML = [
+    kpi(c.chunks, "知识库分块"), kpi(c.docs, "文档"), kpi(c.nodes, "图谱节点"),
+    kpi(c.edges, "图谱关系"), kpi(c.figures, "教学图"), kpi(c.pairs, "辨析对"),
+    kpi(s.users ?? 0, "账号"), kpi(s.messages ?? 0, "消息"),
+    kpi(g.reject_rate == null ? "—" : (g.reject_rate * 100).toFixed(0) + "%", "拒答率（kb_search 口径）"),
+    kpi(g.coverage_avg == null ? "—" : (g.coverage_avg * 100).toFixed(0) + "%", "平均覆盖率（同口径）"),
+  ].join("");
+
+  const ev = s.events || {};
+  const maxEv = Math.max(1, ...Object.values(ev));
+  $("#events").innerHTML = Object.keys(ev).length ? Object.entries(ev)
+    .sort((a, b) => b[1] - a[1])
+    .map(([k, v]) => `<div style="margin:6px 0">
+        <div style="display:flex;justify-content:space-between;font-size:12px">
+          <span>${esc(k)}</span><span class="muted">${v}</span></div>${bar(v, maxEv)}</div>`)
+    .join("") : `<div class="empty">还没有埋点数据，先用学生端问几个问题。</div>`;
+
+  $("#gate").innerHTML = `<div style="font-size:12px;line-height:1.9" class="muted">
+      门控阈值 τ=${d.config.gate_tau} · 单块 τ=${d.config.gate_tau_chunk} ·
+      混合检索 λ=${d.config.sparse_weight}<br>
+      覆盖率区间 ${g.coverage_min ?? "—"} ~ ${g.coverage_max ?? "—"} ·
+      样本 ${g.samples ?? 0} 次 · 拒答 ${g.gated ?? 0} 次
+    </div>`;
+
+  const roots = s.root_causes || [];
+  const maxR = Math.max(1, ...roots.map(r => r.n));
+  $("#roots").innerHTML = roots.length ? roots.map(r => `<div style="margin:6px 0">
+      <div style="display:flex;justify-content:space-between;font-size:12px">
+        <span>${esc(r.root_cause)}</span><span class="muted">${r.n}</span></div>
+      ${bar(r.n, maxR, "warn")}</div>`).join("")
+    : `<div class="empty">错题本还是空的。</div>`;
+
+  const rec = s.recent_wrong || [];
+  $("#recent").innerHTML = rec.length ? `<table><tbody>${rec.map(w => `<tr>
+      <td>${esc((w.question || "").slice(0, 40))}</td>
+      <td style="width:110px"><span class="pill">${esc(w.root_cause || "未标注")}</span></td>
+      <td style="width:90px" class="muted">${esc(w.account)}</td></tr>`).join("")}</tbody></table>`
+    : "";
+
+  $("#docs").innerHTML = c.documents.map(d0 => `
+    <tr class="row" data-doc="${esc(d0.doc_id)}">
+      <td>${esc(d0.title)}<div class="muted" style="font-size:11px">${esc(d0.doc_id)}</div>
+        <div class="sections" id="sec-${esc(d0.doc_id)}" style="display:none">
+          ${(d0.sections || []).map(x => `<span>${esc(x)}</span>`).join("") || "<span>（无章节）</span>"}
+        </div></td>
+      <td>${esc(d0.category)}</td>
+      <td><span class="pill">${esc(d0.role)}</span></td>
+      <td>${d0.chunks}</td>
+      <td>${d0.internal_only ? '<span class="pill int">内部</span>' : "—"}</td>
+    </tr>`).join("");
+
+  document.querySelectorAll("tr.row").forEach(tr => {
+    tr.addEventListener("click", () => {
+      const box = $("#sec-" + tr.dataset.doc);
+      box.style.display = box.style.display === "none" ? "block" : "none";
+    });
+  });
+
+  if ((d.warnings || []).length) {
+    $("#warn").style.display = "block";
+    $("#warn").textContent = "启动告警：" + d.warnings.join("；");
+  } else { $("#warn").style.display = "none"; }
+}
+
+async function renderReview() {
+  try {
+    const d = await getJSON("/api/admin/review");
+    $("#review").innerHTML = d.items.length ? `<table>
+      <thead><tr><th style="width:26%">位置</th><th style="width:80px">标记</th><th>原文片段</th></tr></thead>
+      <tbody>${d.items.map(it => `<tr>
+        <td>《${esc(it.doc_title)}》<div class="muted" style="font-size:11px">${esc(it.section)}</div>
+            <code>${esc(it.chunk_id)}</code></td>
+        <td><span class="pill int">${esc(it.mark)}</span></td>
+        <td class="muted">${esc(it.snippet)}</td></tr>`).join("")}</tbody></table>`
+      : `<div class="empty">没有检出需要复核的段落。</div>`;
+  } catch (e) { $("#review").innerHTML = `<div class="empty">加载失败：${esc(e.message)}</div>`; }
+}
+
+async function renderUsers() {
+  try {
+    const d = await getJSON("/api/admin/users");
+    $("#users").innerHTML = d.users.length ? d.users.map(u => `<tr>
+      <td>${esc(u.account)}</td><td>${u.ev}</td><td>${u.wb}</td>
+      <td class="muted">${new Date(u.created_at * 1000).toLocaleString("zh-CN")}</td></tr>`).join("")
+      : `<tr><td colspan="4" class="empty">还没有账号。</td></tr>`;
+  } catch (e) { $("#users").innerHTML = `<tr><td colspan="4" class="empty">加载失败</td></tr>`; }
+}
+
+async function load() {
+  $("#conn").textContent = "连接中…";
+  try {
+    const d = await getJSON("/api/admin/overview");
+    renderOverview(d);
+  } catch (e) {
+    $("#conn").textContent = "后端未连接";
+    $("#kpi").innerHTML = `<div class="kpi"><div class="n">—</div>
+      <div class="l">后端未连接（${esc(e.message)}）</div></div>`;
+  }
+  renderReview(); renderUsers();
+}
+
+$("#refresh").addEventListener("click", load);
+$("#reload").addEventListener("click", async () => {
+  const btn = $("#reload");
+  btn.disabled = true; btn.textContent = "重建中…";
+  try {
+    const r = await fetch("/api/admin/reload", {method: "POST"});
+    const d = await r.json();
+    btn.textContent = `已重建 · ${d.chunks} 块`;
+    await load();
+  } catch (e) {
+    btn.textContent = "重建失败";
+  } finally {
+    setTimeout(() => { btn.disabled = false; btn.textContent = "重建知识库索引"; }, 2500);
+  }
+});
+
+load();
+</script>
+</body>
+</html>

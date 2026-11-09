@@ -1,0 +1,280 @@
+{"source": "KN-001", "target": "KN-002", "rel": "prereq", "note": "先明确核反应堆是可控自持链式（或聚变）反应的装置，才能按机理、能谱、冷却剂分类。"}
+{"source": "KN-001", "target": "KN-003", "rel": "prereq", "note": "知道反应堆是可控自持装置后，才能理解堆芯、反射层、控制棒各部件分工。"}
+{"source": "KN-003", "target": "KN-004", "rel": "prereq", "note": "掌握裂变堆基本组成，才能定位燃料元件与燃料组件在堆芯中的角色。"}
+{"source": "KN-005", "target": "KN-006", "rel": "prereq", "note": "先建立“裂变→慢化→扩散→吸收/泄漏”的整体过程图景，才能理解输运方程要描述的对象。"}
+{"source": "KN-006", "target": "KN-007", "rel": "prereq", "note": "输运过程是反应堆物理分析要量化的核心过程，先学过程再谈分析目标与核心物理量。"}
+{"source": "KN-005", "target": "KN-007", "rel": "prereq", "note": "k_eff、通量分布、反应性这些核心物理量都来自反应堆内基本物理过程。"}
+{"source": "KN-007", "target": "KN-008", "rel": "prereq", "note": "明确物理分析目标与核心物理量，才知道堆芯核设计要输出哪些中子学数据。"}
+{"source": "KN-002", "target": "KN-009", "rel": "prereq", "note": "掌握热堆/快堆等分类依据，才能理解第四代先进堆型的技术路线差异。"}
+{"source": "KN-005", "target": "KN-035", "rel": "prereq", "note": "绪论给出的裂变—慢化—扩散—吸收链条，是第三章自持链式反应讨论的起点。"}
+{"source": "KN-007", "target": "KN-036", "rel": "prereq", "note": "绪论列出的核心物理量中的增殖系数，正是第三章 k_eff 的正式定义。"}
+{"source": "KN-006", "target": "KN-075", "rel": "prereq", "note": "绪论提到的中子输运方程，是第四章用 P1 近似导出扩散方程的原方程。"}
+{"source": "KN-004", "target": "KN-099", "rel": "prereq", "note": "了解燃料组件结构，才能理解第五章栅格均匀化与组件群常数的计算对象。"}
+{"source": "KN-010", "target": "KN-011", "rel": "prereq", "note": "先区分散射/吸收/裂变三类作用形式，才能理解势散射与直接相互作用属于散射的两种机理。"}
+{"source": "KN-010", "target": "KN-012", "rel": "prereq", "note": "三种作用形式中吸收常经复合核进行，先有作用形式框架再学复合核。"}
+{"source": "KN-012", "target": "KN-013", "rel": "prereq", "note": "复合核的衰变方式决定弹性/非弹性散射，先学复合核才能解释非弹性散射的阈能特征。"}
+{"source": "KN-012", "target": "KN-014", "rel": "prereq", "note": "复合核放出γ射线返回基态即辐射俘获，复合核是理解俘获的机理基础。"}
+{"source": "KN-014", "target": "KN-015", "rel": "prereq", "note": "核裂变 (n,f) 是吸收反应的特例，先理解吸收的几种结果再学裂变通道。"}
+{"source": "KN-010", "target": "KN-016", "rel": "prereq", "note": "截面是各种作用形式发生概率的度量，先有作用形式概念再定义微观截面。"}
+{"source": "KN-016", "target": "KN-017", "rel": "prereq", "note": "宏观截面 Σ=Nσ 由微观截面乘核密度得到，先掌握微观截面。"}
+{"source": "KN-018", "target": "KN-017", "rel": "prereq", "note": "Σ=Nσ 中 N 来自原子核密度与富集度换算，先学核密度与富集度。"}
+{"source": "KN-017", "target": "KN-019", "rel": "prereq", "note": "平均自由程 λ=1/Σ 由宏观截面定义，先学宏观截面。"}
+{"source": "KN-021", "target": "KN-020", "rel": "prereq", "note": "核反应率 R=ΣΦ 需要中子通量密度 Φ=nv 的概念，先学通量密度。"}
+{"source": "KN-016", "target": "KN-022", "rel": "prereq", "note": "1/v 律是微观吸收截面随能量变化的规律，先学微观截面。"}
+{"source": "KN-022", "target": "KN-023", "rel": "prereq", "note": "散射截面的能量依赖（势散射常数区、共振区）建立在截面-能量关系上，先学 1/v 律代表的规律。"}
+{"source": "KN-022", "target": "KN-024", "rel": "prereq", "note": "裂变截面的 1/v 区与阈能特征，需先掌握截面随能量变化的基本规律。"}
+{"source": "KN-015", "target": "KN-025", "rel": "prereq", "note": "俘获-裂变比 α 只对裂变核才有意义，先学裂变反应。"}
+{"source": "KN-025", "target": "KN-026", "rel": "prereq", "note": "η=ν/(1+α)，先掌握俘获-裂变比才能算有效裂变中子数。"}
+{"source": "KN-024", "target": "KN-026", "rel": "prereq", "note": "η 用 0.0253 eV 的裂变与吸收截面计算，需先学裂变截面的能量取值。"}
+{"source": "KN-015", "target": "KN-027", "rel": "prereq", "note": "瞬发中子是裂变瞬间放出的中子，先学裂变反应。"}
+{"source": "KN-015", "target": "KN-028", "rel": "prereq", "note": "缓发中子来自裂变碎片的延迟 β 衰变，先学裂变反应。"}
+{"source": "KN-029", "target": "KN-028", "rel": "prereq", "note": "缓发中子由丰中子裂变碎片经 β 衰变放出，先学裂变碎片性质。"}
+{"source": "KN-015", "target": "KN-029", "rel": "prereq", "note": "裂变碎片是裂变反应的产物，先学裂变反应再看碎片性质。"}
+{"source": "KN-016", "target": "KN-030", "rel": "prereq", "note": "共振现象表现为截面在特定能量急剧增大，先学微观截面。"}
+{"source": "KN-015", "target": "KN-032", "rel": "prereq", "note": "易裂变/可裂变的区别在于能否被任意能量中子引发裂变，先学裂变反应。"}
+{"source": "KN-015", "target": "KN-033", "rel": "prereq", "note": "裂变能量释放来自裂变反应的质量亏损，先学裂变反应。"}
+{"source": "KN-033", "target": "KN-034", "rel": "prereq", "note": "衰变功率是停堆后裂变产物衰变继续释热，先学裂变能量释放的分配。"}
+{"source": "KN-028", "target": "KN-146", "rel": "prereq", "note": "β_eff 在缓发中子份额 β 基础上按中子价值加权。"}
+{"source": "KN-027", "target": "KN-139", "rel": "prereq", "note": "瞬发中子决定瞬发代时间，是瞬发动力学分析的起点。"}
+{"source": "KN-027", "target": "KN-143", "rel": "prereq", "note": "瞬发临界判据 ρ=β 来自瞬发中子与缓发中子的份额对比，先学瞬发中子。"}
+{"source": "KN-030", "target": "KN-088", "rel": "prereq", "note": "共振吸收是有效共振积分的物理来源，先学共振现象。"}
+{"source": "KN-031", "target": "KN-120", "rel": "prereq", "note": "多普勒展宽使共振吸收随燃料温度升高而增加，是燃料温度系数为负的主因。"}
+{"source": "KN-026", "target": "KN-044", "rel": "prereq", "note": "四因子中的 η 就是第二章的有效裂变中子数，先学 η 才能理解中子循环。"}
+{"source": "KN-034", "target": "KN-046", "rel": "prereq", "note": "反应堆功率与 ²³⁵U 消耗率依赖裂变能量，先学裂变能量释放与衰变功率。"}
+{"source": "KN-021", "target": "KN-052", "rel": "prereq", "note": "中子流密度 J 与通量密度 Φ 的区别和联系，建立在第二章通量密度定义之上。"}
+{"source": "KN-035", "target": "KN-036", "rel": "prereq", "note": "自持链式反应的核心判据是增殖系数，先理解链式反应才能定义 k_eff。"}
+{"source": "KN-036", "target": "KN-038", "rel": "prereq", "note": "临界条件 k_eff=1 由增殖系数定义直接给出，先掌握 k_eff。"}
+{"source": "KN-035", "target": "KN-040", "rel": "prereq", "note": "热中子堆中子循环是链式反应在热堆中的具体化，先学链式反应。"}
+{"source": "KN-040", "target": "KN-041", "rel": "prereq", "note": "ε 是循环中快中子增殖环节的因子，先理解中子循环结构。"}
+{"source": "KN-040", "target": "KN-042", "rel": "prereq", "note": "慢化不泄漏与逃脱共振吸收是循环的第二环节，先学中子循环。"}
+{"source": "KN-040", "target": "KN-043", "rel": "prereq", "note": "扩散不泄漏与热中子利用系数是循环的第三环节，先学中子循环。"}
+{"source": "KN-040", "target": "KN-044", "rel": "prereq", "note": "η 是循环中热中子环节的产出因子，先学中子循环再看各环节。"}
+{"source": "KN-041", "target": "KN-045", "rel": "prereq", "note": "四/六因子公式把各环节连乘，先分别掌握 ε 等因子。"}
+{"source": "KN-042", "target": "KN-045", "rel": "prereq", "note": "六因子中的 p（逃脱共振吸收概率）是公式的乘项，先学该环节。"}
+{"source": "KN-043", "target": "KN-045", "rel": "prereq", "note": "f（热中子利用系数）与扩散不泄漏概率是公式乘项，先学该环节。"}
+{"source": "KN-044", "target": "KN-045", "rel": "prereq", "note": "η 是四因子公式的乘项，先学有效裂变中子数。"}
+{"source": "KN-047", "target": "KN-048", "rel": "prereq", "note": "弹性散射动力学给出每次碰撞的能量损失，才能定义对数能降 ξ。"}
+{"source": "KN-048", "target": "KN-049", "rel": "prereq", "note": "N_c=Δu/ξ，先学平均对数能降增量。"}
+{"source": "KN-047", "target": "KN-050", "rel": "prereq", "note": "平均散射角余弦由实验室系/质心系散射角关系导出，先学弹性散射动力学。"}
+{"source": "KN-048", "target": "KN-051", "rel": "prereq", "note": "慢化能力 ξΣ_s 由 ξ 与宏观散射截面构成，先学 ξ。"}
+{"source": "KN-052", "target": "KN-053", "rel": "prereq", "note": "斐克定律 J=−D∇Φ 由中子流密度的定义推广而来，先学中子流密度。"}
+{"source": "KN-053", "target": "KN-054", "rel": "prereq", "note": "四个假设（大介质、各向同性散射、慢变等）是斐克定律成立的前提，先学斐克定律。"}
+{"source": "KN-053", "target": "KN-055", "rel": "prereq", "note": "把斐克定律代入中子守恒方程就得到单能扩散方程，先学斐克定律。"}
+{"source": "KN-055", "target": "KN-056", "rel": "prereq", "note": "扩散方程的边界条件（外推边界、交界面连续）用于定解，先学扩散方程。"}
+{"source": "KN-056", "target": "KN-057", "rel": "prereq", "note": "外推距离与反照率是两类常用边界条件的量化形式，先学边界条件。"}
+{"source": "KN-055", "target": "KN-058", "rel": "prereq", "note": "判断扩散方程何时失效要回到方程成立条件，先学单能扩散方程。"}
+{"source": "KN-055", "target": "KN-059", "rel": "prereq", "note": "扩散长度 L 由扩散方程的稳态解定义，先学单能扩散方程。"}
+{"source": "KN-048", "target": "KN-059", "rel": "prereq", "note": "慢化长度 L_s 与徙动面积 M² 用到 ξ 与慢化过程，先学对数能降。"}
+{"source": "KN-059", "target": "KN-060", "rel": "prereq", "note": "中子寿命是慢化时间与扩散时间之和，先学扩散长度/慢化长度与徙动长度。"}
+{"source": "KN-036", "target": "KN-070", "rel": "prereq", "note": "单群临界方程本质是 k_eff=1 的具体化，先掌握 k_eff 与临界条件。"}
+{"source": "KN-045", "target": "KN-066", "rel": "prereq", "note": "增殖介质扩散方程的源项包含 k∞，先学四因子公式得到 k∞。"}
+{"source": "KN-059", "target": "KN-069", "rel": "prereq", "note": "材料曲率 B_m²=(k∞−1)/M² 中的 M² 来自徙动长度，先学 L² 与 τ。"}
+{"source": "KN-055", "target": "KN-061", "rel": "prereq", "note": "非增殖介质的齐次扩散方程就是扩散方程去掉裂变源，先学斐克定律与扩散方程。"}
+{"source": "KN-056", "target": "KN-065", "rel": "prereq", "note": "两种介质交界面的连续条件在第四章用于求交界面问题，先学边界条件。"}
+{"source": "KN-057", "target": "KN-073", "rel": "prereq", "note": "反射层的作用用反照率描述，先学外推距离与反照率。"}
+{"source": "KN-060", "target": "KN-137", "rel": "prereq", "note": "点堆模型用热中子寿期 l 表示中子平均代时间，先学中子寿命。"}
+{"source": "KN-039", "target": "KN-108", "rel": "prereq", "note": "剩余反应性即堆芯寿期内的反应性余量，先学反应性与反应性单位。"}
+{"source": "KN-039", "target": "KN-118", "rel": "prereq", "note": "反应性系数是反应性对温度/功率的偏导，先学反应性与反应性单位。"}
+{"source": "KN-051", "target": "KN-098", "rel": "prereq", "note": "慢化剂选择的慢化能力/慢化比，决定水铀比优化的方向。"}
+{"source": "KN-040", "target": "KN-100", "rel": "prereq", "note": "压水堆中子能谱是热中子堆中子循环各环节的能量图像，先学中子循环。"}
+{"source": "KN-058", "target": "KN-075", "rel": "prereq", "note": "扩散近似的偏差正是 P1 输运近似要解决的问题，先学扩散方程的适用范围。"}
+{"source": "KN-042", "target": "KN-087", "rel": "prereq", "note": "第三章定性的逃脱共振吸收概率 p，在第五章用弱吸收慢化能谱定量化。"}
+{"source": "KN-053", "target": "KN-130", "rel": "prereq", "note": "控制棒价值与中子价值的关系以扩散理论给出的通量分布为基础，先学斐克定律与扩散方程。"}
+{"source": "KN-061", "target": "KN-062", "rel": "prereq", "note": "无限介质点源解是齐次扩散方程加 δ 源的基本解，先学非增殖介质方程。"}
+{"source": "KN-062", "target": "KN-063", "rel": "prereq", "note": "无限大平面源是无数点源的积分，先学点源解。"}
+{"source": "KN-063", "target": "KN-064", "rel": "prereq", "note": "有限介质平面源解在无限介质解上施加边界条件，先学无限介质平面源解。"}
+{"source": "KN-063", "target": "KN-065", "rel": "prereq", "note": "两种介质问题要先掌握单介质平面源解。"}
+{"source": "KN-066", "target": "KN-067", "rel": "prereq", "note": "分离变量把时空解拆成空间本征函数与时间因子，先学增殖介质单能扩散方程。"}
+{"source": "KN-067", "target": "KN-068", "rel": "prereq", "note": "几何曲率是分离变量得到的空间本征值，先学分离变量与时间行为。"}
+{"source": "KN-068", "target": "KN-069", "rel": "prereq", "note": "材料曲率与几何曲率在临界时相等，先学几何曲率的定义。"}
+{"source": "KN-068", "target": "KN-070", "rel": "prereq", "note": "B_g²=B_m² 即单群临界方程，先学几何曲率。"}
+{"source": "KN-069", "target": "KN-070", "rel": "prereq", "note": "临界方程把材料曲率等于几何曲率写成 k_eff 表达式，先学材料曲率。"}
+{"source": "KN-070", "target": "KN-071", "rel": "prereq", "note": "临界计算三类问题（定尺寸/定材料/定 k_eff）由临界方程改写而来，先学临界方程。"}
+{"source": "KN-070", "target": "KN-072", "rel": "prereq", "note": "修正单群临界方程在单群方程中补入徙动面积修正，先学单群临界方程。"}
+{"source": "KN-070", "target": "KN-073", "rel": "prereq", "note": "反射层问题以裸堆临界方程为基础加反射层边界条件，先学单群临界方程。"}
+{"source": "KN-073", "target": "KN-074", "rel": "prereq", "note": "反射层节省 δ 是反射层相对于裸堆的尺寸节省，先学反射层作用。"}
+{"source": "KN-075", "target": "KN-076", "rel": "prereq", "note": "P1 近似把输运方程化为扩散型方程，先学输运方程与扩散近似。"}
+{"source": "KN-076", "target": "KN-077", "rel": "prereq", "note": "多群方程是把能量相关方程按能群离散，先学能量相关中子扩散方程。"}
+{"source": "KN-077", "target": "KN-078", "rel": "prereq", "note": "源迭代法用于求解多群扩散方程，先学多群扩散方程。"}
+{"source": "KN-077", "target": "KN-079", "rel": "prereq", "note": "并群/少群截面是多群方程的群常数处理，先学多群方程。"}
+{"source": "KN-080", "target": "KN-081", "rel": "prereq", "note": "功率归一后才能讨论功率分布不均匀系数，先学功率归一。"}
+{"source": "KN-077", "target": "KN-101", "rel": "prereq", "note": "燃耗计算需要多群扩散给出的通量分布作为输入，先学多群扩散方程。"}
+{"source": "KN-081", "target": "KN-126", "rel": "prereq", "note": "反应性系数计算要用功率分布加权的通量，先学功率分布与不均匀系数。"}
+{"source": "KN-081", "target": "KN-125", "rel": "prereq", "note": "功率系数与功率亏损和功率分布（单棒释能）有关，先学功率分布。"}
+{"source": "KN-079", "target": "KN-099", "rel": "prereq", "note": "并群与少群截面是栅格均匀化输出的群常数，先学并群/少群截面概念。"}
+{"source": "KN-068", "target": "KN-149", "rel": "prereq", "note": "时空动力学的形状函数展开以几何曲率与空间本征函数为基础，先学几何曲率。"}
+{"source": "KN-083", "target": "KN-084", "rel": "prereq", "note": "裂变中子能谱是整体中子能谱在高能端的组成部分，先学中子能谱概念。"}
+{"source": "KN-085", "target": "KN-086", "rel": "prereq", "note": "无吸收氢介质的慢化方程解给出 1/E 谱，先学慢化密度与慢化方程。"}
+{"source": "KN-086", "target": "KN-087", "rel": "prereq", "note": "弱吸收介质在 1/E 谱基础上修正，先学 1/E 谱（费米谱）。"}
+{"source": "KN-087", "target": "KN-088", "rel": "prereq", "note": "有效共振积分是对慢化谱在共振区被吸收的积分度量，先学弱吸收介质慢化能谱。"}
+{"source": "KN-088", "target": "KN-090", "rel": "prereq", "note": "共振吸收的近似模型用于计算有效共振积分，先学有效共振积分。"}
+{"source": "KN-089", "target": "KN-090", "rel": "prereq", "note": "自屏效应是共振吸收模型必须处理的核心效应，先学能量自屏效应。"}
+{"source": "KN-091", "target": "KN-092", "rel": "prereq", "note": "等价原理把非均匀栅元化为等效均匀介质，以首次飞行逃脱概率为桥梁。"}
+{"source": "KN-092", "target": "KN-093", "rel": "prereq", "note": "丹可夫效应是等价原理在燃料块表面通量抬升上的体现，先学等价原理与稀释截面。"}
+{"source": "KN-094", "target": "KN-095", "rel": "prereq", "note": "谱硬化使热中子平均能量高于介质温度，才有中子温度概念。"}
+{"source": "KN-095", "target": "KN-096", "rel": "prereq", "note": "g_a 修正与中子温度一起用于求平均热中子截面，先学中子温度。"}
+{"source": "KN-097", "target": "KN-098", "rel": "prereq", "note": "非均匀效应导致慢化不足，才有欠慢化/过慢化与最优水铀比。"}
+{"source": "KN-097", "target": "KN-099", "rel": "prereq", "note": "栅格均匀化要处理空间自屏，先学非均匀效应与空间自屏效应。"}
+{"source": "KN-098", "target": "KN-099", "rel": "prereq", "note": "均匀化群常数计算依赖水铀比与慢化状态，先学水铀比。"}
+{"source": "KN-084", "target": "KN-100", "rel": "prereq", "note": "压水堆能谱高能端由裂变谱决定，先学裂变中子能谱。"}
+{"source": "KN-099", "target": "KN-100", "rel": "prereq", "note": "压水堆能谱的工程形态还取决于栅格均匀化结果，先学栅格均匀化。"}
+{"source": "KN-096", "target": "KN-121", "rel": "prereq", "note": "慢化剂温度系数用到平均热中子截面随温度的变化，先学热中子平均截面与 g_a 修正。"}
+{"source": "KN-098", "target": "KN-122", "rel": "prereq", "note": "水铀比所处区段决定慢化剂温度系数的符号，先学欠慢化/过慢化与水铀比。"}
+{"source": "KN-101", "target": "KN-102", "rel": "prereq", "note": "²³⁵U 燃耗链是燃耗方程最基础的一组方程。"}
+{"source": "KN-101", "target": "KN-103", "rel": "prereq", "note": "²³⁸U—²³⁹Pu 燃耗链在燃耗方程框架下增加转换核素。"}
+{"source": "KN-101", "target": "KN-104", "rel": "prereq", "note": "燃耗方程需数值求解，预估-校正法是基本算法，先学方程形式。"}
+{"source": "KN-102", "target": "KN-106", "rel": "prereq", "note": "燃耗深度由 ²³⁵U 消耗量换算，先学 ²³⁵U 燃耗链。"}
+{"source": "KN-105", "target": "KN-106", "rel": "prereq", "note": "堆芯寿期是燃耗深度达到限值的运行时间，两者互为表里。"}
+{"source": "KN-106", "target": "KN-108", "rel": "prereq", "note": "剩余反应性随燃耗深度下降，先学燃耗深度。"}
+{"source": "KN-107", "target": "KN-108", "rel": "prereq", "note": "饱和/非饱和裂变产物的中毒规律不同，先学两类划分再谈剩余反应性。"}
+{"source": "KN-108", "target": "KN-109", "rel": "prereq", "note": "裂变产物中毒中最重要的是氙，先学中毒与剩余反应性的关系。"}
+{"source": "KN-109", "target": "KN-110", "rel": "prereq", "note": "¹³⁵Xe 的燃耗链给出 ¹³⁵I/¹³⁵Xe 的浓度方程，先学氙的核性质与燃耗链。"}
+{"source": "KN-110", "target": "KN-111", "rel": "prereq", "note": "氙中毒等于氙浓度乘其中子吸收，先学碘氙平衡浓度。"}
+{"source": "KN-110", "target": "KN-112", "rel": "prereq", "note": "停堆后 ¹³⁵I 继续衰变生成 ¹³⁵Xe，先学两者浓度变化关系。"}
+{"source": "KN-111", "target": "KN-112", "rel": "prereq", "note": "碘坑深度用氙中毒的峰值衡量，先学氙中毒。"}
+{"source": "KN-110", "target": "KN-113", "rel": "prereq", "note": "功率调节改变 ¹³⁵I 产生率，先学碘氙浓度与平衡浓度。"}
+{"source": "KN-113", "target": "KN-114", "rel": "prereq", "note": "氙振荡源于功率分布变化引起的局部氙浓度滞后，先学功率调节时的氙变化。"}
+{"source": "KN-110", "target": "KN-115", "rel": "prereq", "note": "钐的中毒计算与氙同法（先驱核+吸收体），先学碘氙浓度方程。"}
+{"source": "KN-108", "target": "KN-116", "rel": "prereq", "note": "其他裂变产物中毒是剩余反应性核算的补充项，先学中毒与剩余反应性。"}
+{"source": "KN-101", "target": "KN-117", "rel": "prereq", "note": "燃耗方程的矩阵形式是燃耗方程的系统化数值表达，先学燃耗方程。"}
+{"source": "KN-104", "target": "KN-105", "rel": "prereq", "note": "堆芯寿期计算要用燃耗方程的数值解逐段推进，先学预估-校正法。"}
+{"source": "KN-108", "target": "KN-128", "rel": "prereq", "note": "停堆深度由寿期末剩余反应性扣除各控制毒物价值得到，先学剩余反应性。"}
+{"source": "KN-112", "target": "KN-127", "rel": "prereq", "note": "停堆后受碘坑限制的启动安排属于反应性控制任务的一部分，先学碘坑。"}
+{"source": "KN-106", "target": "KN-152", "rel": "prereq", "note": "卸料燃耗限值是循环长度与燃耗深度的判据，先掌握卸料燃耗深度。"}
+{"source": "KN-105", "target": "KN-151", "rel": "prereq", "note": "多循环燃料管理的换料策略以堆芯寿期为约束，先学堆芯寿期。"}
+{"source": "KN-118", "target": "KN-119", "rel": "prereq", "note": "温度系数的符号决定自调节方向，先学反应性系数与温度系数的定义。"}
+{"source": "KN-118", "target": "KN-120", "rel": "prereq", "note": "燃料温度系数是温度系数按燃料温度分量的分解，先学温度系数。"}
+{"source": "KN-118", "target": "KN-121", "rel": "prereq", "note": "慢化剂温度系数是温度系数按慢化剂温度分量的分解，先学温度系数。"}
+{"source": "KN-121", "target": "KN-122", "rel": "prereq", "note": "慢化剂温度系数正负由水铀比所处区段决定，先学慢化剂温度系数。"}
+{"source": "KN-122", "target": "KN-123", "rel": "prereq", "note": "硼浓度通过改变 Σ_a 改变水铀比的有效位置，先学水铀比与温度系数符号。"}
+{"source": "KN-118", "target": "KN-124", "rel": "prereq", "note": "空泡系数是反应性对空泡份额的偏导，先学反应性系数。"}
+{"source": "KN-118", "target": "KN-125", "rel": "prereq", "note": "功率系数由燃料与慢化剂温度系数合成，先学两类温度系数。"}
+{"source": "KN-121", "target": "KN-125", "rel": "prereq", "note": "功率系数包含慢化剂温度分量，先学慢化剂温度系数。"}
+{"source": "KN-118", "target": "KN-126", "rel": "prereq", "note": "反应性系数的计算要逐个系数做温度扰动，先学系数定义与分类。"}
+{"source": "KN-127", "target": "KN-128", "rel": "prereq", "note": "反应性控制的第一任务是提供足够的停堆深度，先学控制任务与途径。"}
+{"source": "KN-128", "target": "KN-129", "rel": "prereq", "note": "控制棒价值是停堆深度与剩余反应性平衡中最主要的负反应性，先学控制毒物价值与停堆深度。"}
+{"source": "KN-129", "target": "KN-130", "rel": "prereq", "note": "控制棒价值取决于所在位置的中子价值，先学价值概念。"}
+{"source": "KN-129", "target": "KN-131", "rel": "prereq", "note": "干涉效应是相邻棒价值叠加不线性的现象，先学单棒价值。"}
+{"source": "KN-129", "target": "KN-132", "rel": "prereq", "note": "控制棒材料（含硼/银铟镉）与结构决定价值大小，先学价值定义。"}
+{"source": "KN-127", "target": "KN-133", "rel": "prereq", "note": "可燃毒物是反应性控制的手段之一，先学控制任务与途径。"}
+{"source": "KN-133", "target": "KN-134", "rel": "prereq", "note": "可燃毒物布置影响功率峰与寿期末反应性惩罚，先学可燃毒物原理。"}
+{"source": "KN-127", "target": "KN-135", "rel": "prereq", "note": "可溶硼是压水堆主要的反应性控制方式，先学控制任务与途径。"}
+{"source": "KN-135", "target": "KN-136", "rel": "prereq", "note": "临界硼浓度是可溶硼控制的核心参数，先学可溶硼控制。"}
+{"source": "KN-129", "target": "KN-136", "rel": "prereq", "note": "临界硼浓度还要扣除控制棒价值，先学控制棒价值。"}
+{"source": "KN-129", "target": "KN-147", "rel": "prereq", "note": "次临界堆停堆深度由控制棒价值等负反应性构成，先学控制毒物价值与停堆深度。"}
+{"source": "KN-127", "target": "KN-158", "rel": "prereq", "note": "换料装载方案要满足反应性控制与停堆深度约束，先学反应性控制的任务与途径。"}
+{"source": "KN-137", "target": "KN-138", "rel": "prereq", "note": "点堆模型下中子密度随时间指数变化，才有反应堆周期概念。"}
+{"source": "KN-137", "target": "KN-140", "rel": "prereq", "note": "点堆模型把堆芯看作一点、空间效应归入寿期 l，先学点堆模型与热中子寿期。"}
+{"source": "KN-138", "target": "KN-144", "rel": "prereq", "note": "正阶跃响应表现为稳定的反应堆周期，先学周期与启动率。"}
+{"source": "KN-139", "target": "KN-143", "rel": "prereq", "note": "无缓发中子的瞬发动力学给出 ρ=β 的突变点，先学瞬发动力学。"}
+{"source": "KN-140", "target": "KN-141", "rel": "prereq", "note": "点堆方程代入指数解得到倒时方程，先学点堆动力学方程。"}
+{"source": "KN-141", "target": "KN-142", "rel": "prereq", "note": "倒时方程有六个负根与一个正根，先学倒时方程。"}
+{"source": "KN-141", "target": "KN-144", "rel": "prereq", "note": "阶跃后的稳定周期由倒时方程正根给出，先学倒时方程。"}
+{"source": "KN-142", "target": "KN-144", "rel": "prereq", "note": "周期大小取决于正根大小，先学倒时方程根的性质。"}
+{"source": "KN-140", "target": "KN-145", "rel": "prereq", "note": "负阶跃下的功率下降由点堆方程描述，先学点堆方程。"}
+{"source": "KN-141", "target": "KN-145", "rel": "prereq", "note": "最大停堆速度由倒时方程最负根决定，先学倒时方程。"}
+{"source": "KN-146", "target": "KN-141", "rel": "prereq", "note": "倒时方程要用 β_eff 替代 β，先学缓发中子有效份额。"}
+{"source": "KN-146", "target": "KN-143", "rel": "prereq", "note": "瞬发临界判据 ρ=β_eff，先学 β_eff。"}
+{"source": "KN-140", "target": "KN-147", "rel": "prereq", "note": "次临界动力学在点堆方程中加入外源项，先学点堆方程。"}
+{"source": "KN-147", "target": "KN-148", "rel": "prereq", "note": "次临界增殖与能量放大由外源驱动方程给出，先学次临界堆动力学。"}
+{"source": "KN-140", "target": "KN-149", "rel": "prereq", "note": "时空动力学把点堆方程推广到空间相关，先学点堆方程。"}
+{"source": "KN-143", "target": "KN-144", "rel": "prereq", "note": "瞬发临界是阶跃响应从缓变到突变的转折，先学瞬发临界判据。"}
+{"source": "KN-149", "target": "KN-114", "rel": "prereq", "note": "氙振荡是典型的时空动力学现象，需先掌握时空动力学与准静态近似。"}
+{"source": "KN-144", "target": "KN-145", "rel": "prereq", "note": "正阶跃与负阶跃共用同一套点堆解，先学正阶跃响应。"}
+{"source": "KN-150", "target": "KN-151", "rel": "prereq", "note": "核燃料循环的三个环节中，堆芯内的燃料管理决定循环长度，先学循环与燃料管理环节。"}
+{"source": "KN-151", "target": "KN-152", "rel": "prereq", "note": "剩余反应性与循环长度要用燃耗深度来度量，先学剩余反应性与循环长度。"}
+{"source": "KN-152", "target": "KN-153", "rel": "prereq", "note": "卸料燃耗限值决定批料数与分批换料方案，先学燃耗深度与卸料限值。"}
+{"source": "KN-153", "target": "KN-154", "rel": "prereq", "note": "批料数是燃料管理决策变量之一，先学批料数与分批换料。"}
+{"source": "KN-154", "target": "KN-155", "rel": "prereq", "note": "多循环的初始/过渡/平衡循环划分是单循环决策变量的推广，先学燃料管理内容与决策变量。"}
+{"source": "KN-155", "target": "KN-156", "rel": "prereq", "note": "点堆分析模型与线性反应性模型用于多循环平衡循环计算，先学三类循环。"}
+{"source": "KN-156", "target": "KN-157", "rel": "prereq", "note": "平衡循环特性（批料数影响）由线性反应性模型解出，先学点堆分析模型。"}
+{"source": "KN-157", "target": "KN-158", "rel": "prereq", "note": "换料方案以平衡循环的批料数分析为基础，先学平衡循环特性。"}
+{"source": "KN-158", "target": "KN-159", "rel": "prereq", "note": "Out-In 与低泄漏是两类可选换料方案，先学 Out-In 再对比低泄漏。"}
+{"source": "KN-159", "target": "KN-160", "rel": "prereq", "note": "单循环燃料管理计算流程要输入所选装载方案，先学换料方案。"}
+{"source": "KN-151", "target": "KN-165", "rel": "prereq", "note": "堆芯物理设计准则要求满足循环长度与剩余反应性平衡，先学剩余反应性与循环长度。"}
+{"source": "KN-128", "target": "KN-172", "rel": "prereq", "note": "总被控反应性必须覆盖停堆深度要求，先学控制毒物价值与停堆深度。"}
+{"source": "KN-165", "target": "KN-166", "rel": "prereq", "note": "设计准则是三方面设计内容的约束条件，先学堆芯物理设计准则。"}
+{"source": "KN-166", "target": "KN-167", "rel": "prereq", "note": "燃料参数选择是堆芯设计三方面内容之一，先学设计内容。"}
+{"source": "KN-167", "target": "KN-170", "rel": "prereq", "note": "水铀比选择是燃料栅格参数设计的核心决策，先学燃料参数选择。"}
+{"source": "KN-170", "target": "KN-171", "rel": "prereq", "note": "确定水铀比后才能定堆芯几何尺寸与栅格布置。"}
+{"source": "KN-172", "target": "KN-173", "rel": "prereq", "note": "堆芯物理设计计算要核算被控反应性、功率能力与控制手段，先定总被控反应性。"}
+{"source": "KN-173", "target": "KN-174", "rel": "prereq", "note": "启动物理试验用于验证设计计算结果，先学设计计算内容。"}
+{"source": "KN-174", "target": "KN-175", "rel": "prereq", "note": "换料堆芯安全评价以启动物理试验数据为基础，先学启动物理试验。"}
+{"source": "KN-098", "target": "KN-170", "rel": "prereq", "note": "水铀比的选择以欠慢化与温度系数符号为依据，先学水铀比与欠慢化。"}
+{"source": "KN-160", "target": "KN-161", "rel": "prereq", "note": "单循环燃料管理流程中的扩散计算需要少群截面，先学计算流程。"}
+{"source": "KN-155", "target": "KN-162", "rel": "prereq", "note": "核燃料转换与增殖影响多循环的燃料供给与循环长度，先学多循环燃料管理。"}
+{"source": "KN-162", "target": "KN-163", "rel": "prereq", "note": "转换比决定开式/闭式燃料循环的选择，先学核燃料转换与增殖。"}
+{"source": "KN-163", "target": "KN-164", "rel": "prereq", "note": "闭式循环后段的高放废物嬗变（ADS）建立在燃料循环形式之上。"}
+{"source": "KN-167", "target": "KN-168", "rel": "prereq", "note": "燃料棒直径是燃料参数选择中的关键几何量。"}
+{"source": "KN-167", "target": "KN-169", "rel": "prereq", "note": "包壳材料与厚度是燃料参数选择中与安全相关的决策。"}
+{"source": "KN-169", "target": "KN-170", "rel": "prereq", "note": "棒径与包壳确定后才能定栅格尺寸与水铀比。"}
+{"source": "KN-171", "target": "KN-172", "rel": "prereq", "note": "堆芯几何尺寸确定后才能核算总被控反应性。"}
+{"source": "KN-161", "target": "KN-173", "rel": "prereq", "note": "堆芯物理设计计算中的扩散计算需要少群截面，先学少群截面拟合。"}
+{"source": "KN-081", "target": "KN-165", "rel": "prereq", "note": "设计准则中的功率峰因子限值要用功率分布不均匀系数来表征，先学功率分布。"}
+{"source": "KN-083", "target": "KN-085", "rel": "prereq", "note": "中子能谱 Φ(E) 是慢化方程要求解的未知量，先明确能谱概念再学慢化方程。"}
+{"source": "KN-054", "target": "KN-058", "rel": "prereq", "note": "斐克定律四个假设失效的边界，正是扩散方程适用范围的判据。"}
+{"source": "KN-050", "target": "KN-053", "rel": "prereq", "note": "平均散射角余弦 μ 用于修正输运平均自由程，进而决定扩散系数 D。"}
+{"source": "KN-020", "target": "KN-055", "rel": "prereq", "note": "核反应率是建立单能扩散方程中子守恒（源项与吸收项）的基础量。"}
+{"source": "KN-008", "target": "KN-165", "rel": "prereq", "note": "绪论给出的堆芯核设计任务，是第十章设计准则与设计内容的先导。"}
+{"source": "KN-082", "target": "KN-125", "rel": "prereq", "note": "功率系数与功率亏损按单棒释能分布核算，先学组件单棒功率计算。"}
+{"source": "KN-016", "target": "KN-017", "rel": "contrast", "note": "σ 是单个核的反应概率度量，Σ=Nσ 是单位体积内所有核的合成量，学生常把二者单位混用。"}
+{"source": "KN-027", "target": "KN-028", "rel": "contrast", "note": "瞬发中子在裂变瞬间放出（占约 99.35%），缓发中子来自碎片延迟衰变（约 0.65%），后者决定可控性。"}
+{"source": "KN-026", "target": "KN-025", "rel": "contrast", "note": "η 是每次吸收放出的裂变中子数，α 是俘获与裂变之比，η=ν/(1+α) 把两者联系起来但含义不同。"}
+{"source": "KN-037", "target": "KN-036", "rel": "contrast", "note": "k∞ 只描述无限大介质内的增殖，k_eff=k∞·P_NL 还要乘不泄漏概率，二者只在无泄漏时相等。"}
+{"source": "KN-042", "target": "KN-043", "rel": "contrast", "note": "p 是慢化过程中逃脱共振吸收的概率，f 是热中子被燃料吸收的份额，分别位于循环的慢化段与热化段。"}
+{"source": "KN-052", "target": "KN-021", "rel": "contrast", "note": "Φ=nv 是标量（各方向求和），J 是矢量（净穿过单位面积的中子数），Φ 大不代表 J 大。"}
+{"source": "KN-055", "target": "KN-076", "rel": "contrast", "note": "单能扩散方程只有一个能群，能量相关方程保留能量变量、离散后才是多群方程。"}
+{"source": "KN-065", "target": "KN-056", "rel": "contrast", "note": "边界条件是求解域外边界（真空/外推/反射），交界面条件是两种介质分界面上的通量与流连续。"}
+{"source": "KN-138", "target": "KN-139", "rel": "contrast", "note": "周期描述缓发中子主导的慢变化，瞬发动力学描述忽略缓发中子时的快变化，两者时间尺度差 4~5 个量级。"}
+{"source": "KN-143", "target": "KN-139", "rel": "contrast", "note": "瞬发动力学指出 ρ=β 是分界，瞬发临界正是 ρ≥β 时功率在瞬发中子主导下失控的工况。"}
+{"source": "KN-144", "target": "KN-145", "rel": "contrast", "note": "正阶跃后功率按稳定周期上升，负阶跃后按倒时方程最负根快速下降，同一方程两种响应。"}
+{"source": "KN-158", "target": "KN-159", "rel": "contrast", "note": "Out-In 把新料装在外围、深燃耗料在中心；低泄漏把新料放内区以减少泄漏，二者功率峰与中子经济性不同。"}
+{"source": "KN-151", "target": "KN-152", "rel": "contrast", "note": "剩余反应性与循环长度是时间/反应性指标，燃耗深度与卸料限值是能量/质量指标，前者由后者换算得到。"}
+{"source": "KN-106", "target": "KN-105", "rel": "contrast", "note": "燃耗深度是能量/质量指标（MWd/tU），堆芯寿期是时间指标（EFPD），换算要经过功率与负荷因子。"}
+{"source": "KN-111", "target": "KN-115", "rel": "contrast", "note": "氙中毒变化快、停堆后出现碘坑；钐中毒因 ¹⁴⁹Pm 半衰期长而缓慢趋近饱和，二者时间常数相差两个量级。"}
+{"source": "KN-112", "target": "KN-114", "rel": "contrast", "note": "碘坑是停堆后全堆氙浓度的时间响应，氙振荡是功率分布扰动引起的空间-时间振荡。"}
+{"source": "KN-116", "target": "KN-111", "rel": "contrast", "note": "氙是中毒的主体（截面最大、变化最快），其他裂变产物是长期平均效应，二者核算方式不同。"}
+{"source": "KN-120", "target": "KN-121", "rel": "contrast", "note": "燃料温度系数由多普勒展宽主导、响应快（秒级），慢化剂温度系数由密度变化主导、响应慢（分钟级）。"}
+{"source": "KN-120", "target": "KN-124", "rel": "contrast", "note": "燃料温度系数对应燃料温度变化，空泡系数对应冷却剂汽化引起的慢化/吸收变化，二者物理机制不同。"}
+{"source": "KN-133", "target": "KN-135", "rel": "contrast", "note": "可燃毒物是固体、随燃耗自行消耗且布置固定；可溶硼由化学容积控制连续调节，二者在反应性控制中分工不同。"}
+{"source": "KN-133", "target": "KN-107", "rel": "contrast", "note": "可燃毒物是人为加入的毒物，裂变产物中毒是燃耗自生的毒物，前者可设计后者必须承受。"}
+{"source": "KN-129", "target": "KN-128", "rel": "contrast", "note": "控制棒价值是单组棒能引入的反应性，停堆深度是全部负反应性（棒+硼+氙等）的净余量。"}
+{"source": "KN-068", "target": "KN-069", "rel": "contrast", "note": "几何曲率只由堆芯几何与外推边界决定，材料曲率只由材料参数（k∞、M²）决定，临界时两者相等。"}
+{"source": "KN-072", "target": "KN-070", "rel": "contrast", "note": "单群临界方程忽略徙动面积修正，修正单群方程用 M² 替换 L² 后精度提高但方程形式相近。"}
+{"source": "KN-074", "target": "KN-073", "rel": "contrast", "note": "反射层节省是反射层带来临界尺寸减小的等效量，反射层作用是物理机制，节省是其量化结果。"}
+{"source": "KN-075", "target": "KN-058", "rel": "contrast", "note": "输运方程的 P1 近似给出扩散方程，扩散方程适用范围正是 P1 近似失效的边界。"}
+{"source": "KN-079", "target": "KN-077", "rel": "contrast", "note": "多群方程保留多个能群，并群/少群截面是为减少能群数而做的群常数压缩。"}
+{"source": "KN-086", "target": "KN-094", "rel": "contrast", "note": "1/E 谱是慢化区的费米谱，热中子谱是热化区的 Maxwell 型谱（含硬化），二者拼成压水堆能谱。"}
+{"source": "KN-089", "target": "KN-097", "rel": "contrast", "note": "能量自屏是共振能处通量凹陷，空间自屏是燃料块内部通量低于表面，分别对应能量与空间两个维度。"}
+{"source": "KN-093", "target": "KN-091", "rel": "contrast", "note": "首次飞行逃脱概率描述燃料块内产生的共振中子逃出芯块的概率，丹可夫效应描述由此造成的表面通量抬升。"}
+{"source": "KN-147", "target": "KN-038", "rel": "contrast", "note": "临界堆 k_eff=1、无需外源；次临界堆 k_eff<1，必须靠外源维持中子水平。"}
+{"source": "KN-062", "target": "KN-063", "rel": "contrast", "note": "点源解是球对称的基本解，平面源解由点源解沿平面叠加积分得到，边界条件不同。"}
+{"source": "KN-029", "target": "KN-028", "rel": "cause", "note": "裂变碎片是丰中子核素，延迟 β 衰变放出缓发中子。"}
+{"source": "KN-031", "target": "KN-120", "rel": "cause", "note": "温度升高使共振峰多普勒展宽、共振吸收增加，形成负燃料温度系数。"}
+{"source": "KN-094", "target": "KN-095", "rel": "cause", "note": "热化区吸收使谱向高能硬化，导致中子温度高于介质温度。"}
+{"source": "KN-097", "target": "KN-091", "rel": "cause", "note": "燃料块内通量被强烈压低（空间自屏），使首次飞行逃脱概率成为共振吸收的主导因素。"}
+{"source": "KN-088", "target": "KN-089", "rel": "cause", "note": "共振截面在共振能处极大，把该能量处通量压低，形成能量自屏。"}
+{"source": "KN-091", "target": "KN-093", "rel": "cause", "note": "燃料块表面通量抬升（丹可夫效应）源于首次飞行逃脱的中子未被燃料吸收。"}
+{"source": "KN-073", "target": "KN-074", "rel": "cause", "note": "反射层把外泄中子散射回堆芯，使临界尺寸减小并产生反射层节省。"}
+{"source": "KN-102", "target": "KN-108", "rel": "cause", "note": "²³⁵U 燃耗与裂变产物积累共同使剩余反应性随时间下降。"}
+{"source": "KN-103", "target": "KN-108", "rel": "cause", "note": "²³⁸U 俘获生成 ²³⁹Pu，部分补偿燃耗引起的反应性损失，使剩余反应性下降变缓。"}
+{"source": "KN-109", "target": "KN-111", "rel": "cause", "note": "¹³⁵Xe 的热中子吸收截面极大（约 2.6×10⁶ b），其浓度直接形成显著负反应性。"}
+{"source": "KN-110", "target": "KN-112", "rel": "cause", "note": "停堆后 ¹³⁵I 继续衰变生成 ¹³⁵Xe，氙浓度短时上升形成碘坑。"}
+{"source": "KN-113", "target": "KN-114", "rel": "cause", "note": "功率分布变化使局部氙浓度滞后改变，形成氙振荡。"}
+{"source": "KN-123", "target": "KN-121", "rel": "cause", "note": "硼提高热中子吸收，使慢化剂温度系数更负并移动符号区段。"}
+{"source": "KN-121", "target": "KN-119", "rel": "cause", "note": "慢化剂温度系数为负，构成压水堆自调节稳定性的物理基础。"}
+{"source": "KN-108", "target": "KN-151", "rel": "cause", "note": "剩余反应性随燃耗下降的速率直接决定循环长度，是燃料管理排程的约束。"}
+{"source": "KN-028", "target": "KN-139", "rel": "cause", "note": "缓发中子把平均代时间从 10⁻⁴ s 量级延长到 0.1 s 量级，使功率变化可控，瞬发临界成为特殊分界。"}
+{"source": "KN-045", "target": "KN-041", "rel": "compose", "note": "四/六因子公式整体由 ε 等环节因子连乘构成，ε 是其中快中子增殖项。"}
+{"source": "KN-045", "target": "KN-042", "rel": "compose", "note": "六因子公式中 p（逃脱共振吸收概率）是公式的乘项之一。"}
+{"source": "KN-045", "target": "KN-043", "rel": "compose", "note": "六因子公式中 f（热中子利用系数）与扩散不泄漏概率是公式的乘项。"}
+{"source": "KN-045", "target": "KN-044", "rel": "compose", "note": "四因子公式中 η 是热中子环节的乘项。"}
+{"source": "KN-040", "target": "KN-045", "rel": "compose", "note": "热中子堆中子循环整体由四/六因子的各环节相乘刻画。"}
+{"source": "KN-070", "target": "KN-068", "rel": "compose", "note": "单群临界方程两边分别是几何曲率（几何侧）与材料曲率（材料侧）。"}
+{"source": "KN-070", "target": "KN-069", "rel": "compose", "note": "单群临界方程中材料曲率由 k∞、L²、τ 决定，几何曲率由尺寸与几何决定。"}
+{"source": "KN-081", "target": "KN-082", "rel": "compose", "note": "功率分布是整体场量，单棒功率由它沿组件/单棒积分得到。"}
+{"source": "KN-100", "target": "KN-094", "rel": "compose", "note": "压水堆中子能谱整体包含热中子谱段，热谱是其中低能部分。"}
+{"source": "KN-136", "target": "KN-129", "rel": "compose", "note": "三种控制方式比较整体涵盖控制棒价值，控制棒是其中一种手段。"}
+{"source": "KN-136", "target": "KN-133", "rel": "compose", "note": "三种控制方式比较整体涵盖可燃毒物，可燃毒物是其中一种手段。"}
+{"source": "KN-136", "target": "KN-135", "rel": "compose", "note": "三种控制方式比较整体涵盖可溶硼，可溶硼是其中一种手段。"}
+{"source": "KN-166", "target": "KN-167", "rel": "compose", "note": "堆芯设计三方面内容整体包含燃料参数选择，燃料参数是其中一部分。"}

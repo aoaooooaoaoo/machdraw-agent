@@ -1,0 +1,138 @@
+[
+  {
+    "doc_id": "DOC-WEB-CORE-DESIGN",
+    "title": "堆芯核设计流程：从设计准则到启动物理试验",
+    "category": "拓展阅读",
+    "role": "lecture",
+    "source": "依据教材第十章 10.1～10.4 整理，自写",
+    "license": "自写整理",
+    "retrieved": "2026-11-09",
+    "word_count": 1330,
+    "topics": [
+      "堆芯核设计",
+      "设计准则",
+      "功率峰因子",
+      "组件计算",
+      "启动物理试验"
+    ]
+  },
+  {
+    "doc_id": "DOC-WEB-FEEDBACK-SAFETY",
+    "title": "反应性反馈与固有安全：为什么温度系数必须为负",
+    "category": "拓展阅读",
+    "role": "authority",
+    "source": "依据教材第七章 7.1～7.3、第十章 10.3.4 整理，自写",
+    "license": "自写整理",
+    "retrieved": "2026-11-09",
+    "word_count": 1217,
+    "topics": [
+      "反应性反馈",
+      "温度系数",
+      "多普勒效应",
+      "固有安全",
+      "空泡系数"
+    ]
+  },
+  {
+    "doc_id": "DOC-WEB-NUCLEAR-DATA-UNC",
+    "title": "核数据与不确定度：从评价库到堆芯计算",
+    "category": "拓展阅读",
+    "role": "authority",
+    "source": "依据教材第二章 2.3.4、第五章 5.5 与附录3 整理，自写",
+    "license": "自写整理",
+    "retrieved": "2026-11-09",
+    "word_count": 1109,
+    "topics": [
+      "评价核数据",
+      "ENDF-6",
+      "群常数",
+      "不确定度",
+      "协方差"
+    ]
+  },
+  {
+    "doc_id": "DOC-WEB-PWR-FUEL-MGMT",
+    "title": "压水堆燃料管理概述：从循环长度到批料数",
+    "category": "拓展阅读",
+    "role": "lecture",
+    "source": "依据教材第九章 9.1～9.3 整理，自写",
+    "license": "自写整理",
+    "retrieved": "2026-11-09",
+    "word_count": 1375,
+    "topics": [
+      "燃料管理",
+      "循环长度",
+      "批料数",
+      "燃耗深度",
+      "平衡循环"
+    ]
+  },
+  {
+    "doc_id": "DOC-WEB-REACTOR-CONTROL",
+    "title": "反应堆的三种控制模式：控制棒、可燃毒物与可溶硼",
+    "category": "拓展阅读",
+    "role": "authority",
+    "source": "依据教材第七章 7.4 整理，自写",
+    "license": "自写整理",
+    "retrieved": "2026-11-09",
+    "word_count": 1333,
+    "topics": [
+      "控制棒",
+      "可燃毒物",
+      "可溶硼",
+      "停堆深度",
+      "反应性控制"
+    ]
+  },
+  {
+    "doc_id": "DOC-WEB-REFUELING",
+    "title": "核电厂换料策略：Out-In 与低泄漏装料",
+    "category": "拓展阅读",
+    "role": "lecture",
+    "source": "依据教材第九章 9.3、第十章 10.5 整理，自写",
+    "license": "自写整理",
+    "retrieved": "2026-11-09",
+    "word_count": 1176,
+    "topics": [
+      "换料策略",
+      "Out-In",
+      "低泄漏装料",
+      "换料安全评价",
+      "乏燃料"
+    ]
+  },
+  {
+    "doc_id": "DOC-WEB-STARTUP-CRITICAL",
+    "title": "反应堆启动、临界监督与周期",
+    "category": "拓展阅读",
+    "role": "lecture",
+    "source": "依据教材第八章 8.2、第十章 10.4 整理，自写",
+    "license": "自写整理",
+    "retrieved": "2026-11-09",
+    "word_count": 1255,
+    "topics": [
+      "启动物理试验",
+      "临界监督",
+      "1/M 外推",
+      "反应堆周期",
+      "瞬发临界"
+    ]
+  },
+  {
+    "doc_id": "DOC-WEB-XENON-MGMT",
+    "title": "碘氙毒物管理与氙振荡",
+    "category": "拓展阅读",
+    "role": "authority",
+    "source": "依据教材第六章 6.2 整理，自写",
+    "license": "自写整理",
+    "retrieved": "2026-11-09",
+    "word_count": 1212,
+    "topics": [
+      "碘坑",
+      "氙振荡",
+      "135Xe",
+      "毒物",
+      "剩余反应性"
+    ]
+  }
+]
