@@ -27,6 +27,7 @@ export function CanvasPanel() {
 
   const [demoType, setDemoType] = useState<string | null>(null);
   const [collapsed, setCollapsed] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const [selected, setSelected] = useState(0);
 
   const artifacts = session.artifacts;
@@ -55,6 +56,16 @@ export function CanvasPanel() {
   useEffect(() => {
     if (latestArtifactType && shouldAutoOpen(latestArtifactType)) setCollapsed(false);
   }, [latestArtifactType, artifacts.length]);
+
+  // 全屏画布：Esc 退出
+  useEffect(() => {
+    if (!expanded) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setExpanded(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [expanded]);
 
   // 收起状态把右栏从 --right-w 压成 48px 细条；恢复时清掉内联变量。
   // 窄屏（<=820px）画布在底部整行，不参与侧边收起。
@@ -157,7 +168,7 @@ export function CanvasPanel() {
   }
 
   return (
-    <aside className="canvas">
+    <aside className={`canvas ${expanded ? 'is-expanded' : ''}`}>
       <div className="canvas-head">
         <div className="canvas-title-wrap">
           <div className="canvas-kicker">画布</div>
@@ -167,6 +178,15 @@ export function CanvasPanel() {
           {isDemo && <span className="chip chip-demo">示例数据</span>}
           {isEntry && <span className="chip chip-entry">全览入口</span>}
           <span className="chip chip-type mono">{shownType}</span>
+          <button
+            className="icon-btn"
+            type="button"
+            title={expanded ? '退出全屏画布（Esc）' : '全屏查看画布'}
+            aria-label={expanded ? '退出全屏' : '全屏查看'}
+            onClick={() => setExpanded((v) => !v)}
+          >
+            <Icon name={expanded ? 'compress' : 'expand'} size={15} />
+          </button>
           <button
             className="icon-btn"
             type="button"
@@ -218,6 +238,16 @@ export function CanvasPanel() {
       <div className="canvas-content">
         {shown ? (
           <CanvasComponent artifact={shown} onAsk={onAsk} demo={isDemo} />
+        ) : session.streaming ? (
+          <div className="canvas-skeleton" aria-label="等待画布结果">
+            <div className="sk-line sk-title" />
+            <div className="sk-line" />
+            <div className="sk-line sk-short" />
+            <div className="sk-card" />
+            <div className="sk-line" />
+            <div className="sk-card sk-tall" />
+            <div className="sk-hint">正在检索并计算结果，画布即将出现…</div>
+          </div>
         ) : (
           <div className="canvas-empty">
             <div className="empty-mark">

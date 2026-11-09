@@ -158,6 +158,8 @@ export interface AppStore {
   activeFeature: string;
   sessions: Record<string, SessionState>;
   globalError: string | null;
+  /** 命令面板（Ctrl/⌘+K）是否打开 */
+  paletteOpen: boolean;
 
   bootstrap: () => Promise<void>;
   signIn: (account: string, password: string) => Promise<void>;
@@ -168,6 +170,9 @@ export interface AppStore {
   send: (text?: string) => Promise<void>;
   stop: () => void;
   dismissGlobalError: () => void;
+  setPaletteOpen: (open: boolean) => void;
+  /** 清空当前模块的会话（消息 / 画布 / 草稿），用于"新会话" */
+  clearSession: () => void;
 }
 
 export const useAppStore = create<AppStore>()((set, get) => {
@@ -303,6 +308,7 @@ export const useAppStore = create<AppStore>()((set, get) => {
     activeFeature: GLOBAL_SESSION_ID,
     sessions: { [GLOBAL_SESSION_ID]: emptySession(GLOBAL_SESSION_ID) },
     globalError: null,
+    paletteOpen: false,
 
     bootstrap: async () => {
       // React 19 StrictMode 开发期会跑两遍 effect，这里做幂等保护
@@ -376,6 +382,18 @@ export const useAppStore = create<AppStore>()((set, get) => {
     setDraft: (text) => {
       const featureId = get().activeFeature;
       patchSession(featureId, (s) => ({ ...s, draft: text }));
+    },
+
+    setPaletteOpen: (open) => set({ paletteOpen: open }),
+
+    clearSession: () => {
+      const featureId = get().activeFeature;
+      activeAbort?.abort();
+      activeAbort = null;
+      set((state) => ({
+        sessions: { ...state.sessions, [featureId]: emptySession(featureId) },
+        globalError: null,
+      }));
     },
 
     send: async (text) => {

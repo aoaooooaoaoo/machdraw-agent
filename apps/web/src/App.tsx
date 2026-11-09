@@ -8,6 +8,8 @@ import { ChatPanel } from './shell/ChatPanel';
 import { CanvasPanel } from './shell/CanvasPanel';
 import { StatusBar } from './shell/StatusBar';
 import { LoginGate } from './shell/LoginGate';
+import { CommandPalette } from './shell/CommandPalette';
+import { ToastViewport } from './shell/Toast';
 import { Icon } from './shell/Icons';
 
 /** 整页模块在还没有 artifact 时用它启动（receivedAt 固定，避免每次渲染重置页面状态）。 */
@@ -29,6 +31,24 @@ export default function App() {
   useEffect(() => {
     void bootstrap();
   }, [bootstrap]);
+
+  // 全局快捷键：Ctrl/⌘+K 命令面板；Ctrl+/ 聚焦输入框；Esc 收起面板
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const mod = e.metaKey || e.ctrlKey;
+      if (mod && (e.key === 'k' || e.key === 'K')) {
+        e.preventDefault();
+        useAppStore.getState().setPaletteOpen(!useAppStore.getState().paletteOpen);
+      } else if (mod && e.key === '/') {
+        e.preventDefault();
+        document.querySelector<HTMLTextAreaElement>('.composer-input')?.focus();
+      } else if (e.key === 'Escape' && useAppStore.getState().paletteOpen) {
+        useAppStore.getState().setPaletteOpen(false);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   if (!bootstrapped) {
     return (
@@ -84,6 +104,8 @@ export default function App() {
         )}
       </div>
       <StatusBar />
+      <CommandPalette />
+      <ToastViewport />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { ChatMessage, ToolCallState } from '../lib/types';
+import { copyText } from '../lib/ui';
 import { Icon } from './Icons';
 import { Markdown } from './Markdown';
 
@@ -56,12 +57,30 @@ function ToolCard({ tool }: { tool: ToolCallState }) {
   );
 }
 
-export function MessageItem({ message }: { message: ChatMessage }) {
+interface MessageItemProps {
+  message: ChatMessage;
+  /** 最后一条助手消息：显示「重新回答」 */
+  canRegenerate?: boolean;
+  onRegenerate?: () => void;
+  /** @deprecated 兼容旧调用 */
+  isLast?: boolean;
+}
+
+export function MessageItem({ message, canRegenerate, onRegenerate }: MessageItemProps) {
   if (message.role === 'user') {
     return (
       <div className="msg msg-user">
         <div className="bubble-user">{message.content}</div>
         <div className="msg-avatar msg-avatar-user">我</div>
+        <button
+          className="msg-mini-btn msg-user-copy"
+          type="button"
+          title="复制我的问题"
+          aria-label="复制我的问题"
+          onClick={() => void copyText(message.content, '问题已复制')}
+        >
+          <Icon name="copy" size={13} />
+        </button>
       </div>
     );
   }
@@ -97,19 +116,32 @@ export function MessageItem({ message }: { message: ChatMessage }) {
           </div>
         )}
 
-        {message.meta && !message.streaming && (
-          <div className="msg-foot">
-            <span>{message.meta.provider ?? '—'}</span>
-            <span>·</span>
-            <span>{message.meta.model ?? '—'}</span>
-            {typeof message.meta.ms === 'number' && (
-              <>
-                <span>·</span>
-                <span>{message.meta.ms} ms</span>
-              </>
+        {!message.streaming && message.content && (
+          <div className="msg-actions">
+            <button
+              className="msg-action"
+              type="button"
+              title="复制回答"
+              onClick={() => void copyText(message.content, '回答已复制')}
+            >
+              <Icon name="copy" size={13} />
+              <span>复制</span>
+            </button>
+            {canRegenerate && onRegenerate && (
+              <button className="msg-action" type="button" title="用同一个问题重新回答" onClick={onRegenerate}>
+                <Icon name="refresh" size={13} />
+                <span>重新回答</span>
+              </button>
             )}
-            <span>·</span>
-            <span>{message.frames} 帧</span>
+            <span className="msg-actions-spacer" />
+            {message.meta && (
+              <span className="msg-foot-inline">
+                {message.meta.provider ?? '—'}
+                {typeof message.meta.ms === 'number' && <> · {message.meta.ms} ms</>}
+                {' · '}
+                {message.frames} 帧
+              </span>
+            )}
           </div>
         )}
       </div>

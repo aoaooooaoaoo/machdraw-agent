@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useAppStore } from '../lib/store';
+import { MOD_KEY } from '../lib/ui';
 import { Icon } from './Icons';
 
 const FEEDBACK_KEY = 'rp.feedback';
@@ -27,6 +28,7 @@ export function TopBar() {
   const backendOnline = useAppStore((s) => s.backendOnline);
   const signOut = useAppStore((s) => s.signOut);
   const refreshHealth = useAppStore((s) => s.refreshHealth);
+  const setPaletteOpen = useAppStore((s) => s.setPaletteOpen);
 
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [feedbackText, setFeedbackText] = useState('');
@@ -77,6 +79,17 @@ export function TopBar() {
             <span className="account-name">{account}</span>
           </div>
         )}
+
+        <button
+          className="search-btn"
+          type="button"
+          title={`搜索模块 / 直接提问 / 操作（${MOD_KEY} + K）`}
+          onClick={() => setPaletteOpen(true)}
+        >
+          <Icon name="search" size={15} />
+          <span className="search-btn-label">搜索</span>
+          <kbd className="topbar-kbd">{MOD_KEY} K</kbd>
+        </button>
 
         <button className="btn btn-ghost" type="button" onClick={() => setFeedbackOpen(true)}>
           <Icon name="feedback" size={16} />

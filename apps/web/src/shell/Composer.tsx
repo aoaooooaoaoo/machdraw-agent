@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useActiveSession, useAppStore } from '../lib/store';
+import { MOD_KEY, toast } from '../lib/ui';
 import { Icon } from './Icons';
 
 const MAX_TEXTAREA = 180;
@@ -9,6 +10,7 @@ export function Composer() {
   const setDraft = useAppStore((s) => s.setDraft);
   const send = useAppStore((s) => s.send);
   const stop = useAppStore((s) => s.stop);
+  const clearSession = useAppStore((s) => s.clearSession);
   const account = useAppStore((s) => s.account);
 
   const taRef = useRef<HTMLTextAreaElement>(null);
@@ -84,6 +86,24 @@ export function Composer() {
           <button
             className="icon-btn"
             type="button"
+            title="新会话（清空当前模块的对话与画布）"
+            aria-label="新会话"
+            onClick={() => {
+              if (session.messages.length === 0 && !draft) {
+                toast('当前已经是空白会话', 'info');
+                return;
+              }
+              clearSession();
+              toast('已开始新会话');
+              taRef.current?.focus();
+            }}
+            disabled={streaming}
+          >
+            <Icon name="refresh" size={16} />
+          </button>
+          <button
+            className="icon-btn"
+            type="button"
             title="添加附件（后端暂未开放上传，仅记录文件名）"
             onClick={() => fileRef.current?.click()}
             disabled={streaming}
@@ -91,7 +111,10 @@ export function Composer() {
             <Icon name="paperclip" size={17} />
           </button>
 
-          <span className="composer-hint">Enter 发送 · Shift+Enter 换行</span>
+          <span className="composer-hint">
+            Enter 发送 · Shift+Enter 换行 · <kbd>{MOD_KEY}</kbd> K 搜索
+          </span>
+          {draft.length > 120 && <span className={`composer-count ${draft.length > 500 ? 'is-warn' : ''}`}>{draft.length} 字</span>}
 
           {streaming ? (
             <button className="btn btn-stop" type="button" onClick={stop}>

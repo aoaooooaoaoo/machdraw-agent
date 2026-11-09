@@ -1,4 +1,4 @@
-"""ReAct 编排：把一次提问变成一条事件流。
+﻿"""ReAct 编排：把一次提问变成一条事件流。
 
 无 API Key 时走"本地规则编排 + 抽取式作答"（provider=mock）：
    1. 先跑确定性工具（临界/点堆/中毒/燃耗/反应性/能谱），因为这些能算准；
@@ -77,8 +77,15 @@ def _plan(query: str, feature: str | None) -> list[dict]:
     if (feature == "concept" or _has(q, CONCEPT_WORDS)) and not _looks_numeric(q):
         steps.append({"name": "comparison_pick", "args": {"query": q}})
 
+    # 计算意图判定：概念题（"缓发中子为什么重要"）不要因为命中"缓发"就调计算工具
+    calc_intent = (
+        _looks_numeric(q)
+        or feature in ("critical", "kinetics", "poison")
+        or _has(q, ("多少", "多大", "多深", "多久", "计算", "求", "算", "等于", "是多少"))
+    )
+
     # ---- 确定性计算：按"问的是什么"路由
-    if not steps or all(s["name"] == "comparison_pick" for s in steps):
+    if calc_intent and (not steps or all(s["name"] == "comparison_pick" for s in steps)):
         if _has(q, KIN_WORDS) or (feature == "kinetics" and not _has(q, REAC_WORDS)):
             steps.append({"name": "kinetics_calc", "args": {"query": q}})
         elif _has(q, REAC_WORDS) or feature == "kinetics":
