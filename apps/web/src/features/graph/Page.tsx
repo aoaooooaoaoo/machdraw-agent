@@ -5,7 +5,8 @@ import { getGraph } from '../../lib/api';
 import { Icon } from '../../shell/Icons';
 import { MessageItem } from '../../shell/MessageItem';
 import { Overview } from '../../modules/graph/Overview';
-import { REL_STYLE, TIER_CN, TIER_COLOR, tierOf, stateColor } from '../../modules/graph/constants';
+import { REL_STYLE, TIER_CN, tierOf, stateColor } from '../../modules/graph/constants';
+import { CHAPTER_COLORS } from '../../modules/graph/layout';
 import { QuestionPage } from './QuestionPage';
 import {
   LEVEL_CN,
@@ -240,8 +241,9 @@ export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], b
               ))}
               <span className="sep" />
               <span className="lbl">章</span>
-              {chapters.map((c) => (
+              {chapters.map((c, i) => (
                 <button key={c.index} className={hiddenSectorIds.has(c.index) ? '' : 'on'} onClick={() => toggleSector(c.index)} title={c.label}>
+                  <i className="gp-dot" style={{ background: CHAPTER_COLORS[i % CHAPTER_COLORS.length], marginRight: 5 }} />
                   {c.label.replace(/^第[一二三四五六七八九十]+章\s*/, '').slice(0, 8)}（{c.count}）
                 </button>
               ))}
@@ -260,15 +262,16 @@ export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], b
               />
             </div>
             <div className="gp-legend">
-              <b>层级</b>
-              {[1, 2, 3, 4].map((level) => {
-                const tier = LEVEL_TIERS[level][0];
-                return (
-                  <span key={level}>
-                    <i className="gp-dot" style={{ background: TIER_COLOR[tier] }} /> L{level} {LEVEL_CN[level]}
-                  </span>
-                );
-              })}
+              <b>说明</b>
+              <span>
+                <i className="gp-dot" style={{ background: 'linear-gradient(90deg,#2f6fed,#ef6c35)' }} /> 颜色 = 章节
+              </span>
+              <span>
+                <i className="gp-dot" style={{ background: '#e2e8f0', border: '1px solid #94a3b8' }} /> 大小 = 关联数
+              </span>
+              <span>
+                <i className="gp-dot" style={{ background: '#fff', border: '1px solid #94a3b8' }} /> 中心点 = 学习状态
+              </span>
               <span className="sep" />
               <b>关系</b>
               {(['prereq', 'contrast', 'compose', 'cause'] as const).map((rel) => (

@@ -116,15 +116,17 @@ npm run build      # 产物进 apps/web/dist，后端会自动托管
 
 ### 7. 实装：让别人电脑用浏览器打开
 
-```powershell
-cd D:\桌面\教学agent\核反应堆物理agent
-powershell -ExecutionPolicy Bypass -File scripts\serve_public.ps1
-```
+**永久在线地址（已部署，任何电脑/手机直接打开）：**
 
-脚本会同时给出 **局域网地址**（同网络直接打开）和 **公网 HTTPS 地址**（任何电脑/手机可打开），
-并把公网地址写入 `data/public_url.txt`。停止：`scripts\stop_serve.ps1`。
-公网链接是临时隧道（本机重启会变）；固定地址请走 Render（见 [DEPLOY.md](DEPLOY.md) §4/§11）。
-**注意：公网链接任何拿到的人都能访问，教师端同样，请勿公开发布；用完即停。**
+- 学生端：<https://reactor-physics-agent.onrender.com/>
+- 教师端：<https://reactor-physics-agent.onrender.com/admin>
+- 健康检查：<https://reactor-physics-agent.onrender.com/api/health>
+
+部署方式：代码在 GitHub 仓库 `aoaooooaoaoo/machdraw-agent` 的 **`reactor-physics` 分支**，Render 上对应服务 `reactor-physics-agent`（Docker 运行时、Free 计划、Oregon）。
+更新方法：本地改完 → `git push` 到该分支 → Render 自动重新构建部署。
+
+> Render 免费档：**15 分钟无访问会休眠**，下一次打开约需 40~60 秒唤醒；实例无持久磁盘，账号/错题等 `data/app.db` 数据在重启/重部署后重置（知识库、索引随镜像重建）。
+> 如需本机同时发布（校园局域网 + 临时公网隧道）：双击根目录 `启动核反应堆物理助教.bat`，见 [DEPLOY.md](DEPLOY.md) §11。
 
 ---
 
@@ -201,5 +203,6 @@ working/             课程材料抽取中间产物（机读，可删）
 | [docs/09-一致性审计.md](docs/09-一致性审计.md) | 代码与契约的逐条审计结果 |
 | [docs/10-交付说明.md](docs/10-交付说明.md) | 交付清单、验收数据、已知限制、后续路线 |
 | [docs/11-待人工复核清单.md](docs/11-待人工复核清单.md) | 标准/条目/习题/图谱的待复核条目 |
+| [docs/12-知识图谱视觉改版.md](docs/12-知识图谱视觉改版.md) | 知识图谱重绘：GitHub 参考项目、章节分簇布局、深色/浅色双主题 |
 | [docs/模块任务书/](docs/模块任务书/) | 由代码生成的 9 个模块任务书（`--check` 防漂移） |
 | [DEPLOY.md](DEPLOY.md) | 部署与运维手册 |
