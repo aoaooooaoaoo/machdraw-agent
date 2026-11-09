@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 全局状态（Zustand）。
  *
  * 选 Zustand 而不是 useReducer 的理由：
@@ -224,6 +224,10 @@ export interface AppStore {
   globalError: string | null;
   /** 命令面板（Ctrl/⌘+K）是否打开 */
   paletteOpen: boolean;
+  /** 历史会话抽屉是否打开 */
+  historyOpen: boolean;
+  /** 今日复习抽屉是否打开 */
+  reviewOpen: boolean;
 
   bootstrap: () => Promise<void>;
   signIn: (account: string, password: string) => Promise<void>;
@@ -235,6 +239,10 @@ export interface AppStore {
   stop: () => void;
   dismissGlobalError: () => void;
   setPaletteOpen: (open: boolean) => void;
+  setHistoryOpen: (open: boolean) => void;
+  setReviewOpen: (open: boolean) => void;
+  /** 从后端历史会话恢复消息到指定模块（替代当前会话） */
+  loadConversation: (featureId: string, messages: Array<{ role: string; content: string }>) => void;
   /** 清空当前模块的会话（消息 / 画布 / 草稿），用于"新会话" */
   clearSession: () => void;
 }
@@ -373,6 +381,8 @@ export const useAppStore = create<AppStore>()((set, get) => {
     sessions: { [GLOBAL_SESSION_ID]: emptySession(GLOBAL_SESSION_ID) },
     globalError: null,
     paletteOpen: false,
+    historyOpen: false,
+    reviewOpen: false,
 
     bootstrap: async () => {
       // React 19 StrictMode 开发期会跑两遍 effect，这里做幂等保护
@@ -404,7 +414,7 @@ export const useAppStore = create<AppStore>()((set, get) => {
         set((state) => ({ sessions: { ...state.sessions, ...savedSessions } }));
         const restored = Object.values(savedSessions).some((s) => s.messages.length > 0);
         if (restored) {
-          import('./ui').then(({ toast }) => toast('已恢复上次的对话记录', 'info')).catch(() => {});
+          toast('已恢复上次的对话记录', 'info');
         }
       }
       // 确保当前激活模块有会话
@@ -466,6 +476,32 @@ export const useAppStore = create<AppStore>()((set, get) => {
     },
 
     setPaletteOpen: (open) => set({ paletteOpen: open }),
+
+    setHistoryOpen: (open) => set({ historyOpen: open }),
+
+    setReviewOpen: (open) => set({ reviewOpen: open }),
+
+    loadConversation: (featureId, messages) => {
+      const mapped: ChatMessage[] = messages.map((m) => ({
+        id: newId('hist'),
+        role: m.role === 'user' ? 'user' : 'assistant',
+        content: m.content,
+        thinking: '',
+        tools: [],
+        streaming: false,
+        frames: 0,
+      }));
+      const session: SessionState = {
+        ...emptySession(featureId),
+        messages: mapped,
+        stats: { ...emptySession(featureId).stats, messages: mapped.length },
+      };
+      set((state) => ({
+        activeFeature: featureId,
+        sessions: { ...state.sessions, [featureId]: session },
+        historyOpen: false,
+      }));
+    },
 
     clearSession: () => {
       const featureId = get().activeFeature;

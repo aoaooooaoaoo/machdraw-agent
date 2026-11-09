@@ -9,6 +9,8 @@ import { CanvasPanel } from './shell/CanvasPanel';
 import { StatusBar } from './shell/StatusBar';
 import { LoginGate } from './shell/LoginGate';
 import { CommandPalette } from './shell/CommandPalette';
+import { HistoryDrawer } from './shell/HistoryDrawer';
+import { ReviewDrawer } from './shell/ReviewDrawer';
 import { ToastViewport } from './shell/Toast';
 import { Icon } from './shell/Icons';
 
@@ -105,6 +107,8 @@ export default function App() {
       </div>
       <StatusBar />
       <CommandPalette />
+      <HistoryDrawer />
+      <ReviewDrawer />
       <ToastViewport />
     </div>
   );

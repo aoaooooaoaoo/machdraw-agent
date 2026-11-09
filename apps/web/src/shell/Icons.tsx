@@ -101,6 +101,13 @@ const PATHS: Record<string, ReactNode> = {
       <path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10" />
     </>
   ),
+  history: (
+    <>
+      <path d="M3 12a9 9 0 1 0 3-6.7L3 8" />
+      <path d="M3 3v5h5" />
+      <path d="M12 7v5l3 2" />
+    </>
+  ),
 };
 
 export type IconName = keyof typeof PATHS;

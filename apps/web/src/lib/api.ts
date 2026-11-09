@@ -154,6 +154,69 @@ export async function reportMastery(
   });
 }
 
+/* ---------------------------------------------------------------- 题卡判分 */
+
+export interface QuizGradeResult {
+  ok: boolean;
+  score: number;
+  verdict: 'pass' | 'partial' | 'fail';
+  feedback: string;
+  missing: string[];
+  reference: string;
+  state?: string;
+  kp_ids: string[];
+}
+
+export async function gradeQuiz(
+  chunkId: string,
+  studentAnswer: string,
+  account: string,
+): Promise<QuizGradeResult> {
+  return request<QuizGradeResult>('/api/quiz/grade', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Account': account },
+    body: JSON.stringify({ chunk_id: chunkId, student_answer: studentAnswer }),
+  });
+}
+
+/* ---------------------------------------------------------------- 历史会话 / 复习 */
+
+export interface HistoryConversation {
+  id: string;
+  module_key: string;
+  title: string;
+  updated_at: number;
+  count: number;
+}
+
+export async function getHistory(account: string): Promise<{ conversations: HistoryConversation[] }> {
+  return request('/api/history', { headers: { 'X-Account': account } });
+}
+
+export async function getHistoryDetail(
+  convId: string,
+  account: string,
+): Promise<{ messages: Array<{ role: string; content: string; created_at: number }> }> {
+  return request(`/api/history/${encodeURIComponent(convId)}`, {
+    headers: { 'X-Account': account },
+  });
+}
+
+export interface ReviewItem {
+  key: string;
+  label: string;
+  state: string;
+  score: number;
+  interval_days: number;
+  overdue_days: number;
+}
+
+export async function getReview(
+  account: string,
+): Promise<{ due: ReviewItem[]; total_tracked: number }> {
+  return request('/api/review', { headers: { 'X-Account': account } });
+}
+
 /* ---------------------------------------------------------------- 错题本 */
 
 export interface WrongbookPayload {

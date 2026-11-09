@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import type { CanvasProps } from '../registry';
 import type { QuizArtifactData } from '../../lib/types';
-import { addWrongbook, explainQuiz, invalidateGraphCache, reportMastery } from '../../lib/api';
+import { addWrongbook, explainQuiz, gradeQuiz, invalidateGraphCache, reportMastery } from '../../lib/api';
+import type { QuizGradeResult } from '../../lib/api';
 import { useAppStore } from '../../lib/store';
 import { toast } from '../../lib/ui';
 import { Markdown } from '../../shell/Markdown';
@@ -66,7 +67,50 @@ export function QuizCanvas({ artifact, demo }: CanvasProps) {
   const [open, setOpen] = useState<Record<string, boolean>>({});
   const [explains, setExplains] = useState<Record<string, ExplainState>>({});
   const [assess, setAssess] = useState<Record<string, AssessState>>({});
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [grades, setGrades] = useState<Record<string, { status: 'saving' | 'done' | 'error'; data?: QuizGradeResult; error?: string }>>({});
   const account = useAppStore((s) => s.account);
+
+  async function gradeAnswer(chunkId: string, q: QuizArtifactData['questions'][number]) {
+    const answer = (answers[chunkId] || '').trim();
+    if (!account) {
+      toast('请先登录再判分', 'info');
+      return;
+    }
+    if (!answer) {
+      toast('先写下你的答案或思路', 'info');
+      return;
+    }
+    setGrades((prev) => ({ ...prev, [chunkId]: { status: 'saving' } }));
+    try {
+      const data = await gradeQuiz(chunkId, answer, account);
+      setGrades((prev) => ({ ...prev, [chunkId]: { status: 'done', data } }));
+      setAssess((prev) => ({
+        ...prev,
+        [chunkId]: {
+          status: 'done',
+          signal: data.score >= 60 ? 'got' : 'again',
+          state: data.state,
+          score: data.score / 100,
+        },
+      }));
+      invalidateGraphCache();
+      toast(
+        data.score >= 60 ? `判分 ${data.score} 分 · 掌握度已更新` : `判分 ${data.score} 分 · 已记入错题本`,
+        data.score >= 60 ? 'success' : 'info',
+      );
+      if (data.score < 60) {
+        // 服务端已自动写错题本；这里只提示，不重复写
+        void q;
+      }
+    } catch (err) {
+      setGrades((prev) => ({
+        ...prev,
+        [chunkId]: { status: 'error', error: (err as Error)?.message || String(err) },
+      }));
+      toast('判分失败，请稍后再试', 'error');
+    }
+  }
 
   async function grade(chunkId: string, q: QuizArtifactData['questions'][number], signal: 'got' | 'again') {
     if (!account) {
@@ -272,6 +316,62 @@ export function QuizCanvas({ artifact, demo }: CanvasProps) {
                         <pre className="json-pre">{JSON.stringify(explain.data, null, 2).slice(0, 2000)}</pre>
                       </div>
                     ))}
+                </div>
+              )}
+
+              {opened && explain?.status === 'done' && (
+                <div className="qz-grade">
+                  <div className="qz-grade-head">
+                    <span>自动判分</span>
+                    <span className="qz-grade-hint">写下你的答案/思路，星火对照参考答案打分并回写掌握度</span>
+                  </div>
+                  <textarea
+                    className="qz-grade-input"
+                    rows={2}
+                    placeholder="例如：控制棒微分价值是单位插入深度引起的反应性变化，积分价值是累计量…"
+                    value={answers[chunkId] || ''}
+                    onChange={(e) => setAnswers((prev) => ({ ...prev, [chunkId]: e.target.value }))}
+                    disabled={grades[chunkId]?.status === 'saving'}
+                  />
+                  <div className="qz-grade-actions">
+                    <button
+                      className="btn btn-primary btn-xs"
+                      type="button"
+                      disabled={grades[chunkId]?.status === 'saving' || !(answers[chunkId] || '').trim()}
+                      onClick={() => void gradeAnswer(chunkId, q)}
+                    >
+                      {grades[chunkId]?.status === 'saving' ? '判分中…' : '提交判分'}
+                    </button>
+                    {grades[chunkId]?.status === 'error' && (
+                      <span className="qz-grade-error">{grades[chunkId]?.error}</span>
+                    )}
+                  </div>
+                  {grades[chunkId]?.status === 'done' && grades[chunkId]?.data && (() => {
+                    const g = grades[chunkId].data!;
+                    return (
+                      <div className={`qz-grade-result is-${g.score >= 60 ? 'pass' : 'fail'}`}>
+                        <div className="qz-grade-score">
+                          <b>{g.score}</b> / 100
+                          <span className={`qz-grade-verdict is-${g.verdict}`}>
+                            {g.verdict === 'pass' ? '通过' : g.verdict === 'partial' ? '部分正确' : '未通过'}
+                          </span>
+                        </div>
+                        {g.feedback && <p className="qz-grade-feedback">{g.feedback}</p>}
+                        {g.missing.length > 0 && (
+                          <div className="qz-grade-missing">
+                            <span>漏掉的点：</span>
+                            {g.missing.map((m) => <em key={m}>{m}</em>)}
+                          </div>
+                        )}
+                        {g.reference && (
+                          <details className="qz-grade-ref">
+                            <summary>对照参考答案</summary>
+                            <Markdown text={g.reference} />
+                          </details>
+                        )}
+                      </div>
+                    );
+                  })()}
                 </div>
               )}
 

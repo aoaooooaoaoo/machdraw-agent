@@ -167,6 +167,23 @@ class Store:
             for r in rows
         ]
 
+    # ---------------- 历史会话
+    def list_conversations(self, account: str, limit: int = 30) -> list[dict]:
+        rows = self._conn.execute(
+            """SELECT c.id, c.module_key, c.title, c.updated_at,
+                      (SELECT COUNT(*) FROM messages m WHERE m.conv_id=c.id) AS count
+               FROM conversations c WHERE c.account=?
+               ORDER BY c.updated_at DESC LIMIT ?""",
+            (account, limit),
+        ).fetchall()
+        return [dict(r) for r in rows]
+
+    def conversation_owner(self, conv_id: str) -> str | None:
+        row = self._conn.execute(
+            "SELECT account FROM conversations WHERE id=?", (conv_id,)
+        ).fetchone()
+        return row["account"] if row else None
+
     # ---------------- 学习者模型（掌握度）
     def list_mastery(self, account: str) -> dict:
         rows = self._conn.execute(
@@ -304,6 +321,22 @@ class Store:
         total_accounts = one(
             "SELECT COUNT(*) FROM (SELECT account FROM users UNION SELECT account FROM conversations)"
         )
+        # 学习者模型：掌握度状态分布 + 最需要关注的知识点
+        mastery_states = {
+            (r["state"] or "未学"): r["n"]
+            for r in c.execute(
+                "SELECT state, COUNT(*) n FROM mastery GROUP BY state"
+            ).fetchall()
+        }
+        mastery_top = [
+            {"kp_id": r["kp_id"], "state": r["state"], "score": r["score"],
+             "attempts": r["attempts"], "accounts": r["accounts"]}
+            for r in c.execute(
+                "SELECT kp_id, state, MAX(score) score, SUM(attempts) attempts, COUNT(*) accounts "
+                "FROM mastery WHERE state IN ('需复习','在学') "
+                "GROUP BY kp_id ORDER BY attempts DESC LIMIT 8"
+            ).fetchall()
+        ]
         return {
             "users": total_accounts,
             "users_registered": registered,
@@ -311,6 +344,8 @@ class Store:
             "conversations": one("SELECT COUNT(*) FROM conversations"),
             "messages": one("SELECT COUNT(*) FROM messages"),
             "wrongbook": one("SELECT COUNT(*) FROM wrongbook"),
+            "mastery_states": mastery_states,
+            "mastery_top": mastery_top,
             "events": kinds,
             "events_total": sum(kinds.values()),
             "root_causes": roots,

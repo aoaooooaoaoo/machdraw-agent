@@ -230,6 +230,46 @@ def get_mastery(x_account: str | None = Header(default=None)) -> dict:
 
 
 @app.post("/api/mastery/report")
+def _apply_mastery(st, account: str, keys: set[str], signal: str, quality: float | None = None) -> tuple[dict, dict]:
+    """统一的掌握度更新：signal=got/again；quality 0–1（判分时用）优先。"""
+    mastery = dict(st.store.list_mastery(account))
+    now = time.time()
+    updated: dict[str, dict] = {}
+    for key in keys:
+        prev = mastery.get(key) or {}
+        prev_score = float(prev.get("score") or 0.0)
+        if quality is not None:
+            score = max(0.0, min(1.0, prev_score * 0.4 + float(quality) * 0.6))
+        elif signal == "again":
+            score = max(0.0, prev_score * 0.45)
+        else:
+            score = min(1.0, prev_score + (0.35 if prev_score < 0.75 else 0.18))
+        if score >= 0.75:
+            state = "已掌握"
+        elif signal == "again" and score < 0.25:
+            state = "需复习"
+        elif score > 0:
+            state = "在学"
+        else:
+            state = "未学"
+        item = {
+            "score": round(score, 3),
+            "attempts": int(prev.get("attempts") or 0) + 1,
+            "correct": int(prev.get("correct") or 0) + (0 if signal == "again" else 1),
+            "state": state,
+            "last_at": now,
+            "last_signal": signal,
+        }
+        mastery[key] = item
+        updated[key] = item
+    st.store.upsert_mastery(account, updated)
+    records = st.store.get_records(account)
+    records["mastery_updated_at"] = now
+    st.store.put_records(account, records)
+    return updated, mastery
+
+
+@app.post("/api/mastery/report")
 def report_mastery(payload: dict = Body(...), x_account: str | None = Header(default=None)) -> dict:
     """学生自评 / 判分回写掌握度。
 
@@ -245,46 +285,19 @@ def report_mastery(payload: dict = Body(...), x_account: str | None = Header(def
     node_ids = [k for k in (payload.get("node_ids") or []) if k]
     node_kp = {n.get("id"): (n.get("kp_id") or n.get("id")) for n in st.nodes}
     keys = set(kp_ids) | {node_kp.get(nid, nid) for nid in node_ids}
-    chapter_key = ""
     if not keys:
-        # 习题块没有 kp_ids（题库是扫描件），退化为"章级掌握度"：chapter:<章名>
+        # 没有 kp 标注时退化为"章级掌握度"：chapter:<章名>
         chapter = str(payload.get("chapter") or "").strip()
         if not chapter and payload.get("chunk_id"):
             hit = next((c for c in st.chunks if c.chunk_id == payload.get("chunk_id")), None)
             if hit is not None:
                 chapter = (hit.section or "").split("›")[0].strip()
         if chapter:
-            chapter_key = f"chapter:{chapter}"
-            keys = {chapter_key}
+            keys = {f"chapter:{chapter}"}
     if not keys:
         raise HTTPException(400, "缺少 kp_ids / node_ids / chapter")
 
-    records = st.store.get_records(acc)
-    mastery = dict(st.store.list_mastery(acc))
-    now = time.time()
-    updated: dict[str, dict] = {}
-    for key in keys:
-        prev = mastery.get(key) or {}
-        score = float(prev.get("score") or 0.0)
-        if signal == "again":
-            score = max(0.0, score * 0.45)
-        else:
-            score = min(1.0, score + (0.35 if score < 0.75 else 0.18))
-        state = "需复习" if signal == "again" else ("已掌握" if score >= 0.75 else "在学")
-        item = {
-            "score": round(score, 3),
-            "attempts": int(prev.get("attempts") or 0) + 1,
-            "correct": int(prev.get("correct") or 0) + (0 if signal == "again" else 1),
-            "state": state,
-            "last_at": now,
-            "last_signal": signal,
-        }
-        mastery[key] = item
-        updated[key] = item
-
-    st.store.upsert_mastery(acc, updated)
-    records["mastery_updated_at"] = now
-    st.store.put_records(acc, records)
+    updated, mastery = _apply_mastery(st, acc, keys, signal)
 
     if signal == "again" and payload.get("question"):
         st.store.add_wrong(acc, {
@@ -299,6 +312,65 @@ def report_mastery(payload: dict = Body(...), x_account: str | None = Header(def
         })
 
     return {"ok": True, "account": acc, "updated": updated, "mastery": mastery}
+
+
+# ---------------------------------------------------------------- 历史会话
+
+@app.get("/api/history")
+def history(x_account: str | None = Header(default=None)) -> dict:
+    st = get_state()
+    acc = _account(x_account)
+    convs = st.store.list_conversations(acc)
+    for c in convs:
+        c["title"] = (c.get("title") or "").strip() or "未命名会话"
+    return {"ok": True, "conversations": convs}
+
+
+@app.get("/api/history/{conv_id}")
+def history_detail(conv_id: str, x_account: str | None = Header(default=None)) -> dict:
+    st = get_state()
+    acc = _account(x_account)
+    owner = st.store.conversation_owner(conv_id)
+    if owner is None:
+        raise HTTPException(404, "会话不存在")
+    if owner != acc:
+        raise HTTPException(403, "无权访问该会话")
+    return {"ok": True, "conversation_id": conv_id, "messages": st.store.messages(conv_id)}
+
+
+# ---------------------------------------------------------------- 复习计划
+
+@app.get("/api/review")
+def review(x_account: str | None = Header(default=None)) -> dict:
+    """FSRS-lite：按掌握度 + 最近练习时间给出"今天该复习什么"。"""
+    st = get_state()
+    acc = _account(x_account)
+    mastery = st.store.list_mastery(acc)
+    kp_to_node = {n.get("kp_id"): n for n in st.nodes if n.get("kp_id")}
+    now = time.time()
+    due: list[dict] = []
+    for key, item in mastery.items():
+        if key.startswith("chapter:"):
+            label = key.split(":", 1)[1]
+        else:
+            node = kp_to_node.get(key) or {}
+            label = node.get("label") or key
+        score = float(item.get("score") or 0)
+        state = item.get("state") or "未学"
+        last = float(item.get("last_at") or 0)
+        interval_days = 1 if state == "需复习" else (3 if score < 0.75 else 7)
+        due_at = last + interval_days * 86400
+        if due_at <= now:
+            due.append({
+                "key": key,
+                "label": label,
+                "state": state,
+                "score": round(score, 3),
+                "interval_days": interval_days,
+                "overdue_days": round((now - due_at) / 86400, 1),
+            })
+    due.sort(key=lambda x: -x["overdue_days"])
+    return {"ok": True, "due": due, "total_tracked": len(mastery)}
 
 
 # ---------------------------------------------------------------- 模块与图谱
@@ -611,6 +683,59 @@ def quiz_explain(payload: dict = Body(...)) -> dict:
              "chunkId": h["chunkId"], "score": h["score"]}
             for h in hits
         ],
+    }
+
+
+@app.post("/api/quiz/grade")
+def quiz_grade(payload: dict = Body(...), x_account: str | None = Header(default=None)) -> dict:
+    """自动判分：学生答案 vs 检索到的参考答案，星火给分 + 回写掌握度/错题本。"""
+    from . import llm as llm_mod
+
+    st = get_state()
+    acc = _account(x_account)
+    chunk_id = str(payload.get("chunk_id") or "")
+    student_answer = str(payload.get("student_answer") or "").strip()
+    if not chunk_id:
+        raise HTTPException(400, "缺少 chunk_id")
+    if not student_answer:
+        raise HTTPException(400, "请先写下你的答案")
+    chunk = next((c for c in st.chunks if c.chunk_id == chunk_id), None)
+    if chunk is None:
+        raise HTTPException(404, "题目不存在")
+
+    refs = st.retriever.search(chunk.text[:160], top_k=3, exclude_roles=["exercise", "answer"])
+    reference = refs["hits"][0].content if refs["hits"] else ""
+    result = llm_mod.grade_answer(chunk.text, reference, student_answer)
+    score = int(result.get("score") or 0)
+    signal = "got" if score >= 60 else "again"
+    keys = {k for k in (chunk.kp_ids or []) if k}
+    if not keys:
+        chapter = (chunk.section or "").split("›")[0].strip()
+        keys = {f"chapter:{chapter}"} if chapter else set()
+    updated: dict = {}
+    if keys:
+        updated, _ = _apply_mastery(st, acc, keys, signal, quality=(score / 100.0) if score >= 60 else None)
+    if score < 60:
+        st.store.add_wrong(acc, {
+            "question": chunk.text[:2000],
+            "wrong_answer": student_answer[:2000],
+            "root_cause": "自动判分未通过",
+            "trace_ref": chunk_id,
+            "correct": reference[:4000],
+            "pitfall": "；".join(result.get("missing") or [])[:1000],
+            "kp_ids": sorted(keys),
+            "source": chunk.document_title,
+        })
+    first = next(iter(updated.values()), {})
+    return {
+        "ok": True,
+        "score": score,
+        "verdict": result.get("verdict"),
+        "feedback": result.get("feedback"),
+        "missing": result.get("missing") or [],
+        "reference": reference,
+        "state": first.get("state"),
+        "kp_ids": sorted(keys),
     }
 
 

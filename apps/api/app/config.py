@@ -49,6 +49,8 @@ LLM_API_KEY = os.getenv("RP_LLM_API_KEY", "") or os.getenv("DEEPSEEK_API_KEY", "
 # 额外请求体参数（JSON 字符串）。主要用于关闭推理模型的思维链：
 #   例：RP_LLM_EXTRA_BODY={"thinking":{"type":"disabled"}}
 LLM_EXTRA_BODY = os.getenv("RP_LLM_EXTRA_BODY", "")
+# 单次模型调用超时（秒）。星火关思维链后通常 6–18s；超过就重试/降级。
+LLM_TIMEOUT = float(os.getenv("RP_LLM_TIMEOUT", "60"))
 # 容错：配了 provider 但没给 Key 时自动回落到 mock，避免线上 500/空回答
 if LLM_PROVIDER != "mock" and not LLM_API_KEY:
     LLM_PROVIDER = "mock"

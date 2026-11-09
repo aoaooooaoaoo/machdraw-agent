@@ -81,6 +81,14 @@
   </div>
 
   <section>
+    <h2>学习者模型 <span class="hint">来自 mastery（题卡自评/判分回写）</span></h2>
+    <div class="two">
+      <div id="mastery"></div>
+      <div id="masteryTop"></div>
+    </div>
+  </section>
+
+  <section>
     <h2>语料清单 <span class="hint">点一行展开章节</span></h2>
     <table>
       <thead><tr>
@@ -151,6 +159,22 @@ function renderOverview(d) {
       覆盖率区间 ${g.coverage_min ?? "—"} ~ ${g.coverage_max ?? "—"} ·
       样本 ${g.samples ?? 0} 次 · 拒答 ${g.gated ?? 0} 次
     </div>`;
+
+  const ms = s.mastery_states || {};
+  const msMax = Math.max(1, ...Object.values(ms));
+  $("#mastery").innerHTML = Object.keys(ms).length ? Object.entries(ms)
+    .sort((a, b) => b[1] - a[1])
+    .map(([k, v]) => `<div style="margin:6px 0">
+        <div style="display:flex;justify-content:space-between;font-size:12px">
+          <span>${esc(k)}</span><span class="muted">${v}</span></div>${bar(v, msMax)}</div>`)
+    .join("") : `<div class="empty">还没有掌握度数据（学生做题/自评后出现）。</div>`;
+  const mt = s.mastery_top || [];
+  $("#masteryTop").innerHTML = mt.length ? `<table><tbody>${mt.map(x => `<tr>
+      <td>${esc(x.kp_id)}</td>
+      <td style="width:90px"><span class="pill">${esc(x.state)}</span></td>
+      <td style="width:80px" class="muted">${Math.round((x.score || 0) * 100)}%</td>
+      <td style="width:70px" class="muted">${x.attempts} 次</td></tr>`).join("")}</tbody></table>`
+    : `<div class="empty">还没有需要关注的知识点。</div>`;
 
   const roots = s.root_causes || [];
   const maxR = Math.max(1, ...roots.map(r => r.n));

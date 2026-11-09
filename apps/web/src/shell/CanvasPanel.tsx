@@ -10,6 +10,7 @@ import {
 } from '../modules/registry';
 import type { CanvasPreview } from '../lib/canvasFeature';
 import type { ArtifactState, ArtifactType } from '../lib/types';
+import { toast } from '../lib/ui';
 import { Icon } from './Icons';
 
 /**
@@ -178,6 +179,43 @@ export function CanvasPanel() {
           {isDemo && <span className="chip chip-demo">示例数据</span>}
           {isEntry && <span className="chip chip-entry">全览入口</span>}
           <span className="chip chip-type mono">{shownType}</span>
+          <button
+            className="icon-btn"
+            type="button"
+            title="导出当前画布为 Markdown"
+            aria-label="导出 Markdown"
+            onClick={() => {
+              const node = document.querySelector('.canvas-content');
+              const text = (node?.textContent || '').trim();
+              if (!text) {
+                toast('当前画布没有可导出的文字', 'info');
+                return;
+              }
+              const header = `# 核反应堆物理助教 · ${shownType} 画布\n\n> 导出时间：${new Date().toLocaleString('zh-CN')}\n\n`;
+              const blob = new Blob([header + text], { type: 'text/markdown;charset=utf-8' });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              a.href = url;
+              a.download = `reactor-physics-${shownType}-${Date.now()}.md`;
+              a.click();
+              URL.revokeObjectURL(url);
+              toast('已导出 Markdown');
+            }}
+          >
+            <Icon name="copy" size={15} />
+          </button>
+          <button
+            className="icon-btn"
+            type="button"
+            title="打印 / 另存为 PDF"
+            aria-label="打印画布"
+            onClick={() => {
+              setExpanded(true);
+              window.setTimeout(() => window.print(), 350);
+            }}
+          >
+            <Icon name="book" size={15} />
+          </button>
           <button
             className="icon-btn"
             type="button"

@@ -27,6 +27,8 @@ export function CommandPalette() {
   const setActiveFeature = useAppStore((s) => s.setActiveFeature);
   const send = useAppStore((s) => s.send);
   const clearSession = useAppStore((s) => s.clearSession);
+  const setHistoryOpen = useAppStore((s) => s.setHistoryOpen);
+  const setReviewOpen = useAppStore((s) => s.setReviewOpen);
   const health = useAppStore((s) => s.health);
 
   const [query, setQuery] = useState('');
@@ -74,6 +76,30 @@ export function CommandPalette() {
     }
 
     out.push(
+      {
+        id: 'action:history',
+        group: '操作',
+        icon: 'history',
+        title: '打开历史会话',
+        hint: '后端已按天保存，可恢复到工作台',
+        keywords: '历史 会话 记录 history',
+        run: () => {
+          setHistoryOpen(true);
+          close();
+        },
+      },
+      {
+        id: 'action:review',
+        group: '操作',
+        icon: 'target',
+        title: '今日复习',
+        hint: '按掌握度 + 时间列出到期知识点',
+        keywords: '复习 计划 到期 review',
+        run: () => {
+          setReviewOpen(true);
+          close();
+        },
+      },
       {
         id: 'action:new-session',
         group: '操作',
@@ -131,7 +157,7 @@ export function CommandPalette() {
     );
 
     return out;
-  }, [modules, health, send, setActiveFeature, clearSession, setOpen]);
+  }, [modules, health, send, setActiveFeature, clearSession, setOpen, setHistoryOpen, setReviewOpen]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();

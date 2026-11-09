@@ -29,6 +29,8 @@ export function TopBar() {
   const signOut = useAppStore((s) => s.signOut);
   const refreshHealth = useAppStore((s) => s.refreshHealth);
   const setPaletteOpen = useAppStore((s) => s.setPaletteOpen);
+  const setHistoryOpen = useAppStore((s) => s.setHistoryOpen);
+  const setReviewOpen = useAppStore((s) => s.setReviewOpen);
 
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [feedbackText, setFeedbackText] = useState('');
@@ -79,6 +81,16 @@ export function TopBar() {
             <span className="account-name">{account}</span>
           </div>
         )}
+
+        <button className="search-btn" type="button" title="历史会话（后端已按天保存）" onClick={() => setHistoryOpen(true)}>
+          <Icon name="history" size={15} />
+          <span className="search-btn-label">历史</span>
+        </button>
+
+        <button className="search-btn" type="button" title="今日复习（按掌握度 + 时间排）" onClick={() => setReviewOpen(true)}>
+          <Icon name="target" size={15} />
+          <span className="search-btn-label">复习</span>
+        </button>
 
         <button
           className="search-btn"

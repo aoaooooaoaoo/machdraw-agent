@@ -23,6 +23,7 @@ from .config import (
     LLM_EXTRA_BODY,
     LLM_MODEL,
     LLM_PROVIDER,
+    LLM_TIMEOUT,
 )
 from .rag.tokenize import tokenize
 from .rag.symbols import normalize
@@ -163,7 +164,7 @@ def _extra_body() -> dict:
         return {}
 
 
-def _http_chat(messages: list[dict], temperature: float = 0.2) -> str:
+def _http_chat(messages: list[dict], temperature: float = 0.2, timeout: float | None = None) -> str:
     body = {
         "model": LLM_MODEL,
         "messages": messages,
@@ -181,7 +182,7 @@ def _http_chat(messages: list[dict], temperature: float = 0.2) -> str:
         },
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=90) as resp:
+    with urllib.request.urlopen(req, timeout=timeout or LLM_TIMEOUT) as resp:
         data = json.loads(resp.read().decode("utf-8"))
     return data["choices"][0]["message"]["content"]
 
@@ -211,20 +212,151 @@ def generate(query: str, hits: list[dict], gated: bool, coverage: float,
         f"· {h.get('section', '')}\n{h.get('content', '')}"
         for i, h in enumerate(hits)
     )
+    cache_key = _cache_key(query, ctx, persona)
+    cached = _cache_get(cache_key)
+    if cached:
+        return LLMResult(text=cached, provider="cache", model=LLM_MODEL)
+
+    system = SYSTEM_PROMPT + ("\n\n" + persona if persona else "")
+    messages = [
+        {"role": "system", "content": system},
+        {"role": "user", "content": f"【课程证据】\n{ctx}\n\n【学生提问】\n{query}"},
+    ]
+    last_exc: Exception | None = None
+    for attempt in range(2):          # 超时/网络错误重试一次，再降级
+        try:
+            text = _http_chat(messages)
+            _cache_put(cache_key, text)
+            return LLMResult(text=text, provider=provider, model=LLM_MODEL)
+        except (urllib.error.URLError, KeyError, TimeoutError, OSError) as exc:
+            last_exc = exc
+            if attempt == 0:
+                continue
+    # 失败时优雅降级到本地抽取，不让对话中断
+    return LLMResult(
+        text=mock_answer(query, hits, gated, coverage)
+        + f"\n\n> ⚠ 模型调用失败（{type(last_exc).__name__ if last_exc else 'unknown'}），已自动降级为本地证据抽取模式。",
+        provider="mock-fallback",
+        model="extractive-local",
+    )
+
+
+# ------------------------------------------------------------------ 语义缓存
+# 相同问题 + 相同证据 + 相同 persona → 直接复用上一次模型回答，省 10–18s 和 token。
+import hashlib
+from collections import OrderedDict
+
+_ANSWER_CACHE: "OrderedDict[str, str]" = OrderedDict()
+_ANSWER_CACHE_MAX = 128
+
+
+def _cache_key(query: str, ctx: str, persona: str) -> str:
+    h = hashlib.sha1()
+    h.update((query.strip() + "\x00" + ctx + "\x00" + persona).encode("utf-8"))
+    return h.hexdigest()
+
+
+def _cache_get(key: str) -> str | None:
+    val = _ANSWER_CACHE.get(key)
+    if val is None:
+        return None
+    _ANSWER_CACHE.move_to_end(key)
+    return val
+
+
+def _cache_put(key: str, text: str) -> None:
+    if not text.strip():
+        return
+    _ANSWER_CACHE[key] = text
+    _ANSWER_CACHE.move_to_end(key)
+    while len(_ANSWER_CACHE) > _ANSWER_CACHE_MAX:
+        _ANSWER_CACHE.popitem(last=False)
+
+
+def cache_stats() -> dict:
+    return {"size": len(_ANSWER_CACHE), "max": _ANSWER_CACHE_MAX}
+
+
+# ------------------------------------------------------------------ 自动判分
+
+
+def grade_answer(question: str, reference: str, student_answer: str) -> dict:
+    """用模型按"参考答案/评分点"判分；失败时用关键词重叠做保守兜底。
+
+    返回：{score: 0-100, verdict: pass|partial|fail, feedback, missing[]}
+    """
+    q = (question or "").strip()
+    ref = (reference or "").strip()
+    ans = (student_answer or "").strip()
+    if not ans:
+        return {"score": 0, "verdict": "fail", "feedback": "没有填写答案。", "missing": []}
+    if LLM_PROVIDER != "mock" and LLM_API_KEY:
+        prompt = (
+            "你是核反应堆物理课程的阅卷助教。请对照【参考答案】给学生答案打分。\n"
+            "只输出 JSON，不要 markdown：\n"
+            '{"score": 0-100 的整数, "verdict": "pass|partial|fail", '
+            '"feedback": "两三句话，指出对在哪、错在哪", "missing": ["漏掉的评分点"]}\n'
+            "评分标准：核心概念/公式正确 60 分起；数值与单位正确再加；关键步骤缺失给 partial。\n\n"
+            f"【题目】\n{q[:1200]}\n\n【参考答案】\n{ref[:3000]}\n\n【学生答案】\n{ans[:2000]}"
+        )
+        try:
+            raw = _http_chat(
+                [{"role": "system", "content": "你只输出 JSON，不要任何解释或代码块。"},
+                 {"role": "user", "content": prompt}],
+                temperature=0.1,
+                timeout=min(45.0, LLM_TIMEOUT),
+            )
+            data = _parse_json_object(raw)
+            if data:
+                score = int(max(0, min(100, float(data.get("score", 0)))))
+                verdict = str(data.get("verdict") or ("pass" if score >= 60 else "fail"))
+                if verdict not in ("pass", "partial", "fail"):
+                    verdict = "pass" if score >= 60 else "fail"
+                missing = data.get("missing") or []
+                if not isinstance(missing, list):
+                    missing = []
+                return {
+                    "score": score,
+                    "verdict": verdict,
+                    "feedback": str(data.get("feedback") or ""),
+                    "missing": [str(x) for x in missing[:6]],
+                }
+        except Exception:
+            pass
+    # 兜底：关键词覆盖率
+    q_tokens = set(tokenize(q))
+    ref_tokens = set(tokenize(ref))
+    ans_tokens = set(tokenize(ans))
+    key_tokens = {t for t in ref_tokens - q_tokens if len(t) >= 2}
+    if not key_tokens:
+        score = 60 if ans else 0
+    else:
+        hit = len(key_tokens & ans_tokens) / len(key_tokens)
+        score = int(round(min(100, hit * 100)))
+    verdict = "pass" if score >= 60 else ("partial" if score >= 30 else "fail")
+    missing = [t for t in sorted(key_tokens - ans_tokens)][:6]
+    return {
+        "score": score,
+        "verdict": verdict,
+        "feedback": "模型判分不可用，已按关键词覆盖做保守估计；建议对照解析自查。" if LLM_PROVIDER != "mock" else "本地关键词判分（未接模型）。",
+        "missing": missing,
+    }
+
+
+def _parse_json_object(raw: str) -> dict | None:
+    text = (raw or "").strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```[a-zA-Z]*\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
     try:
-        system = SYSTEM_PROMPT + ("\n\n" + persona if persona else "")
-        text = _http_chat(
-            [
-                {"role": "system", "content": system},
-                {"role": "user", "content": f"【课程证据】\n{ctx}\n\n【学生提问】\n{query}"},
-            ]
-        )
-        return LLMResult(text=text, provider=provider, model=LLM_MODEL)
-    except (urllib.error.URLError, KeyError, TimeoutError, OSError) as exc:
-        # 失败时优雅降级到本地抽取，不让对话中断
-        return LLMResult(
-            text=mock_answer(query, hits, gated, coverage)
-            + f"\n\n> ⚠ 模型调用失败（{type(exc).__name__}），已自动降级为本地证据抽取模式。",
-            provider="mock-fallback",
-            model="extractive-local",
-        )
+        data = json.loads(text)
+        return data if isinstance(data, dict) else None
+    except json.JSONDecodeError:
+        m = re.search(r"\{[\s\S]*\}", text)
+        if not m:
+            return None
+        try:
+            data = json.loads(m.group(0))
+            return data if isinstance(data, dict) else None
+        except json.JSONDecodeError:
+            return None
