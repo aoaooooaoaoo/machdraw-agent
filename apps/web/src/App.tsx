@@ -12,6 +12,7 @@ import { CommandPalette } from './shell/CommandPalette';
 import { HistoryDrawer } from './shell/HistoryDrawer';
 import { ReviewDrawer } from './shell/ReviewDrawer';
 import { MobileNav } from './shell/MobileNav';
+import { StickyNotes } from './shell/StickyNotes';
 import { ToastViewport } from './shell/Toast';
 import { Icon } from './shell/Icons';
 
@@ -123,6 +124,7 @@ export default function App() {
       <HistoryDrawer />
       <ReviewDrawer />
       <MobileNav />
+      <StickyNotes />
       <ToastViewport />
     </div>
   );

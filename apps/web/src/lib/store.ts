@@ -243,6 +243,8 @@ export interface AppStore {
   theme: 'light' | 'dark';
   /** 移动端模块抽屉 */
   mobileNavOpen: boolean;
+  /** 便签卡片是否显示 */
+  notesOpen: boolean;
 
   bootstrap: () => Promise<void>;
   signIn: (account: string, password: string) => Promise<void>;
@@ -256,6 +258,7 @@ export interface AppStore {
   setPaletteOpen: (open: boolean) => void;
   setHistoryOpen: (open: boolean) => void;
   setReviewOpen: (open: boolean) => void;
+  setNotesOpen: (open: boolean) => void;
   setTheme: (theme: 'light' | 'dark') => void;
   setMobileNavOpen: (open: boolean) => void;
   /** 从后端历史会话恢复消息/画布到指定模块（替代当前会话） */
@@ -404,6 +407,7 @@ export const useAppStore = create<AppStore>()((set, get) => {
     paletteOpen: false,
     historyOpen: false,
     reviewOpen: false,
+    notesOpen: false,
     theme: readTheme(),
     mobileNavOpen: false,
 
@@ -505,6 +509,8 @@ export const useAppStore = create<AppStore>()((set, get) => {
     setHistoryOpen: (open) => set({ historyOpen: open }),
 
     setReviewOpen: (open) => set({ reviewOpen: open }),
+
+    setNotesOpen: (open) => set({ notesOpen: open }),
 
     setTheme: (theme) => {
       try {

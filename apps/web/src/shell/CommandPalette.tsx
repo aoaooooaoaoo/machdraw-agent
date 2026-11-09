@@ -29,6 +29,7 @@ export function CommandPalette() {
   const clearSession = useAppStore((s) => s.clearSession);
   const setHistoryOpen = useAppStore((s) => s.setHistoryOpen);
   const setReviewOpen = useAppStore((s) => s.setReviewOpen);
+  const setNotesOpen = useAppStore((s) => s.setNotesOpen);
   const health = useAppStore((s) => s.health);
 
   const [query, setQuery] = useState('');
@@ -76,6 +77,18 @@ export function CommandPalette() {
     }
 
     out.push(
+      {
+        id: 'action:notes',
+        group: '操作',
+        icon: 'note',
+        title: '打开便签笔记',
+        hint: '可拖拽、自动保存、支持 Markdown / 公式',
+        keywords: '便签 笔记 note 备忘',
+        run: () => {
+          setNotesOpen(true);
+          close();
+        },
+      },
       {
         id: 'action:history',
         group: '操作',
@@ -157,7 +170,7 @@ export function CommandPalette() {
     );
 
     return out;
-  }, [modules, health, send, setActiveFeature, clearSession, setOpen, setHistoryOpen, setReviewOpen]);
+  }, [modules, health, send, setActiveFeature, clearSession, setOpen, setHistoryOpen, setReviewOpen, setNotesOpen]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();

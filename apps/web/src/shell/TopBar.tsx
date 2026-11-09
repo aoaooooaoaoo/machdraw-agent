@@ -31,6 +31,7 @@ export function TopBar() {
   const setPaletteOpen = useAppStore((s) => s.setPaletteOpen);
   const setHistoryOpen = useAppStore((s) => s.setHistoryOpen);
   const setReviewOpen = useAppStore((s) => s.setReviewOpen);
+  const setNotesOpen = useAppStore((s) => s.setNotesOpen);
   const theme = useAppStore((s) => s.theme);
   const setTheme = useAppStore((s) => s.setTheme);
 
@@ -92,6 +93,11 @@ export function TopBar() {
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         >
           <Icon name={theme === 'dark' ? 'sun' : 'moon'} size={17} />
+        </button>
+
+        <button className="search-btn" type="button" title="便签笔记（可拖拽，自动保存）" onClick={() => setNotesOpen(true)}>
+          <Icon name="note" size={15} />
+          <span className="search-btn-label">笔记</span>
         </button>
 
         <button className="search-btn" type="button" title="历史会话（后端已按天保存）" onClick={() => setHistoryOpen(true)}>
