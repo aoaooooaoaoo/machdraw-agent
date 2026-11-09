@@ -1,4 +1,4 @@
-# 多阶段构建：Node 构建前端 → Python 运行时（含预建的检索索引）
+﻿# 多阶段构建：Node 构建前端 → Python 运行时（含预建的检索索引）
 #
 # 部署到 Render / Fly / 任意容器平台时，端口由平台通过 $PORT 注入；
 # 本地直接 `docker compose up` 时不设 PORT，回落到 8077。
@@ -17,7 +17,7 @@ WORKDIR /app
 
 # OCR：拍题/公式图片识别（离线，不依赖外部服务）
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    tesseract-ocr tesseract-ocr-chi-sim tesseract-ocr-eng libgomp1 libgl1 libglib2.0-0 \
+    tesseract-ocr tesseract-ocr-chi-sim tesseract-ocr-eng \
     && rm -rf /var/lib/apt/lists/*
 
 ENV PYTHONUNBUFFERED=1 \
