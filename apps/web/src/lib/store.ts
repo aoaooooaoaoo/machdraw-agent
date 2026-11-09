@@ -13,6 +13,7 @@ import { getHealth, getModules, login as apiLogin, ApiError } from './api';
 import { streamChat, ChatHTTPError } from './sse';
 import { hasCanvasOwner } from '../modules/registry';
 import { toast } from './ui';
+import { syncMastery } from './learner';
 import type {
   ArtifactState,
   ArtifactType,
@@ -26,6 +27,16 @@ import type {
 } from './types';
 
 const ACCOUNT_KEY = 'rp.account';
+
+function readTheme(): 'light' | 'dark' {
+  try {
+    const saved = localStorage.getItem('rp.theme');
+    if (saved === 'dark' || saved === 'light') return saved;
+    return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  } catch {
+    return 'light';
+  }
+}
 const GLOBAL_SESSION_ID = '__global__';
 
 function newId(prefix: string): string {
@@ -228,6 +239,10 @@ export interface AppStore {
   historyOpen: boolean;
   /** 今日复习抽屉是否打开 */
   reviewOpen: boolean;
+  /** 主题：浅色 / 深色 */
+  theme: 'light' | 'dark';
+  /** 移动端模块抽屉 */
+  mobileNavOpen: boolean;
 
   bootstrap: () => Promise<void>;
   signIn: (account: string, password: string) => Promise<void>;
@@ -241,8 +256,14 @@ export interface AppStore {
   setPaletteOpen: (open: boolean) => void;
   setHistoryOpen: (open: boolean) => void;
   setReviewOpen: (open: boolean) => void;
-  /** 从后端历史会话恢复消息到指定模块（替代当前会话） */
-  loadConversation: (featureId: string, messages: Array<{ role: string; content: string }>) => void;
+  setTheme: (theme: 'light' | 'dark') => void;
+  setMobileNavOpen: (open: boolean) => void;
+  /** 从后端历史会话恢复消息/画布到指定模块（替代当前会话） */
+  loadConversation: (
+    featureId: string,
+    messages: Array<{ role: string; content: string }>,
+    artifacts?: Array<{ artifactType: string; data: Record<string, unknown> }>,
+  ) => void;
   /** 清空当前模块的会话（消息 / 画布 / 草稿），用于"新会话" */
   clearSession: () => void;
 }
@@ -383,6 +404,8 @@ export const useAppStore = create<AppStore>()((set, get) => {
     paletteOpen: false,
     historyOpen: false,
     reviewOpen: false,
+    theme: readTheme(),
+    mobileNavOpen: false,
 
     bootstrap: async () => {
       // React 19 StrictMode 开发期会跑两遍 effect，这里做幂等保护
@@ -417,6 +440,7 @@ export const useAppStore = create<AppStore>()((set, get) => {
           toast('已恢复上次的对话记录', 'info');
         }
       }
+      if (account) void syncMastery(account);
       // 确保当前激活模块有会话
       const active = get().activeFeature;
       if (!get().sessions[active]) {
@@ -434,6 +458,7 @@ export const useAppStore = create<AppStore>()((set, get) => {
         globalError: null,
         sessions: savedSessions ? { ...state.sessions, ...savedSessions } : state.sessions,
       }));
+      void syncMastery(result.account);
       await get().refreshHealth();
     },
 
@@ -481,7 +506,18 @@ export const useAppStore = create<AppStore>()((set, get) => {
 
     setReviewOpen: (open) => set({ reviewOpen: open }),
 
-    loadConversation: (featureId, messages) => {
+    setTheme: (theme) => {
+      try {
+        localStorage.setItem('rp.theme', theme);
+      } catch {
+        /* ignore */
+      }
+      set({ theme });
+    },
+
+    setMobileNavOpen: (open) => set({ mobileNavOpen: open }),
+
+    loadConversation: (featureId, messages, artifacts = []) => {
       const mapped: ChatMessage[] = messages.map((m) => ({
         id: newId('hist'),
         role: m.role === 'user' ? 'user' : 'assistant',
@@ -491,9 +527,15 @@ export const useAppStore = create<AppStore>()((set, get) => {
         streaming: false,
         frames: 0,
       }));
+      const restoredArtifacts: ArtifactState[] = artifacts.map((a) => ({
+        artifactType: a.artifactType as ArtifactType,
+        data: (a.data || {}) as Record<string, unknown>,
+        receivedAt: Date.now(),
+      }));
       const session: SessionState = {
         ...emptySession(featureId),
         messages: mapped,
+        artifacts: restoredArtifacts.slice(-8),
         stats: { ...emptySession(featureId).stats, messages: mapped.length },
       };
       set((state) => ({

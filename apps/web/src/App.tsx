@@ -11,6 +11,7 @@ import { LoginGate } from './shell/LoginGate';
 import { CommandPalette } from './shell/CommandPalette';
 import { HistoryDrawer } from './shell/HistoryDrawer';
 import { ReviewDrawer } from './shell/ReviewDrawer';
+import { MobileNav } from './shell/MobileNav';
 import { ToastViewport } from './shell/Toast';
 import { Icon } from './shell/Icons';
 
@@ -26,6 +27,8 @@ export default function App() {
   const bootstrapped = useAppStore((s) => s.bootstrapped);
   const account = useAppStore((s) => s.account);
   const activeFeature = useAppStore((s) => s.activeFeature);
+  const theme = useAppStore((s) => s.theme);
+  const setMobileNavOpen = useAppStore((s) => s.setMobileNavOpen);
   const setDraft = useAppStore((s) => s.setDraft);
   const send = useAppStore((s) => s.send);
   const session = useActiveSession();
@@ -33,6 +36,16 @@ export default function App() {
   useEffect(() => {
     void bootstrap();
   }, [bootstrap]);
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#0b1220' : '#f1f5fa');
+  }, [theme]);
+
+  useEffect(() => {
+    setMobileNavOpen(false);
+  }, [activeFeature, setMobileNavOpen]);
 
   // 全局快捷键：Ctrl/⌘+K 命令面板；Ctrl+/ 聚焦输入框；Esc 收起面板
   useEffect(() => {
@@ -109,6 +122,7 @@ export default function App() {
       <CommandPalette />
       <HistoryDrawer />
       <ReviewDrawer />
+      <MobileNav />
       <ToastViewport />
     </div>
   );

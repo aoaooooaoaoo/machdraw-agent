@@ -4,3 +4,5 @@ pydantic==2.14.3
 numpy==2.5.4
 jieba==0.42.1
 python-dotenv==1.2.4
+pytesseract==0.3.13
+Pillow==11.0.0

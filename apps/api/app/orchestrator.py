@@ -385,6 +385,7 @@ async def run_chat(req: ChatRequest, account: str = "anonymous") -> AsyncIterato
     hits: list[dict] = []
     coverage = 0.0
     tool_answers: list[tuple[str, object]] = []
+    artifacts_out: list[dict] = []
 
     for step in steps:
         name = step["name"]
@@ -400,6 +401,7 @@ async def run_chat(req: ChatRequest, account: str = "anonymous") -> AsyncIterato
 
         if outcome.artifact_type and outcome.artifact_data:
             seq += 1
+            artifacts_out.append({"type": outcome.artifact_type, "data": outcome.artifact_data})
             yield E.artifact(outcome.artifact_type, outcome.artifact_data, seq)
 
         if name == "kb_search":
@@ -451,6 +453,7 @@ async def run_chat(req: ChatRequest, account: str = "anonymous") -> AsyncIterato
         st.store.append_message(conv_id, "assistant", answer, {
             "provider": provider, "model": model,
             "n_evidence": len(hits), "coverage": coverage,
+            "artifacts": artifacts_out,
         })
     except Exception:
         pass   # 持久化失败不能影响回答

@@ -8,9 +8,11 @@ export function LeftNav() {
   const activeFeature = useAppStore((s) => s.activeFeature);
   const setActiveFeature = useAppStore((s) => s.setActiveFeature);
   const health = useAppStore((s) => s.health);
+  const mobileNavOpen = useAppStore((s) => s.mobileNavOpen);
+  const setMobileNavOpen = useAppStore((s) => s.setMobileNavOpen);
 
   return (
-    <aside className="leftnav">
+    <aside className={`leftnav ${mobileNavOpen ? 'is-open' : ''}`}>
       <div className="leftnav-head">
         <span>模块导航</span>
         <span className="count-badge">{modules.length}</span>
@@ -24,7 +26,10 @@ export function LeftNav() {
               key={m.id}
               type="button"
               className={`nav-item ${active ? 'is-active' : ''}`}
-              onClick={() => setActiveFeature(m.id)}
+              onClick={() => {
+                setActiveFeature(m.id);
+                setMobileNavOpen(false);
+              }}
               title={m.desc || m.name}
             >
               <span className="nav-icon">

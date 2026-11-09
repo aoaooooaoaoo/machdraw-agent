@@ -56,7 +56,7 @@ export function HistoryDrawer() {
       const res = await getHistoryDetail(id, account);
       const row = rows.find((r) => r.id === id);
       const feature = row?.module_key || '__global__';
-      loadConversation(feature, res.messages || []);
+      loadConversation(feature, res.messages || [], res.artifacts || []);
       toast('已载入历史会话');
     } catch (err) {
       toast(`载入失败：${(err as Error)?.message || String(err)}`, 'error');

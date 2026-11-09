@@ -4,6 +4,7 @@ import type { QuizArtifactData } from '../../lib/types';
 import { addWrongbook, explainQuiz, gradeQuiz, invalidateGraphCache, reportMastery } from '../../lib/api';
 import type { QuizGradeResult } from '../../lib/api';
 import { useAppStore } from '../../lib/store';
+import { refreshMasteryCache } from '../../lib/learner';
 import { toast } from '../../lib/ui';
 import { Markdown } from '../../shell/Markdown';
 import { Icon } from '../../shell/Icons';
@@ -95,6 +96,7 @@ export function QuizCanvas({ artifact, demo }: CanvasProps) {
         },
       }));
       invalidateGraphCache();
+      void refreshMasteryCache(account);
       toast(
         data.score >= 60 ? `判分 ${data.score} 分 · 掌握度已更新` : `判分 ${data.score} 分 · 已记入错题本`,
         data.score >= 60 ? 'success' : 'info',

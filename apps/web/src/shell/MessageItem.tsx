@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { ChatMessage, ToolCallState } from '../lib/types';
 import { copyText } from '../lib/ui';
+import { toast } from '../lib/ui';
 import { Icon } from './Icons';
 import { Markdown } from './Markdown';
 
@@ -67,6 +68,33 @@ interface MessageItemProps {
 }
 
 export function MessageItem({ message, canRegenerate, onRegenerate }: MessageItemProps) {
+  const [speaking, setSpeaking] = useState(false);
+
+  function speak(text: string) {
+    if (!('speechSynthesis' in window)) {
+      toast('当前浏览器不支持朗读', 'info');
+      return;
+    }
+    if (speaking) {
+      window.speechSynthesis.cancel();
+      setSpeaking(false);
+      return;
+    }
+    const plain = text
+      .replace(/```[\s\S]*?```/g, '（代码略）')
+      .replace(/[#*_`>|]/g, '')
+      .replace(/\n{2,}/g, '\n')
+      .slice(0, 3000);
+    const utter = new SpeechSynthesisUtterance(plain);
+    utter.lang = 'zh-CN';
+    utter.rate = 1.03;
+    utter.onend = () => setSpeaking(false);
+    utter.onerror = () => setSpeaking(false);
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utter);
+    setSpeaking(true);
+  }
+
   if (message.role === 'user') {
     return (
       <div className="msg msg-user">
@@ -126,6 +154,15 @@ export function MessageItem({ message, canRegenerate, onRegenerate }: MessageIte
             >
               <Icon name="copy" size={13} />
               <span>复制</span>
+            </button>
+            <button
+              className="msg-action"
+              type="button"
+              title="朗读回答"
+              onClick={() => speak(message.content)}
+            >
+              <Icon name="volume" size={13} />
+              <span>{speaking ? '停止' : '朗读'}</span>
             </button>
             {canRegenerate && onRegenerate && (
               <button className="msg-action" type="button" title="用同一个问题重新回答" onClick={onRegenerate}>

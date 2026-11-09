@@ -132,6 +132,17 @@ export async function getMastery(
   return request('/api/mastery', { headers: { 'X-Account': account } });
 }
 
+export async function importMastery(
+  mastery: Record<string, MasteryItem>,
+  account: string,
+): Promise<{ ok: boolean; imported: number; mastery: Record<string, MasteryItem> }> {
+  return request('/api/mastery/import', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Account': account },
+    body: JSON.stringify({ mastery }),
+  });
+}
+
 export interface MasteryReportPayload {
   signal: 'got' | 'again';
   kp_ids?: string[];
@@ -151,6 +162,16 @@ export async function reportMastery(
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'X-Account': account },
     body: JSON.stringify(payload),
+  });
+}
+
+/* ---------------------------------------------------------------- 拍题 OCR */
+
+export async function ocrImage(imageDataUrl: string): Promise<{ ok: boolean; text: string }> {
+  return request('/api/vision/ocr', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ image: imageDataUrl }),
   });
 }
 
@@ -196,7 +217,10 @@ export async function getHistory(account: string): Promise<{ conversations: Hist
 export async function getHistoryDetail(
   convId: string,
   account: string,
-): Promise<{ messages: Array<{ role: string; content: string; created_at: number }> }> {
+): Promise<{
+  messages: Array<{ role: string; content: string; created_at: number }>;
+  artifacts?: Array<{ artifactType: string; data: Record<string, unknown> }>;
+}> {
   return request(`/api/history/${encodeURIComponent(convId)}`, {
     headers: { 'X-Account': account },
   });

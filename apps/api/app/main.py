@@ -9,6 +9,8 @@
 """
 from __future__ import annotations
 
+import base64
+import io
 import json
 import time
 from contextlib import asynccontextmanager
@@ -335,7 +337,67 @@ def history_detail(conv_id: str, x_account: str | None = Header(default=None)) -
         raise HTTPException(404, "会话不存在")
     if owner != acc:
         raise HTTPException(403, "无权访问该会话")
-    return {"ok": True, "conversation_id": conv_id, "messages": st.store.messages(conv_id)}
+    messages = st.store.messages(conv_id)
+    artifacts: list[dict] = []
+    for m in messages:
+        payload = m.get("payload") or {}
+        for a in payload.get("artifacts") or []:
+            if isinstance(a, dict) and a.get("type"):
+                artifacts.append({"artifactType": a["type"], "data": a.get("data") or {}})
+    return {"ok": True, "conversation_id": conv_id, "messages": messages, "artifacts": artifacts}
+
+
+# ---------------------------------------------------------------- 拍题 OCR
+
+@app.post("/api/vision/ocr")
+def vision_ocr(payload: dict = Body(...)) -> dict:
+    """离线 OCR：接收 dataURL/纯 base64 图片，返回识别文字（拍题/公式）。"""
+    raw = str(payload.get("image") or "")
+    if not raw:
+        raise HTTPException(400, "缺少图片数据")
+    try:
+        data = base64.b64decode(raw.split(",", 1)[-1])
+    except Exception as exc:
+        raise HTTPException(400, f"图片解码失败：{exc}") from exc
+    try:
+        from PIL import Image
+        import pytesseract
+    except ImportError as exc:
+        raise HTTPException(501, "OCR 组件未安装（pip install pytesseract Pillow）") from exc
+    try:
+        img = Image.open(io.BytesIO(data)).convert("RGB")
+    except Exception as exc:
+        raise HTTPException(400, f"不支持的图片格式：{exc}") from exc
+    # 大图缩到 1800px 内，OCR 更快
+    if max(img.size) > 1800:
+        ratio = 1800 / max(img.size)
+        img = img.resize((int(img.width * ratio), int(img.height * ratio)))
+    try:
+        text = pytesseract.image_to_string(img, lang="chi_sim+eng")
+    except Exception as exc:  # tesseract 未装/语言包缺失
+        raise HTTPException(501, f"OCR 不可用：{exc}") from exc
+    return {"ok": True, "text": (text or "").strip()[:6000]}
+
+
+# ---------------------------------------------------------------- 掌握度导入
+
+@app.post("/api/mastery/import")
+def mastery_import(payload: dict = Body(...), x_account: str | None = Header(default=None)) -> dict:
+    """浏览器本地镜像 → 服务端（Render 重启后恢复掌握度）。"""
+    st = get_state()
+    acc = _account(x_account)
+    items = payload.get("mastery") or {}
+    server = dict(st.store.list_mastery(acc))
+    merged: dict[str, dict] = {}
+    for key, item in items.items():
+        if not isinstance(item, dict):
+            continue
+        srv = server.get(key) or {}
+        if float(item.get("last_at") or 0) >= float(srv.get("last_at") or 0):
+            merged[key] = item
+    if merged:
+        st.store.upsert_mastery(acc, merged)
+    return {"ok": True, "imported": len(merged), "mastery": dict(st.store.list_mastery(acc))}
 
 
 # ---------------------------------------------------------------- 复习计划
@@ -736,6 +798,7 @@ def quiz_grade(payload: dict = Body(...), x_account: str | None = Header(default
         "reference": reference,
         "state": first.get("state"),
         "kp_ids": sorted(keys),
+        "mastery": dict(st.store.list_mastery(acc)),
     }
 
 
@@ -797,6 +860,22 @@ async def chat_sync(req: ChatRequest, x_account: str | None = Header(default=Non
 
 
 # ---------------------------------------------------------------- 静态前端
+
+
+@app.get("/manifest.webmanifest")
+def manifest():
+    f = WEB_DIST / "manifest.webmanifest"
+    if f.exists():
+        return FileResponse(f, media_type="application/manifest+json")
+    return JSONResponse({"error": "manifest 缺失"}, status_code=404)
+
+
+@app.get("/icon.svg")
+def app_icon():
+    f = WEB_DIST / "icon.svg"
+    if f.exists():
+        return FileResponse(f, media_type="image/svg+xml")
+    return JSONResponse({"error": "icon 缺失"}, status_code=404)
 
 
 @app.get("/")

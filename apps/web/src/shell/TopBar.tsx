@@ -31,6 +31,8 @@ export function TopBar() {
   const setPaletteOpen = useAppStore((s) => s.setPaletteOpen);
   const setHistoryOpen = useAppStore((s) => s.setHistoryOpen);
   const setReviewOpen = useAppStore((s) => s.setReviewOpen);
+  const theme = useAppStore((s) => s.theme);
+  const setTheme = useAppStore((s) => s.setTheme);
 
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [feedbackText, setFeedbackText] = useState('');
@@ -81,6 +83,16 @@ export function TopBar() {
             <span className="account-name">{account}</span>
           </div>
         )}
+
+        <button
+          className="icon-btn"
+          type="button"
+          title={theme === 'dark' ? '切换浅色主题' : '切换深色主题'}
+          aria-label="切换主题"
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        >
+          <Icon name={theme === 'dark' ? 'sun' : 'moon'} size={17} />
+        </button>
 
         <button className="search-btn" type="button" title="历史会话（后端已按天保存）" onClick={() => setHistoryOpen(true)}>
           <Icon name="history" size={15} />
