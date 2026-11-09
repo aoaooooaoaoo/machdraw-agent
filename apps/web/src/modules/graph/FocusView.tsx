@@ -14,6 +14,7 @@ import {
   stateColor,
   tierOf,
 } from './constants';
+import { CHAPTER_COLORS } from './layout';
 
 const W = 460;
 const H = 520;
@@ -144,7 +145,18 @@ export function FocusView({ detail, full, loading, error, onFocus, onAsk, onBack
   }
 
   const focusTier = tierOf(focus);
-  const focusColor = TIER_COLOR[focusTier] ?? '#1d4ed8';
+  const chapterOrder = useMemo(() => {
+    const fromSectors = (full?.sectors ?? []).map((s) => s.chapter).filter(Boolean);
+    const unique = fromSectors.length
+      ? fromSectors
+      : [...new Set((full?.nodes ?? []).map((n) => n.chapter).filter(Boolean))];
+    return unique as string[];
+  }, [full]);
+  const colorOf = (node: GraphNodeInfo) => {
+    const idx = chapterOrder.indexOf(node.chapter || '');
+    return CHAPTER_COLORS[(idx >= 0 ? idx : 0) % CHAPTER_COLORS.length];
+  };
+  const focusColor = colorOf(focus);
   const shownPrereq = expandPrereq ? prereq : prereq.slice(0, 6);
 
   return (
@@ -235,7 +247,7 @@ export function FocusView({ detail, full, loading, error, onFocus, onAsk, onBack
 
           {/* 邻居节点 */}
           {placed.map((p) => {
-            const color = TIER_COLOR[p.tier] ?? '#64748b';
+            const color = colorOf(p.node);
             const fill = stateColor(p.node.state);
             const text = clipLabel(p.node.label);
             const lp = labelPlacement(p, text);
