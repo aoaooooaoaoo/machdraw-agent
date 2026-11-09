@@ -179,6 +179,8 @@ working/             课程材料抽取中间产物（机读，可删）
 | `RP_GATE_TAU_CHUNK` | 0.25 | 单块覆盖率门限 |
 | `RP_OOV_WEIGHT` | 1.2 | 语料外实义词权重倍数 |
 | `RP_LLM_PROVIDER` | mock | `mock` / `deepseek` / `openai-compatible` |
+| `RP_LLM_MODEL` | deepseek-chat | 模型名；讯飞星辰用 `spark-x2.6-4b`（免费） |
+| `RP_LLM_BASE_URL` | https://api.deepseek.com/v1 | OpenAI 兼容端点；星火填 `https://maas-api.cn-huabei-1.xf-yun.com/v2` |
 | `RP_LLM_API_KEY` | — | 没有就走 mock |
 | `RP_LLM_EXTRA_BODY` | — | 额外请求体（如关思维链） |
 
@@ -206,5 +208,6 @@ working/             课程材料抽取中间产物（机读，可删）
 | [docs/12-知识图谱视觉改版.md](docs/12-知识图谱视觉改版.md) | 知识图谱重绘：GitHub 参考项目、章节分簇布局、深色/浅色双主题 |
 | [docs/13-整体美化与交互升级.md](docs/13-整体美化与交互升级.md) | 工作台整体美化与命令面板/消息操作/骨架屏/Toast 等交互升级 |
 | [docs/14-同类开源项目对比调研.md](docs/14-同类开源项目对比调研.md) | 与 12 个同类开源项目的对比矩阵、差距分析与改进路线 |
+| [docs/15-P0实现记录-星火与会话掌握度.md](docs/15-P0实现记录-星火与会话掌握度.md) | 星火接入、硬门控、刷新不丢会话、题卡自评与掌握度回写 |
 | [docs/模块任务书/](docs/模块任务书/) | 由代码生成的 9 个模块任务书（`--check` 防漂移） |
 | [DEPLOY.md](DEPLOY.md) | 部署与运维手册 |

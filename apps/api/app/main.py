@@ -10,6 +10,7 @@
 from __future__ import annotations
 
 import json
+import time
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -58,6 +59,14 @@ app.add_middleware(
 
 def _account(x_account: str | None) -> str:
     return (x_account or "anonymous").strip() or "anonymous"
+
+
+def _mastery_records(account: str) -> dict:
+    """读取账号的掌握度记录（独立 mastery 表，按账号 + 知识点）。"""
+    try:
+        return get_state().store.list_mastery(account)
+    except Exception:
+        return {}
 
 
 # ---------------------------------------------------------------- 健康检查
@@ -207,6 +216,91 @@ def put_records(payload: dict = Body(...), x_account: str | None = Header(defaul
     return {"ok": True, "revision": int(payload.get("revision") or 0) + 1}
 
 
+# ---------------------------------------------------------------- 学习者模型（掌握度）
+
+@app.get("/api/mastery")
+def get_mastery(x_account: str | None = Header(default=None)) -> dict:
+    acc = _account(x_account)
+    mastery = _mastery_records(acc)
+    summary: dict[str, int] = {}
+    for item in mastery.values():
+        state = (item or {}).get("state") or "未学"
+        summary[state] = summary.get(state, 0) + 1
+    return {"ok": True, "account": acc, "mastery": mastery, "summary": summary}
+
+
+@app.post("/api/mastery/report")
+def report_mastery(payload: dict = Body(...), x_account: str | None = Header(default=None)) -> dict:
+    """学生自评 / 判分回写掌握度。
+
+    signal='got'   我会了     → 加分（≥0.75 记已掌握）
+    signal='again' 还不会     → 减分并记需复习，同时可自动写入错题本
+    """
+    st = get_state()
+    acc = _account(x_account)
+    signal = str(payload.get("signal") or "got")
+    if signal not in ("got", "again"):
+        raise HTTPException(400, "signal 只能是 got / again")
+    kp_ids = [k for k in (payload.get("kp_ids") or []) if k]
+    node_ids = [k for k in (payload.get("node_ids") or []) if k]
+    node_kp = {n.get("id"): (n.get("kp_id") or n.get("id")) for n in st.nodes}
+    keys = set(kp_ids) | {node_kp.get(nid, nid) for nid in node_ids}
+    chapter_key = ""
+    if not keys:
+        # 习题块没有 kp_ids（题库是扫描件），退化为"章级掌握度"：chapter:<章名>
+        chapter = str(payload.get("chapter") or "").strip()
+        if not chapter and payload.get("chunk_id"):
+            hit = next((c for c in st.chunks if c.chunk_id == payload.get("chunk_id")), None)
+            if hit is not None:
+                chapter = (hit.section or "").split("›")[0].strip()
+        if chapter:
+            chapter_key = f"chapter:{chapter}"
+            keys = {chapter_key}
+    if not keys:
+        raise HTTPException(400, "缺少 kp_ids / node_ids / chapter")
+
+    records = st.store.get_records(acc)
+    mastery = dict(st.store.list_mastery(acc))
+    now = time.time()
+    updated: dict[str, dict] = {}
+    for key in keys:
+        prev = mastery.get(key) or {}
+        score = float(prev.get("score") or 0.0)
+        if signal == "again":
+            score = max(0.0, score * 0.45)
+        else:
+            score = min(1.0, score + (0.35 if score < 0.75 else 0.18))
+        state = "需复习" if signal == "again" else ("已掌握" if score >= 0.75 else "在学")
+        item = {
+            "score": round(score, 3),
+            "attempts": int(prev.get("attempts") or 0) + 1,
+            "correct": int(prev.get("correct") or 0) + (0 if signal == "again" else 1),
+            "state": state,
+            "last_at": now,
+            "last_signal": signal,
+        }
+        mastery[key] = item
+        updated[key] = item
+
+    st.store.upsert_mastery(acc, updated)
+    records["mastery_updated_at"] = now
+    st.store.put_records(acc, records)
+
+    if signal == "again" and payload.get("question"):
+        st.store.add_wrong(acc, {
+            "question": str(payload.get("question") or "")[:2000],
+            "wrong_answer": "（自评：还不会）",
+            "root_cause": "自评未掌握",
+            "trace_ref": str(payload.get("chunk_id") or ""),
+            "correct": str(payload.get("explanation") or "")[:4000],
+            "pitfall": "",
+            "kp_ids": sorted(keys),
+            "source": str(payload.get("document_title") or "题卡自评"),
+        })
+
+    return {"ok": True, "account": acc, "updated": updated, "mastery": mastery}
+
+
 # ---------------------------------------------------------------- 模块与图谱
 
 
@@ -305,7 +399,7 @@ def _load_question_edges(kb_dir) -> list[dict]:
 
 
 @app.get("/api/graph")
-def graph() -> dict:
+def graph(x_account: str | None = Header(default=None)) -> dict:
     """知识图谱 + 问题图谱共用的数据源。
 
     · nodes / edges：知识图谱（169 节点 / 279 边）
@@ -394,6 +488,19 @@ def graph() -> dict:
             "bloom": kp.get("bloom") or "",
             "section": kp.get("section") or "",
         })
+
+    # 学习者模型：把该账号的掌握度叠加到节点 state 上（图谱颜色随之变化）
+    mastery = _mastery_records(_account(x_account))
+    if mastery:
+        for node in enriched_nodes:
+            chapter = (node.get("chapter") or "").strip()
+            item = (
+                mastery.get(node.get("kp_id") or "")
+                or mastery.get(node.get("id") or "")
+                or mastery.get(f"chapter:{chapter}")
+            )
+            if item and item.get("state"):
+                node["state"] = item["state"]
 
     import math as _math
 

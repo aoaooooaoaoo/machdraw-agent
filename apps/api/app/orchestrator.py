@@ -1,4 +1,4 @@
-﻿"""ReAct 编排：把一次提问变成一条事件流。
+"""ReAct 编排：把一次提问变成一条事件流。
 
 无 API Key 时走"本地规则编排 + 抽取式作答"（provider=mock）：
    1. 先跑确定性工具（临界/点堆/中毒/燃耗/反应性/能谱），因为这些能算准；
@@ -32,11 +32,11 @@ SPECTRUM_WORDS = ("能谱", "群常数", "群截面", "1/e", "费米谱", "麦�
                   "裂变谱", "谱硬化", "自屏")
 CONCEPT_WORDS = ("区别", "辨析", "对比", "区分", "异同", "怎么分辨")
 GRAPH_WORDS = ("关系", "前置", "先学", "知识点", "依赖", "学习路径", "图谱", "易混淆")
-QUIZ_WORDS = ("出题", "考考我", "来一道", "练一练", "做道题", "来几道",
+QUIZ_WORDS = ("出题", "考考我", "考我", "考一道", "测验", "测一测", "来一道", "练一练", "做道题", "来几道",
               "出两道", "出几道", "出个题", "给我出", "做题", "练习一下")
 WRONG_WORDS = ("错题", "错题本", "易错")
 # 「出两道题」「给我来几道题」这类口语说法
-QUIZ_PAT = re.compile(r"(出|来|给|做|练)[^。？！?]{0,6}(道|个)?[^。？！?]{0,2}题")
+QUIZ_PAT = re.compile(r"(出|来|给|做|练|考)[^。？！?]{0,8}(道|个)?[^。？！?]{0,2}题")
 
 
 def _has(text: str, words: tuple[str, ...]) -> bool:
@@ -426,9 +426,15 @@ async def run_chat(req: ChatRequest, account: str = "anonymous") -> AsyncIterato
             + ("低于门限，应当拒答并说明知识库未收录。" if gated else "据证据组织回答。"),
             seq,
         )
-        result = llm.generate(query, hits, gated, coverage, persona=persona_block)
-        answer = result.text
-        provider, model = result.provider, result.model
+        if gated or not hits:
+            # 硬门控：不把"边缘证据"交给模型自由发挥。真实 LLM 也必须在这里被拦住，
+            # 否则模型会绕过提示词、用课程外知识编答案（2026-11 实测星火会这样做）。
+            answer = llm.mock_answer(query, hits, gated=gated, coverage=coverage)
+            provider, model = "gate", "knowledge-gate"
+        else:
+            result = llm.generate(query, hits, gated, coverage, persona=persona_block)
+            answer = result.text
+            provider, model = result.provider, result.model
 
     for piece in E.split_for_stream(answer):
         yield E.token(piece)

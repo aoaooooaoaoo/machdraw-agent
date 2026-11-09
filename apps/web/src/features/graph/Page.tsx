@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CanvasProps } from '../../modules/registry';
 import type { ChatMessage, GraphArtifactData, GraphFull, GraphNodeInfo } from '../../lib/types';
 import { getGraph } from '../../lib/api';
+import { useAppStore } from '../../lib/store';
 import { Icon } from '../../shell/Icons';
 import { MessageItem } from '../../shell/MessageItem';
 import { Overview } from '../../modules/graph/Overview';
@@ -97,10 +98,11 @@ export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], b
   const [hiddenLevelIds, setHiddenLevelIds] = useState<Set<number>>(new Set());
   const [hiddenSectorIds, setHiddenSectorIds] = useState<Set<number>>(new Set());
   const [agentOpen, setAgentOpen] = useState(false);
+  const account = useAppStore((s) => s.account);
 
   useEffect(() => {
     let alive = true;
-    getGraph()
+    getGraph(account)
       .then((data) => {
         if (alive) setFull(data);
       })
@@ -110,7 +112,7 @@ export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], b
     return () => {
       alive = false;
     };
-  }, []);
+  }, [account]);
 
   // chat 下发 graph artifact：{mode, focus} 或旧的 focus 对象 → 切 tab 并聚焦
   useEffect(() => {

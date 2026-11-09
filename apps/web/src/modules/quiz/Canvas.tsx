@@ -1,9 +1,19 @@
 import { useState } from 'react';
 import type { CanvasProps } from '../registry';
 import type { QuizArtifactData } from '../../lib/types';
-import { explainQuiz } from '../../lib/api';
+import { addWrongbook, explainQuiz, invalidateGraphCache, reportMastery } from '../../lib/api';
+import { useAppStore } from '../../lib/store';
+import { toast } from '../../lib/ui';
 import { Markdown } from '../../shell/Markdown';
 import { Icon } from '../../shell/Icons';
+
+interface AssessState {
+  status: 'saving' | 'done' | 'error';
+  signal: 'got' | 'again';
+  state?: string;
+  score?: number;
+  error?: string;
+}
 
 interface ExplainState {
   status: 'idle' | 'loading' | 'done' | 'error';
@@ -55,6 +65,64 @@ export function QuizCanvas({ artifact, demo }: CanvasProps) {
   const questions = Array.isArray(data.questions) ? data.questions : [];
   const [open, setOpen] = useState<Record<string, boolean>>({});
   const [explains, setExplains] = useState<Record<string, ExplainState>>({});
+  const [assess, setAssess] = useState<Record<string, AssessState>>({});
+  const account = useAppStore((s) => s.account);
+
+  async function grade(chunkId: string, q: QuizArtifactData['questions'][number], signal: 'got' | 'again') {
+    if (!account) {
+      toast('请先登录再记录学习状态', 'info');
+      return;
+    }
+    const explainText = (() => {
+      const payload = explains[chunkId]?.data;
+      return extractExplain(payload) ?? '';
+    })();
+    setAssess((prev) => ({ ...prev, [chunkId]: { status: 'saving', signal } }));
+    try {
+      const res = await reportMastery(
+        {
+          signal,
+          kp_ids: q.kp_ids || [],
+          chapter: q.section || '',
+          chunk_id: chunkId,
+          question: q.content,
+          explanation: explainText,
+          document_title: q.documentTitle,
+        },
+        account,
+      );
+      const item = Object.values(res.updated || {})[0];
+      setAssess((prev) => ({
+        ...prev,
+        [chunkId]: { status: 'done', signal, state: item?.state, score: item?.score },
+      }));
+      invalidateGraphCache();
+      if (signal === 'again') {
+        await addWrongbook(
+          {
+            question: q.content || '',
+            wrong_answer: '（自评：还不会）',
+            root_cause: '自评未掌握',
+            trace_ref: chunkId,
+            correct: explainText,
+            pitfall: '',
+            kp_ids: q.kp_ids || [],
+            source: q.documentTitle || '题卡自评',
+          },
+          account,
+        );
+        toast('已记入错题本 · 图谱状态更新为「需复习」', 'info');
+      } else {
+        toast('已记录掌握度 · 图谱状态已更新');
+      }
+    } catch (err) {
+      setAssess((prev) => ({
+        ...prev,
+        [chunkId]: { status: 'error', signal, error: (err as Error)?.message || String(err) },
+      }));
+      toast('记录失败，请稍后再试', 'error');
+    }
+  }
 
   async function loadExplain(chunkId: string) {
     setExplains((prev) => ({ ...prev, [chunkId]: { status: 'loading' } }));
@@ -204,6 +272,44 @@ export function QuizCanvas({ artifact, demo }: CanvasProps) {
                         <pre className="json-pre">{JSON.stringify(explain.data, null, 2).slice(0, 2000)}</pre>
                       </div>
                     ))}
+                </div>
+              )}
+
+              {opened && explain?.status === 'done' && (
+                <div className="qz-assess">
+                  <span className="qz-assess-label">学完这道题，你现在：</span>
+                  {(() => {
+                    const a = assess[chunkId];
+                    const saving = a?.status === 'saving';
+                    return (
+                      <>
+                        <button
+                          className={`qz-assess-btn is-got ${a?.status === 'done' && a.signal === 'got' ? 'is-on' : ''}`}
+                          type="button"
+                          disabled={saving}
+                          onClick={() => void grade(chunkId, q, 'got')}
+                        >
+                          <Icon name="check" size={12} /> 我会了
+                        </button>
+                        <button
+                          className={`qz-assess-btn is-again ${a?.status === 'done' && a.signal === 'again' ? 'is-on' : ''}`}
+                          type="button"
+                          disabled={saving}
+                          onClick={() => void grade(chunkId, q, 'again')}
+                        >
+                          <Icon name="alert" size={12} /> 还不会
+                        </button>
+                        {saving && <span className="qz-assess-tip"><span className="spinner" /> 记录中…</span>}
+                        {a?.status === 'done' && (
+                          <span className={`qz-assess-state is-${a.state === '已掌握' ? 'got' : a.state === '需复习' ? 'again' : 'learning'}`}>
+                            {a.state}
+                            {typeof a.score === 'number' ? ` · ${Math.round(a.score * 100)}%` : ''}
+                          </span>
+                        )}
+                        {a?.status === 'error' && <span className="qz-assess-tip is-error">{a.error}</span>}
+                      </>
+                    );
+                  })()}
                 </div>
               )}
             </article>

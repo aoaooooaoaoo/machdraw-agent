@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 全局状态（Zustand）。
  *
  * 选 Zustand 而不是 useReducer 的理由：
@@ -12,6 +12,7 @@ import { create } from 'zustand';
 import { getHealth, getModules, login as apiLogin, ApiError } from './api';
 import { streamChat, ChatHTTPError } from './sse';
 import { hasCanvasOwner } from '../modules/registry';
+import { toast } from './ui';
 import type {
   ArtifactState,
   ArtifactType,
@@ -49,6 +50,69 @@ function writeAccount(account: string | null): void {
     else localStorage.removeItem(ACCOUNT_KEY);
   } catch {
     /* 隐私模式忽略 */
+  }
+}
+
+/* ---------------------------------------------------------------- 会话持久化
+ * 刷新不丢：按账号把「消息 / 画布 / 草稿 / 统计」写进 localStorage。
+ * 只存最近 40 条消息、最近 6 个画布；单个画布数据 >60KB 就跳过，避免撑爆配额。
+ */
+const SESSIONS_KEY = 'rp.sessions.v1';
+
+function loadPersistedSessions(account: string | null): Record<string, SessionState> | null {
+  if (!account) return null;
+  try {
+    const raw = localStorage.getItem(`${SESSIONS_KEY}:${account}`);
+    if (!raw) return null;
+    const data = JSON.parse(raw) as Record<string, SessionState>;
+    if (!data || typeof data !== 'object') return null;
+    const out: Record<string, SessionState> = {};
+    for (const [id, s] of Object.entries(data)) {
+      if (!s || !Array.isArray(s.messages)) continue;
+      out[id] = {
+        ...emptySession(id),
+        messages: s.messages.map((m) => ({ ...m, streaming: false })),
+        artifacts: Array.isArray(s.artifacts) ? s.artifacts.slice(-6) : [],
+        stats: s.stats ?? emptySession(id).stats,
+        draft: typeof s.draft === 'string' ? s.draft : '',
+        streaming: false,
+      };
+    }
+    return out;
+  } catch {
+    return null;
+  }
+}
+
+function persistSessions(account: string | null, sessions: Record<string, SessionState>): void {
+  if (!account) return;
+  try {
+    const slim: Record<string, SessionState> = {};
+    for (const [id, s] of Object.entries(sessions)) {
+      const artifacts = (s.artifacts || [])
+        .slice(-6)
+        .filter((a) => {
+          try {
+            return JSON.stringify(a.data ?? {}).length < 60000;
+          } catch {
+            return false;
+          }
+        });
+      slim[id] = {
+        ...s,
+        messages: (s.messages || []).slice(-40).map((m) => ({
+          ...m,
+          streaming: false,
+          content: (m.content || '').slice(0, 12000),
+          thinking: (m.thinking || '').slice(0, 3000),
+        })),
+        artifacts,
+        streaming: false,
+      };
+    }
+    localStorage.setItem(`${SESSIONS_KEY}:${account}`, JSON.stringify(slim));
+  } catch {
+    /* 配额满/隐私模式：静默降级，不影响使用 */
   }
 }
 
@@ -334,6 +398,15 @@ export const useAppStore = create<AppStore>()((set, get) => {
         })(),
       );
       await Promise.allSettled(tasks);
+      // 恢复该账号上次的会话（刷新不丢）
+      const savedSessions = loadPersistedSessions(account);
+      if (savedSessions) {
+        set((state) => ({ sessions: { ...state.sessions, ...savedSessions } }));
+        const restored = Object.values(savedSessions).some((s) => s.messages.length > 0);
+        if (restored) {
+          import('./ui').then(({ toast }) => toast('已恢复上次的对话记录', 'info')).catch(() => {});
+        }
+      }
       // 确保当前激活模块有会话
       const active = get().activeFeature;
       if (!get().sessions[active]) {
@@ -345,13 +418,21 @@ export const useAppStore = create<AppStore>()((set, get) => {
     signIn: async (account, password) => {
       const result = await apiLogin(account.trim(), password);
       writeAccount(result.account);
-      set({ account: result.account, globalError: null });
+      const savedSessions = loadPersistedSessions(result.account);
+      set((state) => ({
+        account: result.account,
+        globalError: null,
+        sessions: savedSessions ? { ...state.sessions, ...savedSessions } : state.sessions,
+      }));
       await get().refreshHealth();
     },
 
     signOut: () => {
+      const currentAccount = get().account;
+      const currentSessions = get().sessions;
       activeAbort?.abort();
       activeAbort = null;
+      persistSessions(currentAccount, currentSessions);
       writeAccount(null);
       set({
         account: null,
@@ -535,3 +616,14 @@ const FALLBACK_SESSION: SessionState = emptySession('__fallback__');
 export function useActiveSession(): SessionState {
   return useAppStore((s) => s.sessions[s.activeFeature] ?? FALLBACK_SESSION);
 }
+
+/* 会话变化（消息/画布/草稿）→ 400ms 防抖落盘，刷新后由 loadPersistedSessions 恢复。 */
+let persistTimer: number | undefined;
+useAppStore.subscribe((state, prev) => {
+  if (state.sessions === prev.sessions || !state.account) return;
+  const account = state.account;
+  if (persistTimer) window.clearTimeout(persistTimer);
+  persistTimer = window.setTimeout(() => {
+    persistSessions(account, useAppStore.getState().sessions);
+  }, 400);
+});

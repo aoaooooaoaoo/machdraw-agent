@@ -137,14 +137,24 @@ docker run -d --name reactor-physics-agent -p 8077:8077 -v ${PWD}/data-docker:/a
 4. 首次构建约 5–8 分钟（node 依赖 + pip + 建索引）；
 5. 免费档特性（写进 `render.yaml` 注释）：**15 分钟无访问休眠，下次访问约 40 秒唤醒**；512 MB 内存（运行时约 250–300 MB）；**无持久盘，重启会清空 SQLite**。
 
-切真实模型（示例）：
+切真实模型（示例，线上当前用的是讯飞星辰免费模型）：
+
+```
+RP_LLM_PROVIDER = openai-compatible
+RP_LLM_MODEL    = spark-x2.6-4b
+RP_LLM_BASE_URL = https://maas-api.cn-huabei-1.xf-yun.com/v2
+RP_LLM_API_KEY  = <在 Render 控制台填，不进仓库>
+# 星火必须关思维链，否则单次 100s+：
+RP_LLM_EXTRA_BODY = {"thinking":{"type":"disabled"}}
+```
+
+DeepSeek 也可以：
 
 ```
 RP_LLM_PROVIDER = deepseek
 RP_LLM_MODEL    = deepseek-chat
 RP_LLM_BASE_URL = https://api.deepseek.com/v1
 RP_LLM_API_KEY  = sk-xxxx
-# 推理模型可关思维链：RP_LLM_EXTRA_BODY = {"thinking":{"type":"disabled"}}
 ```
 
 ---
@@ -479,4 +489,22 @@ powershell -ExecutionPolicy Bypass -File scripts\stop_serve.ps1
 - 公网 502：本机后端没起来或隧道刚连上——先看 `data/serve_lan.log` 与 `%TEMP%\rp_ssh_tunnel.log`，再重跑脚本。
 - 局域网打不开：确认对方同网段；Windows 防火墙需放行 `D:\python\python.exe`（本机已有该规则）。
 - 换端口：改脚本里的 `--port` 与隧道 `-R 80:localhost:8077` 两处。
+
+### 11.5 永久在线地址（Render，已部署）
+
+- 学生端：<https://reactor-physics-agent.onrender.com/>
+- 教师端：<https://reactor-physics-agent.onrender.com/admin>
+- 健康检查：<https://reactor-physics-agent.onrender.com/api/health>
+
+| 项 | 值 |
+|---|---|
+| GitHub 仓库 | `aoaooooaoaoo/machdraw-agent`，分支 **`reactor-physics`** |
+| Render 服务 | `reactor-physics-agent`（Web Service / Docker / Free / Oregon） |
+| 源码提交 | 该分支最新 commit（当前 `e0dfa1c`） |
+| 构建 | Render 用仓库根 `Dockerfile` 两阶段构建（Node 建前端 → Python 运行时 + 构建期预建索引） |
+| 更新 | 改完代码 `git push` 到 `reactor-physics` 分支 → Render 自动重新部署 |
+| 休眠 | 免费档 15 分钟无访问休眠，冷启动约 40~60 s |
+| 数据 | 免费档无持久磁盘：`data/app.db` 重启即重置；知识库/索引在镜像内，随代码重建 |
+
+> 本机 Docker（`docker compose up -d --build`）未实机复测（本机 Docker Desktop 未启动），但**同一份 `Dockerfile` 已由 Render 在 Linux 上构建并运行成功**，可视为镜像可用性的证据。
 

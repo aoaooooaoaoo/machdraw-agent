@@ -78,14 +78,21 @@ export async function login(account: string, password: string): Promise<LoginRes
  */
 let graphPromise: Promise<GraphFull> | null = null;
 
-export function getGraph(): Promise<GraphFull> {
+export function getGraph(account?: string | null): Promise<GraphFull> {
   if (!graphPromise) {
-    graphPromise = request<GraphFull>('/api/graph').catch((err) => {
+    graphPromise = request<GraphFull>('/api/graph', {
+      headers: account ? { 'X-Account': account } : undefined,
+    }).catch((err) => {
       graphPromise = null; // 失败不缓存，便于重试
       throw err;
     });
   }
   return graphPromise;
+}
+
+/** 掌握度变化后让下一次 /api/graph 重新取（节点 state 会叠加掌握度）。 */
+export function invalidateGraphCache(): void {
+  graphPromise = null;
 }
 
 /** 点画布节点时换焦点：单元详情（node + neighbors + prereq 链）。 */
@@ -105,6 +112,45 @@ export async function explainQuiz(chunkId: string): Promise<Record<string, unkno
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ chunk_id: chunkId }),
+  });
+}
+
+/* ---------------------------------------------------------------- 学习者模型 */
+
+export interface MasteryItem {
+  score: number;
+  attempts: number;
+  correct: number;
+  state: string;
+  last_at: number;
+  last_signal?: string;
+}
+
+export async function getMastery(
+  account: string,
+): Promise<{ ok: boolean; mastery: Record<string, MasteryItem>; summary: Record<string, number> }> {
+  return request('/api/mastery', { headers: { 'X-Account': account } });
+}
+
+export interface MasteryReportPayload {
+  signal: 'got' | 'again';
+  kp_ids?: string[];
+  node_ids?: string[];
+  chunk_id?: string;
+  chapter?: string;
+  question?: string;
+  explanation?: string;
+  document_title?: string;
+}
+
+export async function reportMastery(
+  payload: MasteryReportPayload,
+  account: string,
+): Promise<{ ok: boolean; updated: Record<string, MasteryItem>; mastery: Record<string, MasteryItem> }> {
+  return request('/api/mastery/report', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Account': account },
+    body: JSON.stringify(payload),
   });
 }
 

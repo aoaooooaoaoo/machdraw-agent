@@ -6260,3 +6260,80 @@ kbd {
 .palette-search:focus-within {
   box-shadow: inset 0 0 0 1px var(--accent-line);
 }
+
+/* ---- 题卡：自评回写掌握度 ---------------------------------------------- */
+.qz-assess {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+.qz-assess-label {
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+.qz-assess-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text-2);
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-size: 11.5px;
+  cursor: pointer;
+}
+.qz-assess-btn:hover:not(:disabled) {
+  border-color: var(--accent-line);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.qz-assess-btn.is-got.is-on {
+  border-color: #86efac;
+  background: #f0fdf4;
+  color: #15803d;
+}
+.qz-assess-btn.is-again.is-on {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+.qz-assess-btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.qz-assess-tip {
+  font-size: 11px;
+  color: var(--text-3);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.qz-assess-tip.is-error {
+  color: var(--red);
+}
+.qz-assess-state {
+  font-size: 11px;
+  border-radius: 999px;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+}
+.qz-assess-state.is-got {
+  color: #15803d;
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+.qz-assess-state.is-again {
+  color: #b91c1c;
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+.qz-assess-state.is-learning {
+  color: #b45309;
+  background: #fffbeb;
+  border-color: #fde68a;
+}

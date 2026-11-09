@@ -1,4 +1,4 @@
-# Render 蓝图：把本仓库一键部署成公网可访问的免费 Web 服务
+﻿# Render 蓝图：把本仓库一键部署成公网可访问的免费 Web 服务
 #
 # 用法：Render → New → Blueprint → 选中本仓库 → Apply
 # 免费档说明：
@@ -14,17 +14,17 @@ services:
     healthCheckPath: /api/health
     # 首次构建约 5–8 分钟（要装 node 依赖 + Python 依赖 + 建索引）
     envVars:
-      # ---- 大模型：默认本地抽取模式（mock），零 key 可跑
-      # 有 key 时改成 deepseek / openai-compatible：
+      # ---- 大模型：讯飞星辰 MaaS 免费模型 spark-x2.6-4b（¥0/百万 tokens）
+      # 没有 Key 时后端自动回落到 mock，仍可完整演示：
       - key: RP_LLM_PROVIDER
-        value: mock
+        value: openai-compatible
       - key: RP_LLM_BASE_URL
-        value: https://api.deepseek.com/v1
+        value: https://maas-api.cn-huabei-1.xf-yun.com/v2
       - key: RP_LLM_MODEL
-        value: deepseek-chat
-      # 关掉思维链（推理模型用，非推理模型可不设）
-      # - key: RP_LLM_EXTRA_BODY
-      #   value: '{"thinking":{"type":"disabled"}}'
+        value: spark-x2.6-4b
+      # 关掉思维链（星火默认 115s/3405 推理 token；关掉后 ~6s/0 推理 token）
+      - key: RP_LLM_EXTRA_BODY
+        value: '{"thinking":{"type":"disabled"}}'
       # API Key 不进仓库，部署时在 Render 控制台填：
       # 服务 → Environment → RP_LLM_API_KEY = sk-xxxx
       - key: RP_LLM_API_KEY

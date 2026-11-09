@@ -470,6 +470,9 @@ export interface QuizQuestion {
   documentTitle?: string;
   section?: string;
   content: string;
+  /** 题面关联的知识点（后端 chunk 自带；用于自评回写掌握度） */
+  kp_ids?: string[];
+  node_ids?: string[];
 }
 
 export interface QuizArtifactData {

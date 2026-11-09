@@ -55,6 +55,17 @@ CREATE TABLE IF NOT EXISTS events (
     payload      TEXT NOT NULL DEFAULT '{}',
     created_at   REAL NOT NULL
 );
+CREATE TABLE IF NOT EXISTS mastery (
+    account      TEXT NOT NULL,
+    kp_id        TEXT NOT NULL,
+    score        REAL NOT NULL DEFAULT 0,
+    attempts     INTEGER NOT NULL DEFAULT 0,
+    correct      INTEGER NOT NULL DEFAULT 0,
+    state        TEXT NOT NULL DEFAULT '未学',
+    last_signal  TEXT DEFAULT '',
+    last_at      REAL NOT NULL,
+    PRIMARY KEY (account, kp_id)
+);
 CREATE INDEX IF NOT EXISTS idx_msg_conv ON messages(conv_id, created_at);
 CREATE INDEX IF NOT EXISTS idx_ev_account ON events(account, created_at);
 """
@@ -155,6 +166,44 @@ class Store:
             }
             for r in rows
         ]
+
+    # ---------------- 学习者模型（掌握度）
+    def list_mastery(self, account: str) -> dict:
+        rows = self._conn.execute(
+            "SELECT * FROM mastery WHERE account=?", (account,)
+        ).fetchall()
+        out: dict[str, dict] = {}
+        for r in rows:
+            out[r["kp_id"]] = {
+                "score": r["score"],
+                "attempts": r["attempts"],
+                "correct": r["correct"],
+                "state": r["state"],
+                "last_signal": r["last_signal"] or "",
+                "last_at": r["last_at"],
+            }
+        return out
+
+    def upsert_mastery(self, account: str, items: dict[str, dict]) -> None:
+        for kp_id, item in items.items():
+            self._conn.execute(
+                """INSERT INTO mastery(account,kp_id,score,attempts,correct,state,last_signal,last_at)
+                   VALUES(?,?,?,?,?,?,?,?)
+                   ON CONFLICT(account,kp_id) DO UPDATE SET
+                     score=excluded.score, attempts=excluded.attempts, correct=excluded.correct,
+                     state=excluded.state, last_signal=excluded.last_signal, last_at=excluded.last_at""",
+                (
+                    account,
+                    kp_id,
+                    float(item.get("score") or 0),
+                    int(item.get("attempts") or 0),
+                    int(item.get("correct") or 0),
+                    str(item.get("state") or "未学"),
+                    str(item.get("last_signal") or ""),
+                    float(item.get("last_at") or time.time()),
+                ),
+            )
+        self._conn.commit()
 
     # ---------------- 错题本
     def add_wrong(self, account: str, rec: dict) -> str:
