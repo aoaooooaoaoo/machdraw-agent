@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { getHistory, getHistoryDetail } from '../lib/api';
+import { exportLearningData, importLearningData } from '../lib/backup';
 import { useAppStore } from '../lib/store';
 import { toast } from '../lib/ui';
 import { Icon } from './Icons';
@@ -26,6 +27,8 @@ export function HistoryDrawer() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [loadingId, setLoadingId] = useState<string | null>(null);
+  const importRef = useRef<HTMLInputElement>(null);
+  const [busy, setBusy] = useState(false);
 
   useEffect(() => {
     if (!open || !account) return;
@@ -113,6 +116,54 @@ export function HistoryDrawer() {
               </div>
             </button>
           ))}
+        </div>
+
+        <div className="history-foot">
+          <div className="history-foot-hint">换设备/重启前，可把学习数据导出成 JSON；导入只增不减。</div>
+          <div className="history-foot-actions">
+            <button
+              className="btn btn-ghost btn-xs"
+              type="button"
+              disabled={busy || !account}
+              onClick={() => {
+                if (!account) return;
+                setBusy(true);
+                exportLearningData(account)
+                  .then(() => toast('备份已下载'))
+                  .catch((err) => toast(`导出失败：${(err as Error)?.message || err}`, 'error'))
+                  .finally(() => setBusy(false));
+              }}
+            >
+              导出备份
+            </button>
+            <button
+              className="btn btn-ghost btn-xs"
+              type="button"
+              disabled={busy || !account}
+              onClick={() => importRef.current?.click()}
+            >
+              导入备份
+            </button>
+            <input
+              ref={importRef}
+              type="file"
+              accept="application/json,.json"
+              className="hidden-input"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                e.target.value = '';
+                if (!file || !account) return;
+                setBusy(true);
+                importLearningData(file, account)
+                  .then((res) => {
+                    toast(`导入完成：掌握度 ${res.importedMastery} 条，错题 ${res.importedWrongbook} 条`);
+                    window.setTimeout(() => window.location.reload(), 900);
+                  })
+                  .catch((err) => toast(`导入失败：${(err as Error)?.message || err}`, 'error'))
+                  .finally(() => setBusy(false));
+              }}
+            />
+          </div>
         </div>
       </aside>
     </div>

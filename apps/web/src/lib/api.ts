@@ -165,6 +165,32 @@ export async function reportMastery(
   });
 }
 
+/* ---------------------------------------------------------------- 学习数据备份 */
+
+export interface BackupPayload {
+  ok: boolean;
+  account: string;
+  exported_at: number;
+  mastery: Record<string, MasteryItem>;
+  wrongbook: Array<Record<string, unknown>>;
+  records: Record<string, unknown>;
+}
+
+export async function getBackup(account: string): Promise<BackupPayload> {
+  return request('/api/backup', { headers: { 'X-Account': account } });
+}
+
+export async function restoreBackup(
+  payload: Record<string, unknown>,
+  account: string,
+): Promise<{ ok: boolean; imported_mastery: number; imported_wrongbook: number }> {
+  return request('/api/restore', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Account': account },
+    body: JSON.stringify(payload),
+  });
+}
+
 /* ---------------------------------------------------------------- 拍题 OCR */
 
 export async function ocrImage(imageDataUrl: string): Promise<{ ok: boolean; text: string }> {

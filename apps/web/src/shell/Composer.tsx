@@ -155,6 +155,7 @@ export function Composer() {
             ref={fileRef}
             type="file"
             accept="image/*"
+            capture="environment"
             className="hidden-input"
             onChange={(e) => {
               const file = e.target.files?.[0];

@@ -17,7 +17,7 @@ WORKDIR /app
 
 # OCR：拍题/公式图片识别（离线，不依赖外部服务）
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    tesseract-ocr tesseract-ocr-chi-sim tesseract-ocr-eng \
+    tesseract-ocr tesseract-ocr-chi-sim tesseract-ocr-eng libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
 ENV PYTHONUNBUFFERED=1 \

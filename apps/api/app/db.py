@@ -1,4 +1,4 @@
-"""SQLite 持久化：账号、会话、错题、学情事件。
+﻿"""SQLite 持久化：账号、会话、错题、学情事件。
 
 刻意用标准库 sqlite3，不引入 ORM——数据模型很小，手写 SQL 更透明。
 """
@@ -246,6 +246,12 @@ class Store:
         self._conn.commit()
         return wid
 
+    def wrong_exists(self, account: str, question: str, trace_ref: str) -> bool:
+        row = self._conn.execute(
+            "SELECT 1 FROM wrongbook WHERE account=? AND question=? AND trace_ref=? LIMIT 1",
+            (account, question, trace_ref),
+        ).fetchone()
+        return row is not None
     def list_wrong(self, account: str, limit: int = 50) -> list[dict]:
         rows = self._conn.execute(
             "SELECT * FROM wrongbook WHERE account=? ORDER BY created_at DESC LIMIT ?",

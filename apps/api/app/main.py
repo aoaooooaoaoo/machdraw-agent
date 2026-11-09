@@ -12,6 +12,8 @@ from __future__ import annotations
 import base64
 import io
 import json
+import os
+import re
 import time
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -231,7 +233,6 @@ def get_mastery(x_account: str | None = Header(default=None)) -> dict:
     return {"ok": True, "account": acc, "mastery": mastery, "summary": summary}
 
 
-@app.post("/api/mastery/report")
 def _apply_mastery(st, account: str, keys: set[str], signal: str, quality: float | None = None) -> tuple[dict, dict]:
     """统一的掌握度更新：signal=got/again；quality 0–1（判分时用）优先。"""
     mastery = dict(st.store.list_mastery(account))
@@ -349,9 +350,47 @@ def history_detail(conv_id: str, x_account: str | None = Header(default=None)) -
 
 # ---------------------------------------------------------------- 拍题 OCR
 
+_RAPID_OCR = None
+
+
+def _normalize_ocr_text(text: str) -> str:
+    """OCR 后处理：中文去字间空格、常见符号/变量名归一。"""
+    text = (text or "").replace("\r", "")
+    # 中文字符之间的空格是 tesseract 的典型输出，去掉
+    text = re.sub(r"(?<=[\u4e00-\u9fff])\s+(?=[\u4e00-\u9fff])", "", text)
+    text = re.sub(r"(?<=[\u4e00-\u9fff])\s+(?=[，。；：、？！])", "", text)
+    text = re.sub(r"(?<=[，。；：、？！])\s+(?=[\u4e00-\u9fff])", "", text)
+    # 常见变量写法
+    text = re.sub(r"\bk[\s_-]?eff\b", "k_eff", text, flags=re.IGNORECASE)
+    text = re.sub(r"\brho\b", "ρ", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bpcm\b", "pcm", text, flags=re.IGNORECASE)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
+def _ocr_rapid(data: bytes) -> str:
+    """可选：RapidOCR（onnxruntime）。比 tesseract 准，但内存峰值约 300MB，需 RP_OCR_ENGINE=rapid。"""
+    global _RAPID_OCR
+    import numpy as np
+    from PIL import Image
+    from rapidocr_onnxruntime import RapidOCR
+
+    if _RAPID_OCR is None:
+        _RAPID_OCR = RapidOCR()
+    img = Image.open(io.BytesIO(data)).convert("RGB")
+    if max(img.size) > 1800:
+        ratio = 1800 / max(img.size)
+        img = img.resize((int(img.width * ratio), int(img.height * ratio)))
+    result, _ = _RAPID_OCR(np.array(img))
+    return "\n".join(str(r[1]) for r in (result or []))
+
+
 @app.post("/api/vision/ocr")
 def vision_ocr(payload: dict = Body(...)) -> dict:
-    """离线 OCR：接收 dataURL/纯 base64 图片，返回识别文字（拍题/公式）。"""
+    """离线 OCR：接收 dataURL/纯 base64 图片，返回识别文字（拍题/公式）。
+
+    RP_OCR_ENGINE=tesseract（默认，省内存）/ rapid（更准，需装 rapidocr-onnxruntime）。
+    """
     raw = str(payload.get("image") or "")
     if not raw:
         raise HTTPException(400, "缺少图片数据")
@@ -359,24 +398,39 @@ def vision_ocr(payload: dict = Body(...)) -> dict:
         data = base64.b64decode(raw.split(",", 1)[-1])
     except Exception as exc:
         raise HTTPException(400, f"图片解码失败：{exc}") from exc
+    if len(data) > 12_000_000:
+        raise HTTPException(413, "图片太大（>12MB），请压缩后再试")
+
+    engine = (os.getenv("RP_OCR_ENGINE", "tesseract") or "tesseract").strip().lower()
+    if engine == "rapid":
+        try:
+            text = _ocr_rapid(data)
+            return {"ok": True, "engine": "rapidocr", "text": _normalize_ocr_text(text)[:6000]}
+        except Exception:
+            pass  # 回落到 tesseract
+
     try:
-        from PIL import Image
+        from PIL import Image, ImageOps
         import pytesseract
     except ImportError as exc:
         raise HTTPException(501, "OCR 组件未安装（pip install pytesseract Pillow）") from exc
     try:
-        img = Image.open(io.BytesIO(data)).convert("RGB")
+        img = Image.open(io.BytesIO(data))
     except Exception as exc:
         raise HTTPException(400, f"不支持的图片格式：{exc}") from exc
-    # 大图缩到 1800px 内，OCR 更快
-    if max(img.size) > 1800:
-        ratio = 1800 / max(img.size)
+
+    # 预处理：灰度 + 自动对比度 + 小图放大（拍题截图常偏小）
+    img = ImageOps.autocontrast(img.convert("L"))
+    if img.width < 1000:
+        img = img.resize((img.width * 2, img.height * 2), Image.LANCZOS)
+    if max(img.size) > 2200:
+        ratio = 2200 / max(img.size)
         img = img.resize((int(img.width * ratio), int(img.height * ratio)))
     try:
-        text = pytesseract.image_to_string(img, lang="chi_sim+eng")
+        text = pytesseract.image_to_string(img, lang="chi_sim+eng", config="--psm 6")
     except Exception as exc:  # tesseract 未装/语言包缺失
         raise HTTPException(501, f"OCR 不可用：{exc}") from exc
-    return {"ok": True, "text": (text or "").strip()[:6000]}
+    return {"ok": True, "engine": "tesseract", "text": _normalize_ocr_text(text)[:6000]}
 
 
 # ---------------------------------------------------------------- 掌握度导入
@@ -433,6 +487,78 @@ def review(x_account: str | None = Header(default=None)) -> dict:
             })
     due.sort(key=lambda x: -x["overdue_days"])
     return {"ok": True, "due": due, "total_tracked": len(mastery)}
+
+
+@app.get("/api/backup")
+def backup(x_account: str | None = Header(default=None)) -> dict:
+    """导出当前账号的学习数据（掌握度/错题本/records），用于跨设备迁移或本地留档。"""
+    st = get_state()
+    acc = _account(x_account)
+    return {
+        "ok": True,
+        "account": acc,
+        "exported_at": time.time(),
+        "mastery": st.store.list_mastery(acc),
+        "wrongbook": st.store.list_wrong(acc, limit=300),
+        "records": st.store.get_records(acc),
+    }
+
+
+@app.post("/api/restore")
+def restore(payload: dict = Body(...), x_account: str | None = Header(default=None)) -> dict:
+    """导入学习数据（只增不减：掌握度按 last_at 取新，错题本按 题面+trace 去重）。"""
+    st = get_state()
+    acc = _account(x_account)
+    imported_mastery = 0
+    imported_wrong = 0
+
+    items = payload.get("mastery") or {}
+    server = dict(st.store.list_mastery(acc))
+    merged: dict[str, dict] = {}
+    for key, item in items.items():
+        if not isinstance(item, dict):
+            continue
+        srv = server.get(key) or {}
+        if float(item.get("last_at") or 0) >= float(srv.get("last_at") or 0):
+            merged[key] = item
+    if merged:
+        st.store.upsert_mastery(acc, merged)
+        imported_mastery = len(merged)
+
+    for w in (payload.get("wrongbook") or [])[:300]:
+        if not isinstance(w, dict):
+            continue
+        question = str(w.get("question") or "")[:2000]
+        trace = str(w.get("trace_ref") or "")
+        if not question or st.store.wrong_exists(acc, question, trace):
+            continue
+        st.store.add_wrong(acc, {
+            "question": question,
+            "wrong_answer": str(w.get("wrong_answer") or "")[:2000],
+            "root_cause": str(w.get("root_cause") or ""),
+            "trace_ref": trace,
+            "correct": str(w.get("correct") or "")[:4000],
+            "pitfall": str(w.get("pitfall") or "")[:1000],
+            "kp_ids": w.get("kp_ids") or [],
+            "source": str(w.get("source") or "备份导入"),
+        })
+        imported_wrong += 1
+
+    records = st.store.get_records(acc)
+    incoming = payload.get("records") or {}
+    if isinstance(incoming, dict):
+        for k, v in incoming.items():
+            if k == "mastery":
+                continue
+            records[k] = v
+        st.store.put_records(acc, records)
+
+    return {
+        "ok": True,
+        "imported_mastery": imported_mastery,
+        "imported_wrongbook": imported_wrong,
+        "mastery": dict(st.store.list_mastery(acc)),
+    }
 
 
 # ---------------------------------------------------------------- 模块与图谱

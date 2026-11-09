@@ -6,3 +6,4 @@ jieba==0.42.1
 python-dotenv==1.2.4
 pytesseract==0.3.13
 Pillow==11.0.0
+rapidocr-onnxruntime==1.4.4
