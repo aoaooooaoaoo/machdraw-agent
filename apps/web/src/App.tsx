@@ -58,8 +58,12 @@ export default function App() {
       } else if (mod && e.key === '/') {
         e.preventDefault();
         document.querySelector<HTMLTextAreaElement>('.composer-input')?.focus();
-      } else if (e.key === 'Escape' && useAppStore.getState().paletteOpen) {
-        useAppStore.getState().setPaletteOpen(false);
+      } else if (e.key === 'Escape') {
+        const s = useAppStore.getState();
+        if (s.paletteOpen) s.setPaletteOpen(false);
+        else if (s.historyOpen) s.setHistoryOpen(false);
+        else if (s.reviewOpen) s.setReviewOpen(false);
+        else if (s.notesOpen) s.setNotesOpen(false);
       }
     };
     window.addEventListener('keydown', onKey);
