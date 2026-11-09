@@ -402,12 +402,14 @@ def vision_ocr(payload: dict = Body(...)) -> dict:
         raise HTTPException(413, "图片太大（>12MB），请压缩后再试")
 
     engine = (os.getenv("RP_OCR_ENGINE", "tesseract") or "tesseract").strip().lower()
+    rapid_error = ""
     if engine == "rapid":
         try:
             text = _ocr_rapid(data)
             return {"ok": True, "engine": "rapidocr", "text": _normalize_ocr_text(text)[:6000]}
-        except Exception:
-            pass  # 回落到 tesseract
+        except Exception as exc:
+            rapid_error = f"{type(exc).__name__}: {str(exc)[:180]}"
+            # 回落到 tesseract
 
     try:
         from PIL import Image, ImageOps
@@ -430,7 +432,8 @@ def vision_ocr(payload: dict = Body(...)) -> dict:
         text = pytesseract.image_to_string(img, lang="chi_sim+eng", config="--psm 6")
     except Exception as exc:  # tesseract 未装/语言包缺失
         raise HTTPException(501, f"OCR 不可用：{exc}") from exc
-    return {"ok": True, "engine": "tesseract", "text": _normalize_ocr_text(text)[:6000]}
+    return {"ok": True, "engine": "tesseract", "engine_requested": engine,
+            "rapid_error": rapid_error, "text": _normalize_ocr_text(text)[:6000]}
 
 
 # ---------------------------------------------------------------- 掌握度导入
