@@ -105,7 +105,7 @@ export function TopBar() {
         </button>
 
         <button
-          className="search-btn"
+          className="search-btn search-main"
           type="button"
           title={`搜索模块 / 直接提问 / 操作（${MOD_KEY} + K）`}
           onClick={() => setPaletteOpen(true)}

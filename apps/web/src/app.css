@@ -1,4 +1,4 @@
-/* ============================================================================
+﻿/* ============================================================================
    核反应堆物理 AI 助教 Agent · 三栏工作台
    设计基调：工程/物理式的冷静蓝灰 + 单一强调色（蓝），信息密度高但不拥挤。
    参考作品的信息架构（顶栏 / 左模块 / 中对话 / 右画布 / 底状态栏），
@@ -6940,7 +6940,7 @@ kbd {
 @media (max-width: 520px) {
   .topbar-right .status-chip,
   .topbar-right .model-chip,
-  .topbar-right .search-btn,
+  .topbar-right .search-main,
   .account-name {
     display: none !important;
   }
