@@ -32,6 +32,8 @@ export default function App() {
   const setMobileNavOpen = useAppStore((s) => s.setMobileNavOpen);
   const setDraft = useAppStore((s) => s.setDraft);
   const send = useAppStore((s) => s.send);
+  const hasGraph = useAppStore((s) => s.modules.some((module) => module.id === 'graph'));
+  const setActiveFeature = useAppStore((s) => s.setActiveFeature);
   const session = useActiveSession();
 
   useEffect(() => {
@@ -47,6 +49,12 @@ export default function App() {
   useEffect(() => {
     setMobileNavOpen(false);
   }, [activeFeature, setMobileNavOpen]);
+
+  useEffect(() => {
+    if (account && hasGraph && new URLSearchParams(location.search).get('view') === 'course') {
+      setActiveFeature('graph');
+    }
+  }, [account, hasGraph, setActiveFeature]);
 
   // 全局快捷键：Ctrl/⌘+K 命令面板；Ctrl+/ 聚焦输入框；Esc 收起面板
   useEffect(() => {

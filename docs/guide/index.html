@@ -1,0 +1,57 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>核反应堆物理 AI 助教使用说明</title><style>
+*{box-sizing:border-box}body{margin:0;font:16px/1.7 system-ui,'Microsoft YaHei',sans-serif;color:#182437;background:#f1f5fa}
+header,main{max-width:880px;margin:auto;padding:1.5rem 1rem}header{padding-bottom:0}
+h1,h2,h3{line-height:1.32;margin:.3rem 0 .9rem}h1{font-size:clamp(1.55rem,4vw,2.25rem)}
+h2{font-size:1.4rem}h3{font-size:1.05rem;margin-top:1.25rem}p{margin:.55rem 0 .9rem}
+section{background:#fff;border:1px solid #d7e1ed;border-radius:12px;padding:clamp(1rem,3vw,1.65rem);margin:0 0 1rem}
+nav,.links{display:flex;flex-wrap:wrap;gap:.35rem 1rem}nav{margin-top:1rem}a{color:#174b92;text-underline-offset:.18em}
+table{width:100%;border-collapse:collapse;margin:.8rem 0}th,td{border:1px solid #d9d9d9;padding:.48rem .65rem;text-align:left}
+th{background:#e8eff8}td:first-child{width:30%}ol{padding-left:1.45rem}li{margin:.35rem 0}
+@media print{body{background:white}nav{display:none}header,main{padding:0}section{border:0;border-radius:0;break-after:page}}
+</style>
+<header><h1>核反应堆物理 AI 助教使用说明</h1><p>学生与教师手册 v2.0  ·  2026 年 11 月</p>
+<div class="links"><a href="./manual-v2.pdf">下载 PDF</a><a href="./manual-v2.docx">下载 Word</a></div>
+<nav aria-label="手册目录"><a href="#start">快速开始</a><a href="#graphs">三张图谱</a><a href="#cases">工程案例</a><a href="#teacher">主观题批阅</a><a href="#records">记录备份与常见问题</a></nav></header><main>
+<section id="start"><h2>快速开始</h2>
+<p>本手册适用于《核反应堆物理》本科课程。学生可查教材依据、沿图谱复习，并完成需要计算、取证和修订结论的工程案例。教师可按同一道题批阅作业，复核候选错因并导出统计。</p>
+<p class="links"><a href="https://reactor-physics-agent.onrender.com/">学生工作台</a><a href="https://reactor-physics-agent.onrender.com/?view=course&amp;tab=cases">课程图谱与案例</a><a href="https://reactor-physics-agent.onrender.com/admin/homework">教师主观题批阅</a></p>
+<h3>学生首次使用</h3>
+<ol><li>打开学生工作台，按课程约定输入账号和密码。以后用同一账号和密码登录。</li><li>在输入框提问，或从左栏选择教材与概念溯源、课程图谱与案例、学习计划等模块。</li><li>阅读回答后，打开右侧证据卡核对教材章节。遇到算题，可查看计算卡的输入、过程与结果。</li></ol>
+<h3>按任务找入口</h3>
+<table><thead><tr><th scope="col">要做什么</th><th scope="col">从哪里进入</th></tr></thead><tbody><tr><td>查定义、公式或教材出处</td><td>教材与概念溯源 → 查看证据卡</td></tr><tr><td>梳理先学什么</td><td>课程图谱与案例 → 知识图谱或问题图谱</td></tr><tr><td>练习工程判断</td><td>课程图谱与案例 → 工程案例</td></tr><tr><td>查看分项作答记录</td><td>课程图谱与案例 → 能力图谱</td></tr><tr><td>批改同一道主观题</td><td>教师端 → 主观题批阅</td></tr></tbody></table>
+</section>
+<section id="graphs"><h2>三张图谱</h2>
+<p>左栏打开「课程图谱与案例」，用页面上方的标签切换。三张图谱分别回答概念怎样相连、问题怎样递进、能力怎样通过作答体现。</p>
+<table><thead><tr><th scope="col">图谱</th><th scope="col">用途与操作</th></tr></thead><tbody><tr><td>知识图谱</td><td>179 个知识点、289 条关系。可按章或层级浏览，搜索术语或编号。点节点可看定义、前置、易错点、课程出处和关联案例。</td></tr><tr><td>问题图谱</td><td>37 道问题、37 条递进关系。可按关键词或编号搜索，也可按案例查看前置题链。点问题看关联知识点、提示和递进理由。</td></tr><tr><td>能力图谱</td><td>8 项能力。点能力看前置与后续能力，以及对应案例、综合问题和评分项。展开已有练习可查看作答证据。</td></tr></tbody></table>
+<h3>沿着一个问题复习</h3>
+<ol><li>在问题图谱搜索 Q-037，查看两份计算报告为何需要分别核对统计精度和归一口径。</li><li>点「独立估计差值的合成标准误」查看概念，再从知识点详情进入「两份计算结果的一致性复核」。</li><li>完成案例并保存自评后，打开「不确定性评估」，查看对应评分项及初判、所选材料和修订作答。</li></ol>
+<p>能力记录区分自评与模型建议。每个案例在当前浏览器按账号保留最近五条记录。</p>
+</section>
+<section id="cases"><h2>工程案例</h2>
+<p>在工程案例页按主题筛选或用关键词搜索。七个案例的数值为合成教学数据，概念出处可从案例或知识图谱回查。</p>
+<table><thead><tr><th scope="col">案例</th><th scope="col">练习重点</th></tr></thead><tbody><tr><td>堆芯功率分布报告复核</td><td>功率归一、峰均比和空间分辨率</td></tr><tr><td>两群模型结果差异追查</td><td>按通量权重折叠响应，用对照复算追查差异</td></tr><tr><td>卸料燃耗统计口径审查</td><td>区分整体加权均值、最高批均值和组件最大值</td></tr><tr><td>探测器计数记录复核</td><td>统一计数口径，扣除背景并说明比较条件</td></tr><tr><td>停堆后两条信号的解释</td><td>区分衰变释热、归一基准和仪器显示下限</td></tr><tr><td>温度反馈时序复盘</td><td>核对时序与反馈分项，说明证据支持的归因</td></tr><tr><td>两份计算结果的一致性复核</td><td>比较差值与标准误，分别核对统计误差和模型口径</td></tr></tbody></table>
+<h3>完成一次推演</h3>
+<ol><li>阅读题设和表格，写下初步判断、计算依据和还缺的资料。</li><li>点「记录初判，选择补充证据」，选一份材料。先看这份材料实际提供了什么。</li><li>修订结论并提交。按对应量规自评或获取模型评阅建议，可展开对照另一条证据路径。</li></ol>
+</section>
+<section id="teacher"><h2>主观题批阅</h2>
+<p>在教师端顶部点「主观题批阅」。可用内置案例，也可填写自定义题目、评分项、分值、得分要点和预设错因。</p>
+<ol><li>选定题目，再导入同一道题的匿名作答。可逐份录入、粘贴两列表格或导入 CSV。</li><li>用「按错答示例扫描」匹配量规里的错答短句，或用「批量模型预评」查看逐项建议。展开候选错因组，核对引文及原答卷。</li><li>可改错因名称、勾选适用作答，并把错因加入待批阅记录。检查每项分数、补充错因或评语后，点「确认并继续批阅」。</li><li>展开本题错因统计查看相关答卷，或导出本题错因报告。分母为教师确认的答卷数，同一答卷中的同一错因只计一次。</li></ol>
+<h3>导入与演示</h3>
+<p>CSV 可使用「匿名编号,作答」或「id,answer」作表头。含换行或逗号的答案用双引号包住，答案里的双引号写成两个。每道题内匿名编号唯一。</p>
+<p>内置案例提供「填入演示作答」，可先检查填入内容，再点「批量导入」。演示作答用于体验功能，班级统计应基于本班真实匿名作答。</p>
+<h3>模型建议与数据</h3>
+<p>主动点击模型预评时，题目、量规和对应匿名作答会发送给配置的模型。示例扫描和人工阅卷可独立使用。模型评分和归组均由教师复核。</p>
+</section>
+<section id="records"><h2>记录备份与常见问题</h2>
+<table><thead><tr><th scope="col">记录</th><th scope="col">如何保存</th></tr></thead><tbody><tr><td>对话、错题及掌握度</td><td>在顶栏「历史」中导出学习备份。需要恢复时从同一入口导入。</td></tr><tr><td>教师批阅、量规及错因</td><td>记录保存在当前浏览器。从主观题批阅页导出批阅 JSON，再在目标浏览器用「恢复备份」合并。</td></tr><tr><td>案例初判、修订与自评</td><td>可在能力图谱回看。记录按账号保存在当前浏览器，换浏览器后需重新练习。</td></tr></tbody></table>
+<h3>常见操作</h3>
+<p>网页加载慢时，稍等服务唤醒。重新打开后可用顶栏连接状态确认后端是否连通。</p>
+<p>问题图谱信息太多时，选「按案例看前置」聚焦一条题链。案例页也可先按主题过滤。</p>
+<p>模型暂不可用时，案例可按量规自评，教师可做示例扫描与人工批阅。示例扫描的覆盖范围取决于量规中列出的短句。</p>
+<p>拍照识别适合清晰的印刷体。公式、上下标或手写内容识别有误时，可在输入框补写关键文字。</p>
+<p>云端服务使用临时磁盘时，重启或重新部署可能影响服务器记录。重要作业和学习数据应先从对应页面导出。</p>
+<p class="links"><a href="https://reactor-physics-agent.onrender.com/guide/">在线手册</a><a href="https://reactor-physics-agent.onrender.com/guide/manual-v2.pdf">PDF 版</a><a href="https://reactor-physics-agent.onrender.com/guide/manual-v2.docx">Word 版</a></p>
+</section>
+</main></html>

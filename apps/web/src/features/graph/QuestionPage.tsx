@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { GraphFull, GraphQuestion } from '../../lib/types';
+import type { TeachingCourse } from '../../lib/api';
 import { Icon } from '../../shell/Icons';
 import {
   buildQuestionEdges,
@@ -36,6 +37,10 @@ interface Anchors {
 
 interface Props {
   full: GraphFull;
+  cases?: TeachingCourse['cases'];
+  abilities?: TeachingCourse['abilities'];
+  onJumpCase?: (id: string) => void;
+  onJumpAbility?: (id: string) => void;
   focusId: string | null;
   onSelectQuestion: (qid: string | null) => void;
   onJumpKnowledge: (nodeId: string) => void;
@@ -43,7 +48,8 @@ interface Props {
 
 const STYLE = `
 .qp-wrap { flex: 1; min-height: 0; display: flex; flex-direction: column; position: relative; background: #f6f8fc; }
-.qp-bar { display: flex; align-items: center; gap: 10px; padding: 8px 16px; border-bottom: 1px solid rgba(120,150,200,.18); font-size: 11px; color: #64748b; background: rgba(255,255,255,.6); }
+.qp-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 8px 16px; border-bottom: 1px solid rgba(120,150,200,.18); font-size: 12px; color: #475569; background: rgba(255,255,255,.6); }
+.qp-bar input, .qp-bar select { border: 1px solid #bfcde0; border-radius: 6px; background: #fff; color: #1e293b; font: inherit; padding: 5px 7px; }
 .qp-bar b { color: #334155; }
 .qp-bar .spacer { flex: 1; }
 .qp-scroll { flex: 1; min-height: 0; overflow: auto; padding: 14px 18px 28px; }
@@ -76,7 +82,7 @@ const STYLE = `
 .qp-chip:hover { background: rgba(37,99,235,.12); }
 .qp-hintbtn { margin-top: 7px; border: 1px dashed #fde68a; background: #fffbeb; color: #b45309; border-radius: 999px; font-size: 9.5px; padding: 2px 8px; cursor: pointer; }
 .qp-hinttext { margin: 6px 0 0; font-size: 10.5px; line-height: 1.55; color: #92400e; background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 6px 8px; }
-.qp-drawer { position: absolute; right: 14px; top: 44px; bottom: 14px; width: 360px; z-index: 20; overflow-y: auto; border-radius: 14px; padding: 14px 15px 18px; background: #fff; border: 1px solid rgba(120,150,200,.32); box-shadow: 0 18px 46px rgba(15,23,42,.18); }
+.qp-drawer { position: absolute; right: 14px; top: 53px; bottom: 14px; width: min(360px, calc(100% - 28px)); z-index: 20; overflow-y: auto; border-radius: 14px; padding: 14px 15px 18px; background: #fff; border: 1px solid rgba(120,150,200,.32); box-shadow: 0 18px 46px rgba(15,23,42,.18); }
 .qp-drawer h4 { margin: 0 0 8px; font-size: 13px; line-height: 1.6; color: #0f172a; padding-right: 22px; }
 .qp-drawer .close { position: absolute; right: 10px; top: 10px; width: 24px; height: 24px; border-radius: 7px; border: 1px solid rgba(120,150,200,.3); background: none; color: #475569; cursor: pointer; }
 .qp-drawer .sec { display: block; margin: 13px 0 5px; font-size: 10.5px; font-weight: 700; color: #64748b; }
@@ -86,9 +92,10 @@ const STYLE = `
 .qp-drawer .acts { display: flex; gap: 7px; margin-top: 14px; }
 .qp-drawer .acts button { flex: 1; border: 1px solid rgba(37,99,235,.35); background: rgba(37,99,235,.08); color: #1d4ed8; border-radius: 8px; padding: 7px 0; font-size: 11.5px; cursor: pointer; }
 .qp-drawer .acts button.ghost { background: #f8fafc; color: #475569; border-color: rgba(120,150,200,.3); }
+@media (max-width: 640px) { .qp-drawer { top: 104px; } }
 `;
 
-export function QuestionPage({ full, focusId, onSelectQuestion, onJumpKnowledge }: Props) {
+export function QuestionPage({ full, focusId, onSelectQuestion, onJumpKnowledge, cases, abilities, onJumpCase, onJumpAbility }: Props) {
   const boardRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef(new Map<string, HTMLDivElement>());
   const [anchors, setAnchors] = useState<Record<string, Anchors>>({});
@@ -96,12 +103,24 @@ export function QuestionPage({ full, focusId, onSelectQuestion, onJumpKnowledge 
   const [hover, setHover] = useState<string | null>(null);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [hintOpen, setHintOpen] = useState<Set<string>>(new Set());
+  const [query, setQuery] = useState('');
+  const [caseFilter, setCaseFilter] = useState('');
 
   useEffect(() => {
     if (focusId) setSelected(focusId);
   }, [focusId]);
 
   const edges = useMemo(() => buildQuestionEdges(full), [full]);
+  const filter = cases?.find((item) => item.id === caseFilter);
+  const visible = useMemo(() => {
+    const term = query.trim().toLowerCase();
+    const caseScope = filter ? new Set(filter.question_ids.flatMap((qid) => [
+      qid, ...questionPath(edges, qid).upstream,
+    ])) : null;
+    const matched = full.questions.filter((q) => (!caseScope || caseScope.has(q.qid)) &&
+      (!term || `${q.qid} ${q.question} ${q.kp_labels?.join(' ') ?? ''}`.toLowerCase().includes(term)));
+    return new Set(matched.map((q) => q.qid));
+  }, [query, filter, full.questions, edges]);
   const layers = useMemo(() => {
     const raw = full.question_layers?.length
       ? full.question_layers
@@ -112,12 +131,12 @@ export function QuestionPage({ full, focusId, onSelectQuestion, onJumpKnowledge 
         : full.questions.filter((q) => layerOfQuestion(full, q) === l.layer).map((q) => q.qid);
       const qs = qids
         .map((qid) => full.questions.find((q) => q.qid === qid))
-        .filter((q): q is GraphQuestion => Boolean(q));
+        .filter((q): q is GraphQuestion => !!q && visible.has(q.qid));
       return { layer: l.layer, name: l.name, desc: l.desc, qs };
     });
-  }, [full]);
+  }, [full, visible]);
 
-  const activeQid = hover ?? selected ?? DEFAULT_HIGHLIGHT;
+  const activeQid = hover ?? selected ?? (visible.size === full.questions.length ? DEFAULT_HIGHLIGHT : null);
   const path = useMemo(
     () => (activeQid ? questionPath(edges, activeQid) : null),
     [edges, activeQid],
@@ -160,7 +179,11 @@ export function QuestionPage({ full, focusId, onSelectQuestion, onJumpKnowledge 
     const t = window.setTimeout(measure, 40);
     return () => window.clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [expanded, hintOpen, full]);
+  }, [expanded, hintOpen, full, visible]);
+
+  useEffect(() => {
+    if (focusId) cardRefs.current.get(focusId)?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+  }, [focusId]);
 
   // 同源多连线在锚点处扇形散开（参考作品公式）
   const geometry = useMemo(() => {
@@ -209,8 +232,20 @@ export function QuestionPage({ full, focusId, onSelectQuestion, onJumpKnowledge 
     return { out, inc };
   }, [edges]);
 
-  const selectedQ = selected ? full.questions.find((q) => q.qid === selected) : undefined;
+  const selectedQ = selected && visible.has(selected) ? full.questions.find((q) => q.qid === selected) : undefined;
   const selectedPath = selected ? questionPath(edges, selected) : null;
+  const relatedCases = cases?.filter((item) => selected && item.question_ids.includes(selected)) ?? [];
+  const relatedAbilities = abilities?.filter((item) => relatedCases.some((entry) =>
+    entry.rubric.some((row) => row.ability_id === item.id))) ?? [];
+  const relatedEdges = edges.filter((edge) => edge.why && (edge.source === selected || edge.target === selected));
+  const focusQuestion = (qid: string) => {
+    if (!visible.has(qid)) {
+      setCaseFilter('');
+      setQuery('');
+    }
+    setSelected(qid);
+    onSelectQuestion(qid);
+  };
 
   const renderCard = (q: GraphQuestion, index: number) => {
     const layer = layerOfQuestion(full, q);
@@ -328,13 +363,25 @@ export function QuestionPage({ full, focusId, onSelectQuestion, onJumpKnowledge 
     <div className="qp-wrap">
       <style>{STYLE}</style>
       <div className="qp-bar">
-        <span>
-          三层递进问题链 · 悬停/点击卡片高亮上下游路径；连线为 <b>{edges.length}</b> 条（跨层 + 对比）
-        </span>
+        <label>搜索问题 <input value={query} onChange={(event) => {
+          setQuery(event.target.value);
+          setSelected(null);
+          setHover(null);
+        }} placeholder="问题编号或关键词" /></label>
+        <label>按案例看前置 <select value={caseFilter} onChange={(event) => {
+          setCaseFilter(event.target.value);
+          setQuery('');
+          setSelected(null);
+          setHover(null);
+        }}>
+          <option value="">全部问题</option>
+          {cases?.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}
+        </select></label>
         <span className="spacer" />
-        <span>{full.questions.length} 个问题</span>
+        <span>{visible.size} / {full.questions.length} 个问题 · {edges.filter((edge) => visible.has(edge.source) && visible.has(edge.target)).length} 条可见关系</span>
       </div>
       <div className="qp-scroll">
+        {visible.size === 0 && <p role="status">没有匹配的问题。</p>}
         <div className="qp-board" ref={boardRef}>
           <svg className="qp-svg" aria-hidden="true">
             <defs>
@@ -438,6 +485,33 @@ export function QuestionPage({ full, focusId, onSelectQuestion, onJumpKnowledge 
             })}
           </div>
 
+          {relatedCases.length > 0 && (
+            <>
+              <b className="sec">工程案例</b>
+              <div className="qp-chips">
+                {relatedCases.map((item) => (
+                  <button key={item.id} className="qp-chip" onClick={() => onJumpCase?.(item.id)}>{item.title}</button>
+                ))}
+              </div>
+            </>
+          )}
+          {relatedAbilities.length > 0 && (
+            <>
+              <b className="sec">案例考查的能力</b>
+              <div className="qp-chips">{relatedAbilities.map((item) => (
+                <button key={item.id} className="qp-chip" onClick={() => onJumpAbility?.(item.id)}>{item.title}</button>
+              ))}</div>
+            </>
+          )}
+          {relatedEdges.length > 0 && (
+            <>
+              <b className="sec">递进依据</b>
+              <ul>{relatedEdges.map((edge) => (
+                <li key={`${edge.source}-${edge.target}`}>{edge.source} → {edge.target} · {edge.why}</li>
+              ))}</ul>
+            </>
+          )}
+
           {selectedPath && (selectedPath.upstream.size > 0 || selectedPath.downstream.size > 0) && (
             <>
               {selectedPath.upstream.size > 0 && (
@@ -451,10 +525,7 @@ export function QuestionPage({ full, focusId, onSelectQuestion, onJumpKnowledge 
                         <button
                           key={qid}
                           className="qp-chip"
-                          onClick={() => {
-                            setSelected(qid);
-                            onSelectQuestion(qid);
-                          }}
+                          onClick={() => focusQuestion(qid)}
                         >
                           {q.question.length > 18 ? `${q.question.slice(0, 18)}…` : q.question}
                         </button>
@@ -474,10 +545,7 @@ export function QuestionPage({ full, focusId, onSelectQuestion, onJumpKnowledge 
                         <button
                           key={qid}
                           className="qp-chip"
-                          onClick={() => {
-                            setSelected(qid);
-                            onSelectQuestion(qid);
-                          }}
+                          onClick={() => focusQuestion(qid)}
                         >
                           {q.question.length > 18 ? `${q.question.slice(0, 18)}…` : q.question}
                         </button>

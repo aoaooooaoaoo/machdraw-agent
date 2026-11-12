@@ -13,7 +13,7 @@
 | 4 | 动力学与反应性 | [kinetics.md](kinetics.md) | `plot` | `kinetics_calc`、`reactivity_calc`、`spectrum_plot`、`kb_search` | `plot` |
 | 5 | 燃耗与中毒 | [poison.md](poison.md) | `plot` | `poison_calc`、`burnup_calc`、`kb_search` | `plot` |
 | 6 | 概念辨析 | [concept.md](concept.md) | `comparison`、`quiz` | `comparison_pick`、`quiz_from_kb`、`kb_search` | `comparison`、`quiz` |
-| 7 | 知识图谱 | [graph.md](graph.md) | `graph` | `kg_lookup`、`kb_search` | `graph` |
+| 7 | 课程图谱与案例 | [graph.md](graph.md) | `graph` | `kg_lookup`、`kb_search` | `graph` |
 | 8 | 学习计划 | [study.md](study.md) | — | `quiz_from_kb`、`kb_search` | ⚠️ 无 |
 | 9 | 错题与计算批改 | [wrongbook.md](wrongbook.md) | `annotation`、`wrongbook` | `wrongbook_crud`、`kb_search`、`quiz_from_kb` | `annotation`、`wrongbook` |
 | 10 | 费曼追问 | [feynman.md](feynman.md) | `annotation` | `kb_search` | `annotation` |

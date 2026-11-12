@@ -36,10 +36,12 @@ from .config import (
 from .contracts.models import AuthRequest, ChatRequest
 from .orchestrator import run_chat
 from .state import MODULES, get_state, load_state, reset_state
+from .teaching import router as teaching_router
 from .tools import TOOLS
 
 WEB_DIST = ROOT / "apps" / "web" / "dist"
 ADMIN_HTML = ROOT / "apps" / "api" / "static" / "admin.html"
+GUIDE_DIR = ROOT / "docs" / "guide"
 
 
 @asynccontextmanager
@@ -53,6 +55,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="核反应堆物理 AI 助教 Agent", version="0.1.0", lifespan=lifespan)
+app.include_router(teaching_router)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -1104,8 +1107,21 @@ def admin_page():
     return JSONResponse({"error": "apps/api/static/admin.html 缺失"}, status_code=404)
 
 
+@app.get("/admin/homework")
+def homework_page():
+    return FileResponse(ADMIN_HTML.with_name("homework.html"))
+
+
+@app.get("/admin/homework.js")
+def homework_script():
+    return FileResponse(ADMIN_HTML.with_name("homework.js"), media_type="text/javascript")
+
+
 if WEB_DIST.exists():
     app.mount("/assets", StaticFiles(directory=str(WEB_DIST / "assets")), name="assets")
+
+if GUIDE_DIR.is_dir():
+    app.mount("/guide", StaticFiles(directory=str(GUIDE_DIR), html=True), name="guide")
 
 # 自绘 SVG 教学图库：前端直接用 <img src="/figures/FIG-xxx.svg"> 或内联 <object>
 FIG_DIR = ROOT / "kb" / "figures"

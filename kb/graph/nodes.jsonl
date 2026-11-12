@@ -173,3 +173,7 @@
 {"id": "KN-173", "kp_id": "KP-DESIGN-009", "label": "堆芯物理设计计算内容", "tier": "branch", "chapter": "第十章 堆芯核设计", "state": "未学"}
 {"id": "KN-174", "kp_id": "KP-DESIGN-010", "label": "反应堆启动物理试验", "tier": "branch", "chapter": "第十章 堆芯核设计", "state": "未学"}
 {"id": "KN-175", "kp_id": "KP-DESIGN-011", "label": "换料堆芯安全评价", "tier": "branch", "chapter": "第十章 堆芯核设计", "state": "未学"}
+{"id":"KN-176","kp_id":"KP-NUCPHY-026","label":"净计数率与背景扣除","tier":"branch","chapter":"第二章 核物理基础","state":"未学"}
+{"id":"KN-177","kp_id":"KP-NUCPHY-027","label":"中子与热信号的归一基准","tier":"branch","chapter":"第二章 核物理基础","state":"未学"}
+{"id":"KN-178","kp_id":"KP-KIN-014","label":"温度反馈时序与归因","tier":"branch","chapter":"第八章 核反应堆中子动力学","state":"未学"}
+{"id":"KN-179","kp_id":"KP-DESIGN-012","label":"独立估计差值的合成标准误","tier":"branch","chapter":"第十章 堆芯核设计","state":"未学"}

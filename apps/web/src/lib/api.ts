@@ -54,6 +54,48 @@ export async function getModules(): Promise<ModuleManifest[]> {
   return Array.isArray(data.modules) ? data.modules : [];
 }
 
+export interface TeachingCourse {
+  abilities: Array<{ id: string; title: string; outcome: string; prerequisites: string[] }>;
+  cases: Array<{
+    id: string;
+    title: string;
+    theme?: string;
+    context: string;
+    table: { columns: string[]; rows: string[][] };
+    question: string;
+    kp_ids: string[];
+    question_ids: string[];
+    refs?: string[];
+    reading?: { label: string; url: string };
+    scenario?: {
+      initial_prompt: string;
+      decision_prompt: string;
+      revision_prompt: string;
+      criterion_id: string;
+      debrief: string;
+      choices: Array<{ id: string; label: string; evidence: string; rubric_note: string }>;
+    };
+    rubric: Array<{ id: string; title: string; points: number; expected: string; ability_id: string }>;
+  }>;
+}
+
+export interface TeachingReview {
+  total: number;
+  items: Array<{ id: string; score: number; quote: string; feedback: string }>;
+}
+
+export function getTeachingCourse(): Promise<TeachingCourse> {
+  return request('/api/teaching/course');
+}
+
+export function reviewCase(caseId: string, answer: string, choice?: string): Promise<TeachingReview> {
+  return request('/api/teaching/review', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ case_id: caseId, answer, scenario: choice ? { choice } : undefined }),
+  });
+}
+
 export interface LoginResult {
   ok: boolean;
   account: string;

@@ -1,4 +1,4 @@
-# 模块任务书 · 知识图谱（`graph`）
+# 模块任务书 · 课程图谱与案例（`graph`）
 
 > ⚠️ **本文件由 `scripts/gen-module-docs.py` 从代码生成，请勿手改。**
 > 改契约改代码（`app/state.py` 的 `MODULES` / `app/tools/<name>.py` / `features/<id>/index.ts` / `lib/types.ts`），再跑一次生成脚本；`--check` 模式会在 CI 里拦住漂移。
@@ -8,14 +8,14 @@
 | 项 | 值 | 来源 |
 |---|---|---|
 | id | `graph` | `apps/api/app/state.py` · `MODULES` |
-| 显示名 | 知识图谱 | 同上 |
+| 显示名 | 课程图谱与案例 | 同上 |
 | 图标 | `graph` | 同上（须存在于 `shell/Icons.tsx`） |
 | 画布类型 | `graph` | 同上 · `canvas_kinds` |
 | 工具 | `kg_lookup`、`kb_search` | 同上 · `tools` |
 | 前端画布 | 知识图谱画布（`graph`，order 80） | `features/*/index.ts` |
 | 入口示例 | 2 条 | `state.py` · `entry_examples` |
 
-**一句话职责**：十章知识星图与问题链
+**一句话职责**：知识图谱、问题图谱、能力图谱与工程案例
 
 ## 二、系统提示词（`system_prompt`，拼进 LLM system 消息）
 
@@ -72,7 +72,7 @@ apps\api\.venv\Scripts\python.exe apps\api\tests\smoke.py              # 端到�
 apps\api\.venv\Scripts\python.exe scripts\gen-module-docs.py --check     # 本文档与代码一致
 ```
 
-手工验收：左栏点「知识图谱」；空态列出声明画布；提问产出 `graph` 时画布按 `autoOpenCanvas` 行为自动展开。
+手工验收：左栏点「课程图谱与案例」；空态列出声明画布；提问产出 `graph` 时画布按 `autoOpenCanvas` 行为自动展开。
 
 ---
 

@@ -34,6 +34,7 @@ COPY apps/api/static ./apps/api/static
 COPY pipeline ./pipeline
 COPY kb ./kb
 COPY eval ./eval
+COPY docs/guide ./docs/guide
 # 前端构建产物（由阶段 1 产出）
 COPY --from=web /web/dist ./apps/web/dist
 

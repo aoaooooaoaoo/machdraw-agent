@@ -173,3 +173,7 @@ KP-DESIGN-008	总被控反应性的确定
 KP-DESIGN-009	堆芯物理设计计算内容
 KP-DESIGN-010	反应堆启动物理试验
 KP-DESIGN-011	换料堆芯安全评价
+KP-NUCPHY-026	净计数率与背景扣除
+KP-NUCPHY-027	中子与热信号的归一基准
+KP-KIN-014	温度反馈时序与归因
+KP-DESIGN-012	独立估计差值的合成标准误

@@ -9,6 +9,7 @@ import { Overview } from '../../modules/graph/Overview';
 import { REL_STYLE, TIER_CN, tierOf, stateColor } from '../../modules/graph/constants';
 import { CHAPTER_COLORS } from '../../modules/graph/layout';
 import { QuestionPage } from './QuestionPage';
+import { Teaching, useTeachingCourse } from './Teaching';
 import {
   LEVEL_CN,
   levelOf,
@@ -18,7 +19,12 @@ import {
   parentMap,
 } from './pageData';
 
-type Tab = 'knowledge' | 'question';
+type Tab = 'knowledge' | 'question' | 'ability' | 'cases';
+
+function startingTab(): Tab {
+  const value = new URLSearchParams(location.search).get('tab');
+  return value === 'question' || value === 'ability' || value === 'cases' ? value : 'knowledge';
+}
 
 const LEVEL_TIERS: Record<number, string[]> = {
   1: ['core'],
@@ -28,7 +34,7 @@ const LEVEL_TIERS: Record<number, string[]> = {
 };
 
 const PAGE_STYLE = `
-.gp-root { height: 100%; min-height: 0; display: flex; flex-direction: column; background: #f4f7fc; color: #1e293b; position: relative; overflow: hidden; }
+.gp-root { width: 100%; min-width: 0; height: 100%; min-height: 0; display: flex; flex-direction: column; background: #f4f7fc; color: #1e293b; position: relative; overflow: hidden; }
 .gp-head { flex-shrink: 0; display: flex; align-items: center; gap: 14px; padding: 10px 18px; border-bottom: 1px solid rgba(120,150,200,.22); background: #fff; }
 .gp-brand { display: flex; align-items: center; gap: 9px; min-width: 0; }
 .gp-mark { width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; flex-shrink: 0; color: #fff; background: radial-gradient(circle at 32% 28%, #38bdf8, #2563eb 58%, #1e3a8a); box-shadow: 0 0 14px rgba(37,99,235,.35); }
@@ -87,18 +93,27 @@ const PAGE_STYLE = `
 .gp-agent-input button:disabled { opacity: .45; cursor: default; }
 .gp-float { position: absolute; right: 16px; bottom: 16px; z-index: 25; display: inline-flex; align-items: center; gap: 7px; padding: 8px 13px; border-radius: 999px; background: #0f172a; color: #fff; font-size: 11.5px; box-shadow: 0 10px 26px rgba(15,23,42,.3); }
 .gp-float .pulse { width: 7px; height: 7px; border-radius: 50%; background: #22d3ee; animation: gp-pulse 1.1s ease-in-out infinite; }
+@media (max-width: 850px) {
+  .gp-head { flex-wrap: wrap; gap: 7px; padding: 8px; }
+  .gp-tabs { max-width: 100%; overflow-x: auto; }
+  .gp-tabs button { white-space: nowrap; padding: 6px 9px; }
+  .gp-head-right .gp-stat { display: none; }
+}
 `;
 
 export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], busy = false }: CanvasProps) {
   const [full, setFull] = useState<GraphFull | null>(null);
   const [fullError, setFullError] = useState<string | null>(null);
-  const [tab, setTab] = useState<Tab>('knowledge');
-  const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [qFocus, setQFocus] = useState<string | null>(null);
+  const [tab, setTab] = useState<Tab>(startingTab);
+  const [caseId, setCaseId] = useState<string | null>(() => new URLSearchParams(location.search).get('case'));
+  const [abilityId, setAbilityId] = useState<string | null>(() => new URLSearchParams(location.search).get('ability'));
+  const [selectedId, setSelectedId] = useState<string | null>(() => new URLSearchParams(location.search).get('node'));
+  const [qFocus, setQFocus] = useState<string | null>(() => new URLSearchParams(location.search).get('question'));
   const [hiddenLevelIds, setHiddenLevelIds] = useState<Set<number>>(new Set());
   const [hiddenSectorIds, setHiddenSectorIds] = useState<Set<number>>(new Set());
   const [agentOpen, setAgentOpen] = useState(false);
   const account = useAppStore((s) => s.account);
+  const { course, error: courseError } = useTeachingCourse();
 
   useEffect(() => {
     let alive = true;
@@ -170,6 +185,9 @@ export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], b
     () => (full && selectedNode ? questionsOfNode(full, selectedNode) : []),
     [full, selectedNode],
   );
+  const relatedCases = course?.cases.filter((item) => selectedNode?.kp_id && item.kp_ids.includes(selectedNode.kp_id)) ?? [];
+  const relatedAbilities = course?.abilities.filter((ability) => relatedCases.some((item) =>
+    item.rubric.some((row) => row.ability_id === ability.id))) ?? [];
 
   const toggleLevel = (level: number) => {
     setHiddenLevelIds((prev) => {
@@ -196,6 +214,14 @@ export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], b
     setTab('knowledge');
     setSelectedId(kid);
   };
+  const jumpToCase = (id: string) => {
+    setCaseId(id);
+    setTab('cases');
+  };
+  const jumpToAbility = (id: string) => {
+    setAbilityId(id);
+    setTab('ability');
+  };
 
   const stats = full?.stats;
 
@@ -220,6 +246,12 @@ export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], b
           </button>
           <button role="tab" aria-selected={tab === 'question'} className={tab === 'question' ? 'on' : ''} onClick={() => setTab('question')}>
             问题图谱
+          </button>
+          <button role="tab" aria-selected={tab === 'ability'} className={tab === 'ability' ? 'on' : ''} onClick={() => setTab('ability')}>
+            能力图谱
+          </button>
+          <button role="tab" aria-selected={tab === 'cases'} className={tab === 'cases' ? 'on' : ''} onClick={() => setTab('cases')}>
+            工程案例
           </button>
         </div>
         <div className="gp-head-right">
@@ -363,6 +395,18 @@ export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], b
                   </div>
                 </>
               )}
+              {relatedCases.length > 0 && (
+                <>
+                  <b className="sec">工程案例</b>
+                  <div className="gp-chips">{relatedCases.map((item) => (
+                    <button key={item.id} className="gp-chip" onClick={() => jumpToCase(item.id)}>{item.title}</button>
+                  ))}</div>
+                  <b className="sec">案例考查的能力</b>
+                  <div className="gp-chips">{relatedAbilities.map((ability) => (
+                    <button key={ability.id} className="gp-chip" onClick={() => jumpToAbility(ability.id)}>{ability.title}</button>
+                  ))}</div>
+                </>
+              )}
               {!!selectedNode.commonMistakes?.length && (
                 <>
                   <b className="sec">易错点</b>
@@ -388,7 +432,7 @@ export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], b
             </aside>
           )}
         </div>
-      ) : (
+      ) : tab === 'question' ? (
         <div className="gp-body">
           {full ? (
             <div className="gp-main">
@@ -397,12 +441,22 @@ export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], b
                 focusId={qFocus}
                 onSelectQuestion={setQFocus}
                 onJumpKnowledge={jumpToKnowledge}
+                cases={course?.cases}
+                abilities={course?.abilities}
+                onJumpCase={jumpToCase}
+                onJumpAbility={jumpToAbility}
               />
             </div>
           ) : (
             <div className="gp-empty">{fullError ? `图谱加载失败：${fullError}` : '正在加载问题图谱…'}</div>
           )}
         </div>
+      ) : course ? (
+        <Teaching key={account ?? ''} course={course} full={full} account={account ?? ''} mode={tab}
+          caseId={caseId} abilityId={abilityId} onCase={jumpToCase} onQuestion={jumpToQuestion}
+          onKnowledge={jumpToKnowledge} onAbility={jumpToAbility} />
+      ) : (
+        <div className="gp-empty" role="status">{courseError || '正在加载能力和案例…'}</div>
       )}
 
       {agentOpen && (
@@ -418,7 +472,7 @@ export function GraphPage({ artifact, onSendMessage = () => {}, messages = [], b
           <span className="pulse" /> Agent 正在回答，点击查看
         </button>
       )}
-      {!full && (
+      {!full && tab === 'knowledge' && (
         <div className="gp-empty" style={{ position: 'absolute', inset: '60px 0 0', pointerEvents: 'none' }}>
           {fullError ? `图谱加载失败：${fullError}` : '正在加载全课程星图…'}
         </div>

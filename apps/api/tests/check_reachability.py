@@ -7,7 +7,7 @@
 2. 10 个模块声明的 canvas_kinds 都在 8 类画布里；
 3. 每个工具至少被一个模块声明（否则学生永远触发不到）；
 4. 每个画布至少被一个模块声明；
-5. 前端 features/ 目录（若存在）与画布集合一致。
+5. 前端画布功能与画布集合一致，独立整页模块单独计算。
 """
 from __future__ import annotations
 
@@ -61,6 +61,8 @@ def main() -> int:
     if feats.exists():
         dirs = {p.name for p in feats.iterdir() if p.is_dir()}
         mapping = {"three_view": "plot", "tolerance": "calc"}
+        page_only = {m.id for m in MODULES if not m.canvas_kinds}
+        dirs -= page_only
         dirs = {mapping.get(d, d) for d in dirs}
         check(dirs == set(ARTIFACT_TYPES),
               "前端 features 与画布集合一致",

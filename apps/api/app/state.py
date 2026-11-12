@@ -83,11 +83,11 @@ MODULES: list[ModuleManifest] = [
         entry_examples=["快群和热群有什么区别", "扩散理论和输运理论怎么区分"],
     ),
     ModuleManifest(
-        id="graph", name="知识图谱", icon="graph",
+        id="graph", name="课程图谱与案例", icon="graph",
         canvas_kinds=["graph"],
         tools=["kg_lookup", "kb_search"],
         system_prompt="知识图谱助教：说明知识点之间的关系（前置依赖、易混淆对比、包含与因果）并给出课程出处。",
-        desc="十章知识星图与问题链",
+        desc="知识图谱、问题图谱、能力图谱与工程案例",
         entry_examples=["点堆动力学依赖哪些前置知识？", "多普勒展宽和温度系数什么关系"],
     ),
     ModuleManifest(

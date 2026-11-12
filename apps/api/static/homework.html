@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>主观题批阅 · 核反应堆物理</title>
+<style>
+  :root { font: 15px/1.6 system-ui, "Microsoft YaHei", sans-serif; color: #172538; background: #f1f5fa; }
+  body { margin: 0; }
+  header, main { max-width: 1120px; margin: auto; padding: 16px; }
+  header a { color: #204f93; }
+  h1 { margin: 6px 0; font-size: 28px; }
+  h2 { margin: 0 0 12px; font-size: 18px; }
+  h3 { margin: 4px 0; font-size: 15px; }
+  p { margin: 6px 0 12px; }
+  section { padding: 16px; margin-bottom: 14px; border: 1px solid #d5dfeb; border-radius: 12px; background: white; min-width: 0; }
+  .grid { display: grid; grid-template-columns: minmax(250px, 1fr) minmax(360px, 2fr); gap: 14px; }
+  label { display: block; margin: 8px 0; }
+  input, textarea, select, button { font: inherit; color: inherit; box-sizing: border-box; }
+  input:not([type=checkbox]), textarea, select { width: 100%; border: 1px solid #b4c4d7; border-radius: 7px; padding: 6px 8px; background: #fafcff; }
+  textarea { resize: vertical; }
+  button { border: 1px solid #b4c4d7; border-radius: 7px; padding: 6px 12px; background: #fff; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: default; }
+  button.primary { background: #1d4f96; color: white; border-color: #1d4f96; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0; align-items: center; }
+  fieldset { border: 1px solid #d5dfeb; border-radius: 8px; margin: 10px 0; padding: 8px 12px; min-width: 0; }
+  .muted { color: #4b627a; font-size: .9rem; }
+  #status { min-height: 1.6em; color: #214e85; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; padding: 12px; background: #f1f5fa; border-radius: 8px; font: inherit; }
+  .candidate { border: 1px solid #d5dfeb; border-radius: 8px; padding: 8px 12px; margin: 8px 0; }
+  .candidate summary { cursor: pointer; font-weight: 650; }
+  .candidate blockquote { margin: 4px 0 4px 22px; color: #214e85; overflow-wrap: anywhere; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; border-bottom: 1px solid #d5dfeb; padding: 6px 8px; }
+  .table-wrap { overflow-x: auto; }
+  [hidden] { display: none !important; }
+  @media (max-width: 720px) { .grid { grid-template-columns: 1fr; gap: 0; } }
+</style>
+<script src="/admin/homework.js" defer></script>
+</head>
+<body>
+<header>
+  <a href="/admin">返回教师端</a>
+  <a href="/guide/#teacher">批阅使用说明</a>
+  <h1>主观题批阅</h1>
+  <p class="muted">按题导入匿名作答，逐项给分并标记错因。记录保存在当前浏览器，可导出备份。点击模型评阅时，题目、量规和当前匿名作答会发送给所配置的模型。</p>
+</header>
+<main>
+  <section>
+    <h2>作业与量规</h2>
+    <label>选择题目 <select id="assignment"></select></label>
+    <p id="question"></p>
+    <div id="case-data" class="table-wrap"></div>
+    <details>
+      <summary>新建自定义题目</summary>
+      <form id="create">
+        <label>作业名称 <input name="title" required maxlength="100"></label>
+        <label>题目与条件 <textarea name="question" required rows="3" maxlength="3000"></textarea></label>
+        <div id="criteria"></div>
+        <div class="actions">
+          <button id="add-criterion" type="button">添加评分项</button>
+          <button class="primary">保存量规</button>
+        </div>
+      </form>
+    </details>
+  </section>
+  <p id="status" role="status" aria-live="polite"></p>
+  <div class="grid">
+    <section>
+      <h2>作答队列</h2>
+      <form id="add">
+        <label>匿名编号 <input name="id" required maxlength="100" placeholder="例如 A01"></label>
+        <label>粘贴单份作答 <textarea name="answer" required rows="3" maxlength="6000"></textarea></label>
+        <button>加入队列</button>
+      </form>
+      <form id="batch">
+        <label>批量粘贴两列 <textarea name="rows" required rows="4" placeholder="匿名编号［制表符］作答"></textarea></label>
+        <p class="muted">可从表格复制两列，每行一份。多行作答可用上方的单份输入。</p>
+        <div class="actions"><button>批量导入</button><button type="button" id="fill-demo">填入演示作答</button></div>
+      </form>
+      <label>从 CSV 导入 <input id="response-file" type="file" accept=".csv,text/csv"></label>
+      <p class="muted">表头用「匿名编号,作答」或「id,answer」。支持双引号包住的多行作答。</p>
+      <label>选择作答 <select id="response"></select></label>
+    </section>
+    <section>
+      <h2>逐项评阅</h2>
+      <div id="review">请先导入作答。</div>
+    </section>
+  </div>
+  <section>
+    <h2>同题错因归组</h2>
+    <div class="actions">
+      <button id="scan-examples">按错答示例扫描</button>
+      <button id="scan-model">批量模型预评</button>
+      <button id="stop-scan" disabled>停止</button>
+    </div>
+    <p class="muted">示例扫描在本机服务匹配量规中的错答短句。模型预评会发送尚未确认的匿名作答到配置的模型，并给出逐项分数和候选错因。分组可改名、勾选适用作答，最终频次以确认的批阅为准。</p>
+    <p id="scan-summary" aria-live="polite"></p>
+    <div id="candidates"></div>
+  </section>
+  <section>
+    <h2>本题错因统计</h2>
+    <p id="summary"></p>
+    <div id="patterns" class="table-wrap"></div>
+    <div class="actions">
+      <button id="export-report">导出本题错因报告</button>
+      <button id="export">导出批阅记录</button>
+      <label>恢复备份 <input id="restore" type="file" accept=".json,application/json"></label>
+    </div>
+  </section>
+</main>
+</body>
+</html>

@@ -278,3 +278,12 @@
 {"source": "KN-136", "target": "KN-133", "rel": "compose", "note": "三种控制方式比较整体涵盖可燃毒物，可燃毒物是其中一种手段。"}
 {"source": "KN-136", "target": "KN-135", "rel": "compose", "note": "三种控制方式比较整体涵盖可溶硼，可溶硼是其中一种手段。"}
 {"source": "KN-166", "target": "KN-167", "rel": "compose", "note": "堆芯设计三方面内容整体包含燃料参数选择，燃料参数是其中一部分。"}
+{"source":"KN-020","target":"KN-176","rel":"prereq","note":"先区分每单位时间的反应数，再核对探测记录的计数口径。"}
+{"source":"KN-021","target":"KN-176","rel":"prereq","note":"理解通量和读数的物理含义不同，才能说明净计数率用作通量指标的条件。"}
+{"source":"KN-034","target":"KN-177","rel":"prereq","note":"先理解衰变释热的来源，再区分热功率通道和中子通道。"}
+{"source":"KN-080","target":"KN-177","rel":"prereq","note":"把归一基准的概念应用到不同物理量的时间记录。"}
+{"source":"KN-120","target":"KN-178","rel":"prereq","note":"识别燃料温度反馈是分析早段响应的基础。"}
+{"source":"KN-121","target":"KN-178","rel":"prereq","note":"掌握慢化剂温度反馈后，再与燃料温度项对照。"}
+{"source":"KN-140","target":"KN-178","rel":"prereq","note":"理解动力学模型的输入与响应后，才能核对各反馈项的独立贡献。"}
+{"source":"KN-173","target":"KN-179","rel":"prereq","note":"先明确设计计算交付的响应量和比较口径，再核对数值差异与误差。"}
+{"source":"KN-080","target":"KN-179","rel":"prereq","note":"归一口径一致是对照两套估计结果的前提。"}

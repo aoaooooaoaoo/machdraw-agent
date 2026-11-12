@@ -112,7 +112,7 @@ export function Overview({
 
   useEffect(() => {
     fitView();
-    selectNode(null);
+    if (externalSelectedId === undefined) selectNode(null);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [layout]);
 

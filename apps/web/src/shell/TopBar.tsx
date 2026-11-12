@@ -121,6 +121,11 @@ export function TopBar() {
           <kbd className="topbar-kbd">{MOD_KEY} K</kbd>
         </button>
 
+        <a className="btn btn-ghost" href="/guide/" target="_blank" rel="noreferrer">
+          <Icon name="book" size={16} />
+          <span>使用说明</span>
+        </a>
+
         <button className="btn btn-ghost" type="button" onClick={() => setFeedbackOpen(true)}>
           <Icon name="feedback" size={16} />
           <span>意见反馈</span>

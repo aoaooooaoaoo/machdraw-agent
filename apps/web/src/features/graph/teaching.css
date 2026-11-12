@@ -1,0 +1,104 @@
+.teaching-view {
+  flex: 1;
+  overflow: auto;
+  padding: clamp(12px, 3vw, 30px);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.teaching-view > * { max-width: 1040px; margin-inline: auto; }
+.teaching-view h2 { margin-top: 0; margin-bottom: 8px; }
+.teaching-view h3 { margin-top: 0; }
+.teaching-muted { color: var(--text-2); font-size: .9rem; }
+.teaching-count { color: var(--text-2); font-size: .9rem; font-weight: 500; }
+.teaching-catalog-filters { display: flex; flex-wrap: wrap; gap: 12px; margin-block: 12px; }
+.teaching-catalog-filters label { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.teaching-catalog-filters input {
+  padding: 7px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+  font: inherit;
+}
+.teaching-catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: 8px;
+  margin-block: 12px 20px;
+}
+.teaching-catalog button { display: grid; gap: 4px; text-align: left; }
+.teaching-catalog span { font-size: .78rem; color: var(--text-2); }
+.teaching-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-block: 12px; }
+.teaching-view button, .teaching-view select {
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  padding: 7px 12px;
+  font: inherit;
+}
+.teaching-view button { cursor: pointer; }
+.teaching-view button:hover, .teaching-view button[aria-pressed="true"] {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.teaching-view button:disabled { opacity: .5; cursor: default; }
+.teaching-map { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-block: 18px; }
+.teaching-stage { position: relative; }
+.teaching-stage h3 { font-size: .9rem; color: var(--text-2); }
+.teaching-stage button { display: grid; gap: 4px; width: 100%; margin-bottom: 8px; text-align: left; }
+.teaching-stage button span { font-size: .85rem; }
+.teaching-stage + .teaching-stage::before {
+  content: '→';
+  color: var(--text-2);
+  position: absolute;
+  left: -21px;
+  top: 45%;
+}
+.teaching-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+.teaching-evidence { list-style: none; padding: 0; margin-bottom: 0; }
+.teaching-evidence li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  padding: 9px 0;
+  border-top: 1px solid var(--border);
+}
+.teaching-evidence li strong { margin-left: auto; }
+.teaching-table { overflow-x: auto; }
+.teaching-table table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.teaching-table th, .teaching-table td { border: 1px solid var(--border); padding: 7px; text-align: left; }
+.teaching-table th { background: var(--panel-2); }
+.teaching-answer { display: grid; gap: 5px; margin-top: 16px; }
+.teaching-answer textarea {
+  font: inherit;
+  resize: vertical;
+  color: var(--text);
+  background: var(--panel-2);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  padding: 8px;
+}
+.teaching-rubric { margin-top: 20px; }
+.teaching-criterion { border-top: 1px solid var(--border); padding: 12px 0; }
+.teaching-attempts { width: 100%; }
+.teaching-attempts summary { color: var(--accent); cursor: pointer; }
+.teaching-attempts blockquote, .teaching-document {
+  margin: 8px 0;
+  padding: 10px 14px;
+  background: var(--panel-2);
+  border-inline-start: 3px solid var(--accent);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.teaching-revision { margin-top: 20px !important; }
+.teaching-view .teaching-ability-link { margin-inline-start: 8px; padding: 2px 8px; font-size: .85rem; }
+.teaching-rubric > button + button { margin-inline-start: 8px; }
+@media (max-width: 600px) {
+  .teaching-map { grid-template-columns: 1fr; gap: 18px; }
+  .teaching-stage + .teaching-stage::before { content: '↓'; top: -22px; left: 10px; }
+}
